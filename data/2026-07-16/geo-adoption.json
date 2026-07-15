@@ -1,0 +1,616 @@
+{
+  "generated_at": "2026-07-15T21:43:41.695242+00:00",
+  "source": "Anthropic Economic Index (huggingface.co/datasets/Anthropic/EconomicIndex, CC-BY)",
+  "release": "release_2026_06_26",
+  "period": {
+    "start": "2026-05-01",
+    "end": "2026-06-01"
+  },
+  "countries": [
+    {
+      "country_code": "AGO",
+      "usage_per_capita_index": 0.1,
+      "usage_pct": 0.05
+    },
+    {
+      "country_code": "ALB",
+      "usage_pct": 0.04,
+      "usage_per_capita_index": 1.02
+    },
+    {
+      "country_code": "ARE",
+      "usage_pct": 0.61,
+      "usage_per_capita_index": 2.84
+    },
+    {
+      "country_code": "ARG",
+      "usage_per_capita_index": 1.48,
+      "usage_pct": 1.05
+    },
+    {
+      "country_code": "ARM",
+      "usage_pct": 0.05,
+      "usage_per_capita_index": 0.95
+    },
+    {
+      "country_code": "AUS",
+      "usage_pct": 2.65,
+      "usage_per_capita_index": 6.4
+    },
+    {
+      "country_code": "AUT",
+      "usage_per_capita_index": 2.61,
+      "usage_pct": 0.37
+    },
+    {
+      "country_code": "AZE",
+      "usage_per_capita_index": 0.43,
+      "usage_pct": 0.07
+    },
+    {
+      "country_code": "BEL",
+      "usage_per_capita_index": 3.8,
+      "usage_pct": 0.68
+    },
+    {
+      "country_code": "BEN",
+      "usage_pct": 0.07,
+      "usage_per_capita_index": 0.39
+    },
+    {
+      "country_code": "BFA",
+      "usage_per_capita_index": 0.15,
+      "usage_pct": 0.05
+    },
+    {
+      "country_code": "BGD",
+      "usage_per_capita_index": 0.11,
+      "usage_pct": 0.31
+    },
+    {
+      "country_code": "BGR",
+      "usage_pct": 0.13,
+      "usage_per_capita_index": 1.36
+    },
+    {
+      "country_code": "BHR",
+      "usage_pct": 0.04,
+      "usage_per_capita_index": 1.5
+    },
+    {
+      "country_code": "BIH",
+      "usage_per_capita_index": 0.61,
+      "usage_pct": 0.03
+    },
+    {
+      "country_code": "BOL",
+      "usage_pct": 0.11,
+      "usage_per_capita_index": 0.56
+    },
+    {
+      "country_code": "BRA",
+      "usage_pct": 3.33,
+      "usage_per_capita_index": 0.96
+    },
+    {
+      "country_code": "BWA",
+      "usage_pct": 0.02,
+      "usage_per_capita_index": 0.52
+    },
+    {
+      "country_code": "CAN",
+      "usage_per_capita_index": 4.13,
+      "usage_pct": 2.63
+    },
+    {
+      "country_code": "CHE",
+      "usage_pct": 0.7,
+      "usage_per_capita_index": 5.02
+    },
+    {
+      "country_code": "CHL",
+      "usage_per_capita_index": 1.84,
+      "usage_pct": 0.59
+    },
+    {
+      "country_code": "CIV",
+      "usage_pct": 0.13,
+      "usage_per_capita_index": 0.3
+    },
+    {
+      "country_code": "CMR",
+      "usage_pct": 0.15,
+      "usage_per_capita_index": 0.38
+    },
+    {
+      "country_code": "COG",
+      "usage_pct": 0.02,
+      "usage_per_capita_index": 0.24
+    },
+    {
+      "country_code": "COL",
+      "usage_per_capita_index": 1.18,
+      "usage_pct": 1.03
+    },
+    {
+      "country_code": "CRI",
+      "usage_per_capita_index": 1.57,
+      "usage_pct": 0.13
+    },
+    {
+      "country_code": "CYP",
+      "usage_pct": 0.07,
+      "usage_per_capita_index": 3.08
+    },
+    {
+      "country_code": "CZE",
+      "usage_per_capita_index": 1.84,
+      "usage_pct": 0.3
+    },
+    {
+      "country_code": "DEU",
+      "usage_pct": 2.98,
+      "usage_per_capita_index": 2.4
+    },
+    {
+      "country_code": "DNK",
+      "usage_per_capita_index": 3.57,
+      "usage_pct": 0.32
+    },
+    {
+      "country_code": "DOM",
+      "usage_per_capita_index": 0.67,
+      "usage_pct": 0.12
+    },
+    {
+      "country_code": "DZA",
+      "usage_per_capita_index": 0.56,
+      "usage_pct": 0.39
+    },
+    {
+      "country_code": "ECU",
+      "usage_pct": 0.17,
+      "usage_per_capita_index": 0.58
+    },
+    {
+      "country_code": "EGY",
+      "usage_per_capita_index": 0.36,
+      "usage_pct": 0.62
+    },
+    {
+      "country_code": "ESP",
+      "usage_per_capita_index": 2.69,
+      "usage_pct": 2.05
+    },
+    {
+      "country_code": "EST",
+      "usage_pct": 0.07,
+      "usage_per_capita_index": 3.21
+    },
+    {
+      "country_code": "FIN",
+      "usage_pct": 0.18,
+      "usage_per_capita_index": 2.19
+    },
+    {
+      "country_code": "FRA",
+      "usage_pct": 3.95,
+      "usage_per_capita_index": 3.97
+    },
+    {
+      "country_code": "GBR",
+      "usage_per_capita_index": 3.35,
+      "usage_pct": 3.47
+    },
+    {
+      "country_code": "GEO",
+      "usage_pct": 0.1,
+      "usage_per_capita_index": 1.8
+    },
+    {
+      "country_code": "GHA",
+      "usage_per_capita_index": 0.38,
+      "usage_pct": 0.19
+    },
+    {
+      "country_code": "GRC",
+      "usage_per_capita_index": 1.51,
+      "usage_pct": 0.23
+    },
+    {
+      "country_code": "GTM",
+      "usage_pct": 0.1,
+      "usage_per_capita_index": 0.37
+    },
+    {
+      "country_code": "HND",
+      "usage_pct": 0.04,
+      "usage_per_capita_index": 0.26
+    },
+    {
+      "country_code": "HRV",
+      "usage_pct": 0.1,
+      "usage_per_capita_index": 1.8
+    },
+    {
+      "country_code": "HTI",
+      "usage_per_capita_index": 0.14,
+      "usage_pct": 0.03
+    },
+    {
+      "country_code": "HUN",
+      "usage_pct": 0.16,
+      "usage_per_capita_index": 1.07
+    },
+    {
+      "country_code": "IDN",
+      "usage_pct": 2.08,
+      "usage_per_capita_index": 0.46
+    },
+    {
+      "country_code": "IND",
+      "usage_per_capita_index": 0.3,
+      "usage_pct": 7.12
+    },
+    {
+      "country_code": "IRL",
+      "usage_per_capita_index": 3.23,
+      "usage_pct": 0.27
+    },
+    {
+      "country_code": "IRQ",
+      "usage_per_capita_index": 0.24,
+      "usage_pct": 0.16
+    },
+    {
+      "country_code": "ISL",
+      "usage_per_capita_index": 4.02,
+      "usage_pct": 0.02
+    },
+    {
+      "country_code": "ISR",
+      "usage_pct": 0.43,
+      "usage_per_capita_index": 3.05
+    },
+    {
+      "country_code": "ITA",
+      "usage_per_capita_index": 1.7,
+      "usage_pct": 1.5
+    },
+    {
+      "country_code": "JAM",
+      "usage_pct": 0.03,
+      "usage_per_capita_index": 0.66
+    },
+    {
+      "country_code": "JOR",
+      "usage_per_capita_index": 0.64,
+      "usage_pct": 0.11
+    },
+    {
+      "country_code": "JPN",
+      "usage_pct": 3.28,
+      "usage_per_capita_index": 1.91
+    },
+    {
+      "country_code": "KAZ",
+      "usage_per_capita_index": 0.71,
+      "usage_pct": 0.21
+    },
+    {
+      "country_code": "KEN",
+      "usage_pct": 0.27,
+      "usage_per_capita_index": 0.34
+    },
+    {
+      "country_code": "KGZ",
+      "usage_pct": 0.04,
+      "usage_per_capita_index": 0.35
+    },
+    {
+      "country_code": "KHM",
+      "usage_pct": 0.06,
+      "usage_per_capita_index": 0.21
+    },
+    {
+      "country_code": "KOR",
+      "usage_pct": 3.24,
+      "usage_per_capita_index": 3.78
+    },
+    {
+      "country_code": "KWT",
+      "usage_pct": 0.08,
+      "usage_per_capita_index": 0.92
+    },
+    {
+      "country_code": "LBN",
+      "usage_pct": 0.08,
+      "usage_per_capita_index": 0.96
+    },
+    {
+      "country_code": "LKA",
+      "usage_pct": 0.19,
+      "usage_per_capita_index": 0.56
+    },
+    {
+      "country_code": "LTU",
+      "usage_pct": 0.1,
+      "usage_per_capita_index": 2.28
+    },
+    {
+      "country_code": "LUX",
+      "usage_per_capita_index": 4.85,
+      "usage_pct": 0.05
+    },
+    {
+      "country_code": "LVA",
+      "usage_per_capita_index": 2.37,
+      "usage_pct": 0.07
+    },
+    {
+      "country_code": "MAR",
+      "usage_per_capita_index": 0.9,
+      "usage_pct": 0.54
+    },
+    {
+      "country_code": "MDA",
+      "usage_per_capita_index": 1.45,
+      "usage_pct": 0.05
+    },
+    {
+      "country_code": "MDG",
+      "usage_pct": 0.04,
+      "usage_per_capita_index": 0.1
+    },
+    {
+      "country_code": "MEX",
+      "usage_per_capita_index": 0.63,
+      "usage_pct": 1.32
+    },
+    {
+      "country_code": "MKD",
+      "usage_per_capita_index": 0.98,
+      "usage_pct": 0.03
+    },
+    {
+      "country_code": "MLT",
+      "usage_pct": 0.04,
+      "usage_per_capita_index": 4.0
+    },
+    {
+      "country_code": "MNG",
+      "usage_per_capita_index": 1.37,
+      "usage_pct": 0.07
+    },
+    {
+      "country_code": "MOZ",
+      "usage_pct": 0.03,
+      "usage_per_capita_index": 0.08
+    },
+    {
+      "country_code": "MUS",
+      "usage_per_capita_index": 1.74,
+      "usage_pct": 0.04
+    },
+    {
+      "country_code": "MYS",
+      "usage_per_capita_index": 0.87,
+      "usage_pct": 0.51
+    },
+    {
+      "country_code": "NAM",
+      "usage_per_capita_index": 0.44,
+      "usage_pct": 0.02
+    },
+    {
+      "country_code": "NGA",
+      "usage_per_capita_index": 0.24,
+      "usage_pct": 0.73
+    },
+    {
+      "country_code": "NLD",
+      "usage_per_capita_index": 3.9,
+      "usage_pct": 1.07
+    },
+    {
+      "country_code": "NOR",
+      "usage_pct": 0.35,
+      "usage_per_capita_index": 4.04
+    },
+    {
+      "country_code": "NPL",
+      "usage_per_capita_index": 0.41,
+      "usage_pct": 0.19
+    },
+    {
+      "country_code": "NZL",
+      "usage_pct": 0.39,
+      "usage_per_capita_index": 4.84
+    },
+    {
+      "country_code": "OMN",
+      "usage_pct": 0.07,
+      "usage_per_capita_index": 0.73
+    },
+    {
+      "country_code": "PAK",
+      "usage_pct": 1.08,
+      "usage_per_capita_index": 0.31
+    },
+    {
+      "country_code": "PAN",
+      "usage_pct": 0.09,
+      "usage_per_capita_index": 1.28
+    },
+    {
+      "country_code": "PER",
+      "usage_pct": 0.57,
+      "usage_per_capita_index": 1.05
+    },
+    {
+      "country_code": "PHL",
+      "usage_per_capita_index": 0.44,
+      "usage_pct": 0.8
+    },
+    {
+      "country_code": "POL",
+      "usage_per_capita_index": 1.33,
+      "usage_pct": 0.75
+    },
+    {
+      "country_code": "PRI",
+      "usage_per_capita_index": 1.68,
+      "usage_pct": 0.08
+    },
+    {
+      "country_code": "PRT",
+      "usage_pct": 0.53,
+      "usage_per_capita_index": 3.32
+    },
+    {
+      "country_code": "PRY",
+      "usage_pct": 0.06,
+      "usage_per_capita_index": 0.59
+    },
+    {
+      "country_code": "PSE",
+      "usage_pct": 0.03,
+      "usage_per_capita_index": 0.43
+    },
+    {
+      "country_code": "QAT",
+      "usage_per_capita_index": 1.66,
+      "usage_pct": 0.09
+    },
+    {
+      "country_code": "ROU",
+      "usage_per_capita_index": 1.37,
+      "usage_pct": 0.4
+    },
+    {
+      "country_code": "RWA",
+      "usage_pct": 0.04,
+      "usage_per_capita_index": 0.2
+    },
+    {
+      "country_code": "SAU",
+      "usage_pct": 0.57,
+      "usage_per_capita_index": 0.93
+    },
+    {
+      "country_code": "SEN",
+      "usage_pct": 0.11,
+      "usage_per_capita_index": 0.41
+    },
+    {
+      "country_code": "SGP",
+      "usage_pct": 0.62,
+      "usage_per_capita_index": 5.81
+    },
+    {
+      "country_code": "SLV",
+      "usage_pct": 0.06,
+      "usage_per_capita_index": 0.59
+    },
+    {
+      "country_code": "SRB",
+      "usage_per_capita_index": 1.31,
+      "usage_pct": 0.13
+    },
+    {
+      "country_code": "SVK",
+      "usage_per_capita_index": 1.43,
+      "usage_pct": 0.12
+    },
+    {
+      "country_code": "SVN",
+      "usage_pct": 0.07,
+      "usage_per_capita_index": 2.13
+    },
+    {
+      "country_code": "SWE",
+      "usage_pct": 0.46,
+      "usage_per_capita_index": 2.98
+    },
+    {
+      "country_code": "TGO",
+      "usage_per_capita_index": 0.22,
+      "usage_pct": 0.03
+    },
+    {
+      "country_code": "THA",
+      "usage_per_capita_index": 0.73,
+      "usage_pct": 0.86
+    },
+    {
+      "country_code": "TTO",
+      "usage_pct": 0.02,
+      "usage_per_capita_index": 1.05
+    },
+    {
+      "country_code": "TUN",
+      "usage_per_capita_index": 1.4,
+      "usage_pct": 0.27
+    },
+    {
+      "country_code": "TUR",
+      "usage_per_capita_index": 0.64,
+      "usage_pct": 0.88
+    },
+    {
+      "country_code": "TWN",
+      "usage_per_capita_index": 2.08,
+      "usage_pct": 0.79
+    },
+    {
+      "country_code": "TZA",
+      "usage_per_capita_index": 0.07,
+      "usage_pct": 0.06
+    },
+    {
+      "country_code": "UGA",
+      "usage_per_capita_index": 0.11,
+      "usage_pct": 0.07
+    },
+    {
+      "country_code": "UKR",
+      "usage_pct": 0.47,
+      "usage_per_capita_index": 0.78
+    },
+    {
+      "country_code": "URY",
+      "usage_per_capita_index": 1.89,
+      "usage_pct": 0.1
+    },
+    {
+      "country_code": "USA",
+      "usage_per_capita_index": 3.87,
+      "usage_pct": 20.16
+    },
+    {
+      "country_code": "UZB",
+      "usage_pct": 0.16,
+      "usage_per_capita_index": 0.3
+    },
+    {
+      "country_code": "VNM",
+      "usage_pct": 0.85,
+      "usage_per_capita_index": 0.53
+    },
+    {
+      "country_code": "ZAF",
+      "usage_pct": 0.47,
+      "usage_per_capita_index": 0.46
+    },
+    {
+      "country_code": "ZMB",
+      "usage_pct": 0.04,
+      "usage_per_capita_index": 0.15
+    },
+    {
+      "country_code": "ZWE",
+      "usage_pct": 0.04,
+      "usage_per_capita_index": 0.2
+    }
+  ]
+}

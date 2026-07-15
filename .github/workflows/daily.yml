@@ -1,0 +1,57 @@
+name: daily-pipeline
+
+on:
+  schedule:
+    - cron: "0 20 * * *" # 20:00 UTC ~ 06:00 AEST (drifts to 07:00 AEDT during daylight saving)
+  workflow_dispatch: {}
+
+concurrency:
+  group: daily-pipeline
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    env:
+      OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+      HF_TOKEN: ${{ secrets.HF_TOKEN }}
+      NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Install dependencies
+        run: uv sync --locked
+
+      - name: Run tests
+        run: uv run pytest -q
+
+      - name: Run pipeline
+        run: uv run python -m aipulse.pipeline
+
+      - name: Commit and push data changes
+        run: |
+          git config user.name "ai-pulse-bot"
+          git config user.email "ai-pulse-bot@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "No data changes to commit"
+          else
+            git commit -m "chore(data): [bot] $(date -u +%Y-%m-%d) daily pipeline run"
+            git push
+          fi
+
+      - name: Alert on workflow failure
+        if: failure()
+        run: |
+          curl -s -H "Title: AI Pulse: daily-pipeline workflow failed" \
+               -H "Priority: high" \
+               -H "Tags: rotating_light" \
+               -d "GitHub Actions run failed before/outside per-source handling: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
+               "https://ntfy.sh/${{ secrets.NTFY_TOPIC }}"
