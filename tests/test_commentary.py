@@ -216,6 +216,51 @@ def test_generate_commentary_retries_once_then_falls_back(monkeypatch):
     assert spend_ledger.month_to_date_cost(ledger) == 0.0  # no successful call, no spend recorded
 
 
+# --- markdown code-fence stripping (observed live: OpenRouter's Bedrock- ---
+# --- routed Claude Haiku wraps JSON in ```json fences despite            ---
+# --- response_format: json_object) -----------------------------------
+
+
+def test_strip_code_fence_leaves_plain_json_untouched():
+    assert commentary._strip_code_fence('{"a": 1}') == '{"a": 1}'
+
+
+def test_strip_code_fence_strips_json_language_fence():
+    fenced = '```json\n{"a": 1}\n```'
+    assert commentary._strip_code_fence(fenced) == '{"a": 1}'
+
+
+def test_strip_code_fence_strips_bare_fence():
+    fenced = '```\n{"a": 1}\n```'
+    assert commentary._strip_code_fence(fenced) == '{"a": 1}'
+
+
+class _FakeResponse:
+    def __init__(self, payload):
+        self._payload = payload
+
+    def raise_for_status(self):
+        pass
+
+    def json(self):
+        return self._payload
+
+
+def test_call_openrouter_chat_parses_fenced_response(monkeypatch):
+    fenced_content = '```json\n{"headline": "h", "summary": "s", "highlights": [], "tone": "quiet"}\n```'
+    fake_payload = {
+        "choices": [{"message": {"content": fenced_content}}],
+        "usage": {"prompt_tokens": 10, "completion_tokens": 5, "cost": 0.0001},
+    }
+    monkeypatch.setattr(commentary, "OPENROUTER_API_KEY", "test-key")
+    monkeypatch.setattr(commentary.requests, "post", lambda *a, **k: _FakeResponse(fake_payload))
+
+    parsed, usage = commentary._call_openrouter_chat("system prompt", "user message")
+
+    assert parsed == {"headline": "h", "summary": "s", "highlights": [], "tone": "quiet"}
+    assert usage["cost"] == 0.0001
+
+
 def test_generate_commentary_success_records_spend_and_forces_deterministic_tone(monkeypatch):
     monkeypatch.setattr(commentary, "COMMENTARY_ENABLED", True)
     monkeypatch.setattr(spend_ledger, "within_budget", lambda ledger, month=None: True)

@@ -31,6 +31,15 @@ _PROMPT_PATH = REPO_ROOT / "prompts" / f"{COMMENTARY_PROMPT_VERSION}.md"
 
 _MODEL_MENTION_RE = re.compile(r"[A-Za-z0-9][\w.\-]*/[\w.\-:]+")
 _PERCENT_MENTION_RE = re.compile(r"(\d+(?:\.\d+)?)\s?%")
+_CODE_FENCE_RE = re.compile(r"^```(?:json)?\s*\n?(.*?)\n?```$", re.DOTALL)
+
+
+def _strip_code_fence(content: str) -> str:
+    """Some models wrap JSON in a ```json fence even with response_format
+    json_object requested (observed live via OpenRouter's Bedrock-routed
+    Claude Haiku) — strip it before parsing rather than failing outright."""
+    match = _CODE_FENCE_RE.match(content.strip())
+    return match.group(1) if match else content
 
 
 def _fmt_pct(value: float) -> set[str]:
@@ -156,7 +165,7 @@ def _call_openrouter_chat(system_prompt: str, user_message: str) -> tuple[dict, 
 
     try:
         content = payload["choices"][0]["message"]["content"]
-        parsed = json.loads(content)
+        parsed = json.loads(_strip_code_fence(content))
     except (KeyError, IndexError, TypeError, json.JSONDecodeError) as e:
         raise CommentaryError(f"OpenRouter chat completion returned unparseable content: {e}") from e
 
