@@ -2,8 +2,9 @@ import sys
 from collections.abc import Callable
 from datetime import date
 
-from aipulse import notify, publish, quality
+from aipulse import history_rollup, notify, publish, quality
 from aipulse.commentary import generate_commentary
+from aipulse.config import ROLLUP_FILENAMES
 from aipulse.errors import SourceFetchError
 from aipulse.facts import compute_facts
 from aipulse.fetchers import clickpy, huggingface, openrouter
@@ -47,18 +48,50 @@ def run_source(source_key: str, fetch_fn: Callable, transform_fn: Callable, toda
         return {"status": "degraded", "last_success": last_success, "path": path, "error": str(e)}
 
 
-def run_facts_and_commentary(today_str: str, rankings_status: dict) -> dict:
+def run_rankings_history_rollup(today_str: str) -> dict:
+    """Extends rankings-history.json with a fresh window fetch (the same
+    ~30-day trailing window OpenRouter returns by default). Runs independently
+    of the single-day rankings.json publish — a failure here degrades only
+    this step; facts/commentary degrade gracefully in turn (see
+    run_facts_and_commentary), never the whole pipeline."""
+    path = f"data/latest/{ROLLUP_FILENAMES['rankings']}"
+    try:
+        window_rows = openrouter.fetch_rankings_window()
+        if not window_rows:
+            raise SourceFetchError("OpenRouter rankings-daily window returned no data")
+        existing = history_rollup.load_rollup("rankings")["rows"]
+        merged = history_rollup.merge_rankings_rows(existing, window_rows, source="pipeline")
+        history_rollup.save_rollup("rankings", merged)
+        print("[rankings_history] published ok")
+        return {"status": "ok", "last_success": today_str, "path": path}
+    except SourceFetchError as e:
+        prior_entry = publish.load_manifest().get("sources", {}).get("rankings_history", {})
+        last_success = prior_entry.get("last_success")
+        print(f"[rankings_history] DEGRADED: {e}", file=sys.stderr)
+        notify.notify(
+            title="AI Pulse: rankings_history degraded",
+            message=str(e),
+            priority="high",
+            tags="warning",
+        )
+        return {"status": "degraded", "last_success": last_success, "path": path, "error": str(e)}
+
+
+def run_facts_and_commentary(today_str: str, rankings_status: dict, rollup_status: dict) -> dict:
     """Deterministic facts diff + LLM (or template) narration. Never raises —
     any failure here degrades this step alone, never the whole pipeline."""
     path = f"data/latest/{publish.SOURCE_FILENAMES['facts']}"
     if rankings_status["status"] != "ok":
         print("[facts] skipped: rankings not published today", file=sys.stderr)
         return {"status": "skipped", "last_success": None, "path": path}
+    if rollup_status["status"] != "ok":
+        print("[facts] skipped: rankings_history rollup not updated today", file=sys.stderr)
+        return {"status": "skipped", "last_success": None, "path": path}
 
     try:
-        history = publish.load_history("rankings", up_to_date=today_str)
+        history = history_rollup.rollup_to_history("rankings")
         if not history or history[-1][0] != today_str:
-            print("[facts] skipped: no rankings snapshot for today in history", file=sys.stderr)
+            print("[facts] skipped: no rankings snapshot for today in history rollup", file=sys.stderr)
             return {"status": "skipped", "last_success": None, "path": path}
 
         facts = compute_facts(history)
@@ -86,7 +119,8 @@ def main() -> None:
         source_key: run_source(source_key, fetch_fn, transform_fn, today_str)
         for source_key, fetch_fn, transform_fn in SOURCES
     }
-    statuses["facts"] = run_facts_and_commentary(today_str, statuses["rankings"])
+    statuses["rankings_history"] = run_rankings_history_rollup(today_str)
+    statuses["facts"] = run_facts_and_commentary(today_str, statuses["rankings"], statuses["rankings_history"])
     publish.write_manifest(today_str, statuses)
 
     degraded = [k for k, v in statuses.items() if v["status"] == "degraded"]

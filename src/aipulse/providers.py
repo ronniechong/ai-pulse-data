@@ -7,7 +7,10 @@ Unmapped prefixes fail open (see resolve_provider) rather than blocking a run.
 
 import sys
 
-# raw prefix (everything before the first "/" in model_permaslug) -> display name
+# raw prefix (everything before the first "/" in model_permaslug) -> display name.
+# Seeded from the M2.5 backfill's full 2025-01-01..2026-07-14 history (40
+# distinct prefixes), not just a single day's top-51 — a single day misses
+# smaller/older providers entirely.
 PROVIDER_MAP: dict[str, str] = {
     "anthropic": "Anthropic",
     "openai": "OpenAI",
@@ -24,6 +27,32 @@ PROVIDER_MAP: dict[str, str] = {
     "xiaomi": "Xiaomi",
     "stepfun": "StepFun",
     "poolside": "Poolside",
+    "alibaba": "Alibaba",
+    "amazon": "Amazon",
+    "anthracite-org": "Anthracite",
+    "arcee-ai": "Arcee AI",
+    "baai": "BAAI",
+    "bytedance-seed": "ByteDance",
+    "cognitivecomputations": "Cognitive Computations",
+    "cohere": "Cohere",
+    "gryphe": "Gryphe",
+    "inclusionai": "InclusionAI",
+    "infermatic": "Infermatic",
+    "intfloat": "intfloat",
+    "kwaipilot": "Kwaipilot",
+    "liquid": "Liquid AI",
+    "meta-llama": "Meta",
+    "microsoft": "Microsoft",
+    "neversleep": "NeverSleep",
+    "nex-agi": "Nex AGI",
+    "nousresearch": "Nous Research",
+    "openchat": "OpenChat",
+    "openrouter": "OpenRouter",
+    "perplexity": "Perplexity",
+    "sao10k": "Sao10K",
+    "sentence-transformers": "Sentence Transformers",
+    "thedrummer": "TheDrummer",
+    "tngtech": "TNG Technology Consulting",
 }
 
 # Pseudo-provider for OpenRouter's aggregate "other" bucket (no "/" in the slug).

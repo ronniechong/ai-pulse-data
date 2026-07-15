@@ -10,7 +10,7 @@ DATA_DIR = REPO_ROOT / "data"
 LATEST_DIR = DATA_DIR / "latest"
 MANIFEST_PATH = DATA_DIR / "manifest.json"
 
-SCHEMA_VERSION = 1
+SCHEMA_VERSION = 2  # bumped for M2.5: rankings-history.json / sdk-geo-history.json rollups
 
 OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY", "")
 HF_TOKEN = os.environ.get("HF_TOKEN", "")
@@ -37,6 +37,27 @@ COMMENTARY_MAX_RETRIES = 1  # 1 retry on validation failure, then template fallb
 
 SPEND_LEDGER_PATH = REPO_ROOT / "spend-ledger.json"
 SPEND_CAP_USD_PER_MONTH = 2.0
+
+# M2.5 history rollups (data/latest/ only — never a dated data/YYYY-MM-DD/ copy;
+# these are cumulative rollups, not daily snapshots, and must stay out of the
+# burn-in provenance story). rankings-history is fed by both the one-off
+# backfill script and the daily pipeline; sdk-geo-history is backfill-only
+# (no M3 panel currently needs day-by-day SDK-download history, only the
+# existing rolling-30d snapshot).
+ROLLUP_FILENAMES = {
+    "rankings": "rankings-history.json",
+    "sdk_geo": "sdk-geo-history.json",
+}
+
+# OpenRouter's rankings-daily data floor (confirmed live 2026-07-16 via the
+# API's own error message). Max span per request is 366 days.
+RANKINGS_HISTORY_FLOOR = "2025-01-01"
+OPENROUTER_MAX_WINDOW_DAYS = 366
+
+# The day before the real CI pipeline's first production run (2026-07-15) —
+# the backfill script's window ends the day before this so there's no
+# overlap/gap with pipeline-sourced rollup rows.
+BACKFILL_END_DATE = "2026-07-14"
 
 HF_TRENDING_LIMIT = 50
 

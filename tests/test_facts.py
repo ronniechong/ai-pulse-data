@@ -137,6 +137,31 @@ def test_tone_big_day_on_record():
     assert compute_tone(facts) == "big_day"
 
 
+def test_record_disqualified_by_backfilled_prior_day():
+    """M2.5: history now spans a backfilled range (e.g. from OpenRouter's
+    historical dataset API, long before this project's CI pipeline existed)
+    plus recent CI-produced days. A model matching an old backfilled peak
+    must NOT be flagged as an all-time record — compute_facts doesn't (and
+    shouldn't) know or care which days came from backfill vs the live
+    pipeline, it just needs to see the deep history."""
+    backfilled_peak = _snapshot("2025-03-01", [_row(1, "anthropic/claude", 0.45)])
+    recent_day = _snapshot("2026-07-15", [_row(1, "anthropic/claude", 0.40)])
+    today = _snapshot("2026-07-16", [_row(1, "anthropic/claude", 0.40)])  # matches recent, not a new high
+    facts = compute_facts([("2025-03-01", backfilled_peak), ("2026-07-15", recent_day), ("2026-07-16", today)])
+
+    assert facts["rankings"]["records"] == []
+
+
+def test_record_still_fires_when_it_exceeds_backfilled_history():
+    backfilled_peak = _snapshot("2025-03-01", [_row(1, "anthropic/claude", 0.45)])
+    recent_day = _snapshot("2026-07-15", [_row(1, "anthropic/claude", 0.40)])
+    today = _snapshot("2026-07-16", [_row(1, "anthropic/claude", 0.50)])  # exceeds the backfilled peak too
+    facts = compute_facts([("2025-03-01", backfilled_peak), ("2026-07-15", recent_day), ("2026-07-16", today)])
+
+    records = facts["rankings"]["records"]
+    assert any(r["type"] == "all_time_token_share" and r["model"] == "anthropic/claude" for r in records)
+
+
 def test_tie_in_rankings_does_not_crash():
     yesterday = _snapshot("2026-07-15", [_row(1, "anthropic/claude", 0.20), _row(2, "openai/gpt", 0.20)])
     today = _snapshot("2026-07-16", [_row(1, "anthropic/claude", 0.20), _row(2, "openai/gpt", 0.20)])

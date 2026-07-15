@@ -34,6 +34,24 @@ def _check_schema() -> None:
         raise SourceFetchError(f"ClickPy table {_TABLE} is missing expected columns: {missing}")
 
 
+def fetch_country_downloads_by_day(start_date: str, end_date: str) -> dict[str, list[dict]]:
+    """Per-package, per-day, per-country download counts over [start_date, end_date]
+    inclusive. Used only by the one-off backfill script — a single grouped query
+    per package, not a per-day loop, since this is a raw SQL table."""
+    _check_schema()
+
+    results: dict[str, list[dict]] = {}
+    for package in SDK_PACKAGES:
+        sql = (
+            f"SELECT date, country_code, sum(count) AS downloads FROM {_TABLE} "
+            f"WHERE project = '{package}' AND date >= '{start_date}' AND date <= '{end_date}' "
+            f"GROUP BY date, country_code ORDER BY date, downloads DESC FORMAT JSON"
+        )
+        result = _run_query(sql)
+        results[package] = result.get("data", [])
+    return results
+
+
 def fetch_country_downloads() -> dict[str, list[ClickPyCountryRow]]:
     """Per-country download counts over the trailing window, one query per tracked SDK package."""
     _check_schema()

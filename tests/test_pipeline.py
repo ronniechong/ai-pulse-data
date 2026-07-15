@@ -76,6 +76,6 @@ def test_manifest_records_per_source_status(_isolate_data_dir):
         "2026-07-16", {"rankings": {"status": "ok", "last_success": "2026-07-16", "path": "x"}}
     )
     manifest = json.loads(publish.MANIFEST_PATH.read_text())
-    assert manifest["schema_version"] == 1
+    assert manifest["schema_version"] == 2
     assert manifest["data_version"] == "2026-07-16"
     assert manifest["sources"]["rankings"]["status"] == "ok"

@@ -40,6 +40,37 @@ def fetch_rankings_daily() -> list[OpenRouterRankingRow]:
         raise SourceFetchError(f"OpenRouter rankings-daily schema mismatch: {e}") from e
 
 
+def fetch_rankings_window(
+    start_date: str | None = None, end_date: str | None = None
+) -> list[OpenRouterRankingRow]:
+    """Unfiltered rankings-daily rows for a date window. A default (no-params)
+    call already returns a trailing ~30-day window — this is what the daily
+    pipeline uses to self-heal the history rollup for free (no extra request
+    beyond the one fetch_rankings_daily already made). Explicit start_date/
+    end_date are for the one-off backfill script (max 366-day span per call,
+    enforced upstream — data floor is 2025-01-01)."""
+    params = {}
+    if start_date:
+        params["start_date"] = start_date
+    if end_date:
+        params["end_date"] = end_date
+    try:
+        resp = requests.get(OPENROUTER_RANKINGS_URL, headers=_headers(), params=params, timeout=_TIMEOUT)
+        resp.raise_for_status()
+        payload = resp.json()
+    except (requests.RequestException, ValueError) as e:
+        raise SourceFetchError(f"OpenRouter rankings-daily window fetch failed: {e}") from e
+
+    rows = payload.get("data")
+    if not isinstance(rows, list):
+        raise SourceFetchError("OpenRouter rankings-daily window returned no data")
+
+    try:
+        return [OpenRouterRankingRow.model_validate(r) for r in rows]
+    except ValidationError as e:
+        raise SourceFetchError(f"OpenRouter rankings-daily window schema mismatch: {e}") from e
+
+
 def fetch_app_rankings() -> list[OpenRouterAppRow]:
     """Current top-50 apps by token usage (single snapshot, not a date series)."""
     try:
