@@ -1,0 +1,21 @@
+{
+  "name": "record_all_time_token_share",
+  "description": "A model hits its highest-ever token share — records make the day 'big_day'.",
+  "facts": {
+    "date": "2026-07-20",
+    "generated_at": "2026-07-20T21:00:00+00:00",
+    "rankings": {
+      "movers": [],
+      "new_entrants": [],
+      "dropouts": [],
+      "records": [
+        {"type": "all_time_token_share", "model": "anthropic/claude-4.8-opus", "provider": "Anthropic", "value": 0.42}
+      ],
+      "provider_share": [
+        {"provider": "Anthropic", "token_share_today": 0.42, "delta_1d": 0.02, "delta_7d": null, "delta_30d": null}
+      ]
+    }
+  },
+  "expect_tone": "big_day",
+  "poisoned_output": null
+}

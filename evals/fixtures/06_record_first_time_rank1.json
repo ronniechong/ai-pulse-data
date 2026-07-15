@@ -1,0 +1,19 @@
+{
+  "name": "record_first_time_rank1",
+  "description": "A model reaches rank #1 for the first time ever in recorded history.",
+  "facts": {
+    "date": "2026-07-20",
+    "generated_at": "2026-07-20T21:00:00+00:00",
+    "rankings": {
+      "movers": [],
+      "new_entrants": [],
+      "dropouts": [],
+      "records": [
+        {"type": "first_time_rank1", "model": "z-ai/glm-5.2", "provider": "Zhipu AI", "value": 0.19}
+      ],
+      "provider_share": []
+    }
+  },
+  "expect_tone": "big_day",
+  "poisoned_output": null
+}

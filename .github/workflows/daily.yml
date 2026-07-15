@@ -19,6 +19,10 @@ jobs:
       OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
       HF_TOKEN: ${{ secrets.HF_TOKEN }}
       NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+      LANGFUSE_PUBLIC_KEY: ${{ secrets.LANGFUSE_PUBLIC_KEY }}
+      LANGFUSE_SECRET_KEY: ${{ secrets.LANGFUSE_SECRET_KEY }}
+      LANGFUSE_HOST: ${{ vars.LANGFUSE_HOST }}
+      COMMENTARY_ENABLED: ${{ vars.COMMENTARY_ENABLED }}
     steps:
       - uses: actions/checkout@v4
 
@@ -40,6 +44,7 @@ jobs:
           git config user.name "ai-pulse-bot"
           git config user.email "ai-pulse-bot@users.noreply.github.com"
           git add data/
+          if [ -f spend-ledger.json ]; then git add spend-ledger.json; fi
           if git diff --cached --quiet; then
             echo "No data changes to commit"
           else

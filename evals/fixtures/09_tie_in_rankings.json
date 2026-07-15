@@ -1,0 +1,42 @@
+{
+  "name": "tie_in_rankings",
+  "description": "Two models with identical token_share — the diff engine must not crash or misattribute deltas when values tie.",
+  "facts": {
+    "date": "2026-07-20",
+    "generated_at": "2026-07-20T21:00:00+00:00",
+    "rankings": {
+      "movers": [
+        {
+          "model": "qwen/qwen3.7-plus",
+          "provider": "Qwen",
+          "rank_today": 6,
+          "token_share_today": 0.05,
+          "rank_delta_1d": 0,
+          "token_share_delta_1d": 0.0,
+          "rank_delta_7d": null,
+          "token_share_delta_7d": null,
+          "rank_delta_30d": null,
+          "token_share_delta_30d": null
+        },
+        {
+          "model": "minimax/minimax-m3",
+          "provider": "MiniMax",
+          "rank_today": 7,
+          "token_share_today": 0.05,
+          "rank_delta_1d": 0,
+          "token_share_delta_1d": 0.0,
+          "rank_delta_7d": null,
+          "token_share_delta_7d": null,
+          "rank_delta_30d": null,
+          "token_share_delta_30d": null
+        }
+      ],
+      "new_entrants": [],
+      "dropouts": [],
+      "records": [],
+      "provider_share": []
+    }
+  },
+  "expect_tone": "quiet",
+  "poisoned_output": null
+}

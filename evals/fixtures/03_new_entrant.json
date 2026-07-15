@@ -1,0 +1,21 @@
+{
+  "name": "new_entrant",
+  "description": "A model newly appears in the top-51 that wasn't there yesterday.",
+  "facts": {
+    "date": "2026-07-20",
+    "generated_at": "2026-07-20T21:00:00+00:00",
+    "rankings": {
+      "movers": [],
+      "new_entrants": [
+        {"model": "google/gemini-3.2-flash", "provider": "Google", "rank": 12, "token_share": 0.015}
+      ],
+      "dropouts": [],
+      "records": [],
+      "provider_share": [
+        {"provider": "Google", "token_share_today": 0.015, "delta_1d": null, "delta_7d": null, "delta_30d": null}
+      ]
+    }
+  },
+  "expect_tone": "notable",
+  "poisoned_output": null
+}

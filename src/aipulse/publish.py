@@ -1,7 +1,10 @@
 import json
+import re
 from datetime import UTC, datetime
 
 from aipulse.config import DATA_DIR, LATEST_DIR, MANIFEST_PATH, SCHEMA_VERSION
+
+_DATED_DIR_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 SOURCE_FILENAMES = {
     "rankings": "rankings.json",
@@ -9,6 +12,8 @@ SOURCE_FILENAMES = {
     "hf_trending": "hf-trending.json",
     "sdk_geo": "sdk-geo.json",
     "geo_adoption": "geo-adoption.json",
+    "facts": "facts.json",
+    "commentary": "commentary.json",
 }
 
 
@@ -28,6 +33,25 @@ def write_source(source_key: str, normalized: dict, date_str: str) -> None:
     payload = json.dumps(normalized, indent=2, sort_keys=False) + "\n"
     (dated_dir / filename).write_text(payload)
     (LATEST_DIR / filename).write_text(payload)
+
+
+def load_history(source_key: str, *, up_to_date: str | None = None) -> list[tuple[str, dict]]:
+    """All committed dated snapshots for a source, oldest first, as (date_str, normalized).
+    Skips dates with no file for this source (e.g. a degraded run). `up_to_date` is
+    inclusive, so the caller can exclude "today" when diffing today against history."""
+    if not DATA_DIR.exists():
+        return []
+    filename = SOURCE_FILENAMES[source_key]
+    out = []
+    for entry in sorted(DATA_DIR.iterdir()):
+        if not entry.is_dir() or not _DATED_DIR_RE.match(entry.name):
+            continue
+        if up_to_date is not None and entry.name > up_to_date:
+            continue
+        path = entry / filename
+        if path.exists():
+            out.append((entry.name, json.loads(path.read_text())))
+    return out
 
 
 def load_manifest() -> dict:

@@ -1,0 +1,19 @@
+{
+  "name": "dropout",
+  "description": "A model that was in yesterday's top-51 has fallen out of it entirely.",
+  "facts": {
+    "date": "2026-07-20",
+    "generated_at": "2026-07-20T21:00:00+00:00",
+    "rankings": {
+      "movers": [],
+      "new_entrants": [],
+      "dropouts": [
+        {"model": "mistralai/mistral-medium-4", "provider": "Mistral AI", "last_rank": 48, "last_token_share": 0.004}
+      ],
+      "records": [],
+      "provider_share": []
+    }
+  },
+  "expect_tone": "notable",
+  "poisoned_output": null
+}

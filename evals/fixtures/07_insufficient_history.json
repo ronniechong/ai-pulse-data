@@ -1,0 +1,32 @@
+{
+  "name": "insufficient_history",
+  "description": "Early burn-in / degraded-source day: no comparison snapshots exist, so every list is empty and every delta would be null. Must render cleanly, not crash.",
+  "facts": {
+    "date": "2026-07-15",
+    "generated_at": "2026-07-15T21:00:00+00:00",
+    "rankings": {
+      "movers": [
+        {
+          "model": "anthropic/claude-4.8-opus",
+          "provider": "Anthropic",
+          "rank_today": 1,
+          "token_share_today": 0.30,
+          "rank_delta_1d": null,
+          "token_share_delta_1d": null,
+          "rank_delta_7d": null,
+          "token_share_delta_7d": null,
+          "rank_delta_30d": null,
+          "token_share_delta_30d": null
+        }
+      ],
+      "new_entrants": [],
+      "dropouts": [],
+      "records": [],
+      "provider_share": [
+        {"provider": "Anthropic", "token_share_today": 0.30, "delta_1d": null, "delta_7d": null, "delta_30d": null}
+      ]
+    }
+  },
+  "expect_tone": "quiet",
+  "poisoned_output": null
+}

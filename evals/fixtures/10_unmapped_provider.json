@@ -1,0 +1,19 @@
+{
+  "name": "unmapped_provider_prefix",
+  "description": "A model slug with a prefix not present in providers.PROVIDER_MAP. resolve_provider() must fail open (use the raw prefix) rather than crash the pipeline.",
+  "facts": {
+    "date": "2026-07-20",
+    "generated_at": "2026-07-20T21:00:00+00:00",
+    "rankings": {
+      "movers": [],
+      "new_entrants": [
+        {"model": "newcorp-ai/frontier-model-v1", "provider": "newcorp-ai", "rank": 30, "token_share": 0.003}
+      ],
+      "dropouts": [],
+      "records": [],
+      "provider_share": []
+    }
+  },
+  "expect_tone": "notable",
+  "poisoned_output": null
+}

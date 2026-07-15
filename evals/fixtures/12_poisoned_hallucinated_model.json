@@ -1,0 +1,35 @@
+{
+  "name": "poisoned_hallucinated_model",
+  "description": "Simulates an LLM output that invents a model not present in facts. validate_entities_and_numbers must reject it.",
+  "facts": {
+    "date": "2026-07-20",
+    "generated_at": "2026-07-20T21:00:00+00:00",
+    "rankings": {
+      "movers": [
+        {
+          "model": "anthropic/claude-4.8-opus",
+          "provider": "Anthropic",
+          "rank_today": 1,
+          "token_share_today": 0.30,
+          "rank_delta_1d": 1,
+          "token_share_delta_1d": 0.01,
+          "rank_delta_7d": null,
+          "token_share_delta_7d": null,
+          "rank_delta_30d": null,
+          "token_share_delta_30d": null
+        }
+      ],
+      "new_entrants": [],
+      "dropouts": [],
+      "records": [],
+      "provider_share": []
+    }
+  },
+  "expect_tone": null,
+  "poisoned_output": {
+    "headline": "fake-vendor/imaginary-model-9000 takes the lead",
+    "summary": "A brand new model from a vendor not seen before has surged to the top.",
+    "highlights": [],
+    "tone": "big_day"
+  }
+}

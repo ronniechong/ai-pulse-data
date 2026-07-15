@@ -1,0 +1,32 @@
+{
+  "name": "big_mover",
+  "description": "A model jumps 15 ranks in a single day — should be 'notable', not 'quiet'.",
+  "facts": {
+    "date": "2026-07-20",
+    "generated_at": "2026-07-20T21:00:00+00:00",
+    "rankings": {
+      "movers": [
+        {
+          "model": "deepseek/deepseek-v4-pro",
+          "provider": "DeepSeek",
+          "rank_today": 5,
+          "token_share_today": 0.08,
+          "rank_delta_1d": 15,
+          "token_share_delta_1d": 0.02,
+          "rank_delta_7d": null,
+          "token_share_delta_7d": null,
+          "rank_delta_30d": null,
+          "token_share_delta_30d": null
+        }
+      ],
+      "new_entrants": [],
+      "dropouts": [],
+      "records": [],
+      "provider_share": [
+        {"provider": "DeepSeek", "token_share_today": 0.08, "delta_1d": 0.02, "delta_7d": null, "delta_30d": null}
+      ]
+    }
+  },
+  "expect_tone": "notable",
+  "poisoned_output": null
+}

@@ -1,4 +1,5 @@
 from datetime import date as date_type
+from typing import Literal
 
 from pydantic import BaseModel, ConfigDict
 
@@ -51,3 +52,16 @@ class ClickPyCountryRow(BaseModel):
 
     country_code: str
     downloads: int
+
+
+class CommentaryOutput(BaseModel):
+    """LLM-generated commentary. Schema-valid is necessary but not sufficient —
+    commentary.py additionally checks every entity/number against facts.json
+    before this is accepted (see validate_entities_and_numbers)."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    headline: str
+    summary: str
+    highlights: list[str]
+    tone: Literal["quiet", "notable", "big_day"]

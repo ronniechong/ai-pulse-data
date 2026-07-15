@@ -1,0 +1,38 @@
+{
+  "name": "multi_fact_day",
+  "description": "A record, a new entrant, a dropout, and a provider-share shift all land on the same day. Commentary must synthesize into one coherent story, not just concatenate every fact.",
+  "facts": {
+    "date": "2026-07-20",
+    "generated_at": "2026-07-20T21:00:00+00:00",
+    "rankings": {
+      "movers": [
+        {
+          "model": "anthropic/claude-4.8-opus",
+          "provider": "Anthropic",
+          "rank_today": 1,
+          "token_share_today": 0.40,
+          "rank_delta_1d": 0,
+          "token_share_delta_1d": 0.08,
+          "rank_delta_7d": null,
+          "token_share_delta_7d": null,
+          "rank_delta_30d": null,
+          "token_share_delta_30d": null
+        }
+      ],
+      "new_entrants": [
+        {"model": "google/gemini-3.2-flash", "provider": "Google", "rank": 15, "token_share": 0.01}
+      ],
+      "dropouts": [
+        {"model": "mistralai/mistral-medium-4", "provider": "Mistral AI", "last_rank": 49, "last_token_share": 0.002}
+      ],
+      "records": [
+        {"type": "all_time_token_share", "model": "anthropic/claude-4.8-opus", "provider": "Anthropic", "value": 0.40}
+      ],
+      "provider_share": [
+        {"provider": "Anthropic", "token_share_today": 0.40, "delta_1d": 0.08, "delta_7d": null, "delta_30d": null}
+      ]
+    }
+  },
+  "expect_tone": "big_day",
+  "poisoned_output": null
+}
