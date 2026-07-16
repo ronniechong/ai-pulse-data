@@ -49,7 +49,7 @@ def test_skips_when_rollup_status_not_ok(_isolate):
 
 
 def test_skips_when_no_history_for_today(_isolate):
-    # both statuses say "ok" but the rollup has no row for today (edge case).
+    # both statuses say "ok" but the rollup is empty (edge case).
     status = run_facts_and_commentary("2026-07-16", _OK, _OK)
     assert status["status"] == "skipped"
 
@@ -68,6 +68,34 @@ def test_publishes_facts_and_commentary_when_rollup_has_today(_isolate):
     assert commentary_out["tone"] == "notable"
     assert (publish.DATA_DIR / "2026-07-16" / "facts.json").exists()
     assert (publish.DATA_DIR / "2026-07-16" / "commentary.json").exists()
+
+
+def test_publishes_facts_when_rollups_latest_date_is_behind_today_str(_isolate):
+    """OpenRouter's rankings-daily can only be complete for a day once that
+    day is over, so on a same-day cron run the rollup's latest date is
+    normally behind today_str — this must not be treated as "no data"."""
+    _seed_rollup("2026-07-14", [_row(1, "anthropic/claude", 0.30)])
+    _seed_rollup("2026-07-15", [_row(1, "anthropic/claude", 0.30), _row(2, "google/gemini", 0.10)])
+
+    status = run_facts_and_commentary("2026-07-16", _OK, _OK)
+
+    assert status["status"] == "ok"
+    assert status["last_success"] == "2026-07-15"
+    facts = json.loads((publish.LATEST_DIR / "facts.json").read_text())
+    assert facts["date"] == "2026-07-15"
+
+
+def test_skips_when_rollups_latest_date_already_processed(_isolate):
+    _seed_rollup("2026-07-15", [_row(1, "anthropic/claude", 0.30)])
+    publish.write_manifest(
+        "2026-07-15",
+        {"facts": {"status": "ok", "last_success": "2026-07-15", "path": "data/latest/facts.json"}},
+    )
+
+    status = run_facts_and_commentary("2026-07-16", _OK, _OK)
+
+    assert status["status"] == "skipped"
+    assert status["last_success"] == "2026-07-15"
 
 
 def test_facts_step_failure_is_degraded_not_a_crash(_isolate, monkeypatch):

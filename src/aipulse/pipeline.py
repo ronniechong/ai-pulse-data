@@ -101,20 +101,33 @@ def run_geo_regions(today_str: str) -> dict:
 
 def run_facts_and_commentary(today_str: str, rankings_status: dict, rollup_status: dict) -> dict:
     """Deterministic facts diff + LLM (or template) narration. Never raises —
-    any failure here degrades this step alone, never the whole pipeline."""
+    any failure here degrades this step alone, never the whole pipeline.
+
+    Gated on the rollup's latest date advancing past the last date facts were
+    computed for — NOT on matching today_str. OpenRouter's rankings-daily can
+    only report a day once it's fully over (and our cron fires before
+    today_str's day ends), so the latest available data is always at least a
+    day behind; requiring history[-1][0] == today_str would skip forever."""
     path = f"data/latest/{publish.SOURCE_FILENAMES['facts']}"
+    prior_last_success = publish.load_manifest().get("sources", {}).get("facts", {}).get("last_success")
+
     if rankings_status["status"] != "ok":
         print("[facts] skipped: rankings not published today", file=sys.stderr)
-        return {"status": "skipped", "last_success": None, "path": path}
+        return {"status": "skipped", "last_success": prior_last_success, "path": path}
     if rollup_status["status"] != "ok":
         print("[facts] skipped: rankings_history rollup not updated today", file=sys.stderr)
-        return {"status": "skipped", "last_success": None, "path": path}
+        return {"status": "skipped", "last_success": prior_last_success, "path": path}
 
     try:
         history = history_rollup.rollup_to_history("rankings")
-        if not history or history[-1][0] != today_str:
-            print("[facts] skipped: no rankings snapshot for today in history rollup", file=sys.stderr)
-            return {"status": "skipped", "last_success": None, "path": path}
+        if not history:
+            print("[facts] skipped: rankings history rollup is empty", file=sys.stderr)
+            return {"status": "skipped", "last_success": prior_last_success, "path": path}
+
+        latest_date = history[-1][0]
+        if latest_date == prior_last_success:
+            print(f"[facts] skipped: no new rankings day since {prior_last_success}", file=sys.stderr)
+            return {"status": "skipped", "last_success": prior_last_success, "path": path}
 
         facts = compute_facts(history)
         publish.write_source("facts", facts, today_str)
@@ -123,7 +136,7 @@ def run_facts_and_commentary(today_str: str, rankings_status: dict, rollup_statu
         publish.write_source("commentary", commentary, today_str)
 
         print("[facts] published ok")
-        return {"status": "ok", "last_success": today_str, "path": path}
+        return {"status": "ok", "last_success": latest_date, "path": path}
     except Exception as e:  # noqa: BLE001 - must never take down the pipeline
         print(f"[facts] DEGRADED: {e}", file=sys.stderr)
         notify.notify(
@@ -132,7 +145,7 @@ def run_facts_and_commentary(today_str: str, rankings_status: dict, rollup_statu
             priority="high",
             tags="warning",
         )
-        return {"status": "degraded", "last_success": None, "path": path, "error": str(e)}
+        return {"status": "degraded", "last_success": prior_last_success, "path": path, "error": str(e)}
 
 
 def main() -> None:
