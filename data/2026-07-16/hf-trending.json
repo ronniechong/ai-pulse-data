@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T22:03:37.907824+00:00",
+  "generated_at": "2026-07-16T22:36:14.986022+00:00",
   "source": "Hugging Face Hub (huggingface.co/models?sort=trending)",
   "models": [
     {
@@ -8,8 +8,8 @@
       "author": "thinkingmachines",
       "downloads": 4,
       "downloads_all_time": null,
-      "likes": 785,
-      "trending_score": 774,
+      "likes": 789,
+      "trending_score": 778,
       "pipeline_tag": "image-text-to-text",
       "library_name": "transformers"
     },
@@ -19,8 +19,8 @@
       "author": "prism-ml",
       "downloads": 74007,
       "downloads_all_time": null,
-      "likes": 584,
-      "trending_score": 567,
+      "likes": 589,
+      "trending_score": 572,
       "pipeline_tag": "text-generation",
       "library_name": "llama.cpp"
     },
@@ -30,8 +30,8 @@
       "author": "prism-ml",
       "downloads": 559267,
       "downloads_all_time": null,
-      "likes": 333,
-      "trending_score": 328,
+      "likes": 335,
+      "trending_score": 330,
       "pipeline_tag": "text-generation",
       "library_name": "llama.cpp"
     },
@@ -42,7 +42,7 @@
       "downloads": 2042670,
       "downloads_all_time": null,
       "likes": 2231,
-      "trending_score": 252,
+      "trending_score": 251,
       "pipeline_tag": "image-text-to-text",
       "library_name": "gguf"
     },
@@ -53,7 +53,7 @@
       "downloads": 513061,
       "downloads_all_time": null,
       "likes": 4027,
-      "trending_score": 241,
+      "trending_score": 239,
       "pipeline_tag": "text-generation",
       "library_name": "transformers"
     },
@@ -64,7 +64,7 @@
       "downloads": 8238,
       "downloads_all_time": null,
       "likes": 389,
-      "trending_score": 205,
+      "trending_score": 204,
       "pipeline_tag": "image-text-to-text",
       "library_name": "transformers"
     },
@@ -86,7 +86,7 @@
       "downloads": 11849,
       "downloads_all_time": null,
       "likes": 812,
-      "trending_score": 181,
+      "trending_score": 180,
       "pipeline_tag": "text-generation",
       "library_name": "transformers"
     },
@@ -130,7 +130,7 @@
       "downloads": 33400,
       "downloads_all_time": null,
       "likes": 562,
-      "trending_score": 134,
+      "trending_score": 133,
       "pipeline_tag": "text-generation",
       "library_name": "transformers"
     },
@@ -195,8 +195,8 @@
       "author": "unsloth",
       "downloads": 1712974,
       "downloads_all_time": null,
-      "likes": 215,
-      "trending_score": 107,
+      "likes": 216,
+      "trending_score": 108,
       "pipeline_tag": "image-text-to-text",
       "library_name": "transformers"
     },
@@ -218,7 +218,7 @@
       "downloads": 1852722,
       "downloads_all_time": null,
       "likes": 2009,
-      "trending_score": 101,
+      "trending_score": 100,
       "pipeline_tag": "image-text-to-text",
       "library_name": "transformers"
     },
@@ -240,7 +240,7 @@
       "downloads": 0,
       "downloads_all_time": null,
       "likes": 165,
-      "trending_score": 96,
+      "trending_score": 95,
       "pipeline_tag": "text-to-video",
       "library_name": null
     },
@@ -272,24 +272,13 @@
       "author": "GnLOLot",
       "downloads": 121296,
       "downloads_all_time": null,
-      "likes": 261,
+      "likes": 262,
       "trending_score": 85,
       "pipeline_tag": "text-generation",
       "library_name": "gguf"
     },
     {
       "rank": 26,
-      "id": "yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
-      "author": "yuxinlu1",
-      "downloads": 506068,
-      "downloads_all_time": null,
-      "likes": 1206,
-      "trending_score": 79,
-      "pipeline_tag": "text-generation",
-      "library_name": "gguf"
-    },
-    {
-      "rank": 27,
       "id": "deepreinforce-ai/Ornith-1.0-35B-GGUF",
       "author": "deepreinforce-ai",
       "downloads": 1785575,
@@ -298,6 +287,17 @@
       "trending_score": 79,
       "pipeline_tag": "text-generation",
       "library_name": "transformers"
+    },
+    {
+      "rank": 27,
+      "id": "yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
+      "author": "yuxinlu1",
+      "downloads": 506068,
+      "downloads_all_time": null,
+      "likes": 1206,
+      "trending_score": 78,
+      "pipeline_tag": "text-generation",
+      "library_name": "gguf"
     },
     {
       "rank": 28,
@@ -316,8 +316,8 @@
       "author": "prism-ml",
       "downloads": 10760,
       "downloads_all_time": null,
-      "likes": 80,
-      "trending_score": 77,
+      "likes": 81,
+      "trending_score": 78,
       "pipeline_tag": "text-generation",
       "library_name": "mlx"
     },
@@ -356,17 +356,6 @@
     },
     {
       "rank": 33,
-      "id": "robbyant/lingbot-world-v2-14b-causal-fast",
-      "author": "robbyant",
-      "downloads": 0,
-      "downloads_all_time": null,
-      "likes": 101,
-      "trending_score": 75,
-      "pipeline_tag": "image-to-video",
-      "library_name": "diffusers"
-    },
-    {
-      "rank": 34,
       "id": "unsloth/Qwen3.6-35B-A3B-NVFP4-Fast",
       "author": "unsloth",
       "downloads": 186456,
@@ -377,7 +366,7 @@
       "library_name": "transformers"
     },
     {
-      "rank": 35,
+      "rank": 34,
       "id": "nvidia/Nemotron-Labs-Audex-30B-A3B",
       "author": "nvidia",
       "downloads": 1764,
@@ -388,13 +377,24 @@
       "library_name": "transformers"
     },
     {
+      "rank": 35,
+      "id": "robbyant/lingbot-world-v2-14b-causal-fast",
+      "author": "robbyant",
+      "downloads": 0,
+      "downloads_all_time": null,
+      "likes": 101,
+      "trending_score": 74,
+      "pipeline_tag": "image-to-video",
+      "library_name": "diffusers"
+    },
+    {
       "rank": 36,
       "id": "unsloth/Qwen3.6-27B-MTP-GGUF",
       "author": "unsloth",
       "downloads": 2893839,
       "downloads_all_time": null,
-      "likes": 1107,
-      "trending_score": 70,
+      "likes": 1108,
+      "trending_score": 71,
       "pipeline_tag": "image-text-to-text",
       "library_name": "transformers"
     },
@@ -433,17 +433,6 @@
     },
     {
       "rank": 40,
-      "id": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M",
-      "author": "empero-ai",
-      "downloads": 192847,
-      "downloads_all_time": null,
-      "likes": 820,
-      "trending_score": 63,
-      "pipeline_tag": "text-generation",
-      "library_name": "transformers"
-    },
-    {
-      "rank": 41,
       "id": "google/gemma-4-31B-it",
       "author": "google",
       "downloads": 12203723,
@@ -454,13 +443,24 @@
       "library_name": "transformers"
     },
     {
+      "rank": 41,
+      "id": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M",
+      "author": "empero-ai",
+      "downloads": 192847,
+      "downloads_all_time": null,
+      "likes": 820,
+      "trending_score": 62,
+      "pipeline_tag": "text-generation",
+      "library_name": "transformers"
+    },
+    {
       "rank": 42,
       "id": "migtissera/Tess-4-27B",
       "author": "migtissera",
       "downloads": 1492,
       "downloads_all_time": null,
-      "likes": 122,
-      "trending_score": 62,
+      "likes": 123,
+      "trending_score": 61,
       "pipeline_tag": "image-text-to-text",
       "library_name": "transformers"
     },
@@ -477,17 +477,6 @@
     },
     {
       "rank": 44,
-      "id": "open-gigaai/Giga-World-1",
-      "author": "open-gigaai",
-      "downloads": 0,
-      "downloads_all_time": null,
-      "likes": 137,
-      "trending_score": 58,
-      "pipeline_tag": null,
-      "library_name": "diffusers"
-    },
-    {
-      "rank": 45,
       "id": "RavichandranJ/Dolphin3-Cyber-8B-GGUF",
       "author": "RavichandranJ",
       "downloads": 52825,
@@ -498,13 +487,24 @@
       "library_name": "transformers"
     },
     {
-      "rank": 46,
+      "rank": 45,
       "id": "LiconStudio/LTX-2.3-Multiple-Subject-Reference",
       "author": "LiconStudio",
       "downloads": 25750,
       "downloads_all_time": null,
       "likes": 222,
       "trending_score": 57,
+      "pipeline_tag": null,
+      "library_name": "diffusers"
+    },
+    {
+      "rank": 46,
+      "id": "open-gigaai/Giga-World-1",
+      "author": "open-gigaai",
+      "downloads": 0,
+      "downloads_all_time": null,
+      "likes": 137,
+      "trending_score": 56,
       "pipeline_tag": null,
       "library_name": "diffusers"
     },
@@ -543,14 +543,14 @@
     },
     {
       "rank": 50,
-      "id": "nvidia/LocateAnything-3B",
-      "author": "nvidia",
-      "downloads": 1546414,
+      "id": "google/tabfm-1.0.0-pytorch",
+      "author": "google",
+      "downloads": 24233,
       "downloads_all_time": null,
-      "likes": 2740,
+      "likes": 374,
       "trending_score": 48,
-      "pipeline_tag": "image-text-to-text",
-      "library_name": "transformers"
+      "pipeline_tag": "tabular-classification",
+      "library_name": "tabfm"
     }
   ]
 }
