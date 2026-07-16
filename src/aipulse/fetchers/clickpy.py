@@ -45,7 +45,7 @@ def fetch_country_downloads_by_day(start_date: str, end_date: str) -> dict[str, 
         sql = (
             f"SELECT date, country_code, sum(count) AS downloads FROM {_TABLE} "
             f"WHERE project = '{package}' AND date >= '{start_date}' AND date <= '{end_date}' "
-            f"GROUP BY date, country_code ORDER BY date, downloads DESC FORMAT JSON"
+            f"GROUP BY date, country_code ORDER BY date, downloads DESC, country_code FORMAT JSON"
         )
         result = _run_query(sql)
         results[package] = result.get("data", [])
@@ -61,7 +61,7 @@ def fetch_country_downloads() -> dict[str, list[ClickPyCountryRow]]:
         sql = (
             f"SELECT country_code, sum(count) AS downloads FROM {_TABLE} "
             f"WHERE project = '{package}' AND date >= today() - {_WINDOW_DAYS} "
-            f"GROUP BY country_code ORDER BY downloads DESC FORMAT JSON"
+            f"GROUP BY country_code ORDER BY downloads DESC, country_code FORMAT JSON"
         )
         result = _run_query(sql)
         rows = result.get("data", [])
