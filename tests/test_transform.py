@@ -25,8 +25,20 @@ def test_transform_apps_sorts_by_rank():
         OpenRouterAppRow(rank=2, app_id=2, app_name="Second", total_tokens=10, total_requests=1),
         OpenRouterAppRow(rank=1, app_id=1, app_name="First", total_tokens=20, total_requests=2),
     ]
-    out = transform_apps(rows)
+    out = transform_apps((rows, {}))
     assert [a["app_name"] for a in out["apps"]] == ["First", "Second"]
+
+
+def test_transform_apps_attaches_category_tags():
+    rows = [OpenRouterAppRow(rank=1, app_id=1, app_name="Cline", total_tokens=20, total_requests=2)]
+    out = transform_apps((rows, {1: ["coding", "cli-agent"]}))
+    assert out["apps"][0]["categories"] == ["coding", "cli-agent"]
+
+
+def test_transform_apps_untagged_app_gets_empty_categories():
+    rows = [OpenRouterAppRow(rank=1, app_id=1, app_name="Untagged", total_tokens=20, total_requests=2)]
+    out = transform_apps((rows, {}))
+    assert out["apps"][0]["categories"] == []
 
 
 def test_transform_hf_trending_assigns_rank_by_input_order():

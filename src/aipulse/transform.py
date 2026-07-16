@@ -27,7 +27,8 @@ def transform_rankings(rows: list[OpenRouterRankingRow]) -> dict:
     }
 
 
-def transform_apps(rows: list[OpenRouterAppRow]) -> dict:
+def transform_apps(data: tuple[list[OpenRouterAppRow], dict[int, list[str]]]) -> dict:
+    rows, tags = data
     rows = sorted(rows, key=lambda r: r.rank)
     return {
         "generated_at": _now_iso(),
@@ -39,6 +40,7 @@ def transform_apps(rows: list[OpenRouterAppRow]) -> dict:
                 "app_name": r.app_name,
                 "total_tokens": r.total_tokens,
                 "total_requests": r.total_requests,
+                "categories": tags.get(r.app_id, []),
             }
             for r in rows
         ],

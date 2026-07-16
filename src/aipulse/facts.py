@@ -151,24 +151,44 @@ def _compute_records(today: dict, prior_history: list[tuple[str, dict]]) -> list
     return records
 
 
+def _provider_shares(snapshot: dict | None) -> dict[str, float]:
+    """Token share per provider, excluding the 'other' aggregate row (an
+    unlisted-providers bucket, not one real actor) — used for both the
+    provider-share leaderboard and the HHI concentration index."""
+    if snapshot is None:
+        return {}
+    totals: dict[str, float] = {}
+    for row in snapshot["models"]:
+        if row["model"] == OTHER_PROVIDER_KEY:
+            continue
+        provider = resolve_provider(row["model"])
+        totals[provider] = totals.get(provider, 0.0) + row["token_share"]
+    return totals
+
+
+def _compute_hhi(shares: dict[str, float]) -> float | None:
+    """Herfindahl-Hirschman concentration index: sum of squared provider
+    shares, 0-1 scale ('other' already excluded by _provider_shares). None
+    when there's nothing to compute over (e.g. no comparison snapshot)."""
+    if not shares:
+        return None
+    return round(sum(share**2 for share in shares.values()), 6)
+
+
+def _compute_concentration(today_shares: dict[str, float], d30_shares: dict[str, float]) -> dict:
+    hhi_today = _compute_hhi(today_shares)
+    hhi_30d = _compute_hhi(d30_shares)
+    hhi_delta_30d = round(hhi_today - hhi_30d, 6) if hhi_today is not None and hhi_30d is not None else None
+    return {"hhi_today": hhi_today, "hhi_delta_30d": hhi_delta_30d}
+
+
 def _compute_provider_share(
     today: dict, yesterday: dict | None, d7: dict | None, d30: dict | None
 ) -> list[dict]:
-    def by_provider(snapshot: dict | None) -> dict[str, float]:
-        if snapshot is None:
-            return {}
-        totals: dict[str, float] = {}
-        for row in snapshot["models"]:
-            if row["model"] == OTHER_PROVIDER_KEY:
-                continue
-            provider = resolve_provider(row["model"])
-            totals[provider] = totals.get(provider, 0.0) + row["token_share"]
-        return totals
-
-    today_shares = by_provider(today)
-    yesterday_shares = by_provider(yesterday)
-    d7_shares = by_provider(d7)
-    d30_shares = by_provider(d30)
+    today_shares = _provider_shares(today)
+    yesterday_shares = _provider_shares(yesterday)
+    d7_shares = _provider_shares(d7)
+    d30_shares = _provider_shares(d30)
 
     def delta(provider: str, comparison: dict[str, float]) -> float | None:
         if provider not in comparison:
@@ -201,6 +221,7 @@ def compute_facts(history: list[tuple[str, dict]]) -> dict:
     d30 = _find_comparison(prior_history, today_date, *_WINDOW_30D)
 
     entrants, dropouts = _compute_entrants_and_dropouts(today, yesterday)
+    concentration = _compute_concentration(_provider_shares(today), _provider_shares(d30))
 
     return {
         "date": today_date,
@@ -211,6 +232,7 @@ def compute_facts(history: list[tuple[str, dict]]) -> dict:
             "dropouts": dropouts,
             "records": _compute_records(today, prior_history),
             "provider_share": _compute_provider_share(today, yesterday, d7, d30),
+            "concentration": concentration,
         },
     }
 

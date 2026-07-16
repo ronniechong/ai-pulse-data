@@ -96,6 +96,30 @@ def test_provider_share_aggregates_multiple_models_per_provider():
     assert shares["OpenAI"] == round(0.15, 6)
 
 
+def test_hhi_excludes_other_bucket_and_is_null_without_30d_comparison():
+    today = _snapshot(
+        "2026-07-16",
+        [_row(1, "anthropic/claude", 0.30), _row(2, "openai/gpt", 0.20), _row(3, "other", 0.50)],
+    )
+    facts = compute_facts([("2026-07-16", today)])
+
+    concentration = facts["rankings"]["concentration"]
+    assert concentration["hhi_today"] == round(0.30**2 + 0.20**2, 6)
+    assert concentration["hhi_delta_30d"] is None
+
+
+def test_hhi_delta_30d_reflects_concentration_change():
+    d30 = _snapshot("2026-06-16", [_row(1, "anthropic/claude", 0.20), _row(2, "openai/gpt", 0.20)])
+    today = _snapshot("2026-07-16", [_row(1, "anthropic/claude", 0.40), _row(2, "openai/gpt", 0.10)])
+    facts = compute_facts([("2026-06-16", d30), ("2026-07-16", today)])
+
+    concentration = facts["rankings"]["concentration"]
+    hhi_30d = round(0.20**2 + 0.20**2, 6)
+    hhi_today = round(0.40**2 + 0.10**2, 6)
+    assert concentration["hhi_today"] == hhi_today
+    assert concentration["hhi_delta_30d"] == round(hhi_today - hhi_30d, 6)
+
+
 def test_7d_and_30d_use_nearest_snapshot_within_tolerance():
     d0 = _snapshot("2026-06-16", [_row(1, "anthropic/claude", 0.10)])  # ~30d before
     d1 = _snapshot("2026-07-09", [_row(1, "anthropic/claude", 0.20)])  # ~7d before

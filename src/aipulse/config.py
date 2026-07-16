@@ -61,6 +61,16 @@ BACKFILL_END_DATE = "2026-07-14"
 
 HF_TRENDING_LIMIT = 50
 
+# App-rankings category/subcategory tagging (M2.6). Values confirmed live
+# 2026-07-16 via the API's own ZodError enum on an invalid value — the
+# design brief's "cli-agent" guess turned out to be a *subcategory* of the
+# "coding" *category*, not a category itself; mismatched category+subcategory
+# pairs 400. Each filtered call returns its own top-50, tagged onto whichever
+# app_ids appear in it — most apps in the base top-50 won't match any slice,
+# which is expected (fail open, not an error).
+APP_RANKING_CATEGORIES = ["coding", "creative", "productivity", "entertainment"]
+APP_RANKING_TAG_SUBCATEGORIES = ["cli-agent"]  # only the one the M3 design needs; more available later
+
 # SDK download tracking: PyPI package name -> provider label
 SDK_PACKAGES = {
     "openai": "OpenAI",

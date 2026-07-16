@@ -9,6 +9,8 @@ SOURCE_FILENAMES = {
     "hf_trending": "hf-trending.json",
     "sdk_geo": "sdk-geo.json",
     "geo_adoption": "geo-adoption.json",
+    "geo_regions": "geo-regions.json",
+    "occupations": "occupations.json",
     "facts": "facts.json",
     "commentary": "commentary.json",
 }

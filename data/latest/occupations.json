@@ -1,0 +1,151 @@
+{
+  "generated_at": "2026-07-16T03:17:05.906596+00:00",
+  "source": "Anthropic Economic Index (huggingface.co/datasets/Anthropic/EconomicIndex, CC-BY)",
+  "release": "release_2026_06_26",
+  "period": {
+    "start": "2026-05-01",
+    "end": "2026-06-01"
+  },
+  "occupations": [
+    {
+      "name": "Document Management Specialists",
+      "soc_code": "15-1299.03",
+      "automation_pct": 67.37,
+      "augmentation_pct": 32.63,
+      "usage_pct": 5.1
+    },
+    {
+      "name": "Librarians and Media Collections Specialists",
+      "soc_code": "25-4022.00",
+      "augmentation_pct": 49.26,
+      "automation_pct": 50.74,
+      "usage_pct": 4.22
+    },
+    {
+      "name": "Counter and Rental Clerks",
+      "soc_code": "41-2021.00",
+      "augmentation_pct": 56.52,
+      "automation_pct": 43.48,
+      "usage_pct": 2.72
+    },
+    {
+      "name": "Editors",
+      "soc_code": "27-3041.00",
+      "augmentation_pct": 66.44,
+      "automation_pct": 33.56,
+      "usage_pct": 2.58
+    },
+    {
+      "name": "Writers and Authors",
+      "soc_code": "27-3043.00",
+      "augmentation_pct": 71.46,
+      "automation_pct": 28.54,
+      "usage_pct": 2.22
+    },
+    {
+      "name": "Computer User Support Specialists",
+      "soc_code": "15-1232.00",
+      "augmentation_pct": 34.38,
+      "automation_pct": 65.62,
+      "usage_pct": 2.17
+    },
+    {
+      "name": "Computer Systems Analysts",
+      "soc_code": "15-1211.00",
+      "augmentation_pct": 15.76,
+      "automation_pct": 84.24,
+      "usage_pct": 1.91
+    },
+    {
+      "name": "Web and Digital Interface Designers",
+      "soc_code": "15-1255.00",
+      "augmentation_pct": 48.66,
+      "automation_pct": 51.34,
+      "usage_pct": 1.7
+    },
+    {
+      "name": "Technical Writers",
+      "soc_code": "27-3042.00",
+      "augmentation_pct": 61.14,
+      "automation_pct": 38.86,
+      "usage_pct": 1.67
+    },
+    {
+      "name": "Computer Programmers",
+      "soc_code": "15-1251.00",
+      "automation_pct": 63.31,
+      "augmentation_pct": 36.69,
+      "usage_pct": 1.67
+    },
+    {
+      "name": "Data Warehousing Specialists",
+      "soc_code": "15-1243.01",
+      "augmentation_pct": 39.29,
+      "automation_pct": 60.71,
+      "usage_pct": 1.65
+    },
+    {
+      "name": "News Analysts, Reporters, and Journalists",
+      "soc_code": "27-3023.00",
+      "augmentation_pct": 71.2,
+      "automation_pct": 28.8,
+      "usage_pct": 1.62
+    },
+    {
+      "name": "Library Technicians",
+      "soc_code": "25-4031.00",
+      "augmentation_pct": 49.71,
+      "automation_pct": 50.29,
+      "usage_pct": 1.5
+    },
+    {
+      "name": "Credit Counselors",
+      "soc_code": "13-2071.00",
+      "augmentation_pct": 65.34,
+      "automation_pct": 34.66,
+      "usage_pct": 1.49
+    },
+    {
+      "name": "Poets, Lyricists and Creative Writers",
+      "soc_code": "27-3043.05",
+      "augmentation_pct": 70.42,
+      "automation_pct": 29.58,
+      "usage_pct": 1.49
+    },
+    {
+      "name": "Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",
+      "soc_code": "41-4012.00",
+      "augmentation_pct": 53.12,
+      "automation_pct": 46.88,
+      "usage_pct": 1.39
+    },
+    {
+      "name": "Substitute Teachers, Short-Term",
+      "soc_code": "25-3031.00",
+      "augmentation_pct": 76.92,
+      "automation_pct": 23.08,
+      "usage_pct": 1.38
+    },
+    {
+      "name": "Software Quality Assurance Analysts and Testers",
+      "soc_code": "15-1253.00",
+      "augmentation_pct": 24.23,
+      "automation_pct": 75.77,
+      "usage_pct": 1.32
+    },
+    {
+      "name": "Tutors",
+      "soc_code": "25-3041.00",
+      "augmentation_pct": 51.28,
+      "automation_pct": 48.72,
+      "usage_pct": 1.27
+    },
+    {
+      "name": "Word Processors and Typists",
+      "soc_code": "43-9022.00",
+      "automation_pct": 54.62,
+      "augmentation_pct": 45.38,
+      "usage_pct": 1.16
+    }
+  ]
+}

@@ -1,7 +1,15 @@
+import sys
+
 import requests
 from pydantic import ValidationError
 
-from aipulse.config import OPENROUTER_API_KEY, OPENROUTER_APP_RANKINGS_URL, OPENROUTER_RANKINGS_URL
+from aipulse.config import (
+    APP_RANKING_CATEGORIES,
+    APP_RANKING_TAG_SUBCATEGORIES,
+    OPENROUTER_API_KEY,
+    OPENROUTER_APP_RANKINGS_URL,
+    OPENROUTER_RANKINGS_URL,
+)
 from aipulse.errors import SourceFetchError
 from aipulse.schemas import OpenRouterAppRow, OpenRouterRankingRow
 
@@ -71,10 +79,11 @@ def fetch_rankings_window(
         raise SourceFetchError(f"OpenRouter rankings-daily window schema mismatch: {e}") from e
 
 
-def fetch_app_rankings() -> list[OpenRouterAppRow]:
-    """Current top-50 apps by token usage (single snapshot, not a date series)."""
+def _fetch_app_rankings_raw(params: dict | None = None) -> list[OpenRouterAppRow]:
     try:
-        resp = requests.get(OPENROUTER_APP_RANKINGS_URL, headers=_headers(), timeout=_TIMEOUT)
+        resp = requests.get(
+            OPENROUTER_APP_RANKINGS_URL, headers=_headers(), params=params or {}, timeout=_TIMEOUT
+        )
         resp.raise_for_status()
         payload = resp.json()
     except (requests.RequestException, ValueError) as e:
@@ -88,3 +97,41 @@ def fetch_app_rankings() -> list[OpenRouterAppRow]:
         return [OpenRouterAppRow.model_validate(r) for r in rows]
     except ValidationError as e:
         raise SourceFetchError(f"OpenRouter app-rankings schema mismatch: {e}") from e
+
+
+def fetch_app_rankings() -> list[OpenRouterAppRow]:
+    """Current top-50 apps by token usage (single snapshot, not a date series)."""
+    return _fetch_app_rankings_raw()
+
+
+def fetch_app_category_tags() -> dict[int, list[str]]:
+    """app_id -> category/subcategory slugs it appears under in their own
+    top-50 filtered rankings. Best-effort per slug: one bad filtered request
+    degrades only that tag (skipped, logged), never the base apps publish —
+    most apps in the base top-50 won't match any slice, which is expected."""
+    tags: dict[int, list[str]] = {}
+    for slug in APP_RANKING_CATEGORIES:
+        param, key = "category", slug
+        try:
+            rows = _fetch_app_rankings_raw({param: key})
+        except SourceFetchError as e:
+            print(f"[apps] category tag '{slug}' fetch failed, skipping: {e}", file=sys.stderr)
+            continue
+        for row in rows:
+            tags.setdefault(row.app_id, []).append(slug)
+    for slug in APP_RANKING_TAG_SUBCATEGORIES:
+        try:
+            rows = _fetch_app_rankings_raw({"subcategory": slug})
+        except SourceFetchError as e:
+            print(f"[apps] subcategory tag '{slug}' fetch failed, skipping: {e}", file=sys.stderr)
+            continue
+        for row in rows:
+            tags.setdefault(row.app_id, []).append(slug)
+    return tags
+
+
+def fetch_app_rankings_with_tags() -> tuple[list[OpenRouterAppRow], dict[int, list[str]]]:
+    """Combined fetch used by the daily pipeline: base top-50 (required —
+    raises on failure like fetch_app_rankings always has) plus best-effort
+    category/subcategory tags (never raises, see fetch_app_category_tags)."""
+    return fetch_app_rankings(), fetch_app_category_tags()
