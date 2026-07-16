@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T20:52:27.448738+00:00",
+  "generated_at": "2026-07-16T22:03:49.281946+00:00",
   "data_version": "2026-07-16",
   "schema_version": 2,
   "sources": {
@@ -29,8 +29,8 @@
       "path": "data/latest/geo-adoption.json"
     },
     "facts": {
-      "status": "skipped",
-      "last_success": null,
+      "status": "ok",
+      "last_success": "2026-07-15",
       "path": "data/latest/facts.json"
     },
     "rankings_history": {
