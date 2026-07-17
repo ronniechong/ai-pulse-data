@@ -1,9 +1,13 @@
 # Eval suite
 
-13 frozen `facts.json`-shaped fixtures covering the scenarios in the M2 design
+14 frozen `facts.json`-shaped fixtures covering the scenarios in the M2 design
 spec (quiet day, big mover, new entrant, dropout, both record types,
 insufficient history, adversarial model name, tie in rankings, unmapped
-provider, multi-fact day, and two "poisoned" LLM-output fixtures).
+provider, multi-fact day, two "poisoned" LLM-output fixtures, and one
+"faithful paraphrase" fixture — a real production false positive where a
+model was narrated as `{ProviderDisplayName}/{suffix}` with trailing
+punctuation instead of the raw slug; asserts the validator accepts it rather
+than requiring exact-case, exact-punctuation slug matches).
 
 **Mocked by default, not a live-LLM eval.** Each fixture runs through the
 deterministic path only: `compute_tone`, `render_template_commentary`, and

@@ -45,6 +45,12 @@ def run_fixture(fixture: dict) -> list[str]:
         if not violations:
             errors.append("expected poisoned_output to be rejected by entity validation, but it passed clean")
 
+    faithful = fixture.get("faithful_output")
+    if faithful is not None:
+        violations = validate_entities_and_numbers(faithful, facts)
+        if violations:
+            errors.append(f"expected faithful_output to pass entity validation clean, but got: {violations}")
+
     return errors
 
 

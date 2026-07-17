@@ -92,13 +92,22 @@ def _collect_allowed_entities(facts: dict) -> tuple[set[str], set[str]]:
 def validate_entities_and_numbers(parsed: dict, facts: dict) -> list[str]:
     """Every model slug and percentage figure mentioned in the commentary text
     must trace back to `facts`. Approximate for free text (formatting/rounding
-    variance), but catches fabricated models and made-up figures."""
+    variance, case, and trailing sentence punctuation swept up by the regex),
+    but catches fabricated models and made-up figures."""
     allowed_models, allowed_percents = _collect_allowed_entities(facts)
+    allowed_models_lower = {m.lower() for m in allowed_models}
     text = " ".join([parsed["headline"], parsed["summary"], *parsed["highlights"]])
 
     violations = []
     for match in _MODEL_MENTION_RE.findall(text):
-        if match not in allowed_models:
+        # LLM prose often narrates a model as "{ProviderDisplayName}/{suffix}"
+        # (both fields come straight from facts, just recombined with the
+        # provider's display-name casing) rather than quoting the raw slug
+        # verbatim — that's a faithful reference, not a fabrication, so match
+        # case-insensitively and ignore trailing sentence punctuation the
+        # regex's character class happens to include (':', '.').
+        candidate = match.rstrip(":.").lower()
+        if candidate not in allowed_models_lower:
             violations.append(f"unknown model referenced: {match!r}")
     for match in _PERCENT_MENTION_RE.findall(text):
         if match not in allowed_percents:

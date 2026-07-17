@@ -1,0 +1,39 @@
+{
+  "name": "faithful_paraphrase_not_rejected",
+  "description": "Regression fixture for a real production false-positive (2026-07-18 ntfy alert): LLM prose narrated a model as '{ProviderDisplayName}/{suffix}' (recombining facts' own 'provider' and 'model' fields) instead of quoting the raw lowercase slug verbatim, and the regex also swept a trailing sentence colon into the match. Both are faithful references to real facts, not fabrications, and must NOT be rejected by validate_entities_and_numbers.",
+  "facts": {
+    "date": "2026-07-17",
+    "generated_at": "2026-07-17T21:00:00+00:00",
+    "rankings": {
+      "movers": [],
+      "new_entrants": [],
+      "dropouts": [],
+      "records": [
+        {
+          "type": "all_time_token_share",
+          "model": "tencent/hy3-20260706:free",
+          "provider": "Tencent",
+          "value": 0.181
+        },
+        {
+          "type": "all_time_token_share",
+          "model": "openai/gpt-5.6-sol-20260709",
+          "provider": "OpenAI",
+          "value": 0.01
+        }
+      ],
+      "provider_share": []
+    }
+  },
+  "expect_tone": "big_day",
+  "poisoned_output": null,
+  "faithful_output": {
+    "headline": "Tencent/hy3-20260706:free hit a highest-ever token share at 18.1%",
+    "summary": "Two records today.",
+    "highlights": [
+      "Tencent/hy3-20260706:free (Tencent) hit a highest-ever token share at 18.1%",
+      "OpenAI/gpt-5.6-sol-20260709: hit a highest-ever token share at 1%"
+    ],
+    "tone": "big_day"
+  }
+}
