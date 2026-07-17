@@ -2,7 +2,7 @@ name: daily-pipeline
 
 on:
   schedule:
-    - cron: "0 20 * * *" # 20:00 UTC ~ 06:00 AEST (drifts to 07:00 AEDT during daylight saving)
+    - cron: "0 1 * * *" # 01:00 UTC ~ 11:00 AEST (drifts to 12:00 AEDT during daylight saving) — shortly after OpenRouter's rankings-daily end_date advances at UTC midnight, minimizing unnecessary staleness (see work-docs/ai-pulse.md 2026-07-18 history entry)
   workflow_dispatch: {}
 
 concurrency:
