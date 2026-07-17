@@ -38,16 +38,23 @@ COMMENTARY_MAX_RETRIES = 1  # 1 retry on validation failure, then template fallb
 SPEND_LEDGER_PATH = REPO_ROOT / "spend-ledger.json"
 SPEND_CAP_USD_PER_MONTH = 2.0
 
-# M2.5 history rollups (data/latest/ only — never a dated data/YYYY-MM-DD/ copy;
+# History rollups (data/latest/ only — never a dated data/YYYY-MM-DD/ copy;
 # these are cumulative rollups, not daily snapshots, and must stay out of the
-# burn-in provenance story). rankings-history is fed by both the one-off
-# backfill script and the daily pipeline; sdk-geo-history is backfill-only
-# (no M3 panel currently needs day-by-day SDK-download history, only the
-# existing rolling-30d snapshot).
+# burn-in provenance story). Both rankings-history (M2.5) and sdk-geo-history
+# (M2.5 backfill, extended daily from 2026-07-18) are fed by a one-off
+# backfill script AND the daily pipeline. sdk-geo-history is large (56MB+,
+# ~300k rows) and never served to the client directly — sdk_geo_trend.py
+# derives a small per-region/per-package daily summary from it instead.
 ROLLUP_FILENAMES = {
     "rankings": "rankings-history.json",
     "sdk_geo": "sdk-geo-history.json",
 }
+
+# Trailing window (days) re-fetched from ClickPy into sdk-geo-history on every
+# pipeline run — generous overlap so late-arriving/corrected ClickPy data
+# self-heals the same way rankings-history's window fetch does, ending
+# yesterday since "today" is never a complete day in ClickPy either.
+SDK_GEO_HISTORY_WINDOW_DAYS = 30
 
 # OpenRouter's rankings-daily data floor (confirmed live 2026-07-16 via the
 # API's own error message). Max span per request is 366 days.

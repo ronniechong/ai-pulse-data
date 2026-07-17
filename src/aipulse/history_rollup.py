@@ -70,10 +70,12 @@ def merge_rankings_rows(
 
 
 def merge_sdk_geo_rows(existing_rows: list[dict], new_rows: list[dict], source: str) -> list[dict]:
-    """Backfill-only rollup (see M2.5: no M3 panel currently needs day-by-day
-    SDK-download history) — flat (date, package, country_code, downloads)
-    rows, no rank/share computation needed. Kept mergeable/idempotent anyway
-    in case the backfill script is ever re-run."""
+    """Flat (date, package, country_code, downloads) rows, no rank/share
+    computation needed. Newer fetches win on (date, package, country_code)
+    conflicts, same self-healing behavior as merge_rankings_rows — lets the
+    daily pipeline's trailing-window re-fetch correct late-arriving ClickPy
+    data, and lets "pipeline"-sourced rows naturally supersede "backfill"
+    ones as the window slides forward."""
     merged: dict[tuple[str, str, str], dict] = {
         (r["date"], r["package"], r["country_code"]): r for r in existing_rows
     }

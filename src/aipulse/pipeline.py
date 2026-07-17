@@ -1,14 +1,15 @@
 import sys
 from collections.abc import Callable
-from datetime import UTC, date, datetime
+from datetime import UTC, date, datetime, timedelta
 
 from aipulse import history_rollup, notify, publish, quality
 from aipulse.commentary import generate_commentary
-from aipulse.config import ROLLUP_FILENAMES
+from aipulse.config import ROLLUP_FILENAMES, SDK_GEO_HISTORY_WINDOW_DAYS, SDK_PACKAGES
 from aipulse.errors import SourceFetchError
 from aipulse.facts import compute_facts
 from aipulse.fetchers import clickpy, huggingface, openrouter
 from aipulse.geo_regions import compute_geo_regions
+from aipulse.sdk_geo_trend import compute_sdk_geo_trend
 from aipulse.transform import (
     transform_apps,
     transform_hf_trending,
@@ -75,6 +76,70 @@ def run_rankings_history_rollup(today_str: str) -> dict:
             priority="high",
             tags="warning",
         )
+        return {"status": "degraded", "last_success": last_success, "path": path, "error": str(e)}
+
+
+def run_sdk_geo_history_rollup(today_str: str) -> dict:
+    """Extends sdk-geo-history.json with a fresh trailing-window fetch from
+    ClickPy, ending yesterday (ClickPy's "today" is never a complete day
+    either, same reasoning as OpenRouter's rankings-daily). Runs
+    independently of the single-day sdk_geo.json publish — a failure here
+    degrades only this step and sdk_geo_trend in turn, never the whole
+    pipeline."""
+    path = f"data/latest/{ROLLUP_FILENAMES['sdk_geo']}"
+    try:
+        end = date.today() - timedelta(days=1)
+        start = end - timedelta(days=SDK_GEO_HISTORY_WINDOW_DAYS - 1)
+        by_package = clickpy.fetch_country_downloads_by_day(start.isoformat(), end.isoformat())
+        if not any(by_package.values()):
+            raise SourceFetchError("ClickPy per-day window returned no data for any package")
+
+        new_rows = [
+            {
+                "date": r["date"],
+                "package": package,
+                "provider": SDK_PACKAGES[package],
+                "country_code": r["country_code"],
+                "downloads": int(r["downloads"]),
+            }
+            for package, raw_rows in by_package.items()
+            for r in raw_rows
+        ]
+        existing = history_rollup.load_rollup("sdk_geo")["rows"]
+        merged = history_rollup.merge_sdk_geo_rows(existing, new_rows, source="pipeline")
+        history_rollup.save_rollup("sdk_geo", merged)
+        print("[sdk_geo_history] published ok")
+        return {"status": "ok", "last_success": today_str, "path": path}
+    except SourceFetchError as e:
+        prior_entry = publish.load_manifest().get("sources", {}).get("sdk_geo_history", {})
+        last_success = prior_entry.get("last_success")
+        print(f"[sdk_geo_history] DEGRADED: {e}", file=sys.stderr)
+        notify.notify(
+            title="AI Pulse: sdk_geo_history degraded",
+            message=str(e),
+            priority="high",
+            tags="warning",
+        )
+        return {"status": "degraded", "last_success": last_success, "path": path, "error": str(e)}
+
+
+def run_sdk_geo_trend(today_str: str) -> dict:
+    """Derives sdk-geo-trend.json (small per-region/per-package daily
+    summary) from whatever is currently in the sdk-geo-history rollup — pure
+    computation, never blocks the rest of the pipeline (same philosophy as
+    run_geo_regions). Runs even if today's rollup fetch degraded, using
+    whatever history already exists."""
+    path = f"data/latest/{publish.SOURCE_FILENAMES['sdk_geo_trend']}"
+    try:
+        rows = history_rollup.load_rollup("sdk_geo")["rows"]
+        trend = compute_sdk_geo_trend(rows, datetime.now(UTC).isoformat())
+        publish.write_source("sdk_geo_trend", trend, today_str)
+        print("[sdk_geo_trend] published ok")
+        return {"status": "ok", "last_success": today_str, "path": path}
+    except Exception as e:  # noqa: BLE001 - derived data, must never take down the pipeline
+        prior_entry = publish.load_manifest().get("sources", {}).get("sdk_geo_trend", {})
+        last_success = prior_entry.get("last_success")
+        print(f"[sdk_geo_trend] DEGRADED: {e}", file=sys.stderr)
         return {"status": "degraded", "last_success": last_success, "path": path, "error": str(e)}
 
 
@@ -155,6 +220,8 @@ def main() -> None:
         for source_key, fetch_fn, transform_fn in SOURCES
     }
     statuses["rankings_history"] = run_rankings_history_rollup(today_str)
+    statuses["sdk_geo_history"] = run_sdk_geo_history_rollup(today_str)
+    statuses["sdk_geo_trend"] = run_sdk_geo_trend(today_str)
     statuses["geo_regions"] = run_geo_regions(today_str)
     statuses["facts"] = run_facts_and_commentary(today_str, statuses["rankings"], statuses["rankings_history"])
     publish.write_manifest(today_str, statuses)

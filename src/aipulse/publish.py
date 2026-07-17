@@ -10,6 +10,7 @@ SOURCE_FILENAMES = {
     "sdk_geo": "sdk-geo.json",
     "geo_adoption": "geo-adoption.json",
     "geo_regions": "geo-regions.json",
+    "sdk_geo_trend": "sdk-geo-trend.json",
     "occupations": "occupations.json",
     "facts": "facts.json",
     "commentary": "commentary.json",
