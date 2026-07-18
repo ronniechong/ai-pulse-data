@@ -40,14 +40,16 @@ SPEND_CAP_USD_PER_MONTH = 2.0
 
 # History rollups (data/latest/ only — never a dated data/YYYY-MM-DD/ copy;
 # these are cumulative rollups, not daily snapshots, and must stay out of the
-# burn-in provenance story). Both rankings-history (M2.5) and sdk-geo-history
-# (M2.5 backfill, extended daily from 2026-07-18) are fed by a one-off
-# backfill script AND the daily pipeline. sdk-geo-history is large (56MB+,
-# ~300k rows) and never served to the client directly — sdk_geo_trend.py
-# derives a small per-region/per-package daily summary from it instead.
+# burn-in provenance story). rankings, sdk_geo, and rankings_daily_totals are
+# all fed by a one-off backfill script AND the daily pipeline. sdk-geo-history
+# is large (56MB+, ~300k rows) and never served to the client directly —
+# sdk_geo_trend.py derives a small per-region/per-package daily summary from
+# it instead. rankings_daily_totals stays tiny by design (one row per day,
+# not per model) — served to the client as-is, same as rankings-history.
 ROLLUP_FILENAMES = {
     "rankings": "rankings-history.json",
     "sdk_geo": "sdk-geo-history.json",
+    "rankings_daily_totals": "rankings-totals-history.json",
 }
 
 # Trailing window (days) re-fetched from ClickPy into sdk-geo-history on every

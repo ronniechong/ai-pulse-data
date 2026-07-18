@@ -109,3 +109,34 @@ def test_merge_sdk_geo_rows_dedupes_by_date_package_country():
     us_row = next(r for r in merged if r["country_code"] == "US")
     assert us_row["downloads"] == 150  # newer wins
     assert us_row["source"] == "backfill"
+
+
+def test_merge_daily_totals_rows_sums_all_models_per_day():
+    rows = [
+        _row("2025-01-01", "a", 70),
+        _row("2025-01-01", "b", 30),
+        _row("2025-01-02", "a", 10),
+        _row("2025-01-02", "b", 90),
+    ]
+    merged = history_rollup.merge_daily_totals_rows([], rows, source="backfill")
+    by_date = {r["date"]: r for r in merged}
+
+    assert by_date["2025-01-01"]["total_tokens"] == 100
+    assert by_date["2025-01-02"]["total_tokens"] == 100
+    assert all(r["source"] == "backfill" for r in merged)
+
+
+def test_merge_daily_totals_rows_one_row_per_day_not_per_model():
+    rows = [_row("2025-01-01", "a", 70), _row("2025-01-01", "b", 30), _row("2025-01-01", "c", 50)]
+    merged = history_rollup.merge_daily_totals_rows([], rows, source="pipeline")
+    assert len(merged) == 1
+    assert merged[0]["total_tokens"] == 150
+
+
+def test_merge_daily_totals_rows_newer_fetch_wins_on_date_conflict():
+    existing = [{"date": "2025-01-01", "total_tokens": 999, "source": "backfill"}]
+    new_rows = [_row("2025-01-01", "a", 70), _row("2025-01-01", "b", 30)]
+    merged = history_rollup.merge_daily_totals_rows(existing, new_rows, source="pipeline")
+    assert len(merged) == 1
+    assert merged[0]["total_tokens"] == 100
+    assert merged[0]["source"] == "pipeline"

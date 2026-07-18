@@ -46,12 +46,26 @@ def backfill_rankings() -> None:
     window_2 = openrouter.fetch_rankings_window(start_date=next_day, end_date=BACKFILL_END_DATE)
     print(f"  {len(window_2)} rows")
 
+    all_rows = window_1 + window_2
+
     existing = history_rollup.load_rollup("rankings")["rows"]
-    merged = history_rollup.merge_rankings_rows(existing, window_1 + window_2, source="backfill")
+    merged = history_rollup.merge_rankings_rows(existing, all_rows, source="backfill")
     history_rollup.save_rollup("rankings", merged)
 
     dates = sorted({r["date"] for r in merged})
     print(f"rankings-history.json: {len(merged)} rows across {len(dates)} days ({dates[0]}..{dates[-1]})")
+
+    # Same window_rows already in hand — no extra fetch, just a different
+    # aggregation (per-day total instead of per-day-per-model share).
+    existing_totals = history_rollup.load_rollup("rankings_daily_totals")["rows"]
+    merged_totals = history_rollup.merge_daily_totals_rows(existing_totals, all_rows, source="backfill")
+    history_rollup.save_rollup("rankings_daily_totals", merged_totals)
+
+    totals_dates = sorted({r["date"] for r in merged_totals})
+    print(
+        f"rankings-totals-history.json: {len(merged_totals)} rows across "
+        f"{len(totals_dates)} days ({totals_dates[0]}..{totals_dates[-1]})"
+    )
 
 
 def backfill_sdk_geo() -> None:

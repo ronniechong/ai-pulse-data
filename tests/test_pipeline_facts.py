@@ -131,6 +131,22 @@ def test_rollup_step_merges_fresh_window_and_publishes_ok(_isolate, monkeypatch)
     assert all(r["source"] == "pipeline" for r in rollup["rows"])
 
 
+def test_rollup_step_also_extends_daily_totals_from_same_window(_isolate, monkeypatch):
+    from aipulse.schemas import OpenRouterRankingRow
+
+    window_rows = [
+        OpenRouterRankingRow(date="2026-07-16", model_permaslug="anthropic/claude", total_tokens=70),
+        OpenRouterRankingRow(date="2026-07-16", model_permaslug="openai/gpt", total_tokens=30),
+    ]
+    monkeypatch.setattr("aipulse.pipeline.openrouter.fetch_rankings_window", lambda: window_rows)
+
+    run_rankings_history_rollup("2026-07-16")
+
+    totals = history_rollup.load_rollup("rankings_daily_totals")["rows"]
+    assert len(totals) == 1
+    assert totals[0] == {"date": "2026-07-16", "total_tokens": 100, "source": "pipeline"}
+
+
 def test_rollup_step_degrades_gracefully_on_fetch_failure(_isolate, monkeypatch):
     def _boom():
         raise SourceFetchError("simulated: rankings-daily window fetch failed")

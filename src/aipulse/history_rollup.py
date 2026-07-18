@@ -69,6 +69,25 @@ def merge_rankings_rows(
     return sorted(merged.values(), key=lambda r: (r["date"], r["rank"]))
 
 
+def merge_daily_totals_rows(existing_rows: list[dict], new_window_rows: list[OpenRouterRankingRow], source: str) -> list[dict]:
+    """Sums total_tokens across every model (including 'other') for each
+    date in the window — the same per-day denominator merge_rankings_rows
+    already computes to derive token_share, just kept here instead of
+    discarded. One row per day (not per model), so this stays tiny (~560
+    rows) even as rankings-history.json (51 rows/day) grows into the tens
+    of thousands. Newer fetches win on date conflicts, same self-healing
+    pattern as the other rollups."""
+    totals_by_date: dict[str, int] = {}
+    for row in new_window_rows:
+        date_str = row.date.isoformat()
+        totals_by_date[date_str] = totals_by_date.get(date_str, 0) + row.total_tokens
+
+    merged: dict[str, dict] = {r["date"]: r for r in existing_rows}
+    for date_str, total in totals_by_date.items():
+        merged[date_str] = {"date": date_str, "total_tokens": total, "source": source}
+    return sorted(merged.values(), key=lambda r: r["date"])
+
+
 def merge_sdk_geo_rows(existing_rows: list[dict], new_rows: list[dict], source: str) -> list[dict]:
     """Flat (date, package, country_code, downloads) rows, no rank/share
     computation needed. Newer fetches win on (date, package, country_code)

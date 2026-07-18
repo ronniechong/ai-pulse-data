@@ -55,7 +55,11 @@ def run_rankings_history_rollup(today_str: str) -> dict:
     ~30-day trailing window OpenRouter returns by default). Runs independently
     of the single-day rankings.json publish — a failure here degrades only
     this step; facts/commentary degrade gracefully in turn (see
-    run_facts_and_commentary), never the whole pipeline."""
+    run_facts_and_commentary), never the whole pipeline.
+
+    Also extends rankings-totals-history.json from the same window_rows — no
+    extra fetch, just a different aggregation of data already in hand (see
+    history_rollup.merge_daily_totals_rows)."""
     path = f"data/latest/{ROLLUP_FILENAMES['rankings']}"
     try:
         window_rows = openrouter.fetch_rankings_window()
@@ -64,6 +68,11 @@ def run_rankings_history_rollup(today_str: str) -> dict:
         existing = history_rollup.load_rollup("rankings")["rows"]
         merged = history_rollup.merge_rankings_rows(existing, window_rows, source="pipeline")
         history_rollup.save_rollup("rankings", merged)
+
+        existing_totals = history_rollup.load_rollup("rankings_daily_totals")["rows"]
+        merged_totals = history_rollup.merge_daily_totals_rows(existing_totals, window_rows, source="pipeline")
+        history_rollup.save_rollup("rankings_daily_totals", merged_totals)
+
         print("[rankings_history] published ok")
         return {"status": "ok", "last_success": today_str, "path": path}
     except SourceFetchError as e:
