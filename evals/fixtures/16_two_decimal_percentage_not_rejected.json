@@ -1,0 +1,33 @@
+{
+  "name": "two_decimal_percentage_not_rejected",
+  "description": "Regression fixture for a real production false-positive (2026-07-19 ntfy alert): the LLM output percentages at 2 decimal places (e.g. '20.19%'), matching the precision of the raw facts values, but _fmt_pct only generated 0dp/1dp allowed strings so faithful figures were rejected as 'unverified'. validate_entities_and_numbers must accept 2dp-rounded figures too.",
+  "facts": {
+    "date": "2026-07-18",
+    "generated_at": "2026-07-19T04:16:00+00:00",
+    "rankings": {
+      "movers": [],
+      "new_entrants": [],
+      "dropouts": [],
+      "records": [],
+      "provider_share": [
+        {
+          "provider": "Tencent",
+          "token_share_today": 0.201946,
+          "delta_1d": 0.008635,
+          "delta_7d": 0.055066,
+          "delta_30d": 0.111703
+        }
+      ]
+    }
+  },
+  "expect_tone": null,
+  "poisoned_output": null,
+  "faithful_output": {
+    "headline": "Tencent leads provider share at 20.19%",
+    "summary": "Tencent's token share reached 20.19%, up 11.17% over the last 30 days.",
+    "highlights": [
+      "Tencent now holds 20.19% of total token share"
+    ],
+    "tone": "quiet"
+  }
+}

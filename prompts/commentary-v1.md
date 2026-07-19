@@ -26,7 +26,9 @@ Hard rules:
      factual, not hyperbolic.
 4. If `facts.rankings` has empty movers/entrants/dropouts/records (e.g. early
    burn-in with no history yet), say so plainly rather than inventing content.
-5. Output *only* a single JSON object matching this shape — no prose before
+5. Round every percentage figure to exactly one decimal place (e.g. `20.2%`,
+   not `20.19%`).
+6. Output *only* a single JSON object matching this shape — no prose before
    or after, no markdown code fence:
 
 ```json

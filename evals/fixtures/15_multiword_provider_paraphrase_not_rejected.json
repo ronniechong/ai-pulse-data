@@ -1,0 +1,38 @@
+{
+  "name": "multiword_provider_paraphrase_not_rejected",
+  "description": "Regression fixture for a real production false-positive (2026-07-19 ntfy alert): LLM prose narrated a model as '{ProviderDisplayName}/{suffix}' for a provider whose display name contains a space ('Moonshot AI'). The model-mention regex stops at the first space, so it only ever saw the truncated tail ('AI/kimi-k3-20260715') and the allowed-entities set never contained that alias either. Both the regex and the allowed set must handle this — a faithful reference to real facts, not a fabrication.",
+  "facts": {
+    "date": "2026-07-18",
+    "generated_at": "2026-07-19T04:16:00+00:00",
+    "rankings": {
+      "movers": [
+        {
+          "model": "moonshotai/kimi-k3-20260715",
+          "provider": "Moonshot AI",
+          "rank_today": 11,
+          "token_share_today": 0.017583,
+          "rank_delta_1d": 13,
+          "token_share_delta_1d": 0.010097,
+          "rank_delta_7d": null,
+          "token_share_delta_7d": null,
+          "rank_delta_30d": null,
+          "token_share_delta_30d": null
+        }
+      ],
+      "new_entrants": [],
+      "dropouts": [],
+      "records": [],
+      "provider_share": []
+    }
+  },
+  "expect_tone": null,
+  "poisoned_output": null,
+  "faithful_output": {
+    "headline": "Moonshot AI/kimi-k3-20260715 jumps 13 ranks",
+    "summary": "Moonshot AI/kimi-k3-20260715 climbed to rank 11 with a 1.8% token share.",
+    "highlights": [
+      "Moonshot AI/kimi-k3-20260715 moved up 13 ranks to #11"
+    ],
+    "tone": "notable"
+  }
+}

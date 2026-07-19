@@ -43,7 +43,11 @@ def _strip_code_fence(content: str) -> str:
 
 
 def _fmt_pct(value: float) -> set[str]:
-    return {f"{value * 100:.1f}", f"{value * 100:.0f}"}
+    # 2dp included because the LLM reliably outputs the same precision it sees
+    # in facts (which carries ~6 significant digits) rather than pre-rounding
+    # itself — observed live (2026-07-19 ntfy alert): faithful figures like
+    # 20.19% were rejected for only existing in 1dp/0dp form.
+    return {f"{value * 100:.0f}", f"{value * 100:.1f}", f"{value * 100:.2f}"}
 
 
 def _load_system_prompt() -> str:
@@ -69,18 +73,28 @@ def _collect_allowed_entities(facts: dict) -> tuple[set[str], set[str]]:
             percents.update(_fmt_pct(value))
             percents.update(_fmt_pct(abs(value)))
 
+    def _add_model(model: str, provider: str | None) -> None:
+        models.add(model)
+        # LLM prose commonly recombines facts' own 'provider' display name
+        # with the model's slug suffix (e.g. "Moonshot AI/kimi-k3-...")
+        # instead of quoting the raw permaslug — a faithful reference to the
+        # same facts, so it must validate too, not just the raw slug form.
+        if provider and "/" in model:
+            suffix = model.split("/", 1)[1]
+            models.add(f"{provider}/{suffix}")
+
     for m in rankings["movers"]:
-        models.add(m["model"])
+        _add_model(m["model"], m.get("provider"))
         for key in ("token_share_today", "token_share_delta_1d", "token_share_delta_7d", "token_share_delta_30d"):
             _add_share(m.get(key))
     for e in rankings["new_entrants"]:
-        models.add(e["model"])
+        _add_model(e["model"], e.get("provider"))
         _add_share(e["token_share"])
     for d in rankings["dropouts"]:
-        models.add(d["model"])
+        _add_model(d["model"], d.get("provider"))
         _add_share(d["last_token_share"])
     for r in rankings["records"]:
-        models.add(r["model"])
+        _add_model(r["model"], r.get("provider"))
         _add_share(r["value"])
     for p in rankings["provider_share"]:
         for key in ("token_share_today", "delta_1d", "delta_7d", "delta_30d"):
@@ -98,8 +112,18 @@ def validate_entities_and_numbers(parsed: dict, facts: dict) -> list[str]:
     allowed_models_lower = {m.lower() for m in allowed_models}
     text = " ".join([parsed["headline"], parsed["summary"], *parsed["highlights"]])
 
+    # Provider display names with a space (e.g. "Moonshot AI", "Zhipu AI")
+    # break _MODEL_MENTION_RE, which stops at the first space — it would only
+    # ever see the truncated tail ("AI/kimi-k3-...") and reject it as unknown.
+    # Mask any literal occurrence of a known full "{provider}/{suffix}" alias
+    # first so the regex below never re-derives (and rejects) just its tail.
+    masked_text = text
+    for alias in sorted(allowed_models, key=len, reverse=True):
+        if " " in alias:
+            masked_text = re.sub(re.escape(alias), "", masked_text, flags=re.IGNORECASE)
+
     violations = []
-    for match in _MODEL_MENTION_RE.findall(text):
+    for match in _MODEL_MENTION_RE.findall(masked_text):
         # LLM prose often narrates a model as "{ProviderDisplayName}/{suffix}"
         # (both fields come straight from facts, just recombined with the
         # provider's display-name casing) rather than quoting the raw slug
@@ -123,7 +147,7 @@ def render_template_commentary(facts: dict) -> dict:
 
     for r in rankings["records"]:
         kind = "highest-ever token share" if r["type"] == "all_time_token_share" else "reached #1 for the first time"
-        pct = next(iter(_fmt_pct(r["value"])))
+        pct = f"{r['value'] * 100:.1f}"
         highlights.append(f"{r['model']} ({r['provider']}) hit a {kind} at {pct}%")
 
     for e in sorted(rankings["new_entrants"], key=lambda x: x["rank"])[:5]:
