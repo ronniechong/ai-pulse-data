@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-19T04:16:40.668694+00:00",
-  "data_version": "2026-07-19",
+  "generated_at": "2026-07-20T04:30:17.763424+00:00",
+  "data_version": "2026-07-20",
   "schema_version": 2,
   "sources": {
     "rankings": {
       "status": "ok",
-      "last_success": "2026-07-19",
+      "last_success": "2026-07-20",
       "path": "data/latest/rankings.json"
     },
     "apps": {
       "status": "ok",
-      "last_success": "2026-07-19",
+      "last_success": "2026-07-20",
       "path": "data/latest/apps.json"
     },
     "hf_trending": {
       "status": "ok",
-      "last_success": "2026-07-19",
+      "last_success": "2026-07-20",
       "path": "data/latest/hf-trending.json"
     },
     "sdk_geo": {
       "status": "ok",
-      "last_success": "2026-07-19",
+      "last_success": "2026-07-20",
       "path": "data/latest/sdk-geo.json"
     },
     "geo_adoption": {
@@ -30,27 +30,27 @@
     },
     "facts": {
       "status": "ok",
-      "last_success": "2026-07-18",
+      "last_success": "2026-07-19",
       "path": "data/latest/facts.json"
     },
     "rankings_history": {
       "status": "ok",
-      "last_success": "2026-07-19",
+      "last_success": "2026-07-20",
       "path": "data/latest/rankings-history.json"
     },
     "geo_regions": {
       "status": "ok",
-      "last_success": "2026-07-19",
+      "last_success": "2026-07-20",
       "path": "data/latest/geo-regions.json"
     },
     "sdk_geo_history": {
       "status": "ok",
-      "last_success": "2026-07-19",
+      "last_success": "2026-07-20",
       "path": "data/latest/sdk-geo-history.json"
     },
     "sdk_geo_trend": {
       "status": "ok",
-      "last_success": "2026-07-19",
+      "last_success": "2026-07-20",
       "path": "data/latest/sdk-geo-trend.json"
     }
   }
