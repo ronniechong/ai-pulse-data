@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T04:30:06.860429+00:00",
+  "generated_at": "2026-07-21T04:09:54.770702+00:00",
   "rows": [
     {
       "date": "2025-01-01",
@@ -2808,12 +2808,17 @@
     },
     {
       "date": "2026-07-18",
-      "total_tokens": 8050764717110,
+      "total_tokens": 8050764751145,
       "source": "pipeline"
     },
     {
       "date": "2026-07-19",
-      "total_tokens": 7211398949093,
+      "total_tokens": 7742838835750,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-07-20",
+      "total_tokens": 8440173824425,
       "source": "pipeline"
     }
   ]
