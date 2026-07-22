@@ -16,6 +16,12 @@ from aipulse.providers import OTHER_PROVIDER_KEY, resolve_provider
 _WINDOW_7D = (5, 9)
 _WINDOW_30D = (26, 34)
 
+# Minimum token-share improvement (percentage points, absolute) required for
+# an all-time-high to count as a "record" rather than a trivial epsilon beat
+# — without this, a model in a slow monotonic uptrend re-sets its own record
+# every single day, making every day "big_day" and every headline the same.
+_RECORD_MARGIN = 0.003
+
 
 def _index_by_model(snapshot: dict) -> dict[str, dict]:
     return {m["model"]: m for m in snapshot["models"]}
@@ -107,20 +113,42 @@ def _compute_entrants_and_dropouts(today: dict, yesterday: dict | None) -> tuple
     return entrants, dropouts
 
 
-def _compute_records(today: dict, prior_history: list[tuple[str, dict]]) -> list[dict]:
-    """prior_history must exclude today. Empty prior_history => no records possible."""
+def _record_streaks(history: list[tuple[str, dict]], margin: float) -> dict[str, int]:
+    """For each model, the number of consecutive trailing days (ending at the
+    last entry in `history`, ascending) it has beaten its own running
+    all-time-high token_share by at least `margin`. A day that doesn't beat
+    the margin resets that model's streak to 0 rather than ending it forever
+    — a real all-time high always resumes counting from the new peak."""
+    running_max: dict[str, float] = {}
+    streak: dict[str, int] = {}
+    for _date_str, snapshot in history:
+        for row in snapshot["models"]:
+            model = row["model"]
+            if model == OTHER_PROVIDER_KEY:
+                continue
+            prior_max = running_max.get(model)
+            if prior_max is not None and row["token_share"] > prior_max + margin:
+                streak[model] = streak.get(model, 0) + 1
+                running_max[model] = row["token_share"]
+            else:
+                streak[model] = 0
+                running_max[model] = max(prior_max, row["token_share"]) if prior_max is not None else row["token_share"]
+    return streak
+
+
+def _compute_records(
+    today: dict, prior_history: list[tuple[str, dict]], streaks: dict[str, int]
+) -> list[dict]:
+    """prior_history must exclude today. Empty prior_history => no records possible.
+    `streaks` comes from `_record_streaks` over the full history including today."""
     if not prior_history:
         return []
 
-    prior_max_share: dict[str, float] = {}
     ever_rank1: set[str] = set()
     for _date_str, snapshot in prior_history:
         for row in snapshot["models"]:
             if row["model"] == OTHER_PROVIDER_KEY:
                 continue
-            prior_max_share[row["model"]] = max(
-                prior_max_share.get(row["model"], 0.0), row["token_share"]
-            )
             if row["rank"] == 1:
                 ever_rank1.add(row["model"])
 
@@ -129,14 +157,15 @@ def _compute_records(today: dict, prior_history: list[tuple[str, dict]]) -> list
         model = row["model"]
         if model == OTHER_PROVIDER_KEY:
             continue
-        prior_max = prior_max_share.get(model)
-        if prior_max is not None and row["token_share"] > prior_max:
+        streak_days = streaks.get(model, 0)
+        if streak_days > 0:
             records.append(
                 {
                     "type": "all_time_token_share",
                     "model": model,
                     "provider": resolve_provider(model),
                     "value": row["token_share"],
+                    "streak_days": streak_days,
                 }
             )
         if row["rank"] == 1 and model not in ever_rank1:
@@ -222,6 +251,7 @@ def compute_facts(history: list[tuple[str, dict]]) -> dict:
 
     entrants, dropouts = _compute_entrants_and_dropouts(today, yesterday)
     concentration = _compute_concentration(_provider_shares(today), _provider_shares(d30))
+    streaks = _record_streaks(history, _RECORD_MARGIN)
 
     return {
         "date": today_date,
@@ -230,7 +260,7 @@ def compute_facts(history: list[tuple[str, dict]]) -> dict:
             "movers": _compute_movers(today, yesterday, d7, d30),
             "new_entrants": entrants,
             "dropouts": dropouts,
-            "records": _compute_records(today, prior_history),
+            "records": _compute_records(today, prior_history, streaks),
             "provider_share": _compute_provider_share(today, yesterday, d7, d30),
             "concentration": concentration,
         },
@@ -238,12 +268,18 @@ def compute_facts(history: list[tuple[str, dict]]) -> dict:
 
 
 def _threshold_hit(facts: dict) -> str:
-    """Rule-based tone — see M2 design spec for the thresholds and rationale."""
+    """Rule-based tone — see M2 design spec for the thresholds and rationale.
+    A record only counts toward `big_day` on the first day it's set
+    (`streak_days <= 1`, the default when the field is absent) — a record
+    still being extended day after day (`streak_days > 1`) is real but no
+    longer surprising, so it only earns `notable` on its own."""
     rankings = facts["rankings"]
-    if rankings["records"]:
+    if any(r.get("streak_days", 1) <= 1 for r in rankings["records"]):
         return "big_day"
     if any(abs(p["delta_1d"] or 0) >= 0.03 for p in rankings["provider_share"]):
         return "big_day"
+    if rankings["records"]:
+        return "notable"
     if rankings["new_entrants"] or rankings["dropouts"]:
         return "notable"
     if any(abs(m["rank_delta_1d"] or 0) >= 10 for m in rankings["movers"]):

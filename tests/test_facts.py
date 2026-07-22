@@ -186,6 +186,35 @@ def test_record_still_fires_when_it_exceeds_backfilled_history():
     assert any(r["type"] == "all_time_token_share" and r["model"] == "anthropic/claude" for r in records)
 
 
+def test_trivial_epsilon_beat_is_not_a_record():
+    day1 = _snapshot("2026-07-15", [_row(1, "anthropic/claude", 0.200)])
+    day2 = _snapshot("2026-07-16", [_row(1, "anthropic/claude", 0.2001)])  # +0.01pp, below the margin
+    facts = compute_facts([("2026-07-15", day1), ("2026-07-16", day2)])
+    assert facts["rankings"]["records"] == []
+    assert compute_tone(facts) == "quiet"
+
+
+def test_record_streak_downgrades_tone_after_first_day():
+    """A model in a genuine multi-day uptrend keeps setting real records, but
+    only the first day of the streak should read as `big_day` — otherwise the
+    dashboard leads with the same 'new all-time high' story every day."""
+    # Deltas kept below the 0.03 provider-share big_day threshold so only the
+    # record-streak logic is under test here, not the other big_day trigger.
+    day1 = _snapshot("2026-07-14", [_row(1, "anthropic/claude", 0.20)])
+    day2 = _snapshot("2026-07-15", [_row(1, "anthropic/claude", 0.22)])  # fresh record, day 1 of streak
+    day3 = _snapshot("2026-07-16", [_row(1, "anthropic/claude", 0.235)])  # still a record, day 2 of streak
+
+    facts_day2 = compute_facts([("2026-07-14", day1), ("2026-07-15", day2)])
+    records_day2 = facts_day2["rankings"]["records"]
+    assert any(r["model"] == "anthropic/claude" and r.get("streak_days", 1) == 1 for r in records_day2)
+    assert compute_tone(facts_day2) == "big_day"
+
+    facts_day3 = compute_facts([("2026-07-14", day1), ("2026-07-15", day2), ("2026-07-16", day3)])
+    records_day3 = facts_day3["rankings"]["records"]
+    assert any(r["model"] == "anthropic/claude" and r["streak_days"] == 2 for r in records_day3)
+    assert compute_tone(facts_day3) == "notable"
+
+
 def test_tie_in_rankings_does_not_crash():
     yesterday = _snapshot("2026-07-15", [_row(1, "anthropic/claude", 0.20), _row(2, "openai/gpt", 0.20)])
     today = _snapshot("2026-07-16", [_row(1, "anthropic/claude", 0.20), _row(2, "openai/gpt", 0.20)])

@@ -37,9 +37,10 @@ made-up figure fails validation, triggers one retry
 (`COMMENTARY_MAX_RETRIES = 1`), and falls back to the template on a second
 failure. An ntfy alert ("AI Pulse: commentary fell back to template")
 fires either way — this is the system working as designed, not an incident.
-Check the alert's error text and the corresponding Langfuse trace
-(`prompt_version: commentary-v1`) if you want to understand *why* it failed,
-but nothing is broken and nothing needs fixing before the next run.
+Check the alert's error text and the corresponding Langfuse trace (the
+`prompt_version` tag on it, currently `commentary-v2`) if you want to
+understand *why* it failed, but nothing is broken and nothing needs fixing
+before the next run.
 
 **Passed validation but is still wrong** (real incident — wrong tone, badly
 phrased, technically-true-but-misleading): validation only checks that
@@ -51,9 +52,10 @@ entities/numbers are real, not that the writing is good.
    data/<date>/commentary.json` (or hand-edit and commit a correction —
    either way, push directly, this is a manual override of automated
    content).
-3. Read `prompts/commentary-v1.md` and the Langfuse trace for that day to
-   decide whether it's a prompt problem (tune the prompt, bump to
-   `commentary-v2`, update `COMMENTARY_PROMPT_VERSION` in `config.py`) or a
+3. Read the current prompt (`prompts/{COMMENTARY_PROMPT_VERSION}.md`, e.g.
+   `prompts/commentary-v2.md`) and the Langfuse trace for that day to decide
+   whether it's a prompt problem (tune the prompt, bump to the next
+   `commentary-vN`, update `COMMENTARY_PROMPT_VERSION` in `config.py`) or a
    one-off model quirk (leave the prompt alone, re-enable, watch the next
    run).
 4. Re-enable only once you're confident the fix addresses the actual cause.

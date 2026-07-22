@@ -1,0 +1,21 @@
+{
+  "name": "record_streak_continuation",
+  "description": "A model extending an already-established all-time-high streak (streak_days > 1) reads as 'notable', not 'big_day' — only the first day of a streak is a fresh headline. Also proves the template's streak-aware phrasing stays entity/number valid.",
+  "facts": {
+    "date": "2026-07-21",
+    "generated_at": "2026-07-21T21:00:00+00:00",
+    "rankings": {
+      "movers": [],
+      "new_entrants": [],
+      "dropouts": [],
+      "records": [
+        {"type": "all_time_token_share", "model": "tencent/hy3", "provider": "Tencent", "value": 0.208, "streak_days": 5}
+      ],
+      "provider_share": [
+        {"provider": "Tencent", "token_share_today": 0.208, "delta_1d": 0.007, "delta_7d": null, "delta_30d": null}
+      ]
+    }
+  },
+  "expect_tone": "notable",
+  "poisoned_output": null
+}

@@ -1,6 +1,6 @@
 """Facts-only LLM narration, with a deterministic template fallback that is
-always schema-valid on its own. See prompts/commentary-v1.md for the prompt
-and work-docs M2 design spec for the validation rationale.
+always schema-valid on its own. See prompts/{COMMENTARY_PROMPT_VERSION}.md for
+the active prompt and work-docs M2/M7 notes for the validation rationale.
 """
 
 import json
@@ -146,9 +146,17 @@ def render_template_commentary(facts: dict) -> dict:
     highlights: list[str] = []
 
     for r in rankings["records"]:
-        kind = "highest-ever token share" if r["type"] == "all_time_token_share" else "reached #1 for the first time"
         pct = f"{r['value'] * 100:.1f}"
-        highlights.append(f"{r['model']} ({r['provider']}) hit a {kind} at {pct}%")
+        streak_days = r.get("streak_days", 1)
+        if r["type"] == "first_time_rank1":
+            highlights.append(f"{r['model']} ({r['provider']}) reached #1 for the first time at {pct}%")
+        elif streak_days > 1:
+            highlights.append(
+                f"{r['model']} ({r['provider']}) extends its all-time-high streak to {streak_days} "
+                f"straight days, now at {pct}%"
+            )
+        else:
+            highlights.append(f"{r['model']} ({r['provider']}) hit a highest-ever token share at {pct}%")
 
     for e in sorted(rankings["new_entrants"], key=lambda x: x["rank"])[:5]:
         highlights.append(f"{e['model']} ({e['provider']}) entered the top rankings at rank {e['rank']}")

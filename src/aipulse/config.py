@@ -32,7 +32,7 @@ NTFY_URL = "https://ntfy.sh"
 LANGFUSE_INGESTION_PATH = "/api/public/ingestion"
 
 COMMENTARY_MODEL = "~anthropic/claude-haiku-latest"  # OpenRouter's auto-updating alias, avoids tracking dated slugs
-COMMENTARY_PROMPT_VERSION = "commentary-v1"
+COMMENTARY_PROMPT_VERSION = "commentary-v2"
 COMMENTARY_MAX_RETRIES = 1  # 1 retry on validation failure, then template fallback
 
 SPEND_LEDGER_PATH = REPO_ROOT / "spend-ledger.json"
