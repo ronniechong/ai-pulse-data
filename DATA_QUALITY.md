@@ -47,6 +47,21 @@ volume (excluding the `other` row) must fall within
 absorbs (or loses) most of the volume — a real data event would still show
 significant token spread across the top 50.
 
+## AI-transparency panel (M8) — no row-count gate
+
+`ai-transparency.json` is derived, not fetched (same category as
+`geo-regions.json`/`sdk-geo-trend.json`): it queries Langfuse's public API
+for the trailing 30 days of `ai-pulse-commentary` traces, reads local
+`commentary.json` history + `spend-ledger.json`, and re-runs the local eval
+suite (`eval_runner.run_all_fixtures`). No row-count or schema gate applies —
+it fails open as a single unit for the Langfuse-dependent piece: a broken/
+unreachable Langfuse call raises before anything is computed, so the whole
+file is left exactly as the last good run wrote it (see
+`pipeline.py::run_ai_transparency`), never a partial rewrite. The eval-suite
+and spend-ledger figures have no external dependency to fail open against —
+if either raised, that would be a genuine code bug surfacing in the daily
+run, not a degraded source.
+
 ## Attribution requirements
 
 - **OpenRouter** (`rankings.json`, `apps.json`): must be cited as

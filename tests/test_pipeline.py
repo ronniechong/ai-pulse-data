@@ -2,9 +2,9 @@ import json
 
 import pytest
 
-from aipulse import notify, publish
+from aipulse import ai_transparency, notify, publish
 from aipulse.errors import SourceFetchError
-from aipulse.pipeline import run_source
+from aipulse.pipeline import run_ai_transparency, run_source
 
 
 @pytest.fixture(autouse=True)
@@ -68,6 +68,40 @@ def test_quality_gate_failure_is_treated_as_degraded(_isolate_data_dir):
     status = run_source("rankings", _good_fetch, bad_quality_transform, "2026-07-16")
     assert status["status"] == "degraded"
     assert not (publish.LATEST_DIR / "rankings.json").exists()
+
+
+def test_run_ai_transparency_publishes_ok(_isolate_data_dir, monkeypatch):
+    monkeypatch.setattr(
+        ai_transparency,
+        "compute_ai_transparency",
+        lambda generated_at: {"generated_at": generated_at, "llm_reliability": {}},
+    )
+    status = run_ai_transparency("2026-07-23")
+    assert status["status"] == "ok"
+    assert (publish.LATEST_DIR / "ai-transparency.json").exists()
+    assert (publish.DATA_DIR / "2026-07-23" / "ai-transparency.json").exists()
+
+
+def test_run_ai_transparency_degrades_on_langfuse_failure_keeps_last_good(_isolate_data_dir, monkeypatch):
+    monkeypatch.setattr(
+        ai_transparency,
+        "compute_ai_transparency",
+        lambda generated_at: {"generated_at": generated_at},
+    )
+    good_status = run_ai_transparency("2026-07-22")
+    publish.write_manifest("2026-07-22", {"ai_transparency": good_status})
+    last_good_content = (publish.LATEST_DIR / "ai-transparency.json").read_text()
+
+    def _broken(_generated_at):
+        raise SourceFetchError("simulated: Langfuse unreachable")
+
+    monkeypatch.setattr(ai_transparency, "compute_ai_transparency", _broken)
+    status = run_ai_transparency("2026-07-23")
+
+    assert status["status"] == "degraded"
+    assert status["last_success"] == "2026-07-22"
+    assert (publish.LATEST_DIR / "ai-transparency.json").read_text() == last_good_content
+    assert not (publish.DATA_DIR / "2026-07-23" / "ai-transparency.json").exists()
 
 
 def test_manifest_records_per_source_status(_isolate_data_dir):

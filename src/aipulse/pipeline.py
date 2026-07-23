@@ -2,7 +2,7 @@ import sys
 from collections.abc import Callable
 from datetime import UTC, date, datetime, timedelta
 
-from aipulse import history_rollup, notify, publish, quality
+from aipulse import ai_transparency, history_rollup, notify, publish, quality
 from aipulse.commentary import generate_commentary
 from aipulse.config import ROLLUP_FILENAMES, SDK_GEO_HISTORY_WINDOW_DAYS, SDK_PACKAGES
 from aipulse.errors import SourceFetchError
@@ -222,6 +222,33 @@ def run_facts_and_commentary(today_str: str, rankings_status: dict, rollup_statu
         return {"status": "degraded", "last_success": prior_last_success, "path": path, "error": str(e)}
 
 
+def run_ai_transparency(today_str: str) -> dict:
+    """Publishes ai-transparency.json (M8): LLM success-vs-fallback rate +
+    avg latency from Langfuse, tone distribution from local commentary.json
+    history, month-to-date spend from the ledger. Runs independently of
+    every other step. Fails open on Langfuse being unreachable — the whole
+    file is either freshly republished or left exactly as the last good run
+    wrote it, same all-or-nothing contract as every other source."""
+    path = f"data/latest/{publish.SOURCE_FILENAMES['ai_transparency']}"
+    try:
+        generated_at = datetime.now(UTC).isoformat()
+        transparency = ai_transparency.compute_ai_transparency(generated_at)
+        publish.write_source("ai_transparency", transparency, today_str)
+        print("[ai_transparency] published ok")
+        return {"status": "ok", "last_success": today_str, "path": path}
+    except SourceFetchError as e:
+        prior_entry = publish.load_manifest().get("sources", {}).get("ai_transparency", {})
+        last_success = prior_entry.get("last_success")
+        print(f"[ai_transparency] DEGRADED: {e}", file=sys.stderr)
+        notify.notify(
+            title="AI Pulse: ai_transparency degraded",
+            message=str(e),
+            priority="default",
+            tags="warning",
+        )
+        return {"status": "degraded", "last_success": last_success, "path": path, "error": str(e)}
+
+
 def main() -> None:
     today_str = date.today().isoformat()
     statuses = {
@@ -233,6 +260,7 @@ def main() -> None:
     statuses["sdk_geo_trend"] = run_sdk_geo_trend(today_str)
     statuses["geo_regions"] = run_geo_regions(today_str)
     statuses["facts"] = run_facts_and_commentary(today_str, statuses["rankings"], statuses["rankings_history"])
+    statuses["ai_transparency"] = run_ai_transparency(today_str)
     publish.write_manifest(today_str, statuses)
 
     degraded = [k for k, v in statuses.items() if v["status"] == "degraded"]

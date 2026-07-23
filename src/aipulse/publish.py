@@ -14,6 +14,7 @@ SOURCE_FILENAMES = {
     "occupations": "occupations.json",
     "facts": "facts.json",
     "commentary": "commentary.json",
+    "ai_transparency": "ai-transparency.json",
 }
 
 

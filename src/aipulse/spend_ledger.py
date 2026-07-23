@@ -31,6 +31,18 @@ def within_budget(ledger: dict, month: str | None = None) -> bool:
     return month_to_date_cost(ledger, month) < SPEND_CAP_USD_PER_MONTH
 
 
+def lifetime_totals(ledger: dict) -> dict:
+    """Sums every month ever recorded. `calls` only ever counts successful,
+    validated LLM generations (see commentary.py — a rejected/errored attempt
+    never reaches record_call), so this is real spend against real usable
+    output, not spend against every attempt."""
+    months = ledger.get("months", {}).values()
+    return {
+        "cost_usd": round(sum(m.get("cost_usd", 0.0) for m in months), 6),
+        "calls": sum(m.get("calls", 0) for m in months),
+    }
+
+
 def record_call(
     ledger: dict,
     *,

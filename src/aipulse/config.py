@@ -30,6 +30,13 @@ HF_MODELS_URL = "https://huggingface.co/api/models"
 CLICKHOUSE_URL = "https://sql-clickhouse.clickhouse.com"
 NTFY_URL = "https://ntfy.sh"
 LANGFUSE_INGESTION_PATH = "/api/public/ingestion"
+LANGFUSE_TRACES_PATH = "/api/public/traces"
+LANGFUSE_COMMENTARY_TRACE_NAME = "ai-pulse-commentary"
+
+# M8: trailing window for the AI-transparency panel (LLM success-vs-fallback
+# rate + avg latency from Langfuse traces; tone distribution from local
+# commentary.json history).
+AI_TRANSPARENCY_WINDOW_DAYS = 30
 
 COMMENTARY_MODEL = "~anthropic/claude-haiku-latest"  # OpenRouter's auto-updating alias, avoids tracking dated slugs
 COMMENTARY_PROMPT_VERSION = "commentary-v2"
