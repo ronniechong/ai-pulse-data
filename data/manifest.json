@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T04:09:12.742846+00:00",
+  "generated_at": "2026-07-23T10:08:55.135848+00:00",
   "data_version": "2026-07-23",
   "schema_version": 2,
   "sources": {
@@ -29,7 +29,7 @@
       "path": "data/latest/geo-adoption.json"
     },
     "facts": {
-      "status": "ok",
+      "status": "skipped",
       "last_success": "2026-07-22",
       "path": "data/latest/facts.json"
     },
@@ -52,6 +52,11 @@
       "status": "ok",
       "last_success": "2026-07-23",
       "path": "data/latest/sdk-geo-trend.json"
+    },
+    "ai_transparency": {
+      "status": "ok",
+      "last_success": "2026-07-23",
+      "path": "data/latest/ai-transparency.json"
     }
   }
 }
