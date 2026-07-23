@@ -51,7 +51,9 @@ def test_compute_tone_distribution_skips_missing_days(tmp_path, monkeypatch):
 
 
 @responses.activate
-def test_fetch_commentary_traces_paginates():
+def test_fetch_commentary_traces_paginates(monkeypatch):
+    monkeypatch.setattr(ai_transparency, "LANGFUSE_PUBLIC_KEY", "test-public")
+    monkeypatch.setattr(ai_transparency, "LANGFUSE_SECRET_KEY", "test-secret")
     responses.add(
         responses.GET,
         f"{LANGFUSE_HOST}{LANGFUSE_TRACES_PATH}",
@@ -69,7 +71,9 @@ def test_fetch_commentary_traces_paginates():
 
 
 @responses.activate
-def test_fetch_commentary_traces_raises_source_fetch_error_on_http_failure():
+def test_fetch_commentary_traces_raises_source_fetch_error_on_http_failure(monkeypatch):
+    monkeypatch.setattr(ai_transparency, "LANGFUSE_PUBLIC_KEY", "test-public")
+    monkeypatch.setattr(ai_transparency, "LANGFUSE_SECRET_KEY", "test-secret")
     responses.add(
         responses.GET,
         f"{LANGFUSE_HOST}{LANGFUSE_TRACES_PATH}",
