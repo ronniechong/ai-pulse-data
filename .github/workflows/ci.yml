@@ -9,6 +9,9 @@ on:
       - "src/aipulse/commentary.py"
       - "src/aipulse/providers.py"
       - "src/aipulse/schemas.py"
+      - "src/aipulse/eval_runner.py"
+      - "src/aipulse/ai_transparency.py"
+      - "src/aipulse/spend_ledger.py"
   pull_request:
     paths:
       - "prompts/**"
@@ -17,6 +20,9 @@ on:
       - "src/aipulse/commentary.py"
       - "src/aipulse/providers.py"
       - "src/aipulse/schemas.py"
+      - "src/aipulse/eval_runner.py"
+      - "src/aipulse/ai_transparency.py"
+      - "src/aipulse/spend_ledger.py"
 
 jobs:
   evals:
