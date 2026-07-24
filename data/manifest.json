@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-23T10:08:55.135848+00:00",
-  "data_version": "2026-07-23",
+  "generated_at": "2026-07-24T04:01:05.234605+00:00",
+  "data_version": "2026-07-24",
   "schema_version": 2,
   "sources": {
     "rankings": {
       "status": "ok",
-      "last_success": "2026-07-23",
+      "last_success": "2026-07-24",
       "path": "data/latest/rankings.json"
     },
     "apps": {
       "status": "ok",
-      "last_success": "2026-07-23",
+      "last_success": "2026-07-24",
       "path": "data/latest/apps.json"
     },
     "hf_trending": {
       "status": "ok",
-      "last_success": "2026-07-23",
+      "last_success": "2026-07-24",
       "path": "data/latest/hf-trending.json"
     },
     "sdk_geo": {
       "status": "ok",
-      "last_success": "2026-07-23",
+      "last_success": "2026-07-24",
       "path": "data/latest/sdk-geo.json"
     },
     "geo_adoption": {
@@ -29,33 +29,33 @@
       "path": "data/latest/geo-adoption.json"
     },
     "facts": {
-      "status": "skipped",
-      "last_success": "2026-07-22",
+      "status": "ok",
+      "last_success": "2026-07-23",
       "path": "data/latest/facts.json"
     },
     "rankings_history": {
       "status": "ok",
-      "last_success": "2026-07-23",
+      "last_success": "2026-07-24",
       "path": "data/latest/rankings-history.json"
     },
     "geo_regions": {
       "status": "ok",
-      "last_success": "2026-07-23",
+      "last_success": "2026-07-24",
       "path": "data/latest/geo-regions.json"
     },
     "sdk_geo_history": {
       "status": "ok",
-      "last_success": "2026-07-23",
+      "last_success": "2026-07-24",
       "path": "data/latest/sdk-geo-history.json"
     },
     "sdk_geo_trend": {
       "status": "ok",
-      "last_success": "2026-07-23",
+      "last_success": "2026-07-24",
       "path": "data/latest/sdk-geo-trend.json"
     },
     "ai_transparency": {
       "status": "ok",
-      "last_success": "2026-07-23",
+      "last_success": "2026-07-24",
       "path": "data/latest/ai-transparency.json"
     }
   }
