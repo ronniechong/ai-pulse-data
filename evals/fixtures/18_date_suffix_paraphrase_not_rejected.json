@@ -1,0 +1,32 @@
+{
+  "name": "date_suffix_paraphrase_not_rejected",
+  "description": "Regression fixture for a real production false-positive (2026-07-26 ntfy alert: 'unknown model referenced: openai/gpt-5.6-sol-pro'). The real facts model was 'openai/gpt-5.6-sol-pro-20260709'; the LLM narrated it without the trailing release-date suffix, the same way it routinely shortens other model names in prose. A faithful reference to real facts, not a fabrication, and must NOT be rejected by validate_entities_and_numbers.",
+  "facts": {
+    "date": "2026-07-26",
+    "generated_at": "2026-07-26T04:21:03+00:00",
+    "rankings": {
+      "movers": [],
+      "new_entrants": [
+        {
+          "model": "openai/gpt-5.6-sol-pro-20260709",
+          "provider": "OpenAI",
+          "rank": 25,
+          "token_share": 0.009
+        }
+      ],
+      "dropouts": [],
+      "records": [],
+      "provider_share": []
+    }
+  },
+  "expect_tone": null,
+  "poisoned_output": null,
+  "faithful_output": {
+    "headline": "OpenAI's gpt-5.6-sol-pro enters the top rankings",
+    "summary": "openai/gpt-5.6-sol-pro entered the top rankings at rank 25 with a 0.9% token share.",
+    "highlights": [
+      "openai/gpt-5.6-sol-pro (OpenAI) entered the top rankings at rank 25"
+    ],
+    "tone": "notable"
+  }
+}

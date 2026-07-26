@@ -130,6 +130,51 @@ def test_validate_entities_catches_unverified_percentage():
     assert any("87.3" in v for v in violations)
 
 
+def test_slug_variants_strips_date_and_tag_suffixes():
+    variants = commentary._slug_variants("openai/gpt-5.6-sol-pro-20260709")
+    assert variants == {
+        "openai/gpt-5.6-sol-pro-20260709",
+        "openai/gpt-5.6-sol-pro",
+    }
+    variants = commentary._slug_variants("tencent/hy3-20260706:free")
+    assert variants == {
+        "tencent/hy3-20260706:free",
+        "tencent/hy3-20260706",
+        "tencent/hy3",
+    }
+
+
+def test_validate_entities_accepts_model_narrated_without_date_suffix():
+    facts = _facts(
+        new_entrants=[
+            {"model": "openai/gpt-5.6-sol-pro-20260709", "provider": "OpenAI", "rank": 25, "token_share": 0.009}
+        ]
+    )
+    parsed = {
+        "headline": "openai/gpt-5.6-sol-pro enters the rankings",
+        "summary": "openai/gpt-5.6-sol-pro entered at rank 25.",
+        "highlights": [],
+        "tone": "notable",
+    }
+    assert commentary.validate_entities_and_numbers(parsed, facts) == []
+
+
+def test_validate_entities_still_rejects_fabricated_model_resembling_a_real_one():
+    facts = _facts(
+        new_entrants=[
+            {"model": "openai/gpt-5.6-sol-pro-20260709", "provider": "OpenAI", "rank": 25, "token_share": 0.009}
+        ]
+    )
+    parsed = {
+        "headline": "openai/gpt-5.6-sol-ultra-20260709 enters the rankings",
+        "summary": "a new flagship debuts",
+        "highlights": [],
+        "tone": "notable",
+    }
+    violations = commentary.validate_entities_and_numbers(parsed, facts)
+    assert any("gpt-5.6-sol-ultra" in v for v in violations)
+
+
 def test_adversarial_model_name_treated_as_inert_data_not_a_new_violation_source():
     # A model name containing prompt-injection-like text should still just be
     # checked as a literal string against `facts` — never executed/interpreted.

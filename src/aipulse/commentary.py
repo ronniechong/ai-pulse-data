@@ -33,6 +33,21 @@ _MODEL_MENTION_RE = re.compile(r"[A-Za-z0-9][\w.\-]*/[\w.\-:]+")
 _PERCENT_MENTION_RE = re.compile(r"(\d+(?:\.\d+)?)\s?%")
 _CODE_FENCE_RE = re.compile(r"^```(?:json)?\s*\n?(.*?)\n?```$", re.DOTALL)
 
+# Trailing modifiers a faithful narration commonly drops because the LLM
+# judges them incidental detail rather than part of the model's "name":
+# a release-date suffix ('-20260709') or a variant tag (':free'). Generate
+# every combination so the allowed-entity set anticipates this pattern
+# instead of getting patched one incident at a time (history: 2026-07-18
+# provider/suffix recombination, 2026-07-19 multi-word provider name +
+# 2dp percentages, 2026-07-26 date-suffix drop).
+_DATE_SUFFIX_RE = re.compile(r"-\d{8}$")
+_VARIANT_TAG_RE = re.compile(r":[\w.\-]+$")
+
+
+def _slug_variants(slug: str) -> set[str]:
+    no_tag = _VARIANT_TAG_RE.sub("", slug)
+    return {slug, no_tag, _DATE_SUFFIX_RE.sub("", slug), _DATE_SUFFIX_RE.sub("", no_tag)}
+
 
 def _strip_code_fence(content: str) -> str:
     """Some models wrap JSON in a ```json fence even with response_format
@@ -74,14 +89,14 @@ def _collect_allowed_entities(facts: dict) -> tuple[set[str], set[str]]:
             percents.update(_fmt_pct(abs(value)))
 
     def _add_model(model: str, provider: str | None) -> None:
-        models.add(model)
+        models.update(_slug_variants(model))
         # LLM prose commonly recombines facts' own 'provider' display name
         # with the model's slug suffix (e.g. "Moonshot AI/kimi-k3-...")
         # instead of quoting the raw permaslug — a faithful reference to the
         # same facts, so it must validate too, not just the raw slug form.
         if provider and "/" in model:
             suffix = model.split("/", 1)[1]
-            models.add(f"{provider}/{suffix}")
+            models.update(f"{provider}/{v}" for v in _slug_variants(suffix))
 
     for m in rankings["movers"]:
         _add_model(m["model"], m.get("provider"))

@@ -1,0 +1,32 @@
+{
+  "name": "free_tag_paraphrase_not_rejected",
+  "description": "Preemptive hardening fixture (added 2026-07-26 alongside the date-suffix fix, same root cause: the LLM commonly drops a trailing modifier it judges incidental to the model's 'name'). Not yet an observed ntfy alert, but the same risk class as the ':free' OpenRouter variant tag being dropped from a real slug like 'tencent/hy3-20260706:free'. Must NOT be rejected by validate_entities_and_numbers.",
+  "facts": {
+    "date": "2026-07-26",
+    "generated_at": "2026-07-26T04:21:03+00:00",
+    "rankings": {
+      "movers": [],
+      "new_entrants": [],
+      "dropouts": [],
+      "records": [
+        {
+          "type": "all_time_token_share",
+          "model": "tencent/hy3-20260706:free",
+          "provider": "Tencent",
+          "value": 0.079
+        }
+      ],
+      "provider_share": []
+    }
+  },
+  "expect_tone": "big_day",
+  "poisoned_output": null,
+  "faithful_output": {
+    "headline": "Tencent's hy3 breaks a new record",
+    "summary": "tencent/hy3-20260706 hit a highest-ever token share at 7.9%.",
+    "highlights": [
+      "tencent/hy3-20260706 (Tencent) hit a highest-ever token share at 7.9%"
+    ],
+    "tone": "big_day"
+  }
+}

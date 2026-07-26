@@ -1,20 +1,32 @@
 # Eval suite
 
-17 frozen `facts.json`-shaped fixtures covering the scenarios in the M2 design
+20 frozen `facts.json`-shaped fixtures covering the scenarios in the M2 design
 spec (quiet day, big mover, new entrant, dropout, both record types,
 insufficient history, adversarial model name, tie in rankings, unmapped
-provider, multi-fact day, two "poisoned" LLM-output fixtures, three
+provider, multi-fact day, three "poisoned" LLM-output fixtures, five
 "faithful paraphrase" regression fixtures for real production false positives:
 a model narrated as `{ProviderDisplayName}/{suffix}` with trailing punctuation
 instead of the raw slug (2026-07-18), the same pattern for a provider whose
 display name contains a space such as "Moonshot AI" (2026-07-19, previously
-broke the model-mention regex and the allowed-entities set), and a percentage
+broke the model-mention regex and the allowed-entities set), a percentage
 figure rounded to 2 decimal places instead of 0/1 (2026-07-19, previously
-rejected as "unverified" purely on string-format mismatch)), and a
-record-streak-continuation fixture (2026-07-22: `streak_days > 1` on an
-`all_time_token_share` record must read as `notable`, not `big_day` — without
-this, a model on a long uptrend re-triggers `big_day` and the same headline
-shape every single day).
+rejected as "unverified" purely on string-format mismatch), a model narrated
+without its trailing release-date suffix (2026-07-26, e.g.
+`openai/gpt-5.6-sol-pro` for the real `openai/gpt-5.6-sol-pro-20260709`), and
+— preemptively, same root cause — a model narrated without its trailing
+`:free`-style variant tag), a record-streak-continuation fixture (2026-07-22:
+`streak_days > 1` on an `all_time_token_share` record must read as `notable`,
+not `big_day` — without this, a model on a long uptrend re-triggers `big_day`
+and the same headline shape every single day), and a fixture proving the
+date/tag-suffix stripping doesn't over-widen the allow-set (a fabricated
+model that merely resembles a real one is still rejected).
+
+`_slug_variants()` in `commentary.py` generalizes this class of false
+positive: rather than special-casing each incident, it strips the modifiers
+(trailing release date, trailing `:tag`) an LLM commonly treats as incidental
+to a model's "name," and adds every combination to the allow-set. New
+incidents of this shape should extend `_slug_variants()` and add a fixture
+here, not patch `validate_entities_and_numbers` directly.
 
 **Mocked by default, not a live-LLM eval.** Each fixture runs through the
 deterministic path only: `compute_tone`, `render_template_commentary`, and
