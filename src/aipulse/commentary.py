@@ -250,6 +250,8 @@ def generate_commentary(facts: dict) -> dict:
     last_error: Exception | None = None
     for _attempt in range(COMMENTARY_MAX_RETRIES + 1):
         started_at = datetime.now(UTC)
+        raw: dict | None = None
+        parsed_dict: dict | None = None
         try:
             raw, usage = _call_openrouter_chat(system_prompt, user_message)
             parsed_dict = CommentaryOutput.model_validate(raw).model_dump()
@@ -264,7 +266,13 @@ def generate_commentary(facts: dict) -> dict:
             tracing.trace_commentary_call(
                 prompt_version=COMMENTARY_PROMPT_VERSION,
                 input_facts=facts,
-                output=None,
+                # Failed output still matters for diagnosing *why* it failed
+                # (e.g. which entity/number tripped the validator) — prefer the
+                # parsed+schema-valid dict (has the offending text in context),
+                # falling back to the raw LLM JSON if schema validation itself
+                # is what failed. Never leave this None on a failure path again
+                # (history: 2026-07-27 ntfy alert was undiagnosable because it was).
+                output=parsed_dict if parsed_dict is not None else raw,
                 model=COMMENTARY_MODEL,
                 input_tokens=0,
                 output_tokens=0,

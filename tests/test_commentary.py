@@ -306,6 +306,51 @@ def test_call_openrouter_chat_parses_fenced_response(monkeypatch):
     assert usage["cost"] == 0.0001
 
 
+def test_generate_commentary_traces_raw_output_on_schema_failure(monkeypatch):
+    monkeypatch.setattr(commentary, "COMMENTARY_ENABLED", True)
+    monkeypatch.setattr(spend_ledger, "within_budget", lambda ledger, month=None: True)
+
+    def _schema_invalid(system_prompt, user_message):
+        return {"headline": "x"}, {"prompt_tokens": 1, "completion_tokens": 1, "cost": 0.0}
+
+    monkeypatch.setattr(commentary, "_call_openrouter_chat", _schema_invalid)
+
+    traced_outputs = []
+    monkeypatch.setattr(
+        commentary,
+        "tracing",
+        type("T", (), {"trace_commentary_call": staticmethod(lambda **k: traced_outputs.append(k["output"]))}),
+    )
+    commentary.generate_commentary(_facts())
+
+    assert traced_outputs == [{"headline": "x"}, {"headline": "x"}]
+
+
+def test_generate_commentary_traces_parsed_output_on_entity_validation_failure(monkeypatch):
+    monkeypatch.setattr(commentary, "COMMENTARY_ENABLED", True)
+    monkeypatch.setattr(spend_ledger, "within_budget", lambda ledger, month=None: True)
+
+    def _fabricated_percentage(system_prompt, user_message):
+        return (
+            {"headline": "h", "summary": "up 8.3% today", "highlights": [], "tone": "quiet"},
+            {"prompt_tokens": 1, "completion_tokens": 1, "cost": 0.0},
+        )
+
+    monkeypatch.setattr(commentary, "_call_openrouter_chat", _fabricated_percentage)
+
+    traced_outputs = []
+    monkeypatch.setattr(
+        commentary,
+        "tracing",
+        type("T", (), {"trace_commentary_call": staticmethod(lambda **k: traced_outputs.append(k["output"]))}),
+    )
+    commentary.generate_commentary(_facts())
+
+    assert len(traced_outputs) == 2
+    for output in traced_outputs:
+        assert output["summary"] == "up 8.3% today"  # the offending text is now recoverable
+
+
 def test_generate_commentary_success_records_spend_and_forces_deterministic_tone(monkeypatch):
     monkeypatch.setattr(commentary, "COMMENTARY_ENABLED", True)
     monkeypatch.setattr(spend_ledger, "within_budget", lambda ledger, month=None: True)
