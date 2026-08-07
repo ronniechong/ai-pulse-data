@@ -30,7 +30,7 @@ built around six controls:
 3. **Prompt versioning** — the active prompt lives at `prompts/commentary-v2.md`
    (older versions kept for history), versioned by filename, PR-reviewed like
    code, and the version string is recorded on every trace.
-4. **Eval gate** — CI runs a 14-fixture eval suite against any change to
+4. **Eval gate** — CI runs a 20-fixture eval suite against any change to
    `prompts/`, the facts engine, or the output schema before it can merge
    (quiet day, big mover, new entrant, adversarial/poisoned inputs, etc.).
 5. **Hallucination controls** — every model name and percentage the LLM
