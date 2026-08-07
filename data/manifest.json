@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T03:43:04.937846+00:00",
+  "generated_at": "2026-08-07T11:01:43.212709+00:00",
   "data_version": "2026-08-07",
   "schema_version": 2,
   "sources": {
@@ -29,7 +29,7 @@
       "path": "data/latest/geo-adoption.json"
     },
     "facts": {
-      "status": "ok",
+      "status": "skipped",
       "last_success": "2026-08-06",
       "path": "data/latest/facts.json"
     },
@@ -57,6 +57,11 @@
       "status": "ok",
       "last_success": "2026-08-07",
       "path": "data/latest/ai-transparency.json"
+    },
+    "commentary_archive": {
+      "status": "ok",
+      "last_success": "2026-08-07",
+      "path": "data/latest/commentary-archive.json"
     }
   }
 }

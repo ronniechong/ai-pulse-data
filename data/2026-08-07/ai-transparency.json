@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-07T03:43:02.885276+00:00",
+  "generated_at": "2026-08-07T11:01:40.591055+00:00",
   "window_days": 30,
   "source": "LLM reliability from Langfuse ai-pulse-commentary traces; tone distribution from local commentary.json history; spend from spend-ledger.json; eval-suite health from a live re-run of evals/fixtures",
   "llm_reliability": {
-    "attempts_checked": 32,
-    "success_count": 20,
+    "attempts_checked": 34,
+    "success_count": 22,
     "fallback_count": 12,
-    "success_rate": 0.625,
-    "avg_latency_ms": 4853.3
+    "success_rate": 0.6471,
+    "avg_latency_ms": 4897.4
   },
   "tone_distribution": {
     "quiet": 1,
