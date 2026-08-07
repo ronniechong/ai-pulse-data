@@ -2,7 +2,7 @@ import sys
 from collections.abc import Callable
 from datetime import UTC, date, datetime, timedelta
 
-from aipulse import ai_transparency, history_rollup, notify, publish, quality
+from aipulse import ai_transparency, commentary_archive, history_rollup, notify, publish, quality
 from aipulse.commentary import generate_commentary
 from aipulse.config import ROLLUP_FILENAMES, SDK_GEO_HISTORY_WINDOW_DAYS, SDK_PACKAGES
 from aipulse.errors import SourceFetchError
@@ -222,6 +222,30 @@ def run_facts_and_commentary(today_str: str, rankings_status: dict, rollup_statu
         return {"status": "degraded", "last_success": prior_last_success, "path": path, "error": str(e)}
 
 
+def run_commentary_archive(today_str: str) -> dict:
+    """Rebuilds commentary-archive.json (the full-history index the archive
+    page paginates over) from every dated folder's commentary.json. Pure
+    local filesystem aggregation, no external dependency — a failure here
+    is a real bug in this repo, not a degraded upstream source."""
+    path = "data/latest/commentary-archive.json"
+    try:
+        entries = commentary_archive.build_archive_index()
+        commentary_archive.save_archive_index(entries)
+        print(f"[commentary_archive] published ok ({len(entries)} days)")
+        return {"status": "ok", "last_success": today_str, "path": path}
+    except Exception as e:  # noqa: BLE001 - must never take down the pipeline
+        prior_entry = publish.load_manifest().get("sources", {}).get("commentary_archive", {})
+        last_success = prior_entry.get("last_success")
+        print(f"[commentary_archive] DEGRADED: {e}", file=sys.stderr)
+        notify.notify(
+            title="AI Pulse: commentary_archive degraded",
+            message=str(e),
+            priority="default",
+            tags="warning",
+        )
+        return {"status": "degraded", "last_success": last_success, "path": path, "error": str(e)}
+
+
 def run_ai_transparency(today_str: str) -> dict:
     """Publishes ai-transparency.json: LLM success-vs-fallback rate +
     avg latency from Langfuse, tone distribution from local commentary.json
@@ -260,6 +284,7 @@ def main() -> None:
     statuses["sdk_geo_trend"] = run_sdk_geo_trend(today_str)
     statuses["geo_regions"] = run_geo_regions(today_str)
     statuses["facts"] = run_facts_and_commentary(today_str, statuses["rankings"], statuses["rankings_history"])
+    statuses["commentary_archive"] = run_commentary_archive(today_str)
     statuses["ai_transparency"] = run_ai_transparency(today_str)
     publish.write_manifest(today_str, statuses)
 
