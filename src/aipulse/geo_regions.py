@@ -1,5 +1,5 @@
 """Aggregates geo-adoption.json + sdk-geo.json into the 8-region bucket
-grid the M3 design's geo panel needs. See regions.py for the country ->
+grid the geo panel needs. See regions.py for the country ->
 region crosswalk and its documented gaps (Oceania/Pacific and non-country
 codes are skipped with a logged warning, never force-mapped).
 

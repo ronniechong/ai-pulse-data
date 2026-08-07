@@ -1,5 +1,5 @@
 """Deterministic eval-fixture runner. Shared by two callers: the CI-facing
-`evals/run_evals.py` CLI, and the AI-transparency panel (M8), which re-runs
+`evals/run_evals.py` CLI, and the AI-transparency panel, which re-runs
 this same suite daily as a live "does this exact running code still pass its
 own eval fixtures" signal rather than a stale hardcoded badge. No LLM call,
 no API key needed — see evals/README.md for why this is mocked-by-default."""

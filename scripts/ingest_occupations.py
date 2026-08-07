@@ -4,14 +4,13 @@
 Same release cadence and CSV as scripts/ingest_geo_adoption.py — re-run
 manually when a new Economic Index release lands.
 
-Live-probed 2026-07-16 against release_2026_06_26:
+Live-probed against release_2026_06_26:
 category_name='soc_occupation', geo_level='global', hierarchy_level='0' is
 the detailed-occupation granularity (718 SOC titles; hierarchy_level='1' is
-22 coarse major groups instead — not what the design's per-occupation panel
-wants). metric_id='pct' is usage share; 'collaboration_bucket_automation_pct'
-/'_augmentation_pct' are the automation-vs-augmentation split the M3 design
-mocks. The doc's original metric-name guess was unverified before this
-probe — confirmed correct.
+22 coarse major groups instead — not what the per-occupation panel wants).
+metric_id='pct' is usage share; 'collaboration_bucket_automation_pct'
+/'_augmentation_pct' are the automation-vs-augmentation split the panel
+shows.
 
 Usage: uv run python scripts/ingest_occupations.py
 """
@@ -28,8 +27,8 @@ from aipulse.economic_index import download, find_claude_ai_csv, find_latest_rel
 
 WANTED_METRICS = {"pct", "collaboration_bucket_automation_pct", "collaboration_bucket_augmentation_pct"}
 
-# M2.6 decision: surface more than the design's illustrative 8 so the web
-# client has room to choose a display count; ranked by real usage share.
+# Surface more than an illustrative handful so the web client has room to
+# choose a display count; ranked by real usage share.
 TOP_N = 20
 
 

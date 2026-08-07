@@ -10,7 +10,7 @@ DATA_DIR = REPO_ROOT / "data"
 LATEST_DIR = DATA_DIR / "latest"
 MANIFEST_PATH = DATA_DIR / "manifest.json"
 
-SCHEMA_VERSION = 2  # bumped for M2.5: rankings-history.json / sdk-geo-history.json rollups
+SCHEMA_VERSION = 2  # bumped when rankings-history.json / sdk-geo-history.json rollups were added
 
 OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY", "")
 HF_TOKEN = os.environ.get("HF_TOKEN", "")
@@ -33,7 +33,7 @@ LANGFUSE_INGESTION_PATH = "/api/public/ingestion"
 LANGFUSE_TRACES_PATH = "/api/public/traces"
 LANGFUSE_COMMENTARY_TRACE_NAME = "ai-pulse-commentary"
 
-# M8: trailing window for the AI-transparency panel (LLM success-vs-fallback
+# Trailing window for the AI-transparency panel (LLM success-vs-fallback
 # rate + avg latency from Langfuse traces; tone distribution from local
 # commentary.json history).
 AI_TRANSPARENCY_WINDOW_DAYS = 30
@@ -65,27 +65,27 @@ ROLLUP_FILENAMES = {
 # yesterday since "today" is never a complete day in ClickPy either.
 SDK_GEO_HISTORY_WINDOW_DAYS = 30
 
-# OpenRouter's rankings-daily data floor (confirmed live 2026-07-16 via the
-# API's own error message). Max span per request is 366 days.
+# OpenRouter's rankings-daily data floor (confirmed live via the API's own
+# error message). Max span per request is 366 days.
 RANKINGS_HISTORY_FLOOR = "2025-01-01"
 OPENROUTER_MAX_WINDOW_DAYS = 366
 
-# The day before the real CI pipeline's first production run (2026-07-15) —
-# the backfill script's window ends the day before this so there's no
-# overlap/gap with pipeline-sourced rollup rows.
+# The day before the real CI pipeline's first production run — the backfill
+# script's window ends the day before this so there's no overlap/gap with
+# pipeline-sourced rollup rows.
 BACKFILL_END_DATE = "2026-07-14"
 
 HF_TRENDING_LIMIT = 50
 
-# App-rankings category/subcategory tagging (M2.6). Values confirmed live
-# 2026-07-16 via the API's own ZodError enum on an invalid value — the
-# design brief's "cli-agent" guess turned out to be a *subcategory* of the
-# "coding" *category*, not a category itself; mismatched category+subcategory
-# pairs 400. Each filtered call returns its own top-50, tagged onto whichever
-# app_ids appear in it — most apps in the base top-50 won't match any slice,
-# which is expected (fail open, not an error).
+# App-rankings category/subcategory tagging. Values confirmed live via the
+# API's own ZodError enum on an invalid value — "cli-agent" turned out to be
+# a *subcategory* of the "coding" *category*, not a category itself;
+# mismatched category+subcategory pairs 400. Each filtered call returns its
+# own top-50, tagged onto whichever app_ids appear in it — most apps in the
+# base top-50 won't match any slice, which is expected (fail open, not an
+# error).
 APP_RANKING_CATEGORIES = ["coding", "creative", "productivity", "entertainment"]
-APP_RANKING_TAG_SUBCATEGORIES = ["cli-agent"]  # only the one the M3 design needs; more available later
+APP_RANKING_TAG_SUBCATEGORIES = ["cli-agent"]  # only the one currently needed; more available later
 
 # SDK download tracking: PyPI package name -> provider label
 SDK_PACKAGES = {

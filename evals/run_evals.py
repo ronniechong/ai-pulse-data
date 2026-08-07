@@ -1,5 +1,5 @@
 """CLI entrypoint for the eval suite. See aipulse.eval_runner for the actual
-fixture-running logic, which is shared with the AI-transparency panel (M8).
+fixture-running logic, which is shared with the AI-transparency panel.
 
 Usage: uv run python evals/run_evals.py
 """

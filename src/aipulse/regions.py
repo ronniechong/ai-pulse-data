@@ -1,4 +1,4 @@
-"""Static country -> region crosswalk for the M3 geo panel's 8-region bucket
+"""Static country -> region crosswalk for the geo panel's 8-region bucket
 grid (design brief's own choice: North America, Europe, East Asia, South
 Asia, SE Asia, Middle East, Latin America, Africa). Covers both alpha-3
 codes (geo-adoption.json, Anthropic Economic Index) and alpha-2 codes

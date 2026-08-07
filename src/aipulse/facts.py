@@ -238,7 +238,7 @@ def _compute_provider_share(
 
 def compute_facts(history: list[tuple[str, dict]]) -> dict:
     """history: (date_str, normalized rankings dict) ascending by date, with the
-    last entry being "today". Returns the facts.json payload (see M2 design spec)."""
+    last entry being "today". Returns the facts.json payload."""
     if not history:
         raise ValueError("compute_facts requires at least today's snapshot")
 
@@ -268,7 +268,7 @@ def compute_facts(history: list[tuple[str, dict]]) -> dict:
 
 
 def _threshold_hit(facts: dict) -> str:
-    """Rule-based tone — see M2 design spec for the thresholds and rationale.
+    """Rule-based tone, using fixed thresholds tuned for signal over noise.
     A record only counts toward `big_day` on the first day it's set
     (`streak_days <= 1`, the default when the field is absent) — a record
     still being extended day after day (`streak_days > 1`) is real but no

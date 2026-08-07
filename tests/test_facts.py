@@ -162,7 +162,7 @@ def test_tone_big_day_on_record():
 
 
 def test_record_disqualified_by_backfilled_prior_day():
-    """M2.5: history now spans a backfilled range (e.g. from OpenRouter's
+    """History now spans a backfilled range (e.g. from OpenRouter's
     historical dataset API, long before this project's CI pipeline existed)
     plus recent CI-produced days. A model matching an old backfilled peak
     must NOT be flagged as an all-time record — compute_facts doesn't (and

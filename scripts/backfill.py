@@ -1,10 +1,10 @@
-"""One-off historical backfill for M3's racing-bar hero and long-window
+"""One-off historical backfill for the racing-bar hero and long-window
 (7d/30d) deltas — run locally, NOT part of the daily pipeline. Seeds
 data/latest/rankings-history.json and data/latest/sdk-geo-history.json from
 OpenRouter's and ClickPy's historical APIs, then you commit + push the
 result like any other data change.
 
-Verified live against the real APIs (2026-07-16):
+Verified live against the real APIs:
 - OpenRouter rankings-daily floor is exactly 2025-01-01; max span per
   request is 366 days, so this needs exactly 2 windowed requests.
 - ClickPy has per-day data back to 2023-02-09 for at least one tracked
@@ -14,9 +14,10 @@ Every row is tagged source="backfill". The daily pipeline (source="pipeline")
 will naturally overwrite backfilled rows as its own sliding window passes
 back over them — see history_rollup.merge_rankings_rows.
 
-Hard rule (M2.5): this script writes ONLY to data/latest/*-history.json.
-It must never create a data/YYYY-MM-DD/ folder or touch manifest.json —
-those stay exclusively CI-produced, to protect the M1 burn-in provenance.
+Hard rule: this script writes ONLY to data/latest/*-history.json. It must
+never create a data/YYYY-MM-DD/ folder or touch manifest.json — those stay
+exclusively CI-produced, to protect the burn-in provenance of the dated
+snapshots.
 
 Usage: uv run python scripts/backfill.py
 """

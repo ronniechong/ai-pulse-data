@@ -1,4 +1,4 @@
-"""AI-engineering transparency panel (M8): the one signal only Langfuse has
+"""AI-engineering transparency panel: the one signal only Langfuse has
 (LLM success-vs-template-fallback rate, avg latency) plus signals already
 computed locally (tone distribution from commentary.json history, spend from
 spend_ledger.py, eval-suite pass rate from eval_runner.py) — bundled into one

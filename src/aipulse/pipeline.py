@@ -223,7 +223,7 @@ def run_facts_and_commentary(today_str: str, rankings_status: dict, rollup_statu
 
 
 def run_ai_transparency(today_str: str) -> dict:
-    """Publishes ai-transparency.json (M8): LLM success-vs-fallback rate +
+    """Publishes ai-transparency.json: LLM success-vs-fallback rate +
     avg latency from Langfuse, tone distribution from local commentary.json
     history, month-to-date spend from the ledger. Runs independently of
     every other step. Fails open on Langfuse being unreachable — the whole

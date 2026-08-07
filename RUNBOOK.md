@@ -41,8 +41,8 @@ Check the alert's error text and the corresponding Langfuse trace (the
 understand *why* it failed, but nothing is broken and nothing needs fixing
 before the next run.
 
-**Passed validation but is still wrong** (real incident — wrong tone, badly
-phrased, technically-true-but-misleading): validation only checks that
+**Passed validation but is still wrong** (wrong tone, badly phrased,
+technically-true-but-misleading): validation only checks that
 entities/numbers are real, not that the writing is good.
 1. Flip kill switch #1 above immediately — stops any more bad commentary
    from publishing while you investigate.

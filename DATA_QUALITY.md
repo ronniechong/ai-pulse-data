@@ -47,7 +47,7 @@ volume (excluding the `other` row) must fall within
 absorbs (or loses) most of the volume — a real data event would still show
 significant token spread across the top 50.
 
-## AI-transparency panel (M8) — no row-count gate
+## AI-transparency panel — no row-count gate
 
 `ai-transparency.json` is derived, not fetched (same category as
 `geo-regions.json`/`sdk-geo-trend.json`): it queries Langfuse's public API
@@ -67,7 +67,7 @@ run, not a degraded source.
 - **OpenRouter** (`rankings.json`, `apps.json`): must be cited as
   `Source: OpenRouter (openrouter.ai/rankings), as of {as_of}` wherever this
   data is displayed or republished (enforced in the dashboard's `/about`
-  page at M3).
+  page).
 - **Anthropic Economic Index** (`geo-adoption.json`): CC-BY licensed, sourced
   from `huggingface.co/datasets/Anthropic/EconomicIndex`. Attribution string
   stored on the payload itself (`source` field).
@@ -75,7 +75,7 @@ run, not a degraded source.
   (`sdk-geo.json`): no formal citation requirement found, but both are noted
   with a `source` field on their payloads for transparency.
 
-## Known metric caveats (carried forward to M3's METRICS.md)
+## Known metric caveats
 
 - Token counts are each provider's own tokenizer — not directly comparable
   across rows within `rankings.json`.

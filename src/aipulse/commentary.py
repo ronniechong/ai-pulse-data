@@ -36,10 +36,8 @@ _CODE_FENCE_RE = re.compile(r"^```(?:json)?\s*\n?(.*?)\n?```$", re.DOTALL)
 # Trailing modifiers a faithful narration commonly drops because the LLM
 # judges them incidental detail rather than part of the model's "name":
 # a release-date suffix ('-20260709') or a variant tag (':free'). Generate
-# every combination so the allowed-entity set anticipates this pattern
-# instead of getting patched one incident at a time (history: 2026-07-18
-# provider/suffix recombination, 2026-07-19 multi-word provider name +
-# 2dp percentages, 2026-07-26 date-suffix drop).
+# every combination so the allowed-entity set anticipates this class of
+# false positive instead of getting patched one incident at a time.
 _DATE_SUFFIX_RE = re.compile(r"-\d{8}$")
 _VARIANT_TAG_RE = re.compile(r":[\w.\-]+$")
 
@@ -60,8 +58,8 @@ def _strip_code_fence(content: str) -> str:
 def _fmt_pct(value: float) -> set[str]:
     # 2dp included because the LLM reliably outputs the same precision it sees
     # in facts (which carries ~6 significant digits) rather than pre-rounding
-    # itself — observed live (2026-07-19 ntfy alert): faithful figures like
-    # 20.19% were rejected for only existing in 1dp/0dp form.
+    # itself — observed live: faithful figures like 20.19% were rejected for
+    # only existing in 1dp/0dp form.
     return {f"{value * 100:.0f}", f"{value * 100:.1f}", f"{value * 100:.2f}"}
 
 
@@ -270,8 +268,8 @@ def generate_commentary(facts: dict) -> dict:
                 # (e.g. which entity/number tripped the validator) — prefer the
                 # parsed+schema-valid dict (has the offending text in context),
                 # falling back to the raw LLM JSON if schema validation itself
-                # is what failed. Never leave this None on a failure path again
-                # (history: 2026-07-27 ntfy alert was undiagnosable because it was).
+                # is what failed. Never leave this None on a failure path — a
+                # prior incident was undiagnosable because it was.
                 output=parsed_dict if parsed_dict is not None else raw,
                 model=COMMENTARY_MODEL,
                 input_tokens=0,
