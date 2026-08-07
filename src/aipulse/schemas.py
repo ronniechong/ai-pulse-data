@@ -65,3 +65,9 @@ class CommentaryOutput(BaseModel):
     summary: str
     highlights: list[str]
     tone: Literal["quiet", "notable", "big_day"]
+    # Never supplied by the LLM itself — commentary.py stamps this onto the
+    # dict after validation (llm on success, template on fallback). Declared
+    # here (rather than left as an extra field) so eval_runner's schema check
+    # of render_template_commentary's output doesn't trip the extra="forbid"
+    # guard.
+    source: Literal["llm", "template"] = "llm"

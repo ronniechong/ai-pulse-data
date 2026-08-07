@@ -192,7 +192,7 @@ def render_template_commentary(facts: dict) -> dict:
         headline = highlights[0][:100]
         summary = f"{len(highlights)} notable change(s) in today's rankings."
 
-    return {"headline": headline, "summary": summary, "highlights": highlights, "tone": tone}
+    return {"headline": headline, "summary": summary, "highlights": highlights, "tone": tone, "source": "template"}
 
 
 def _call_openrouter_chat(system_prompt: str, user_message: str) -> tuple[dict, dict]:
@@ -254,6 +254,7 @@ def generate_commentary(facts: dict) -> dict:
             raw, usage = _call_openrouter_chat(system_prompt, user_message)
             parsed_dict = CommentaryOutput.model_validate(raw).model_dump()
             parsed_dict["tone"] = tone  # deterministic, never trusted from the LLM
+            parsed_dict["source"] = "llm"
 
             violations = validate_entities_and_numbers(parsed_dict, facts)
             if violations:
