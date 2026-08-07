@@ -5,8 +5,8 @@ codes (geo-adoption.json, Anthropic Economic Index) and alpha-2 codes
 (sdk-geo.json, ClickPy/PyPI) so both data sources aggregate into the same
 8 buckets.
 
-One-time hand-authored table, not an external taxonomy library (M2.6
-decision — see work-docs). Judgment calls worth documenting:
+One-time hand-authored table, not an external taxonomy library. Judgment
+calls worth documenting:
 - "Middle East" bucket is broad: MENA (incl. Egypt/Maghreb) + Turkey +
   Caucasus + Central Asia. No dedicated bucket exists for those groups in
   the design's 8 regions, and Middle East was the closest cultural/regional

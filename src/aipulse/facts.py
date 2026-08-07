@@ -2,8 +2,8 @@
 
 No LLM here. Every number in commentary.py's prompt must trace back to a
 field this module computed, so entity/number validation downstream has
-something concrete to check against. See work-docs M2 design spec for the
-definitions this implements (new entrant/dropout, records, provider share).
+something concrete to check against. This module implements the
+definitions for new entrant/dropout, records, and provider share.
 """
 
 from datetime import UTC, datetime

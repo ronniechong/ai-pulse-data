@@ -1,6 +1,6 @@
 """Facts-only LLM narration, with a deterministic template fallback that is
 always schema-valid on its own. See prompts/{COMMENTARY_PROMPT_VERSION}.md for
-the active prompt and work-docs M2/M7 notes for the validation rationale.
+the active prompt and the validation rationale below.
 """
 
 import json

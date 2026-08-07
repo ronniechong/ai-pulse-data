@@ -8,8 +8,7 @@ it ships (see `evals/README.md`). Referenced by `COMMENTARY_PROMPT_VERSION` in
 record Y%") every single day, which got repetitive once one model settled
 into a long uptrend. v2 asks for a livelier, more personable voice — still
 100% facts-only, just written like someone who finds this stuff genuinely
-interesting instead of a compliance report. See work-docs AI Pulse M2/M7
-notes for the before/after.
+interesting instead of a compliance report.
 
 ## System instructions
 

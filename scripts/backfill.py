@@ -4,7 +4,7 @@ data/latest/rankings-history.json and data/latest/sdk-geo-history.json from
 OpenRouter's and ClickPy's historical APIs, then you commit + push the
 result like any other data change.
 
-Verified live (2026-07-16, see work-docs/ai-pulse.md M2.5 section):
+Verified live against the real APIs (2026-07-16):
 - OpenRouter rankings-daily floor is exactly 2025-01-01; max span per
   request is 366 days, so this needs exactly 2 windowed requests.
 - ClickPy has per-day data back to 2023-02-09 for at least one tracked

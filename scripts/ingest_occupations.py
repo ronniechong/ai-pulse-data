@@ -4,7 +4,7 @@
 Same release cadence and CSV as scripts/ingest_geo_adoption.py — re-run
 manually when a new Economic Index release lands.
 
-Live-probed 2026-07-16 against release_2026_06_26 (see work-docs M2.6):
+Live-probed 2026-07-16 against release_2026_06_26:
 category_name='soc_occupation', geo_level='global', hierarchy_level='0' is
 the detailed-occupation granularity (718 SOC titles; hierarchy_level='1' is
 22 coarse major groups instead — not what the design's per-occupation panel

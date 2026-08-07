@@ -1,9 +1,9 @@
 """Rolling history rollups (rankings-history.json, sdk-geo-history.json).
 
 Unlike the per-day data/YYYY-MM-DD/ snapshots, these are cumulative files
-living only in data/latest/ — see M2.5 in work-docs for the provenance
-rules (backfill seeds them once; the daily pipeline extends rankings-history
-forward for free using the window fetch_rankings_window already returns).
+living only in data/latest/ (backfill seeds them once; the daily pipeline
+extends rankings-history forward for free using the window
+fetch_rankings_window already returns).
 """
 
 import json

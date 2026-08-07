@@ -3,7 +3,7 @@ release into data/latest/geo-adoption.json (and a dated snapshot).
 
 Not part of the daily pipeline — the Economic Index only ships new
 geographic releases every few months. Re-run this manually when a new
-release lands (see work-docs/ai-pulse.md architecture summary).
+release lands.
 
 Usage: uv run python scripts/ingest_geo_adoption.py
 """

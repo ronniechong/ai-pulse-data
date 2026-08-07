@@ -1,7 +1,6 @@
 # Runbook
 
-Operational procedures for `ai-pulse-data`. For *why* each control exists,
-see the Decision Log in `work-docs` (not this repo). For what each
+Operational procedures for `ai-pulse-data`. For what each
 data-quality gate checks, see `DATA_QUALITY.md`.
 
 ## Kill switches
@@ -91,10 +90,9 @@ repo forever until rewritten.
    every commit that ever contained it.
 3. Force-push the rewritten history, then tell anyone with a local clone to
    re-clone rather than pull (their local history now diverges permanently).
-4. This is the same method already flagged as needed if `sdk-geo-history.json`
-   is ever removed for size reasons — see Deferred decisions in `work-docs`
-   — filter-repo is the general tool for any "remove this from history for
-   good" situation in this repo, not secret-specific.
+4. The same method applies if `sdk-geo-history.json` is ever removed for
+   size reasons — filter-repo is the general tool for any "remove this from
+   history for good" situation in this repo, not secret-specific.
 
 **Bad data published to `data/latest/`** (corrupted file, wrong values, not
 a secrets issue): revert forward, don't force-push.
@@ -125,6 +123,5 @@ When an ntfy "degraded" alert fires:
 4. No urgency pressure: the site is never showing broken data during this —
    it's showing yesterday's good data for that one source while everything
    else stays current. Fix at a normal pace, verify against the live API
-   before pushing (this project's established pattern — see `work-docs`
-   History log for examples), then confirm via a manual `workflow_dispatch`
-   run that the source recovers to `"status": "ok"`.
+   before pushing, then confirm via a manual `workflow_dispatch` run that the
+   source recovers to `"status": "ok"`.
