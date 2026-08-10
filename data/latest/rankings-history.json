@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T02:56:53.845750+00:00",
+  "generated_at": "2026-08-10T03:05:57.720755+00:00",
   "rows": [
     {
       "date": "2025-01-01",
@@ -208872,6 +208872,363 @@
       "model": "anthropic/claude-4.6-opus-20260205",
       "rank": 51,
       "token_share": 0.00175,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "tencent/hy3-20260706",
+      "rank": 1,
+      "token_share": 0.172845,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "deepseek/deepseek-v4-flash-20260731",
+      "rank": 2,
+      "token_share": 0.148736,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "deepseek/deepseek-v4-flash-20260423",
+      "rank": 3,
+      "token_share": 0.07222,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "xiaomi/mimo-v2.5-20260422",
+      "rank": 4,
+      "token_share": 0.069453,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "openai/gpt-5.6-luna-20260709",
+      "rank": 5,
+      "token_share": 0.06269,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "other",
+      "rank": 6,
+      "token_share": 0.054443,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "z-ai/glm-5.2-20260616",
+      "rank": 7,
+      "token_share": 0.051458,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "nvidia/nemotron-3-ultra-550b-a55b-20260604:free",
+      "rank": 8,
+      "token_share": 0.039184,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "deepseek/deepseek-v4-pro-20260423",
+      "rank": 9,
+      "token_share": 0.036598,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "poolside/laguna-s-2.1-20260720:free",
+      "rank": 10,
+      "token_share": 0.025703,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "minimax/minimax-m3-20260531",
+      "rank": 11,
+      "token_share": 0.023135,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "anthropic/claude-opus-5-20260723",
+      "rank": 12,
+      "token_share": 0.02121,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "moonshotai/kimi-k3-20260715",
+      "rank": 13,
+      "token_share": 0.020914,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "stepfun/step-3.7-flash-20260528",
+      "rank": 14,
+      "token_share": 0.017645,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "google/gemini-3-flash-preview-20251217",
+      "rank": 15,
+      "token_share": 0.011462,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "anthropic/claude-sonnet-5-20260630",
+      "rank": 16,
+      "token_share": 0.01082,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "anthropic/claude-4.6-sonnet-20260217",
+      "rank": 17,
+      "token_share": 0.009928,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "openai/gpt-5.6-terra-20260709",
+      "rank": 18,
+      "token_share": 0.009732,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "google/gemini-2.5-flash-lite",
+      "rank": 19,
+      "token_share": 0.008925,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "openai/gpt-5.6-sol-20260709",
+      "rank": 20,
+      "token_share": 0.008355,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "anthropic/claude-4.8-opus-20260528",
+      "rank": 21,
+      "token_share": 0.007739,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "google/gemma-4-31b-it-20260402",
+      "rank": 22,
+      "token_share": 0.006976,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "google/gemini-2.5-flash",
+      "rank": 23,
+      "token_share": 0.006936,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "google/gemini-3.6-flash-20260721",
+      "rank": 24,
+      "token_share": 0.006909,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "openai/gpt-5.6-luna-pro-20260709",
+      "rank": 25,
+      "token_share": 0.006877,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "openai/gpt-oss-120b",
+      "rank": 26,
+      "token_share": 0.006432,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "google/gemma-4-26b-a4b-it-20260403",
+      "rank": 27,
+      "token_share": 0.006377,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "deepseek/deepseek-v3.2-20251201",
+      "rank": 28,
+      "token_share": 0.006236,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "xiaomi/mimo-v2.5-pro-20260422",
+      "rank": 29,
+      "token_share": 0.006096,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "nvidia/nemotron-3-super-120b-a12b-20230311:free",
+      "rank": 30,
+      "token_share": 0.005308,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "google/gemini-3.1-flash-lite-20260507",
+      "rank": 31,
+      "token_share": 0.004528,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "qwen/qwen3.8-max-20260803",
+      "rank": 32,
+      "token_share": 0.004075,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "inclusionai/ling-2.6-flash-20260421",
+      "rank": 33,
+      "token_share": 0.003914,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "openai/gpt-5.5-20260423",
+      "rank": 34,
+      "token_share": 0.003733,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "rank": 35,
+      "token_share": 0.003438,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "x-ai/grok-4.5-20260708",
+      "rank": 36,
+      "token_share": 0.003401,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "cohere/north-mini-code-20260617:free",
+      "rank": 37,
+      "token_share": 0.003377,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "qwen/qwen3.6-35b-a3b-20260415",
+      "rank": 38,
+      "token_share": 0.002971,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "openai/gpt-4o-mini",
+      "rank": 39,
+      "token_share": 0.002896,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "minimax/minimax-m2.7-20260318",
+      "rank": 40,
+      "token_share": 0.002811,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "anthropic/claude-4.5-haiku-20251001",
+      "rank": 41,
+      "token_share": 0.002755,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "poolside/laguna-xs-2.1-20260625:free",
+      "rank": 42,
+      "token_share": 0.002547,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "google/gemini-3.5-flash-20260519",
+      "rank": 43,
+      "token_share": 0.002541,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "anthropic/claude-5-fable-20260609",
+      "rank": 44,
+      "token_share": 0.002375,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "moonshotai/kimi-k2.7-code-20260612",
+      "rank": 45,
+      "token_share": 0.002126,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "google/gemini-3.5-flash-lite-20260721",
+      "rank": 46,
+      "token_share": 0.002067,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "openai/gpt-5-mini-2025-08-07",
+      "rank": 47,
+      "token_share": 0.00192,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "anthropic/claude-4.6-opus-20260205",
+      "rank": 48,
+      "token_share": 0.001903,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "openai/gpt-oss-20b",
+      "rank": 49,
+      "token_share": 0.001764,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "qwen/qwen3.7-flash-20260727",
+      "rank": 50,
+      "token_share": 0.001761,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-08-09",
+      "model": "mistralai/mistral-nemo",
+      "rank": 51,
+      "token_share": 0.001756,
       "source": "pipeline"
     }
   ]
