@@ -1,6 +1,23 @@
 {
-  "generated_at": "2026-08-28T12:21:52.891837+00:00",
+  "generated_at": "2026-08-29T07:31:45.417885+00:00",
   "entries": [
+    {
+      "date": "2026-08-29",
+      "headline": "OpenAI's Luna hits 11.2% \u2014 day 2 at the top",
+      "summary": "OpenAI/gpt-5.6-luna-20260709 claimed the #1 spot yesterday and is holding it today at 11.2% token share, marking its first time at rank 1. Zhipu AI's glm-5.3-flash is on day 2 of an all-time high at 10.3%, while MiniMax's free tier model is on day 3 of record territory. DeepSeek slipped 2.2 points overnight but still commands 18.5% across its fleet. Four new models entered the rankings, including Tencent's hy4-preview at rank 10.",
+      "highlights": [
+        "openai/gpt-5.6-luna-20260709 reaches 11.2% \u2014 first time at #1, day 2 of streak",
+        "z-ai/glm-5.3-flash-20260826 hits all-time high 10.3%, day 2 holding strong",
+        "minimax/minimax-m3-20260531:free at 4.0% \u2014 day 3 of record run",
+        "DeepSeek provider share down 2.2% overnight to 18.5%, but still #1 by provider",
+        "OpenAI provider share up 1.2% to 15.0% \u2014 30-day gain of 8.9 points",
+        "Zhipu AI provider share up 1.1% to 14.0% \u2014 30-day surge of 8.3 points",
+        "Four new entrants: tencent/hy4-preview-20260827 (rank 10), google/gemini-3.6-flash-20260721 (rank 29), minimax/minimax-m2.7-20260318:free (rank 41), inclusionai/ling-3.0-flash-fin-20260827:free (rank 44)",
+        "Four dropouts: nvidia/nemotron-3.5-lightning (was rank 26), dots-studio/dots-3-note-preview (was rank 48), openai/text-embedding-3-small (was rank 49), qwen/qwen3.7-flash (was rank 51)"
+      ],
+      "tone": "big_day",
+      "source": "llm"
+    },
     {
       "date": "2026-08-28",
       "headline": "OpenAI surges, Zhipu crashes the party, stealth ox exits stage left",
