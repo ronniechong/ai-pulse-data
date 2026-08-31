@@ -1,6 +1,21 @@
 {
-  "generated_at": "2026-08-30T06:03:03.624315+00:00",
+  "generated_at": "2026-08-31T06:22:51.085882+00:00",
   "entries": [
+    {
+      "date": "2026-08-31",
+      "headline": "Zhipu AI's GLM hits the top\u2014and breaks records doing it",
+      "summary": "Zhipu AI's glm-5.3-flash just claimed the #1 spot with 11.5% token share, marking both an all-time high and the model's first time at the podium. DeepSeek and OpenAI hold firm in the top three, but the real story is Zhipu's provider-level surge: up 1.5 points overnight and 11.8 points in a week. Meanwhile, MiniMax's free tier is on day 5 of its all-time token-share streak at 5.6%.",
+      "highlights": [
+        "z-ai/glm-5.3-flash-20260826 hits rank #1 with 11.5% share\u2014first time at the top, all-time high",
+        "Zhipu AI provider share jumps to 15.0% (+1.5% today, +11.8% in 7 days)",
+        "minimax/minimax-m3-20260531:free on day 5 of all-time token-share record at 5.6%",
+        "OpenAI climbs to 13.5% provider share (+2.4% today) despite gpt-5.6-luna slipping one rank",
+        "Tencent drops 2.6 points overnight but still holds 14.4% provider share",
+        "openai/gpt-4o-mini enters at rank 49; dots-studio/dots-3-note-preview exits"
+      ],
+      "tone": "big_day",
+      "source": "llm"
+    },
     {
       "date": "2026-08-30",
       "headline": "Tencent's HY4 Preview Explodes to #1 with 11.7% Share",
