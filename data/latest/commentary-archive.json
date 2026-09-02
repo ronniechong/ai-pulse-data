@@ -1,6 +1,21 @@
 {
-  "generated_at": "2026-09-01T05:50:31.882359+00:00",
+  "generated_at": "2026-09-02T05:13:57.911802+00:00",
   "entries": [
+    {
+      "date": "2026-09-02",
+      "headline": "Zhipu AI's flash model holds top spot despite daily slip",
+      "summary": "Zhipu AI's glm-5.3-flash leads at 11.6% token share, down 2.3 points from yesterday, while OpenAI's gpt-5.6-luna climbs to rank 2 with a 7-spot weekly surge. MiniMax's free tier makes a dramatic 25-rank jump over the week, now sitting at rank 6 with 5.0% share.",
+      "highlights": [
+        "Zhipu AI (glm-5.3-flash-20260826) holds rank 1 at 11.6% token share, but lost 2.3 percentage points in one day",
+        "OpenAI (gpt-5.6-luna-20260709) climbs to rank 2 with 10.9% share, up 7 ranks over 7 days and 1.8 percentage points today",
+        "MiniMax (minimax-m3-20260531:free) surges 25 ranks in a week to rank 6, now at 5.0% share",
+        "Tencent (hy4-preview-20260827) enters top 3 at rank 3 with 10.6% share, up 4.0 percentage points today",
+        "Qwen (qwen3.8-27b-20260814) debuts at rank 48 with 0.2% share",
+        "NVIDIA (nemotron-3-super-120b-a12b-20230311:free) drops out after holding rank 47"
+      ],
+      "tone": "notable",
+      "source": "llm"
+    },
     {
       "date": "2026-09-01",
       "headline": "Zhipu AI's flash model hits 13.8% \u2014 day 2 of dominance",
