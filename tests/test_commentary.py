@@ -130,6 +130,41 @@ def test_validate_entities_catches_unverified_percentage():
     assert any("87.3" in v for v in violations)
 
 
+def test_validate_entities_allows_combined_top_provider_share():
+    facts = _facts(
+        provider_share=[
+            {"provider": "OpenAI", "token_share_today": 0.19, "delta_1d": None, "delta_7d": None, "delta_30d": None},
+            {"provider": "DeepSeek", "token_share_today": 0.164, "delta_1d": None, "delta_7d": None, "delta_30d": None},
+            {"provider": "Tencent", "token_share_today": 0.162, "delta_1d": None, "delta_7d": None, "delta_30d": None},
+            {"provider": "other", "token_share_today": 0.30, "delta_1d": None, "delta_7d": None, "delta_30d": None},
+        ]
+    )
+    parsed = {
+        "headline": "The big three tighten their grip",
+        "summary": "OpenAI, DeepSeek, and Tencent now command 51.6% of tokens between them.",
+        "highlights": ["Top two alone: 35.4%"],
+        "tone": "notable",
+    }
+    assert commentary.validate_entities_and_numbers(parsed, facts) == []
+
+
+def test_validate_entities_still_catches_non_prefix_sum():
+    facts = _facts(
+        provider_share=[
+            {"provider": "OpenAI", "token_share_today": 0.19, "delta_1d": None, "delta_7d": None, "delta_30d": None},
+            {"provider": "Tencent", "token_share_today": 0.162, "delta_1d": None, "delta_7d": None, "delta_30d": None},
+        ]
+    )
+    parsed = {
+        "headline": "OpenAI leads",
+        "summary": "OpenAI and some smaller players add up to 44.4% somehow.",  # not a descending prefix sum
+        "highlights": [],
+        "tone": "quiet",
+    }
+    violations = commentary.validate_entities_and_numbers(parsed, facts)
+    assert any("44.4" in v for v in violations)
+
+
 def test_slug_variants_strips_date_and_tag_suffixes():
     variants = commentary._slug_variants("openai/gpt-5.6-sol-pro-20260709")
     assert variants == {

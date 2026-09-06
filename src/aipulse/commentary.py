@@ -113,6 +113,24 @@ def _collect_allowed_entities(facts: dict) -> tuple[set[str], set[str]]:
         for key in ("token_share_today", "delta_1d", "delta_7d", "delta_30d"):
             _add_share(p.get(key))
 
+    # The one aggregation a faithful commentary reliably reaches for: the
+    # combined share of the top N providers ("the big three now command X%").
+    # Add every descending prefix sum of today's provider shares so that line
+    # validates, without loosening the check for genuinely fabricated figures.
+    # "other" is excluded — same treatment it gets everywhere else.
+    today_shares = sorted(
+        (
+            p["token_share_today"]
+            for p in rankings["provider_share"]
+            if p.get("provider") != "other" and p.get("token_share_today") is not None
+        ),
+        reverse=True,
+    )
+    running = 0.0
+    for share in today_shares:
+        running += share
+        _add_share(running)
+
     return models, percents
 
 
