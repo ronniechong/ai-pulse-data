@@ -1,6 +1,21 @@
 {
-  "generated_at": "2026-09-05T05:02:24.154403+00:00",
+  "generated_at": "2026-09-06T05:16:47.559583+00:00",
   "entries": [
+    {
+      "date": "2026-09-06",
+      "headline": "OpenAI surges past Tencent; Meta's new model hits all-time high",
+      "summary": "OpenAI clawed back 5.3 percentage points in a single day to claim second place at 15.9% token share, while Tencent's lead narrowed to 13.3%. Meta's fresh contributor model set an all-time record at 1.5% share on debut. Five new models entered the rankings, including OpenAI's gpt-6-astra and Qwen's latest pair.",
+      "highlights": [
+        "OpenAI jumped +5.3% in daily token share, vaulting gpt-5.6-luna from rank 4 to rank 2",
+        "Tencent's hy4-preview still leads at 13.3%, but shed 2.9% in one day",
+        "Meta's muse-spark-1.3-contributor set an all-time token-share record at 1.5% on its first day",
+        "Five new entrants: openai/gpt-6-astra-20260903 (rank 31), qwen/qwen3.8-flash-20260826 (rank 48), qwen/qwen3.8-max-20260902 (rank 49), mistralai/mistral-nemo (rank 50), inclusionai/ling-3.0-flash-sante-20260904:free (rank 51)",
+        "Five models dropped out, including qwen/qwen3.8-max-20260803 and openai/gpt-4o-mini",
+        "DeepSeek remains third at 18.1%, down 0.8% daily; Zhipu AI holds fourth at 14.1%"
+      ],
+      "tone": "big_day",
+      "source": "llm"
+    },
     {
       "date": "2026-09-05",
       "headline": "thinkingmachines/inkling-20260715:free (thinkingmachines) entered the top rankings at rank 48",
