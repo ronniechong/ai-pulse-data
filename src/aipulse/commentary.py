@@ -115,9 +115,15 @@ def _collect_allowed_entities(facts: dict) -> tuple[set[str], set[str]]:
 
     # The one aggregation a faithful commentary reliably reaches for: the
     # combined share of the top N providers ("the big three now command X%").
-    # Add every descending prefix sum of today's provider shares so that line
-    # validates, without loosening the check for genuinely fabricated figures.
-    # "other" is excluded — same treatment it gets everywhere else.
+    # facts.py precomputes these (`provider_share_cumulative`) so the prompt
+    # can tell the LLM to quote them verbatim rather than sum shares itself
+    # (which it does unreliably — observed live emitting 53.3% for a real
+    # 51.3% sum). Whitelist those exact figures; also keep deriving the
+    # descending prefix sums directly as a fallback for older facts payloads
+    # and for the rounding the LLM may still apply.
+    for entry in rankings.get("provider_share_cumulative", []):
+        _add_share(entry.get("token_share"))
+
     today_shares = sorted(
         (
             p["token_share_today"]

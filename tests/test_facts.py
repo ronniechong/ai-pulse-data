@@ -96,6 +96,23 @@ def test_provider_share_aggregates_multiple_models_per_provider():
     assert shares["OpenAI"] == round(0.15, 6)
 
 
+def test_provider_share_cumulative_precomputes_top_n_combined_shares():
+    today = _snapshot(
+        "2026-07-16",
+        [
+            _row(1, "openai/gpt", 0.20),
+            _row(2, "anthropic/claude", 0.15),
+            _row(3, "deepseek/v4", 0.10),
+            _row(4, "other", 0.40),  # excluded, same as leaderboard/HHI
+        ],
+    )
+    cumulative = compute_facts([("2026-07-16", today)])["rankings"]["provider_share_cumulative"]
+
+    assert [c["top_n"] for c in cumulative] == [2, 3]  # starts at 2, 'other' excluded
+    assert cumulative[0] == {"top_n": 2, "providers": ["OpenAI", "Anthropic"], "token_share": round(0.35, 6)}
+    assert cumulative[1]["token_share"] == round(0.45, 6)
+
+
 def test_hhi_excludes_other_bucket_and_is_null_without_30d_comparison():
     today = _snapshot(
         "2026-07-16",

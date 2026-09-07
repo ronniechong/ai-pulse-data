@@ -165,6 +165,50 @@ def test_validate_entities_still_catches_non_prefix_sum():
     assert any("44.4" in v for v in violations)
 
 
+def test_validate_entities_allows_precomputed_cumulative_share():
+    # facts.py now precomputes the top-N combined shares; the prompt tells the
+    # LLM to quote these verbatim instead of summing. The figure must validate
+    # even though it isn't a clean prefix sum of the rounded provider_share rows.
+    facts = _facts(
+        provider_share=[
+            {"provider": "OpenAI", "token_share_today": 0.1814, "delta_1d": None, "delta_7d": None, "delta_30d": None},
+            {"provider": "DeepSeek", "token_share_today": 0.1785, "delta_1d": None, "delta_7d": None, "delta_30d": None},
+            {"provider": "Zhipu AI", "token_share_today": 0.1533, "delta_1d": None, "delta_7d": None, "delta_30d": None},
+        ],
+        provider_share_cumulative=[
+            {"top_n": 3, "providers": ["OpenAI", "DeepSeek", "Zhipu AI"], "token_share": 0.5132},
+        ],
+    )
+    parsed = {
+        "headline": "The big three",
+        "summary": "OpenAI, DeepSeek and Zhipu AI hold 51.3% of tokens between them.",
+        "highlights": [],
+        "tone": "notable",
+    }
+    assert commentary.validate_entities_and_numbers(parsed, facts) == []
+
+
+def test_validate_entities_still_catches_wrong_cumulative_arithmetic():
+    facts = _facts(
+        provider_share=[
+            {"provider": "OpenAI", "token_share_today": 0.1814, "delta_1d": None, "delta_7d": None, "delta_30d": None},
+            {"provider": "DeepSeek", "token_share_today": 0.1785, "delta_1d": None, "delta_7d": None, "delta_30d": None},
+            {"provider": "Zhipu AI", "token_share_today": 0.1533, "delta_1d": None, "delta_7d": None, "delta_30d": None},
+        ],
+        provider_share_cumulative=[
+            {"top_n": 3, "providers": ["OpenAI", "DeepSeek", "Zhipu AI"], "token_share": 0.5132},
+        ],
+    )
+    parsed = {
+        "headline": "The big three",
+        "summary": "The top three providers hold 53.3% combined.",  # LLM's own (wrong) sum
+        "highlights": [],
+        "tone": "notable",
+    }
+    violations = commentary.validate_entities_and_numbers(parsed, facts)
+    assert any("53.3" in v for v in violations)
+
+
 def test_slug_variants_strips_date_and_tag_suffixes():
     variants = commentary._slug_variants("openai/gpt-5.6-sol-pro-20260709")
     assert variants == {

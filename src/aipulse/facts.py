@@ -236,6 +236,31 @@ def _compute_provider_share(
     ]
 
 
+def _compute_provider_share_cumulative(today: dict, max_n: int = 5) -> list[dict]:
+    """Combined token share of the top N providers by today's share, for
+    N = 2..max_n. Precomputed here so commentary can quote "the top three hold
+    X%" verbatim instead of summing shares itself (the LLM does that
+    arithmetic unreliably). 'other' excluded, matching the leaderboard and
+    HHI."""
+    ranked = sorted(_provider_shares(today).items(), key=lambda kv: -kv[1])
+    cumulative: list[dict] = []
+    running = 0.0
+    for i, (_, share) in enumerate(ranked, start=1):
+        running += share
+        if i < 2:
+            continue
+        cumulative.append(
+            {
+                "top_n": i,
+                "providers": [p for p, _ in ranked[:i]],
+                "token_share": round(running, 6),
+            }
+        )
+        if i >= max_n:
+            break
+    return cumulative
+
+
 def compute_facts(history: list[tuple[str, dict]]) -> dict:
     """history: (date_str, normalized rankings dict) ascending by date, with the
     last entry being "today". Returns the facts.json payload."""
@@ -262,6 +287,7 @@ def compute_facts(history: list[tuple[str, dict]]) -> dict:
             "dropouts": dropouts,
             "records": _compute_records(today, prior_history, streaks),
             "provider_share": _compute_provider_share(today, yesterday, d7, d30),
+            "provider_share_cumulative": _compute_provider_share_cumulative(today),
             "concentration": concentration,
         },
     }

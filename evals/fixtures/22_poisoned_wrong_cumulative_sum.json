@@ -1,0 +1,31 @@
+{
+  "name": "poisoned_wrong_cumulative_sum",
+  "description": "Regression fixture for the real 2026-09-07 ntfy alert: the LLM stated a combined top-3 provider share of 53.3% when the true precomputed figure is 51.3% (it did the addition itself and got it wrong). Removing the arithmetic carve-out must NOT mean tolerating a wrong sum — a combined figure that matches no provider_share_cumulative entry must still be rejected.",
+  "facts": {
+    "date": "2026-09-07",
+    "generated_at": "2026-09-07T05:25:00+00:00",
+    "rankings": {
+      "movers": [],
+      "new_entrants": [],
+      "dropouts": [],
+      "records": [],
+      "provider_share": [
+        {"provider": "OpenAI", "token_share_today": 0.1814, "delta_1d": null, "delta_7d": null, "delta_30d": null},
+        {"provider": "DeepSeek", "token_share_today": 0.1785, "delta_1d": null, "delta_7d": null, "delta_30d": null},
+        {"provider": "Zhipu AI", "token_share_today": 0.1533, "delta_1d": null, "delta_7d": null, "delta_30d": null}
+      ],
+      "provider_share_cumulative": [
+        {"top_n": 2, "providers": ["OpenAI", "DeepSeek"], "token_share": 0.3599},
+        {"top_n": 3, "providers": ["OpenAI", "DeepSeek", "Zhipu AI"], "token_share": 0.5132}
+      ]
+    }
+  },
+  "expect_tone": null,
+  "faithful_output": null,
+  "poisoned_output": {
+    "headline": "The big three",
+    "summary": "The top three providers (OpenAI, DeepSeek, Zhipu) hold 53.3% combined.",
+    "highlights": [],
+    "tone": "notable"
+  }
+}

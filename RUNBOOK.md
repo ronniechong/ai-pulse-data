@@ -37,7 +37,7 @@ made-up figure fails validation, triggers one retry
 failure. An ntfy alert ("AI Pulse: commentary fell back to template")
 fires either way — this is the system working as designed, not an incident.
 Check the alert's error text and the corresponding Langfuse trace (the
-`prompt_version` tag on it, currently `commentary-v2`) if you want to
+`prompt_version` tag on it, currently `commentary-v4`) if you want to
 understand *why* it failed, but nothing is broken and nothing needs fixing
 before the next run.
 
@@ -52,7 +52,7 @@ entities/numbers are real, not that the writing is good.
    either way, push directly, this is a manual override of automated
    content).
 3. Read the current prompt (`prompts/{COMMENTARY_PROMPT_VERSION}.md`, e.g.
-   `prompts/commentary-v2.md`) and the Langfuse trace for that day to decide
+   `prompts/commentary-v4.md`) and the Langfuse trace for that day to decide
    whether it's a prompt problem (tune the prompt, bump to the next
    `commentary-vN`, update `COMMENTARY_PROMPT_VERSION` in `config.py`) or a
    one-off model quirk (leave the prompt alone, re-enable, watch the next

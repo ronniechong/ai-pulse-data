@@ -1,0 +1,36 @@
+{
+  "name": "cumulative_provider_share_quoted_not_rejected",
+  "description": "facts.py precomputes rankings.provider_share_cumulative so commentary can quote a combined top-N share verbatim instead of summing shares itself (prompt v4). A faithful_output that cites the exact precomputed figure must pass entity validation even though it is not a clean prefix sum of the rounded provider_share rows.",
+  "facts": {
+    "date": "2026-09-07",
+    "generated_at": "2026-09-07T05:25:00+00:00",
+    "rankings": {
+      "movers": [],
+      "new_entrants": [],
+      "dropouts": [],
+      "records": [],
+      "provider_share": [
+        {"provider": "OpenAI", "token_share_today": 0.1814, "delta_1d": 0.021979, "delta_7d": null, "delta_30d": null},
+        {"provider": "DeepSeek", "token_share_today": 0.1785, "delta_1d": -0.006, "delta_7d": null, "delta_30d": null},
+        {"provider": "Zhipu AI", "token_share_today": 0.1533, "delta_1d": 0.0075, "delta_7d": null, "delta_30d": null},
+        {"provider": "Tencent", "token_share_today": 0.1448, "delta_1d": -0.0095, "delta_7d": null, "delta_30d": null}
+      ],
+      "provider_share_cumulative": [
+        {"top_n": 2, "providers": ["OpenAI", "DeepSeek"], "token_share": 0.3599},
+        {"top_n": 3, "providers": ["OpenAI", "DeepSeek", "Zhipu AI"], "token_share": 0.5132},
+        {"top_n": 4, "providers": ["OpenAI", "DeepSeek", "Zhipu AI", "Tencent"], "token_share": 0.658}
+      ]
+    }
+  },
+  "expect_tone": null,
+  "poisoned_output": null,
+  "faithful_output": {
+    "headline": "The big three tighten their grip",
+    "summary": "OpenAI, DeepSeek and Zhipu AI now hold 51.3% of all tokens between them, with Tencent's 14.5% pushing the top four to 65.8%.",
+    "highlights": [
+      "Top three providers: 51.3% combined",
+      "OpenAI up to 18.1% on the day"
+    ],
+    "tone": "notable"
+  }
+}

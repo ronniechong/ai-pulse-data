@@ -27,7 +27,7 @@ built around six controls:
 2. **Tracing** — every commentary call is traced to Langfuse (prompt
    version, input facts, output, tokens, cost, latency), so any output can
    be audited back to exactly what it was given and what it cost.
-3. **Prompt versioning** — the active prompt lives at `prompts/commentary-v2.md`
+3. **Prompt versioning** — the active prompt lives at `prompts/commentary-v4.md`
    (older versions kept for history), versioned by filename, PR-reviewed like
    code, and the version string is recorded on every trace.
 4. **Eval gate** — CI runs a 20-fixture eval suite against any change to
