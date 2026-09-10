@@ -1,0 +1,32 @@
+{
+  "name": "interior_param_tag_paraphrase_not_rejected",
+  "description": "Regression fixture for a real production false-positive (2026-09-10 template fallback: 'unknown model referenced: nvidia/nemotron-3-super-120b'). The real facts model was 'nvidia/nemotron-3-super-120b-a12b-20230311:free'; the LLM narrated it without the interior MoE param tag ('-a12b') or the date suffix, the same way it routinely shortens model names in prose. A faithful reference to real facts, not a fabrication, and must NOT be rejected by validate_entities_and_numbers.",
+  "facts": {
+    "date": "2026-09-10",
+    "generated_at": "2026-09-10T05:25:00+00:00",
+    "rankings": {
+      "movers": [],
+      "new_entrants": [
+        {
+          "model": "nvidia/nemotron-3-super-120b-a12b-20230311:free",
+          "provider": "NVIDIA",
+          "rank": 43,
+          "token_share": 0.006
+        }
+      ],
+      "dropouts": [],
+      "records": [],
+      "provider_share": []
+    }
+  },
+  "expect_tone": null,
+  "poisoned_output": null,
+  "faithful_output": {
+    "headline": "NVIDIA's nemotron-3-super-120b muscles in",
+    "summary": "nvidia/nemotron-3-super-120b entered the top rankings at rank 43 with a 0.6% token share.",
+    "highlights": [
+      "nvidia/nemotron-3-super-120b (NVIDIA) entered the top rankings at rank 43"
+    ],
+    "tone": "notable"
+  }
+}

@@ -37,7 +37,7 @@ made-up figure fails validation, triggers one retry
 failure. An ntfy alert ("AI Pulse: commentary fell back to template")
 fires either way — this is the system working as designed, not an incident.
 Check the alert's error text and the corresponding Langfuse trace (the
-`prompt_version` tag on it, currently `commentary-v4`) if you want to
+`prompt_version` tag on it, currently `commentary-v5`) if you want to
 understand *why* it failed, but nothing is broken and nothing needs fixing
 before the next run.
 

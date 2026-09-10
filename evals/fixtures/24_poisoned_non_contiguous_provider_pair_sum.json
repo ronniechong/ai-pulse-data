@@ -1,0 +1,33 @@
+{
+  "name": "poisoned_non_contiguous_provider_pair_sum",
+  "description": "Real production fallback (2026-09-10): the LLM combined Tencent (#1) and Zhipu AI (#3), skipping DeepSeek (#2), stating 35.6% combined. No provider_share_cumulative entry covers a non-contiguous subset, so this is derived arithmetic the prompt (v5) forbids and the number-validator must still reject — widening _fmt_pct's rounding tolerance must not let an arbitrary provider-pair sum through.",
+  "facts": {
+    "date": "2026-09-10",
+    "generated_at": "2026-09-10T05:25:00+00:00",
+    "rankings": {
+      "movers": [],
+      "new_entrants": [],
+      "dropouts": [],
+      "records": [],
+      "provider_share": [
+        {"provider": "Tencent", "token_share_today": 0.213115, "delta_1d": 0.004134, "delta_7d": null, "delta_30d": null},
+        {"provider": "DeepSeek", "token_share_today": 0.153926, "delta_1d": 0.00222, "delta_7d": null, "delta_30d": null},
+        {"provider": "Zhipu AI", "token_share_today": 0.142483, "delta_1d": 0.006233, "delta_7d": null, "delta_30d": null}
+      ],
+      "provider_share_cumulative": [
+        {"top_n": 2, "providers": ["Tencent", "DeepSeek"], "token_share": 0.367041},
+        {"top_n": 3, "providers": ["Tencent", "DeepSeek", "Zhipu AI"], "token_share": 0.509524}
+      ]
+    }
+  },
+  "expect_tone": null,
+  "poisoned_output": {
+    "headline": "Tencent and Zhipu AI pull ahead",
+    "summary": "Tencent and Zhipu AI together account for 35.6% of all tokens.",
+    "highlights": [
+      "Tencent and Zhipu AI: 35.6% combined"
+    ],
+    "tone": "notable"
+  },
+  "faithful_output": null
+}

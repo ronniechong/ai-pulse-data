@@ -238,6 +238,79 @@ def test_validate_entities_accepts_model_narrated_without_date_suffix():
     assert commentary.validate_entities_and_numbers(parsed, facts) == []
 
 
+def test_validate_entities_accepts_model_narrated_without_interior_param_tag():
+    # Real production false-positive (2026-09-10): facts model
+    # "nvidia/nemotron-3-super-120b-a12b-20230311:free"; the LLM narrated it as
+    # "nvidia/nemotron-3-super-120b", dropping the interior MoE param tag and
+    # the date. A faithful reference — must not be rejected.
+    facts = _facts(
+        new_entrants=[
+            {
+                "model": "nvidia/nemotron-3-super-120b-a12b-20230311:free",
+                "provider": "NVIDIA",
+                "rank": 43,
+                "token_share": 0.006,
+            }
+        ]
+    )
+    parsed = {
+        "headline": "nvidia/nemotron-3-super-120b enters the rankings",
+        "summary": "nvidia/nemotron-3-super-120b entered the top rankings at rank 43.",
+        "highlights": [],
+        "tone": "notable",
+    }
+    assert commentary.validate_entities_and_numbers(parsed, facts) == []
+
+
+def test_validate_entities_accepts_truncated_1dp_percentage():
+    # Real production false-positive (2026-09-10): the LLM emitted "50.9%" for a
+    # top-3 combined share of 0.509524 (rounds to 51.0%). A truncated-but-
+    # faithful figure — the widened _fmt_pct now tolerates it.
+    facts = _facts(
+        provider_share=[
+            {"provider": "Tencent", "token_share_today": 0.213, "delta_1d": None, "delta_7d": None, "delta_30d": None},
+            {"provider": "DeepSeek", "token_share_today": 0.154, "delta_1d": None, "delta_7d": None, "delta_30d": None},
+            {"provider": "Zhipu AI", "token_share_today": 0.142, "delta_1d": None, "delta_7d": None, "delta_30d": None},
+        ],
+        provider_share_cumulative=[
+            {"top_n": 3, "providers": ["Tencent", "DeepSeek", "Zhipu AI"], "token_share": 0.509524},
+        ],
+    )
+    parsed = {
+        "headline": "Top three hold the line",
+        "summary": "Tencent, DeepSeek and Zhipu AI hold 50.9% of tokens between them.",
+        "highlights": [],
+        "tone": "notable",
+    }
+    assert commentary.validate_entities_and_numbers(parsed, facts) == []
+
+
+def test_validate_entities_still_rejects_non_contiguous_provider_pair_sum():
+    # Real production fallback (2026-09-10): the LLM combined Tencent (#1) and
+    # Zhipu AI (#3), skipping DeepSeek (#2) — 35.6%, no provider_share_cumulative
+    # entry covers it. Must stay rejected; v5's prompt wording targets the LLM
+    # behaviour, the validator is the backstop.
+    facts = _facts(
+        provider_share=[
+            {"provider": "Tencent", "token_share_today": 0.213115, "delta_1d": None, "delta_7d": None, "delta_30d": None},
+            {"provider": "DeepSeek", "token_share_today": 0.153926, "delta_1d": None, "delta_7d": None, "delta_30d": None},
+            {"provider": "Zhipu AI", "token_share_today": 0.142483, "delta_1d": None, "delta_7d": None, "delta_30d": None},
+        ],
+        provider_share_cumulative=[
+            {"top_n": 2, "providers": ["Tencent", "DeepSeek"], "token_share": 0.367041},
+            {"top_n": 3, "providers": ["Tencent", "DeepSeek", "Zhipu AI"], "token_share": 0.509524},
+        ],
+    )
+    parsed = {
+        "headline": "Tencent and Zhipu AI",
+        "summary": "Tencent and Zhipu AI together account for 35.6% of tokens.",
+        "highlights": [],
+        "tone": "notable",
+    }
+    violations = commentary.validate_entities_and_numbers(parsed, facts)
+    assert any("35.6" in v for v in violations)
+
+
 def test_validate_entities_still_rejects_fabricated_model_resembling_a_real_one():
     facts = _facts(
         new_entrants=[

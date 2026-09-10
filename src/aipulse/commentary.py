@@ -4,6 +4,7 @@ the active prompt and the validation rationale below.
 """
 
 import json
+import math
 import re
 import sys
 from datetime import UTC, datetime
@@ -60,7 +61,18 @@ def _fmt_pct(value: float) -> set[str]:
     # in facts (which carries ~6 significant digits) rather than pre-rounding
     # itself — observed live: faithful figures like 20.19% were rejected for
     # only existing in 1dp/0dp form.
-    return {f"{value * 100:.0f}", f"{value * 100:.1f}", f"{value * 100:.2f}"}
+    # Also include the truncated (floored) 1dp/0dp forms: the LLM sometimes
+    # cuts a figure short instead of rounding it (observed live 2026-09-10:
+    # "50.9%" for a 0.509524 share that rounds to 51.0%). ±0.05pp slack,
+    # negligible against fabrication detection.
+    scaled = value * 100
+    return {
+        f"{scaled:.0f}",
+        f"{scaled:.1f}",
+        f"{scaled:.2f}",
+        f"{math.floor(scaled * 10) / 10:.1f}",
+        f"{math.floor(scaled):.0f}",
+    }
 
 
 def _load_system_prompt() -> str:
@@ -168,7 +180,17 @@ def validate_entities_and_numbers(parsed: dict, facts: dict) -> list[str]:
         # case-insensitively and ignore trailing sentence punctuation the
         # regex's character class happens to include (':', '.').
         candidate = match.rstrip(":.").lower()
-        if candidate not in allowed_models_lower:
+        # A faithful narration also drops interior "incidental" segments the
+        # LLM judges not part of the name — e.g. an MoE param tag sitting
+        # between the base name and the date suffix (observed live 2026-09-10:
+        # "nvidia/nemotron-3-super-120b" for the real
+        # "nvidia/nemotron-3-super-120b-a12b-20230311:free"). Accept a mention
+        # that is a real slug truncated at a '-'/':' boundary; a fabricated
+        # model is astronomically unlikely to also be a prefix of a real one.
+        if candidate not in allowed_models_lower and not any(
+            allowed.startswith(candidate + "-") or allowed.startswith(candidate + ":")
+            for allowed in allowed_models_lower
+        ):
             violations.append(f"unknown model referenced: {match!r}")
     for match in _PERCENT_MENTION_RE.findall(text):
         if match not in allowed_percents:
