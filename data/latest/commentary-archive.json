@@ -1,6 +1,20 @@
 {
-  "generated_at": "2026-09-13T05:29:19.570429+00:00",
+  "generated_at": "2026-09-14T05:33:24.489834+00:00",
   "entries": [
+    {
+      "date": "2026-09-14",
+      "headline": "OpenAI's Luna keeps climbing; DeepSeek holds firm at #2",
+      "summary": "OpenAI's gpt-5.6-luna-20260709 hit an all-time token-share record of 23.5% (day 2 of the streak), while DeepSeek and Zhipu AI swapped positions overnight. Three models entered the top 50, and three dropped out. The top two providers now command 47.1% of traffic between them.",
+      "highlights": [
+        "openai/gpt-5.6-luna-20260709 sets new all-time high at 23.5% share, extending its streak to day 2",
+        "deepseek/deepseek-v4-flash-20260731 climbs 2 ranks to #2 (8.6%); z-ai/glm-5.3-flash-20260826 rises to #3 (8.4%)",
+        "xiaomi/mimo-v2.5-20260422 surges 20 spots in 7 days, now at rank 6 with 5.9% share",
+        "Three new entrants: google/gemma-4-26b-a4b-it-20260403 (rank 47), xiaomi/mimo-v2.5-pro-20260422 (rank 49), openai/gpt-5.6-luna-pro-20260709 (rank 51)",
+        "OpenAI's provider share jumped 0.9% overnight to 25.6%; top 4 providers hold 69.1% combined"
+      ],
+      "tone": "notable",
+      "source": "llm"
+    },
     {
       "date": "2026-09-13",
       "headline": "OpenAI's Luna hits 22.7% \u2014 biggest single-model share on record",
