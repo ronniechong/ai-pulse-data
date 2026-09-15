@@ -42,7 +42,7 @@ class HFModelRow(BaseModel):
     downloads: int = 0
     downloadsAllTime: int | None = None
     likes: int = 0
-    trendingScore: int = 0
+    trendingScore: float = 0
     pipeline_tag: str | None = None
     library_name: str | None = None
 
