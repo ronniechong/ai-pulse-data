@@ -1,6 +1,21 @@
 {
-  "generated_at": "2026-09-15T05:34:09.967825+00:00",
+  "generated_at": "2026-09-16T05:26:50.808540+00:00",
   "entries": [
+    {
+      "date": "2026-09-16",
+      "headline": "DeepSeek's v4.1-flash hits all-time high; OpenAI tumbles",
+      "summary": "DeepSeek's newest model claimed an all-time token-share record at 10.1%, vaulting two spots to #1 and dragging its provider to 24.8% overall\u2014a gain of 2.3 points in a single day. Meanwhile, OpenAI hemorrhaged 6.3 points, with its flagship gpt-5.6-luna dropping four ranks. The top three providers (DeepSeek, Tencent, Zhipu AI) now command 52.1% of the market.",
+      "highlights": [
+        "deepseek/deepseek-v4.1-flash-20260910 sets all-time token-share record at 10.1%",
+        "DeepSeek provider share surges to 24.8% (+2.3% in one day)",
+        "OpenAI plummets 6.3 points to 11.3%, losing its #5 model four ranks",
+        "Top 3 providers hold 52.1% combined; top 5 hold 69.9%",
+        "Three new entrants: Google's gemma-4-26b, Qwen's qwen3.8-27b, Meta's muse-spark-1.3",
+        "NVIDIA's nemotron-3.5-lightning jumps 12 ranks in a day"
+      ],
+      "tone": "big_day",
+      "source": "llm"
+    },
     {
       "date": "2026-09-15",
       "headline": "DeepSeek surges past OpenAI as top two hold 40.2%",
