@@ -1,6 +1,20 @@
 {
-  "generated_at": "2026-09-16T05:26:50.808540+00:00",
+  "generated_at": "2026-09-17T05:34:58.244907+00:00",
   "entries": [
+    {
+      "date": "2026-09-17",
+      "headline": "DeepSeek's v4.1-flash hits 12.2% \u2014 day 2 at the summit",
+      "summary": "DeepSeek's newest model just claimed the all-time token-share record at 12.2%, holding rank 1 for a second consecutive day. The top four providers (DeepSeek, Zhipu AI, Tencent, OpenAI) now command 62.9% of the market. OpenAI's fresh gpt-6-astra entry jumped 9 spots in a single day, while Anthropic's claude-4.8-opus vaulted 14 ranks to crack the top 30.",
+      "highlights": [
+        "deepseek/deepseek-v4.1-flash-20260910 sets all-time record: 12.2% token share, day 2 at rank 1",
+        "openai/gpt-6-astra-20260903 debuts at rank 19 after a 9-rank jump in one day",
+        "anthropic/claude-4.8-opus-20260528 surges 14 spots to rank 29",
+        "DeepSeek, Zhipu AI, Tencent, and OpenAI hold 62.9% combined",
+        "Four new entrants: stealth/union-alpha (rank 27), openai/gpt-4o-mini (rank 49), nvidia/nemotron-3-super-120b (rank 50), google/gemini-3.5-flash-lite (rank 51)"
+      ],
+      "tone": "big_day",
+      "source": "llm"
+    },
     {
       "date": "2026-09-16",
       "headline": "DeepSeek's v4.1-flash hits all-time high; OpenAI tumbles",
