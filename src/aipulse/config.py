@@ -29,8 +29,6 @@ OPENROUTER_CHAT_URL = "https://openrouter.ai/api/v1/chat/completions"
 HF_MODELS_URL = "https://huggingface.co/api/models"
 CLICKHOUSE_URL = "https://sql-clickhouse.clickhouse.com"
 NTFY_URL = "https://ntfy.sh"
-LANGFUSE_INGESTION_PATH = "/api/public/ingestion"
-LANGFUSE_TRACES_PATH = "/api/public/traces"
 LANGFUSE_COMMENTARY_TRACE_NAME = "ai-pulse-commentary"
 
 # Trailing window for the AI-transparency panel (LLM success-vs-fallback

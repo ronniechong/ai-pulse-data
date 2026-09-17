@@ -9,56 +9,61 @@ pure in-process computation with no external dependency, so a failure there
 is a real bug, not a degraded source."""
 
 import json
-from datetime import date, timedelta
+from datetime import UTC, date, datetime, time, timedelta
 
-import requests
+from langfuse import Langfuse
 
 from aipulse import spend_ledger
 from aipulse.config import (
     AI_TRANSPARENCY_WINDOW_DAYS,
     DATA_DIR,
     LANGFUSE_COMMENTARY_TRACE_NAME,
-    LANGFUSE_HOST,
     LANGFUSE_PUBLIC_KEY,
     LANGFUSE_SECRET_KEY,
-    LANGFUSE_TRACES_PATH,
 )
 from aipulse.errors import SourceFetchError
 from aipulse.eval_runner import run_all_fixtures
 
-_TIMEOUT = 15
+# Every commentary call now produces exactly one root observation (no
+# children), so each observation row here already corresponds 1:1 to a
+# "trace" in the old sense -- no grouping-by-traceId needed. Filtered on
+# `traceName` rather than the observation's own `name` since this Langfuse
+# project is shared with another codebase's traces (museum-of-hallucinations).
+# `type=GENERATION` additionally excludes the wrapping SPAN that the
+# pre-migration dual-event ingestion (trace-create + generation-create) left
+# under the same trace name -- without it, every day traced before this
+# migration double-counts in the trailing 30-day window until it ages out.
+_TRACE_NAME_FILTER = json.dumps(
+    [{"type": "stringOptions", "column": "traceName", "operator": "any of", "value": [LANGFUSE_COMMENTARY_TRACE_NAME]}]
+)
 
 
 def fetch_commentary_traces(since: date) -> list[dict]:
-    """All ai-pulse-commentary traces from `since` onward. Raises
+    """All ai-pulse-commentary observations from `since` onward. Raises
     SourceFetchError on any network/auth failure — caller decides how to
     fail open (see run_ai_transparency in pipeline.py)."""
     if not (LANGFUSE_PUBLIC_KEY and LANGFUSE_SECRET_KEY):
         raise SourceFetchError("LANGFUSE_PUBLIC_KEY/LANGFUSE_SECRET_KEY not set")
 
     traces: list[dict] = []
-    page = 1
+    cursor = None
     try:
+        client = Langfuse()
         while True:
-            resp = requests.get(
-                f"{LANGFUSE_HOST}{LANGFUSE_TRACES_PATH}",
-                params={
-                    "name": LANGFUSE_COMMENTARY_TRACE_NAME,
-                    "fromTimestamp": f"{since.isoformat()}T00:00:00Z",
-                    "page": page,
-                    "limit": 100,
-                },
-                auth=(LANGFUSE_PUBLIC_KEY, LANGFUSE_SECRET_KEY),
-                timeout=_TIMEOUT,
+            response = client.api.observations.get_many(
+                fields="core,io,metadata",
+                filter=_TRACE_NAME_FILTER,
+                type="GENERATION",
+                from_start_time=datetime.combine(since, time.min, tzinfo=UTC),
+                cursor=cursor,
+                limit=100,
             )
-            resp.raise_for_status()
-            payload = resp.json()
-            traces.extend(payload.get("data", []))
-            if page >= payload.get("meta", {}).get("totalPages", 1):
+            traces.extend({"output": o.output, "metadata": o.metadata} for o in response.data)
+            cursor = response.meta.cursor
+            if cursor is None:
                 break
-            page += 1
-    except (requests.RequestException, ValueError) as e:
-        raise SourceFetchError(f"Langfuse traces fetch failed: {e}") from e
+    except Exception as e:  # noqa: BLE001 - any SDK/network failure maps to SourceFetchError
+        raise SourceFetchError(f"Langfuse observations fetch failed: {e}") from e
 
     return traces
 

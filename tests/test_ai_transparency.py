@@ -1,11 +1,10 @@
 import json
 from datetime import date, timedelta
+from types import SimpleNamespace
 
 import pytest
-import responses
 
 from aipulse import ai_transparency, spend_ledger
-from aipulse.config import LANGFUSE_HOST, LANGFUSE_TRACES_PATH
 from aipulse.errors import SourceFetchError
 
 
@@ -50,36 +49,42 @@ def test_compute_tone_distribution_skips_missing_days(tmp_path, monkeypatch):
     assert result == {"quiet": 0, "notable": 0, "big_day": 0, "days_checked": 0}
 
 
-@responses.activate
+def _fake_observations_client(pages):
+    """pages: list of (data, next_cursor) — one entry per expected get_many call."""
+    remaining = list(pages)
+
+    def get_many(**kwargs):
+        data, cursor = remaining.pop(0)
+        return SimpleNamespace(data=data, meta=SimpleNamespace(cursor=cursor))
+
+    return SimpleNamespace(api=SimpleNamespace(observations=SimpleNamespace(get_many=get_many)))
+
+
 def test_fetch_commentary_traces_paginates(monkeypatch):
     monkeypatch.setattr(ai_transparency, "LANGFUSE_PUBLIC_KEY", "test-public")
     monkeypatch.setattr(ai_transparency, "LANGFUSE_SECRET_KEY", "test-secret")
-    responses.add(
-        responses.GET,
-        f"{LANGFUSE_HOST}{LANGFUSE_TRACES_PATH}",
-        json={"data": [{"id": "a"}], "meta": {"page": 1, "totalPages": 2}},
-        status=200,
-    )
-    responses.add(
-        responses.GET,
-        f"{LANGFUSE_HOST}{LANGFUSE_TRACES_PATH}",
-        json={"data": [{"id": "b"}], "meta": {"page": 2, "totalPages": 2}},
-        status=200,
-    )
+    pages = [
+        ([SimpleNamespace(output={"id": "a"}, metadata={})], "cursor-2"),
+        ([SimpleNamespace(output={"id": "b"}, metadata={})], None),
+    ]
+    monkeypatch.setattr(ai_transparency, "Langfuse", lambda: _fake_observations_client(pages))
+
     traces = ai_transparency.fetch_commentary_traces(date.today() - timedelta(days=30))
-    assert [t["id"] for t in traces] == ["a", "b"]
+    assert [t["output"]["id"] for t in traces] == ["a", "b"]
 
 
-@responses.activate
 def test_fetch_commentary_traces_raises_source_fetch_error_on_http_failure(monkeypatch):
     monkeypatch.setattr(ai_transparency, "LANGFUSE_PUBLIC_KEY", "test-public")
     monkeypatch.setattr(ai_transparency, "LANGFUSE_SECRET_KEY", "test-secret")
-    responses.add(
-        responses.GET,
-        f"{LANGFUSE_HOST}{LANGFUSE_TRACES_PATH}",
-        json={"error": "unauthorized"},
-        status=401,
-    )
+
+    class FakeClient:
+        class api:
+            class observations:
+                @staticmethod
+                def get_many(**kwargs):
+                    raise RuntimeError("401 unauthorized")
+
+    monkeypatch.setattr(ai_transparency, "Langfuse", lambda: FakeClient())
     with pytest.raises(SourceFetchError):
         ai_transparency.fetch_commentary_traces(date.today())
 
