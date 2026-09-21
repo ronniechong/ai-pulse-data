@@ -1,6 +1,22 @@
 {
-  "generated_at": "2026-09-20T05:31:57.571726+00:00",
+  "generated_at": "2026-09-21T05:37:47.245491+00:00",
   "entries": [
+    {
+      "date": "2026-09-21",
+      "headline": "Chinese models dominate as DeepSeek, Zhipu AI, Tencent claim 56.7% of tokens",
+      "summary": "The top three providers now command 56.7% of all tokens on OpenRouter, with DeepSeek and Zhipu AI alone holding 42.5%. Zhipu's flash variant vaulted to #1 despite a small daily dip, while DeepSeek v4.1-flash climbed three spots in a week to #2. Typesafe's jev-1.13 hit an all-time high on its second consecutive day at the top, and three new models entered the rankings as older variants fell away.",
+      "highlights": [
+        "Zhipu AI's glm-5.3-flash-20260826 claims the #1 spot with 14.5% token share, up 6.1% over the week",
+        "DeepSeek v4.1-flash surges to #2 (14.4% share) after climbing 3 ranks in 7 days, though it shed 2.9% daily",
+        "Top three providers (DeepSeek, Zhipu AI, Tencent) control 56.7% of tokens; top five reach 71.5%",
+        "Typesafe's jev-1.13 sets an all-time token-share record at 1.3%, day 2 of the streak",
+        "Three new entrants: Xiaomi's mimo-v2.5-pro (#46), Qwen's qwen3.8-27b (#47), and xAI's grok-4.6 (#51)",
+        "DeepSeek provider share dropped 5.4% in one day but remains dominant at 24.8% overall",
+        "OpenAI fell 16.2% over the week to 9.4%, now in fourth place behind the Chinese trio"
+      ],
+      "tone": "big_day",
+      "source": "llm"
+    },
     {
       "date": "2026-09-20",
       "headline": "DeepSeek hits 17.2% \u2014 day 2 of dominance",
