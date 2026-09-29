@@ -1,6 +1,19 @@
 {
-  "generated_at": "2026-09-28T06:05:11.786171+00:00",
+  "generated_at": "2026-09-29T06:23:39.074591+00:00",
   "entries": [
+    {
+      "date": "2026-09-29",
+      "headline": "Zhipu AI surges; three models debut in top 50",
+      "summary": "Zhipu AI jumped 1.5 percentage points in a single day, now holding 8.2% of tokens across its models. Three new entrants\u2014including Anthropic's Claude 4.6 Sonnet and OpenAI's GPT-6 Luna Pro\u2014cracked the top 50, while Mistral AI, an older NVIDIA model, and xAI's Grok dropped out. DeepSeek and stealth remain the duopoly, commanding 40.6% combined.",
+      "highlights": [
+        "Zhipu AI's daily jump: +1.5 percentage points to 8.2% share",
+        "New entrants: anthropic/claude-4.6-sonnet-20260217 (rank 46), meta/muse-spark-1.3-20260902 (rank 49), openai/gpt-6-luna-pro-20260922 (rank 50)",
+        "Dropouts: mistralai/mistral-nemo, nvidia/nemotron-3-super-120b-a12b-20230311:free, x-ai/grok-4.7-20260916",
+        "Top 2 (DeepSeek + stealth): 40.6% of all tokens"
+      ],
+      "tone": "notable",
+      "source": "llm"
+    },
     {
       "date": "2026-09-28",
       "headline": "DeepSeek surges past 24%, stealth holds firm at #1",
