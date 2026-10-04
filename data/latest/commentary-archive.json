@@ -1,6 +1,21 @@
 {
-  "generated_at": "2026-10-03T05:53:27.853071+00:00",
+  "generated_at": "2026-10-04T06:30:51.989510+00:00",
   "entries": [
+    {
+      "date": "2026-10-04",
+      "headline": "Space Bunny keeps climbing; OpenAI takes a tumble",
+      "summary": "stealth/space-bunny-alpha hit an all-time high of 26.9% token share (day 2 of the streak), while DeepSeek held steady at second with 23.5%. OpenAI dropped 3.4 percentage points in a single day, with gpt-6-astra plummeting 21 ranks. Three new models entered the top 51, and xAI's grok-4.7 fell out of the rankings entirely.",
+      "highlights": [
+        "stealth/space-bunny-alpha: 26.9% share, all-time high for day 2 running",
+        "DeepSeek and stealth together command 50.5% of tokens",
+        "OpenAI shed 3.4 points in 24 hours; gpt-6-astra dropped from rank 12 to 33",
+        "Xiaomi's mimo-v2.6-flash jumped 2 spots to rank 3 (+0.3% share)",
+        "New entrants: qwen/qwen3.8-27b-20260814:free (rank 38), inclusionai/ling-3.1-flash-20261002 (rank 39), qwen/qwen3.8-max-20260902 (rank 51)",
+        "Dropouts: x-ai/grok-4.7-20260916, openai/gpt-5.6-terra-20260709, dots-studio/dots-3-note-preview-20260813:free"
+      ],
+      "tone": "big_day",
+      "source": "llm"
+    },
     {
       "date": "2026-10-03",
       "headline": "Space Bunny hits 24.5%, OpenAI's new Luna Pro breaks records",
