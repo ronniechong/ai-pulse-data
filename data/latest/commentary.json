@@ -1,11 +1,12 @@
 {
-  "headline": "DeepSeek still sits on top at 22.3%, while five new names crash the bottom half of the board",
-  "summary": "DeepSeek's v4.1 Flash keeps the No. 1 spot with 22.3% of tokens, and the top three providers hold 49.8% between them. Five fresh entrants landed between ranks 43 and 51, and Claude Fable 5.1 fell off the board from 38th.",
+  "headline": "DeepSeek still holds the top spot at 24.5% as four newcomers and four exits reshuffle the lower ranks",
+  "summary": "DeepSeek keeps the crown with a 24.5% provider share, and the top two providers hold 35.8% between them. Further down, four models arrived and four dropped off, so the tail is getting busier.",
   "highlights": [
-    "Five new entrants arrived in the bottom half: OpenAI's gpt-oss-120b at 43, Perplexity's pplx-decider-v1.1-27b at 45, Qwen's qwen3.8-max at 47, Google's gemini-2.5-flash at 50, and Mistral's mistral-large-4-0 at 51.",
-    "DeepSeek v4-pro took a 7-place tumble to 31st, while Claude Sonnet 5 climbed 9 spots to 35th.",
-    "Claude Fable 5.1 (last ranked 38th) headlines the dropouts, joined by Qwen's qwen3.6-35b-a3b, DeepSeek's v3.2 and two more Qwen models.",
-    "DeepSeek, StepFun and Zhipu AI together account for 49.8% of tokens, and StepFun's step-5-preview sits at No. 2 with 12.1%."
+    "DeepSeek and StepFun together hold 35.8% of tokens, the top two providers' combined share.",
+    "openai/gpt-oss-120b climbed eight places in a day to 35th, the biggest one-day climb on the board.",
+    "moonshotai/kimi-k3 moved up three spots to 13th.",
+    "New entrants: x-ai/grok-4.7 at 40th, qwen/qwen3.8-27b at 45th, meta/muse-wonder at 49th, and qwen/qwen3.7-flash at 51st.",
+    "Dropped off the board: meta/muse-spark-1.3 (last ranked 37th), perplexity/pplx-decider-v1.1-27b, qwen/qwen3.8-max, and mistralai/mistral-large-4-0."
   ],
   "tone": "notable",
   "source": "llm"
