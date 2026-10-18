@@ -1,13 +1,12 @@
 {
-  "headline": "DeepSeek's provider share jumps to 29.9% as Qwen's 35B sprints to an all-time record",
-  "summary": "The provider scoreboard had the day's biggest swing: DeepSeek now holds 29.9% of tokens, up 3.1 points. Meanwhile Qwen's qwen3.6-35b-a3b vaulted 11 places to #15 and set an all-time token-share record at 1.7%.",
+  "headline": "DeepSeek holds 32.1% of tokens while Meta sets a fresh all-time record at 2.6%",
+  "summary": "DeepSeek remains the heavyweight champ, pulling 32.1% of tokens and holding the No. 1 model slot at 22.3%. Meta's muse-spark-1.3-contributor set a new all-time token-share high at 2.6%, and a new DeepSeek entrant barged in straight at seventh place.",
   "highlights": [
-    "DeepSeek's provider share is 29.9% today, up 3.1 points on the day, the biggest provider-level move in the data.",
-    "Qwen's qwen3.6-35b-a3b jumped 11 places to #15 and set an all-time token-share record at 1.7%.",
-    "StepFun's step-5-preview fell 18 spots to #24 and lost 4.6 points of share in a single day. Ouch.",
-    "DeepSeek and Zhipu AI together hold 42.5% of tokens, the top two providers in a combined share.",
-    "NVIDIA's nemotron-3.5-super-vl debuted at #18 with 1.3%, and OpenAI's gpt-6-luna-pro (#47) and gpt-6-astra (#49) made their first appearance.",
-    "Anthropic's claude-fable-5.1, Google's gemini-2.5-flash and gemma-4-26b-a4b-it all dropped off the board."
+    "The top three providers, DeepSeek, Zhipu AI and Anthropic, hold 52.7% of tokens between them.",
+    "meta/muse-spark-1.3-contributor-20260902 posted an all-time token-share record of 2.6%, a first-day record rather than a continuing streak.",
+    "DeepSeek's deepseek/deepseek-v4.1-flash-20261017 debuted at No. 7 with 3.7% of tokens, the day's most notable newcomer.",
+    "anthropic/claude-opus-5-20260723 climbed 11 places in a day to No. 30.",
+    "StepFun's stepfun/step-5-preview-20261008 dropped off the board after sitting at No. 24, and several OpenAI variants fell out of the top 50."
   ],
   "tone": "big_day",
   "source": "llm"

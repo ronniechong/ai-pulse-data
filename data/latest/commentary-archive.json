@@ -1,6 +1,20 @@
 {
-  "generated_at": "2026-10-17T05:10:45.720254+00:00",
+  "generated_at": "2026-10-18T05:15:32.034835+00:00",
   "entries": [
+    {
+      "date": "2026-10-18",
+      "headline": "DeepSeek holds 32.1% of tokens while Meta sets a fresh all-time record at 2.6%",
+      "summary": "DeepSeek remains the heavyweight champ, pulling 32.1% of tokens and holding the No. 1 model slot at 22.3%. Meta's muse-spark-1.3-contributor set a new all-time token-share high at 2.6%, and a new DeepSeek entrant barged in straight at seventh place.",
+      "highlights": [
+        "The top three providers, DeepSeek, Zhipu AI and Anthropic, hold 52.7% of tokens between them.",
+        "meta/muse-spark-1.3-contributor-20260902 posted an all-time token-share record of 2.6%, a first-day record rather than a continuing streak.",
+        "DeepSeek's deepseek/deepseek-v4.1-flash-20261017 debuted at No. 7 with 3.7% of tokens, the day's most notable newcomer.",
+        "anthropic/claude-opus-5-20260723 climbed 11 places in a day to No. 30.",
+        "StepFun's stepfun/step-5-preview-20261008 dropped off the board after sitting at No. 24, and several OpenAI variants fell out of the top 50."
+      ],
+      "tone": "big_day",
+      "source": "llm"
+    },
     {
       "date": "2026-10-17",
       "headline": "DeepSeek's provider share jumps to 29.9% as Qwen's 35B sprints to an all-time record",
