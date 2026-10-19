@@ -1,12 +1,13 @@
 {
-  "headline": "DeepSeek holds 32.1% of tokens while Meta sets a fresh all-time record at 2.6%",
-  "summary": "DeepSeek remains the heavyweight champ, pulling 32.1% of tokens and holding the No. 1 model slot at 22.3%. Meta's muse-spark-1.3-contributor set a new all-time token-share high at 2.6%, and a new DeepSeek entrant barged in straight at seventh place.",
+  "headline": "DeepSeek's v4.1 Flash takes rank one for the first time, with 15.7% of tokens",
+  "summary": "deepseek/deepseek-v4.1-flash-20261017 has taken the top spot for the first time, and its 15.7% share is also an all-time high. DeepSeek as a provider now holds 35.5% of tokens, and the top two providers together hold 46.2%.",
   "highlights": [
-    "The top three providers, DeepSeek, Zhipu AI and Anthropic, hold 52.7% of tokens between them.",
-    "meta/muse-spark-1.3-contributor-20260902 posted an all-time token-share record of 2.6%, a first-day record rather than a continuing streak.",
-    "DeepSeek's deepseek/deepseek-v4.1-flash-20261017 debuted at No. 7 with 3.7% of tokens, the day's most notable newcomer.",
-    "anthropic/claude-opus-5-20260723 climbed 11 places in a day to No. 30.",
-    "StepFun's stepfun/step-5-preview-20261008 dropped off the board after sitting at No. 24, and several OpenAI variants fell out of the top 50."
+    "deepseek/deepseek-v4.1-flash-20261017 jumped six places to No. 1 with 15.7% of tokens, a new all-time share high.",
+    "DeepSeek overall sits at 35.5%, up 3.4% over the day.",
+    "The top two providers, DeepSeek and Zhipu AI, together hold 46.2%.",
+    "nvidia/nemotron-3-ultra-550b-a55b-20260604:free leapt 31 places to No. 8.",
+    "New entrants this round: openai/gpt-6-sol-20260922 at No. 42, mistralai/mistral-nemo at No. 46, and deepseek/deepseek-v3.2-20251201 at No. 49.",
+    "Dropouts: qwen/qwen3.6-35b-a3b-20260415, anthropic/claude-sonnet-5-20260630, and xiaomi/mimo-v2.6-pro-ultraspeed-20260921."
   ],
   "tone": "big_day",
   "source": "llm"
