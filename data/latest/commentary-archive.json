@@ -1,6 +1,21 @@
 {
-  "generated_at": "2026-10-20T05:30:45.491843+00:00",
+  "generated_at": "2026-10-21T05:31:00.276808+00:00",
   "entries": [
+    {
+      "date": "2026-10-21",
+      "headline": "MiniMax's flash model sets an all-time share record at 13.7% and climbs to #2",
+      "summary": "minimax/minimax-m3.1-flash-20261019:free just set an all-time token-share record at 13.7% after a six-spot jump to #2. DeepSeek still runs the top of the board, and the top two providers now hold 42.9% between them.",
+      "highlights": [
+        "DeepSeek's deepseek/deepseek-v4.1-flash-20261017 keeps the #1 spot at 14.5%, which is not a bad place to park.",
+        "MiniMax is up 9.2% as a provider on the day, the biggest one-day provider share gain on the board, now sitting at 14.4%.",
+        "The top three providers, DeepSeek, MiniMax and Zhipu AI, hold 51.4% combined.",
+        "StepFun's stepfun/step-5-preview-20261008 debuts at #13 with a 2.0% share.",
+        "OpenAI's openai/gpt-5.6-sol-20260709 enters the rankings at #47.",
+        "Two models fell off the board: nvidia/nemotron-3-super-120b-a12b-20230311:free and google/gemini-3.7-flash-20260813."
+      ],
+      "tone": "big_day",
+      "source": "llm"
+    },
     {
       "date": "2026-10-20",
       "headline": "MiniMax jumps 4.3 points in a day while DeepSeek still holds the crown at 31.5%",

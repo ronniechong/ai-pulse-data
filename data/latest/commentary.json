@@ -1,13 +1,13 @@
 {
-  "headline": "MiniMax jumps 4.3 points in a day while DeepSeek still holds the crown at 31.5%",
-  "summary": "MiniMax's provider share climbed to 5.2% today, up 4.3 points on the day, and its new m3.1-flash entrant debuted at rank 8. DeepSeek remains the clear leader at 31.5%, though it gave up 4.0 points since yesterday.",
+  "headline": "MiniMax's flash model sets an all-time share record at 13.7% and climbs to #2",
+  "summary": "minimax/minimax-m3.1-flash-20261019:free just set an all-time token-share record at 13.7% after a six-spot jump to #2. DeepSeek still runs the top of the board, and the top two providers now hold 42.9% between them.",
   "highlights": [
-    "MiniMax's provider share rose 4.3 points in one day to 5.2%, the biggest provider-level shift on the board.",
-    "minimax/minimax-m3.1-flash-20261019:free entered at rank 8 with a 4.3% token share, the day's most eye-catching debut.",
-    "DeepSeek still leads with 31.5% of tokens, but its share slipped 4.0 points from yesterday.",
-    "The top two providers, DeepSeek and Zhipu AI, hold 42.4% between them; adding Anthropic lifts the top three to 50.2%.",
-    "Two more new entrants arrived lower down: anthropic/claude-sonnet-5-20260630 at rank 37 and openai/gpt-6-astra-20260903 at rank 47.",
-    "Dropouts today were mistralai/mistral-nemo, openai/gpt-6-luna-20260922:batch, and deepseek/deepseek-v3.2-20251201."
+    "DeepSeek's deepseek/deepseek-v4.1-flash-20261017 keeps the #1 spot at 14.5%, which is not a bad place to park.",
+    "MiniMax is up 9.2% as a provider on the day, the biggest one-day provider share gain on the board, now sitting at 14.4%.",
+    "The top three providers, DeepSeek, MiniMax and Zhipu AI, hold 51.4% combined.",
+    "StepFun's stepfun/step-5-preview-20261008 debuts at #13 with a 2.0% share.",
+    "OpenAI's openai/gpt-5.6-sol-20260709 enters the rankings at #47.",
+    "Two models fell off the board: nvidia/nemotron-3-super-120b-a12b-20230311:free and google/gemini-3.7-flash-20260813."
   ],
   "tone": "big_day",
   "source": "llm"
