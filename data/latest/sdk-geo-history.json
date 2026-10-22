@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T05:30:48.076443+00:00",
+  "generated_at": "2026-10-22T05:34:42.884210+00:00",
   "rows": [
     {
       "date": "2025-01-01",
@@ -3440299,6 +3440299,7038 @@
     },
     {
       "date": "2026-10-20",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "YT",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "US",
+      "downloads": 6355504,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "DE",
+      "downloads": 225546,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "SG",
+      "downloads": 130180,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "NL",
+      "downloads": 96588,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "CA",
+      "downloads": 63664,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "IE",
+      "downloads": 60895,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "HK",
+      "downloads": 59920,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "GB",
+      "downloads": 59213,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "IN",
+      "downloads": 52289,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "JP",
+      "downloads": 49905,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "FR",
+      "downloads": 44207,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "KR",
+      "downloads": 38683,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "AU",
+      "downloads": 29393,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "CN",
+      "downloads": 28375,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "FI",
+      "downloads": 25481,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "BR",
+      "downloads": 24799,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "BE",
+      "downloads": 23048,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "MX",
+      "downloads": 19728,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "IT",
+      "downloads": 19516,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "SE",
+      "downloads": 19215,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "ES",
+      "downloads": 17994,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "TW",
+      "downloads": 12305,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "MY",
+      "downloads": 11782,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "PL",
+      "downloads": 8473,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "IL",
+      "downloads": 8447,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "CH",
+      "downloads": 7692,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "ID",
+      "downloads": 6401,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "TH",
+      "downloads": 5923,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "RU",
+      "downloads": 5595,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "VN",
+      "downloads": 5475,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "AE",
+      "downloads": 4515,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "CL",
+      "downloads": 4348,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "AT",
+      "downloads": 4185,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "TR",
+      "downloads": 3923,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "ZA",
+      "downloads": 3412,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "NO",
+      "downloads": 3232,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "RO",
+      "downloads": 2995,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "CO",
+      "downloads": 2836,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "PT",
+      "downloads": 2791,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "CZ",
+      "downloads": 2737,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "AR",
+      "downloads": 2361,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "UA",
+      "downloads": 2232,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "PH",
+      "downloads": 1982,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "PK",
+      "downloads": 1930,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "NZ",
+      "downloads": 1807,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "LT",
+      "downloads": 1792,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "DK",
+      "downloads": 1786,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "SA",
+      "downloads": 1519,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "EG",
+      "downloads": 1412,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "SI",
+      "downloads": 1398,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "BG",
+      "downloads": 1310,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "EE",
+      "downloads": 1295,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "KZ",
+      "downloads": 1218,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "GR",
+      "downloads": 1180,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "HU",
+      "downloads": 1176,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "RS",
+      "downloads": 895,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "MA",
+      "downloads": 891,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "HR",
+      "downloads": 747,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "UZ",
+      "downloads": 623,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "PE",
+      "downloads": 617,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "NG",
+      "downloads": 592,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "BD",
+      "downloads": 536,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "IS",
+      "downloads": 522,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "LU",
+      "downloads": 499,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "SK",
+      "downloads": 486,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "LV",
+      "downloads": 431,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "KE",
+      "downloads": 402,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "EC",
+      "downloads": 370,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "LK",
+      "downloads": 358,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "CY",
+      "downloads": 354,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "QA",
+      "downloads": 354,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "UY",
+      "downloads": 333,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "TN",
+      "downloads": 327,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "GE",
+      "downloads": 314,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "LB",
+      "downloads": 297,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "MD",
+      "downloads": 296,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "ET",
+      "downloads": 295,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "CR",
+      "downloads": 290,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "JO",
+      "downloads": 271,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "IR",
+      "downloads": 253,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "AL",
+      "downloads": 227,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "AM",
+      "downloads": 224,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "DO",
+      "downloads": 222,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "DZ",
+      "downloads": 208,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "HN",
+      "downloads": 204,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "AZ",
+      "downloads": 197,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "GT",
+      "downloads": 194,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "IQ",
+      "downloads": 190,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "MK",
+      "downloads": 184,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "MT",
+      "downloads": 180,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "BY",
+      "downloads": 176,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "PR",
+      "downloads": 157,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "GH",
+      "downloads": 149,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "KH",
+      "downloads": 147,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "PY",
+      "downloads": 142,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "BO",
+      "downloads": 136,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "SV",
+      "downloads": 133,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "MN",
+      "downloads": 125,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "KW",
+      "downloads": 124,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "OM",
+      "downloads": 110,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "KG",
+      "downloads": 109,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "PA",
+      "downloads": 107,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "UG",
+      "downloads": 96,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "NP",
+      "downloads": 93,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "VE",
+      "downloads": 92,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "BA",
+      "downloads": 91,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "BH",
+      "downloads": 87,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "NA",
+      "downloads": 81,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "TZ",
+      "downloads": 79,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "SN",
+      "downloads": 71,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "ZM",
+      "downloads": 69,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "CI",
+      "downloads": 61,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "MO",
+      "downloads": 61,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "MU",
+      "downloads": 61,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "PS",
+      "downloads": 57,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "RE",
+      "downloads": 57,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "MG",
+      "downloads": 54,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "CM",
+      "downloads": 52,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "ZW",
+      "downloads": 52,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "ME",
+      "downloads": 47,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "RW",
+      "downloads": 47,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "BJ",
+      "downloads": 42,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "TJ",
+      "downloads": 39,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "LA",
+      "downloads": 36,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "LY",
+      "downloads": 36,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "MV",
+      "downloads": 35,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "AD",
+      "downloads": 31,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "SX",
+      "downloads": 30,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "KY",
+      "downloads": 29,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "AO",
+      "downloads": 28,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "TG",
+      "downloads": 28,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "GN",
+      "downloads": 27,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "YE",
+      "downloads": 25,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "CD",
+      "downloads": 24,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "NI",
+      "downloads": 24,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "MQ",
+      "downloads": 23,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "BM",
+      "downloads": 21,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "TT",
+      "downloads": 21,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "GA",
+      "downloads": 20,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "ML",
+      "downloads": 19,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "MZ",
+      "downloads": 19,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "JM",
+      "downloads": 18,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "BZ",
+      "downloads": 16,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "BF",
+      "downloads": 15,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "SY",
+      "downloads": 15,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "BW",
+      "downloads": 13,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "JE",
+      "downloads": 13,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "BN",
+      "downloads": 12,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "SD",
+      "downloads": 12,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "GI",
+      "downloads": 11,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "MC",
+      "downloads": 11,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "CG",
+      "downloads": 10,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "GP",
+      "downloads": 10,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "HT",
+      "downloads": 10,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "NC",
+      "downloads": 10,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "CW",
+      "downloads": 9,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "GF",
+      "downloads": 9,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "IM",
+      "downloads": 9,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "MR",
+      "downloads": 9,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "LI",
+      "downloads": 8,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "TC",
+      "downloads": 8,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "VC",
+      "downloads": 8,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "MM",
+      "downloads": 7,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "MW",
+      "downloads": 7,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "PF",
+      "downloads": 7,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "AF",
+      "downloads": 6,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "BS",
+      "downloads": 6,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "EU",
+      "downloads": 6,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "GG",
+      "downloads": 6,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "GY",
+      "downloads": 6,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "LS",
+      "downloads": 6,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "NE",
+      "downloads": 6,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "BT",
+      "downloads": 5,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "VI",
+      "downloads": 5,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "AG",
+      "downloads": 4,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "BB",
+      "downloads": 4,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "CU",
+      "downloads": 4,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "FJ",
+      "downloads": 4,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "FO",
+      "downloads": 4,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "MP",
+      "downloads": 4,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "SL",
+      "downloads": 4,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "SM",
+      "downloads": 4,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "SO",
+      "downloads": 4,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "SS",
+      "downloads": 4,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "SZ",
+      "downloads": 4,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "TL",
+      "downloads": 4,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "VU",
+      "downloads": 4,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "BL",
+      "downloads": 3,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "CV",
+      "downloads": 3,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "GL",
+      "downloads": 3,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "GU",
+      "downloads": 3,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "PG",
+      "downloads": 3,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "SB",
+      "downloads": 3,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "SC",
+      "downloads": 3,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "VG",
+      "downloads": 3,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "AQ",
+      "downloads": 2,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "GM",
+      "downloads": 2,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "KM",
+      "downloads": 2,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "TD",
+      "downloads": 2,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "VA",
+      "downloads": 2,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "YT",
+      "downloads": 2,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "AS",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "BI",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "CF",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "DJ",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "GD",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "GQ",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "GW",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "LC",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "LR",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "MH",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "PM",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "SR",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "country_code": "TM",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "US",
+      "downloads": 258947,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "DE",
+      "downloads": 16114,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "JP",
+      "downloads": 12913,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "IN",
+      "downloads": 10107,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "SG",
+      "downloads": 5308,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "FR",
+      "downloads": 2661,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "NL",
+      "downloads": 2321,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "IE",
+      "downloads": 1939,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "BE",
+      "downloads": 1479,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "GB",
+      "downloads": 1385,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "CA",
+      "downloads": 1369,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "KR",
+      "downloads": 1328,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "BR",
+      "downloads": 1114,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "FI",
+      "downloads": 1054,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "AU",
+      "downloads": 839,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "SE",
+      "downloads": 812,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "MX",
+      "downloads": 761,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "HK",
+      "downloads": 739,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "TW",
+      "downloads": 515,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "ES",
+      "downloads": 509,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "CN",
+      "downloads": 500,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "VN",
+      "downloads": 461,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "ID",
+      "downloads": 422,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "PL",
+      "downloads": 325,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "IT",
+      "downloads": 322,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "RU",
+      "downloads": 298,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "TR",
+      "downloads": 264,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "CH",
+      "downloads": 251,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "IL",
+      "downloads": 230,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "PK",
+      "downloads": 206,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "CL",
+      "downloads": 191,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "AR",
+      "downloads": 183,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "SA",
+      "downloads": 129,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "TH",
+      "downloads": 123,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "AE",
+      "downloads": 117,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "EG",
+      "downloads": 115,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "CO",
+      "downloads": 109,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "UA",
+      "downloads": 109,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "BD",
+      "downloads": 106,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "RO",
+      "downloads": 99,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "MY",
+      "downloads": 92,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "EE",
+      "downloads": 87,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "ZA",
+      "downloads": 85,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "PT",
+      "downloads": 78,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "AT",
+      "downloads": 74,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "CZ",
+      "downloads": 74,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "PE",
+      "downloads": 69,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "UZ",
+      "downloads": 62,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "NZ",
+      "downloads": 61,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "MA",
+      "downloads": 59,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "SK",
+      "downloads": 52,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "GR",
+      "downloads": 51,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "LK",
+      "downloads": 44,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "NG",
+      "downloads": 38,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "PH",
+      "downloads": 36,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "KZ",
+      "downloads": 35,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "JO",
+      "downloads": 32,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "KE",
+      "downloads": 32,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "DK",
+      "downloads": 29,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "IQ",
+      "downloads": 29,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "SX",
+      "downloads": 29,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "BG",
+      "downloads": 24,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "HU",
+      "downloads": 24,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "EC",
+      "downloads": 23,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "NO",
+      "downloads": 21,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "TN",
+      "downloads": 19,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "KH",
+      "downloads": 16,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "QA",
+      "downloads": 16,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "IR",
+      "downloads": 15,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "LT",
+      "downloads": 15,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "LU",
+      "downloads": 15,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "VE",
+      "downloads": 15,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "AZ",
+      "downloads": 13,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "ET",
+      "downloads": 13,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "RS",
+      "downloads": 13,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "DZ",
+      "downloads": 12,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "GE",
+      "downloads": 12,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "BY",
+      "downloads": 11,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "CR",
+      "downloads": 11,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "YE",
+      "downloads": 11,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "LV",
+      "downloads": 9,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "NP",
+      "downloads": 9,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "UY",
+      "downloads": 9,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "IS",
+      "downloads": 8,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "LB",
+      "downloads": 8,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "MG",
+      "downloads": 8,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "GH",
+      "downloads": 7,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "MT",
+      "downloads": 7,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "PR",
+      "downloads": 7,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "PY",
+      "downloads": 7,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "SN",
+      "downloads": 7,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "SV",
+      "downloads": 7,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "AM",
+      "downloads": 6,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "GT",
+      "downloads": 6,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "HR",
+      "downloads": 6,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "BH",
+      "downloads": 5,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "CM",
+      "downloads": 5,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "KW",
+      "downloads": 5,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "MK",
+      "downloads": 5,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "MM",
+      "downloads": 5,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "MN",
+      "downloads": 5,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "OM",
+      "downloads": 5,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "SI",
+      "downloads": 5,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "ZM",
+      "downloads": 5,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "AO",
+      "downloads": 4,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "BF",
+      "downloads": 4,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "CY",
+      "downloads": 4,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "DO",
+      "downloads": 4,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "LY",
+      "downloads": 4,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "MD",
+      "downloads": 4,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "PS",
+      "downloads": 4,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "RW",
+      "downloads": 4,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "ZW",
+      "downloads": 4,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "AL",
+      "downloads": 3,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "BA",
+      "downloads": 3,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "BJ",
+      "downloads": 3,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "BO",
+      "downloads": 3,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "CI",
+      "downloads": 3,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "MU",
+      "downloads": 3,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "RE",
+      "downloads": 3,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "SY",
+      "downloads": 3,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "TJ",
+      "downloads": 3,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "UG",
+      "downloads": 3,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "LA",
+      "downloads": 2,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "PA",
+      "downloads": 2,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "TZ",
+      "downloads": 2,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "BB",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "CG",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "GN",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "HN",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "IM",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "KG",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "LI",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "MO",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "NI",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "SD",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "SL",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "country_code": "SO",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "US",
+      "downloads": 460148,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "SE",
+      "downloads": 71275,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "NL",
+      "downloads": 39179,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "ES",
+      "downloads": 16776,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "DE",
+      "downloads": 9751,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "FR",
+      "downloads": 6863,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "CN",
+      "downloads": 5307,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "IE",
+      "downloads": 2960,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "CA",
+      "downloads": 2693,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "GB",
+      "downloads": 2556,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "IN",
+      "downloads": 1694,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "SG",
+      "downloads": 1372,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "BE",
+      "downloads": 1296,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "JP",
+      "downloads": 1253,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "FI",
+      "downloads": 1146,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "MX",
+      "downloads": 1111,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "IT",
+      "downloads": 839,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "HK",
+      "downloads": 785,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "KR",
+      "downloads": 772,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "NO",
+      "downloads": 755,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "BR",
+      "downloads": 573,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "DK",
+      "downloads": 538,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "AU",
+      "downloads": 536,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "MY",
+      "downloads": 488,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "CH",
+      "downloads": 467,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "AE",
+      "downloads": 340,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "IL",
+      "downloads": 320,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "PL",
+      "downloads": 305,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "AT",
+      "downloads": 279,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "CZ",
+      "downloads": 251,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "CL",
+      "downloads": 234,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "NC",
+      "downloads": 227,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "VN",
+      "downloads": 227,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "RU",
+      "downloads": 225,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "UA",
+      "downloads": 128,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "ID",
+      "downloads": 119,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "TW",
+      "downloads": 117,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "TR",
+      "downloads": 98,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "PT",
+      "downloads": 96,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "ZA",
+      "downloads": 73,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "RO",
+      "downloads": 71,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "PK",
+      "downloads": 67,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "CO",
+      "downloads": 61,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "GR",
+      "downloads": 58,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "BG",
+      "downloads": 52,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "HU",
+      "downloads": 52,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "MA",
+      "downloads": 51,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "SA",
+      "downloads": 48,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "NG",
+      "downloads": 44,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "LU",
+      "downloads": 43,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "RS",
+      "downloads": 41,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "EG",
+      "downloads": 38,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "TH",
+      "downloads": 34,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "PH",
+      "downloads": 32,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "MK",
+      "downloads": 27,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "LV",
+      "downloads": 26,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "SI",
+      "downloads": 23,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "KG",
+      "downloads": 21,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "AR",
+      "downloads": 19,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "TN",
+      "downloads": 19,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "LT",
+      "downloads": 18,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "NZ",
+      "downloads": 17,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "BY",
+      "downloads": 15,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "DO",
+      "downloads": 14,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "GE",
+      "downloads": 14,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "IR",
+      "downloads": 13,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "LK",
+      "downloads": 13,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "MG",
+      "downloads": 13,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "SK",
+      "downloads": 13,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "BA",
+      "downloads": 12,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "KE",
+      "downloads": 12,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "MD",
+      "downloads": 12,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "PR",
+      "downloads": 12,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "DZ",
+      "downloads": 11,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "PE",
+      "downloads": 11,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "CY",
+      "downloads": 10,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "KZ",
+      "downloads": 10,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "EE",
+      "downloads": 9,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "HR",
+      "downloads": 9,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "BD",
+      "downloads": 8,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "ET",
+      "downloads": 8,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "BJ",
+      "downloads": 7,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "QA",
+      "downloads": 7,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "RE",
+      "downloads": 7,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "CR",
+      "downloads": 6,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "IS",
+      "downloads": 6,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "JO",
+      "downloads": 6,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "NP",
+      "downloads": 6,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "AM",
+      "downloads": 5,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "BO",
+      "downloads": 5,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "LB",
+      "downloads": 5,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "UZ",
+      "downloads": 5,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "EC",
+      "downloads": 4,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "GH",
+      "downloads": 4,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "PY",
+      "downloads": 4,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "VE",
+      "downloads": 4,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "AO",
+      "downloads": 3,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "IQ",
+      "downloads": 3,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "MT",
+      "downloads": 3,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "TZ",
+      "downloads": 3,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "UG",
+      "downloads": 3,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "UY",
+      "downloads": 3,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "CI",
+      "downloads": 2,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "CM",
+      "downloads": 2,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "GT",
+      "downloads": 2,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "HN",
+      "downloads": 2,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "JM",
+      "downloads": 2,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "KW",
+      "downloads": 2,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "MQ",
+      "downloads": 2,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "MU",
+      "downloads": 2,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "NI",
+      "downloads": 2,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "SN",
+      "downloads": 2,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "SV",
+      "downloads": 2,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "AD",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "AL",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "AZ",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "BF",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "BH",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "BW",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "KH",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "LA",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "LY",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "MC",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "ME",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "MM",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "MR",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "MW",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "NE",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "PA",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "SX",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "TJ",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "country_code": "ZM",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "US",
+      "downloads": 327352,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "DE",
+      "downloads": 14935,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "HK",
+      "downloads": 9585,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "SG",
+      "downloads": 9309,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "JP",
+      "downloads": 8612,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "IN",
+      "downloads": 8155,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "NL",
+      "downloads": 6235,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "CA",
+      "downloads": 4932,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "FI",
+      "downloads": 4278,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "CN",
+      "downloads": 4028,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "AU",
+      "downloads": 3869,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "FR",
+      "downloads": 3725,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "KR",
+      "downloads": 3592,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "BE",
+      "downloads": 3475,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "GB",
+      "downloads": 3264,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "TW",
+      "downloads": 3106,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "IE",
+      "downloads": 2924,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "SA",
+      "downloads": 2179,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "BR",
+      "downloads": 1830,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "SE",
+      "downloads": 1811,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "IT",
+      "downloads": 1406,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "ES",
+      "downloads": 1323,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "ID",
+      "downloads": 1231,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "MX",
+      "downloads": 1170,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "ZA",
+      "downloads": 1053,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "PL",
+      "downloads": 1019,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "CH",
+      "downloads": 1007,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "RU",
+      "downloads": 823,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "UY",
+      "downloads": 644,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "VN",
+      "downloads": 603,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "TR",
+      "downloads": 531,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "AT",
+      "downloads": 511,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "IL",
+      "downloads": 504,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "NZ",
+      "downloads": 494,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "PT",
+      "downloads": 479,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "PK",
+      "downloads": 452,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "RO",
+      "downloads": 415,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "UA",
+      "downloads": 358,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "DK",
+      "downloads": 344,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "CZ",
+      "downloads": 297,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "CL",
+      "downloads": 291,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "AE",
+      "downloads": 255,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "MY",
+      "downloads": 252,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "AR",
+      "downloads": 251,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "TH",
+      "downloads": 232,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "CO",
+      "downloads": 206,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "EG",
+      "downloads": 199,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "NO",
+      "downloads": 189,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "LT",
+      "downloads": 184,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "NG",
+      "downloads": 165,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "CY",
+      "downloads": 164,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "BD",
+      "downloads": 157,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "PH",
+      "downloads": 151,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "PE",
+      "downloads": 140,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "GR",
+      "downloads": 136,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "MA",
+      "downloads": 123,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "BG",
+      "downloads": 112,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "EE",
+      "downloads": 110,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "TN",
+      "downloads": 102,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "HU",
+      "downloads": 99,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "SK",
+      "downloads": 92,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "EC",
+      "downloads": 89,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "KZ",
+      "downloads": 82,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "DZ",
+      "downloads": 78,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "KE",
+      "downloads": 71,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "LK",
+      "downloads": 69,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "AD",
+      "downloads": 64,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "IR",
+      "downloads": 62,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "ET",
+      "downloads": 60,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "RS",
+      "downloads": 58,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "AM",
+      "downloads": 55,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "JO",
+      "downloads": 55,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "NA",
+      "downloads": 54,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "AL",
+      "downloads": 50,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "IQ",
+      "downloads": 48,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "LU",
+      "downloads": 48,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "BO",
+      "downloads": 47,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "UZ",
+      "downloads": 47,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "HR",
+      "downloads": 43,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "CR",
+      "downloads": 41,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "BY",
+      "downloads": 39,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "GE",
+      "downloads": 39,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "VE",
+      "downloads": 38,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "CI",
+      "downloads": 36,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "GH",
+      "downloads": 36,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "QA",
+      "downloads": 34,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "AZ",
+      "downloads": 29,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "MG",
+      "downloads": 28,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "NP",
+      "downloads": 27,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "TZ",
+      "downloads": 25,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "IS",
+      "downloads": 24,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "LB",
+      "downloads": 24,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "LV",
+      "downloads": 24,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "MD",
+      "downloads": 24,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "UG",
+      "downloads": 24,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "KH",
+      "downloads": 23,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "PY",
+      "downloads": 22,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "ZM",
+      "downloads": 22,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "SI",
+      "downloads": 21,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "DO",
+      "downloads": 20,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "SN",
+      "downloads": 18,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "GT",
+      "downloads": 17,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "BH",
+      "downloads": 16,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "OM",
+      "downloads": 15,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "TG",
+      "downloads": 15,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "HN",
+      "downloads": 14,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "PA",
+      "downloads": 14,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "SV",
+      "downloads": 14,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "AO",
+      "downloads": 13,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "BJ",
+      "downloads": 13,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "KG",
+      "downloads": 13,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "PR",
+      "downloads": 13,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "CD",
+      "downloads": 12,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "CM",
+      "downloads": 12,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "MN",
+      "downloads": 12,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "MQ",
+      "downloads": 11,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "RW",
+      "downloads": 11,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "ZW",
+      "downloads": 11,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "YE",
+      "downloads": 10,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "BA",
+      "downloads": 9,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "KW",
+      "downloads": 9,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "MU",
+      "downloads": 9,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "SD",
+      "downloads": 9,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "TJ",
+      "downloads": 9,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "MT",
+      "downloads": 8,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "LY",
+      "downloads": 7,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "ML",
+      "downloads": 7,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "SY",
+      "downloads": 7,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "MK",
+      "downloads": 6,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "LS",
+      "downloads": 5,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "MZ",
+      "downloads": 5,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "RE",
+      "downloads": 5,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "AF",
+      "downloads": 4,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "CU",
+      "downloads": 4,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "GA",
+      "downloads": 4,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "GN",
+      "downloads": 4,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "NI",
+      "downloads": 4,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "PS",
+      "downloads": 4,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "BF",
+      "downloads": 3,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "BT",
+      "downloads": 3,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "ME",
+      "downloads": 3,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "MO",
+      "downloads": 3,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "MR",
+      "downloads": 3,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "MW",
+      "downloads": 3,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "CG",
+      "downloads": 2,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "FJ",
+      "downloads": 2,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "GM",
+      "downloads": 2,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "HT",
+      "downloads": 2,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "IM",
+      "downloads": 2,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "KM",
+      "downloads": 2,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "MM",
+      "downloads": 2,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "MV",
+      "downloads": 2,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "NC",
+      "downloads": 2,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "NE",
+      "downloads": 2,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "PF",
+      "downloads": 2,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "SO",
+      "downloads": 2,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "SS",
+      "downloads": 2,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "TT",
+      "downloads": 2,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "BB",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "BI",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "BN",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "BS",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "BW",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "BZ",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "CF",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "GG",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "GL",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "GP",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "JM",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "KY",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "LA",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "LR",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "MF",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "PG",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "SL",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "SX",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "SZ",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "TD",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "ollama",
+      "provider": "Ollama",
+      "country_code": "VG",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "US",
+      "downloads": 10379798,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "GB",
+      "downloads": 773396,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "SG",
+      "downloads": 483981,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "DE",
+      "downloads": 387225,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "NL",
+      "downloads": 368639,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "IN",
+      "downloads": 285877,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "HK",
+      "downloads": 183309,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "IE",
+      "downloads": 140296,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "JP",
+      "downloads": 137381,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "CA",
+      "downloads": 104653,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "KR",
+      "downloads": 83490,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "FR",
+      "downloads": 82847,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "SE",
+      "downloads": 82334,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "CN",
+      "downloads": 74605,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "FI",
+      "downloads": 68629,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "BR",
+      "downloads": 55448,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "AU",
+      "downloads": 46800,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "BE",
+      "downloads": 38235,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "ES",
+      "downloads": 38050,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "IT",
+      "downloads": 31277,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "MY",
+      "downloads": 30693,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "MX",
+      "downloads": 27106,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "IL",
+      "downloads": 20690,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "RU",
+      "downloads": 20329,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "PL",
+      "downloads": 18930,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "CH",
+      "downloads": 17261,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "TW",
+      "downloads": 16521,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "ID",
+      "downloads": 14879,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "AE",
+      "downloads": 11443,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "TH",
+      "downloads": 10618,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "VN",
+      "downloads": 9728,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "AT",
+      "downloads": 7611,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "CL",
+      "downloads": 7311,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "TR",
+      "downloads": 7106,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "CZ",
+      "downloads": 6049,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "ZA",
+      "downloads": 5583,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "NO",
+      "downloads": 5531,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "DK",
+      "downloads": 5494,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "RO",
+      "downloads": 5309,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "PT",
+      "downloads": 5167,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "CO",
+      "downloads": 4705,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "PK",
+      "downloads": 4055,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "UA",
+      "downloads": 3694,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "AR",
+      "downloads": 3472,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "SA",
+      "downloads": 3257,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "KZ",
+      "downloads": 2789,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "NZ",
+      "downloads": 2512,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "EE",
+      "downloads": 2501,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "PH",
+      "downloads": 2476,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "EG",
+      "downloads": 2371,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "MA",
+      "downloads": 2358,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "GR",
+      "downloads": 1808,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "BG",
+      "downloads": 1779,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "HU",
+      "downloads": 1756,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "LT",
+      "downloads": 1659,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "PE",
+      "downloads": 1633,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "RS",
+      "downloads": 1419,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "UY",
+      "downloads": 1255,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "IR",
+      "downloads": 1187,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "NG",
+      "downloads": 1173,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "LV",
+      "downloads": 1160,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "EC",
+      "downloads": 1158,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "LU",
+      "downloads": 1128,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "UZ",
+      "downloads": 1117,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "SK",
+      "downloads": 1097,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "BD",
+      "downloads": 1074,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "SI",
+      "downloads": 1052,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "IS",
+      "downloads": 933,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "KE",
+      "downloads": 800,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "HR",
+      "downloads": 796,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "QA",
+      "downloads": 744,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "CY",
+      "downloads": 722,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "BY",
+      "downloads": 691,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "DZ",
+      "downloads": 666,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "LK",
+      "downloads": 651,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "GE",
+      "downloads": 641,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "TN",
+      "downloads": 637,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "JO",
+      "downloads": 566,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "AZ",
+      "downloads": 480,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "DO",
+      "downloads": 473,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "AM",
+      "downloads": 469,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "CR",
+      "downloads": 435,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "LB",
+      "downloads": 418,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "KG",
+      "downloads": 416,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "MD",
+      "downloads": 391,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "IQ",
+      "downloads": 339,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "AL",
+      "downloads": 322,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "ET",
+      "downloads": 308,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "BO",
+      "downloads": 301,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "CI",
+      "downloads": 293,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "MK",
+      "downloads": 290,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "PY",
+      "downloads": 281,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "GH",
+      "downloads": 275,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "KH",
+      "downloads": 240,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "GT",
+      "downloads": 212,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "OM",
+      "downloads": 204,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "PR",
+      "downloads": 203,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "VE",
+      "downloads": 202,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "NP",
+      "downloads": 195,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "MT",
+      "downloads": 191,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "BA",
+      "downloads": 185,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "MN",
+      "downloads": 180,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "SV",
+      "downloads": 177,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "PA",
+      "downloads": 169,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "BH",
+      "downloads": 168,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "UG",
+      "downloads": 154,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "MG",
+      "downloads": 141,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "SN",
+      "downloads": 135,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "KW",
+      "downloads": 131,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "AD",
+      "downloads": 122,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "BN",
+      "downloads": 116,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "TZ",
+      "downloads": 115,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "TJ",
+      "downloads": 113,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "KY",
+      "downloads": 112,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "PS",
+      "downloads": 107,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "AO",
+      "downloads": 105,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "MO",
+      "downloads": 103,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "CM",
+      "downloads": 99,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "MU",
+      "downloads": 99,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "HN",
+      "downloads": 94,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "RW",
+      "downloads": 93,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "NA",
+      "downloads": 84,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "BJ",
+      "downloads": 83,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "ZM",
+      "downloads": 83,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "NI",
+      "downloads": 78,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "ME",
+      "downloads": 77,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "YE",
+      "downloads": 72,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "CD",
+      "downloads": 69,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "JM",
+      "downloads": 69,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "RE",
+      "downloads": 69,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "TG",
+      "downloads": 60,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "LY",
+      "downloads": 55,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "ZW",
+      "downloads": 54,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "BF",
+      "downloads": 49,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "ML",
+      "downloads": 47,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "MZ",
+      "downloads": 44,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "LA",
+      "downloads": 43,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "MM",
+      "downloads": 43,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "MV",
+      "downloads": 40,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "SL",
+      "downloads": 40,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "TT",
+      "downloads": 39,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "GN",
+      "downloads": 33,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "SX",
+      "downloads": 33,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "SY",
+      "downloads": 30,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "BZ",
+      "downloads": 29,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "AF",
+      "downloads": 26,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "MQ",
+      "downloads": 25,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "MR",
+      "downloads": 25,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "LI",
+      "downloads": 24,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "BM",
+      "downloads": 21,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "GA",
+      "downloads": 19,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "SD",
+      "downloads": 19,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "CG",
+      "downloads": 18,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "SO",
+      "downloads": 18,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "EU",
+      "downloads": 17,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "GY",
+      "downloads": 17,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "JE",
+      "downloads": 16,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "PF",
+      "downloads": 16,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "PG",
+      "downloads": 16,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "BW",
+      "downloads": 15,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "CU",
+      "downloads": 15,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "MW",
+      "downloads": 15,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "FJ",
+      "downloads": 14,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "FO",
+      "downloads": 14,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "BB",
+      "downloads": 13,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "BT",
+      "downloads": 13,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "CV",
+      "downloads": 13,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "IM",
+      "downloads": 13,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "GP",
+      "downloads": 11,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "HT",
+      "downloads": 10,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "LS",
+      "downloads": 10,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "NE",
+      "downloads": 10,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "SZ",
+      "downloads": 10,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "BS",
+      "downloads": 9,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "MC",
+      "downloads": 9,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "SM",
+      "downloads": 8,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "SR",
+      "downloads": 8,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "TD",
+      "downloads": 8,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "VC",
+      "downloads": 8,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "VU",
+      "downloads": 8,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "AG",
+      "downloads": 7,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "CW",
+      "downloads": 7,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "NC",
+      "downloads": 7,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "SC",
+      "downloads": 7,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "SS",
+      "downloads": 7,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "BI",
+      "downloads": 6,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "GF",
+      "downloads": 5,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "GU",
+      "downloads": 5,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "KN",
+      "downloads": 5,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "VG",
+      "downloads": 5,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "AW",
+      "downloads": 4,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "GG",
+      "downloads": 4,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "GI",
+      "downloads": 4,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "LR",
+      "downloads": 4,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "AQ",
+      "downloads": 3,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "DJ",
+      "downloads": 3,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "GL",
+      "downloads": 3,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "GM",
+      "downloads": 3,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "KM",
+      "downloads": 3,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "LC",
+      "downloads": 3,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "AS",
+      "downloads": 2,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "CF",
+      "downloads": 2,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "MF",
+      "downloads": 2,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "MH",
+      "downloads": 2,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "TL",
+      "downloads": 2,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "TM",
+      "downloads": 2,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "VA",
+      "downloads": 2,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "CK",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "ER",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "GD",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "GQ",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "SB",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "TC",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "TO",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
+      "package": "openai",
+      "provider": "OpenAI",
+      "country_code": "VI",
+      "downloads": 1,
+      "source": "pipeline"
+    },
+    {
+      "date": "2026-10-21",
       "package": "openai",
       "provider": "OpenAI",
       "country_code": "YT",
