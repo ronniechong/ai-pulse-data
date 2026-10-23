@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T05:34:45.019526+00:00",
+  "generated_at": "2026-10-23T05:33:04.358121+00:00",
   "source": "derived from sdk-geo-history.json rollup via the static country-to-region crosswalk",
   "regions": [
     "North America",
@@ -159303,6 +159303,286 @@
       "package": "openai",
       "provider": "OpenAI",
       "downloads": 291905
+    },
+    {
+      "date": "2026-10-22",
+      "region": "Africa",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "downloads": 5950
+    },
+    {
+      "date": "2026-10-22",
+      "region": "Africa",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "downloads": 211
+    },
+    {
+      "date": "2026-10-22",
+      "region": "Africa",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "downloads": 160
+    },
+    {
+      "date": "2026-10-22",
+      "region": "Africa",
+      "package": "ollama",
+      "provider": "Ollama",
+      "downloads": 1534
+    },
+    {
+      "date": "2026-10-22",
+      "region": "Africa",
+      "package": "openai",
+      "provider": "OpenAI",
+      "downloads": 11733
+    },
+    {
+      "date": "2026-10-22",
+      "region": "East Asia",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "downloads": 153445
+    },
+    {
+      "date": "2026-10-22",
+      "region": "East Asia",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "downloads": 16189
+    },
+    {
+      "date": "2026-10-22",
+      "region": "East Asia",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "downloads": 7401
+    },
+    {
+      "date": "2026-10-22",
+      "region": "East Asia",
+      "package": "ollama",
+      "provider": "Ollama",
+      "downloads": 20023
+    },
+    {
+      "date": "2026-10-22",
+      "region": "East Asia",
+      "package": "openai",
+      "provider": "OpenAI",
+      "downloads": 443870
+    },
+    {
+      "date": "2026-10-22",
+      "region": "Europe",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "downloads": 642529
+    },
+    {
+      "date": "2026-10-22",
+      "region": "Europe",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "downloads": 29494
+    },
+    {
+      "date": "2026-10-22",
+      "region": "Europe",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "downloads": 166674
+    },
+    {
+      "date": "2026-10-22",
+      "region": "Europe",
+      "package": "ollama",
+      "provider": "Ollama",
+      "downloads": 57514
+    },
+    {
+      "date": "2026-10-22",
+      "region": "Europe",
+      "package": "openai",
+      "provider": "OpenAI",
+      "downloads": 2360650
+    },
+    {
+      "date": "2026-10-22",
+      "region": "Latin America",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "downloads": 52707
+    },
+    {
+      "date": "2026-10-22",
+      "region": "Latin America",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "downloads": 2372
+    },
+    {
+      "date": "2026-10-22",
+      "region": "Latin America",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "downloads": 2160
+    },
+    {
+      "date": "2026-10-22",
+      "region": "Latin America",
+      "package": "ollama",
+      "provider": "Ollama",
+      "downloads": 4869
+    },
+    {
+      "date": "2026-10-22",
+      "region": "Latin America",
+      "package": "openai",
+      "provider": "OpenAI",
+      "downloads": 109836
+    },
+    {
+      "date": "2026-10-22",
+      "region": "Middle East",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "downloads": 25437
+    },
+    {
+      "date": "2026-10-22",
+      "region": "Middle East",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "downloads": 1068
+    },
+    {
+      "date": "2026-10-22",
+      "region": "Middle East",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "downloads": 832
+    },
+    {
+      "date": "2026-10-22",
+      "region": "Middle East",
+      "package": "ollama",
+      "provider": "Ollama",
+      "downloads": 4672
+    },
+    {
+      "date": "2026-10-22",
+      "region": "Middle East",
+      "package": "openai",
+      "provider": "OpenAI",
+      "downloads": 60345
+    },
+    {
+      "date": "2026-10-22",
+      "region": "North America",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "downloads": 6596344
+    },
+    {
+      "date": "2026-10-22",
+      "region": "North America",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "downloads": 239934
+    },
+    {
+      "date": "2026-10-22",
+      "region": "North America",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "downloads": 442695
+    },
+    {
+      "date": "2026-10-22",
+      "region": "North America",
+      "package": "ollama",
+      "provider": "Ollama",
+      "downloads": 343175
+    },
+    {
+      "date": "2026-10-22",
+      "region": "North America",
+      "package": "openai",
+      "provider": "OpenAI",
+      "downloads": 11025720
+    },
+    {
+      "date": "2026-10-22",
+      "region": "SE Asia",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "downloads": 143041
+    },
+    {
+      "date": "2026-10-22",
+      "region": "SE Asia",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "downloads": 4820
+    },
+    {
+      "date": "2026-10-22",
+      "region": "SE Asia",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "downloads": 1506
+    },
+    {
+      "date": "2026-10-22",
+      "region": "SE Asia",
+      "package": "ollama",
+      "provider": "Ollama",
+      "downloads": 12723
+    },
+    {
+      "date": "2026-10-22",
+      "region": "SE Asia",
+      "package": "openai",
+      "provider": "OpenAI",
+      "downloads": 576112
+    },
+    {
+      "date": "2026-10-22",
+      "region": "South Asia",
+      "package": "anthropic",
+      "provider": "Anthropic",
+      "downloads": 55339
+    },
+    {
+      "date": "2026-10-22",
+      "region": "South Asia",
+      "package": "google-generativeai",
+      "provider": "Google",
+      "downloads": 10881
+    },
+    {
+      "date": "2026-10-22",
+      "region": "South Asia",
+      "package": "mistralai",
+      "provider": "Mistral AI",
+      "downloads": 2085
+    },
+    {
+      "date": "2026-10-22",
+      "region": "South Asia",
+      "package": "ollama",
+      "provider": "Ollama",
+      "downloads": 10508
+    },
+    {
+      "date": "2026-10-22",
+      "region": "South Asia",
+      "package": "openai",
+      "provider": "OpenAI",
+      "downloads": 270102
     }
   ]
 }
