@@ -1,6 +1,21 @@
 {
-  "generated_at": "2026-10-25T05:28:42.229885+00:00",
+  "generated_at": "2026-10-26T05:33:40.226088+00:00",
   "entries": [
+    {
+      "date": "2026-10-26",
+      "headline": "DeepSeek's 37.6% provider share and a 5-day record streak keep the top of the board crowded",
+      "summary": "DeepSeek's provider share hit 37.6% today, up 3.1 points on the day, and its flagship deepseek-v4.1-flash-20261017 is on day 5 of holding its all-time record at 24.7% token share. Meanwhile, the top two providers, DeepSeek and Zhipu AI, together hold 49.6%, and the top three reach 58.3% with OpenAI.",
+      "highlights": [
+        "DeepSeek's 37.6% provider share is the biggest number on the board, and it's gained 3.1 points since yesterday.",
+        "deepseek/deepseek-v4.1-flash-20261017 is on day 5 of its all-time record at 24.7% token share, and it still isn't giving up the top spot.",
+        "Zhipu AI (12.0%) and OpenAI (8.7%) round out the top three, which together hold 58.3% of tokens.",
+        "Newcomers this round: mistralai/mistral-nemo at 47th, deepseek/deepseek-v3.2-20251201 at 50th, and stepfun/step-3.7-flash-20260528 at 51st.",
+        "Three models fell off the chart: qwen/qwen3.7-flash-20260727, openai/gpt-6-astra-20260903, and openai/gpt-6-luna-decisions-20261006.",
+        "minimax/minimax-m3.1-flash-20261019 set a fresh all-time high of 1.4% token share, now on day 2 of that record."
+      ],
+      "tone": "big_day",
+      "source": "llm"
+    },
     {
       "date": "2026-10-25",
       "headline": "DeepSeek holds 34.5% of all tokens, and its flagship keeps its record on day four",
