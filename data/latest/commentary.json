@@ -1,13 +1,12 @@
 {
-  "headline": "DeepSeek's 37.6% provider share and a 5-day record streak keep the top of the board crowded",
-  "summary": "DeepSeek's provider share hit 37.6% today, up 3.1 points on the day, and its flagship deepseek-v4.1-flash-20261017 is on day 5 of holding its all-time record at 24.7% token share. Meanwhile, the top two providers, DeepSeek and Zhipu AI, together hold 49.6%, and the top three reach 58.3% with OpenAI.",
+  "headline": "DeepSeek still owns a third of the board, but its share slipped 3.8 points today",
+  "summary": "DeepSeek remains the heavyweight at 33.8% of tokens, though it gave back 3.8 points since yesterday. MiniMax's minimax-m3.1-flash is on day 3 of its all-time token-share record at 2.6%.",
   "highlights": [
-    "DeepSeek's 37.6% provider share is the biggest number on the board, and it's gained 3.1 points since yesterday.",
-    "deepseek/deepseek-v4.1-flash-20261017 is on day 5 of its all-time record at 24.7% token share, and it still isn't giving up the top spot.",
-    "Zhipu AI (12.0%) and OpenAI (8.7%) round out the top three, which together hold 58.3% of tokens.",
-    "Newcomers this round: mistralai/mistral-nemo at 47th, deepseek/deepseek-v3.2-20251201 at 50th, and stepfun/step-3.7-flash-20260528 at 51st.",
-    "Three models fell off the chart: qwen/qwen3.7-flash-20260727, openai/gpt-6-astra-20260903, and openai/gpt-6-luna-decisions-20261006.",
-    "minimax/minimax-m3.1-flash-20261019 set a fresh all-time high of 1.4% token share, now on day 2 of that record."
+    "DeepSeek's provider share is 33.8%, down 3.8 points on the day: still the heavyweight, just a little less heavy.",
+    "Zhipu AI and DeepSeek together hold 46.3% of tokens; add OpenAI and the top three reach 55.7%.",
+    "Tencent's provider share jumped 1.6 points to 7.3%, the biggest one-day gain among the leaders.",
+    "minimax-m3.1-flash climbed 6 spots to rank 10 and is on day 3 of its all-time token-share record at 2.6%.",
+    "Three OpenAI models debuted in the lower reaches of the board: gpt-6-sol at 45, gpt-oss-120b at 50, and gpt-6-astra at 51."
   ],
   "tone": "big_day",
   "source": "llm"
