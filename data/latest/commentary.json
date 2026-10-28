@@ -1,13 +1,13 @@
 {
-  "headline": "DeepSeek still owns a third of the board, but its share slipped 3.8 points today",
-  "summary": "DeepSeek remains the heavyweight at 33.8% of tokens, though it gave back 3.8 points since yesterday. MiniMax's minimax-m3.1-flash is on day 3 of its all-time token-share record at 2.6%.",
+  "headline": "MiniMax M3 takes a 22-place tumble while DeepSeek keeps the top spot warm",
+  "summary": "The day's biggest move belongs to MiniMax's M3, which slid 22 places to 46th. Two new models made the board at 40th and 44th, and DeepSeek's v4.1 Flash still sits comfortably on top at 22.4%.",
   "highlights": [
-    "DeepSeek's provider share is 33.8%, down 3.8 points on the day: still the heavyweight, just a little less heavy.",
-    "Zhipu AI and DeepSeek together hold 46.3% of tokens; add OpenAI and the top three reach 55.7%.",
-    "Tencent's provider share jumped 1.6 points to 7.3%, the biggest one-day gain among the leaders.",
-    "minimax-m3.1-flash climbed 6 spots to rank 10 and is on day 3 of its all-time token-share record at 2.6%.",
-    "Three OpenAI models debuted in the lower reaches of the board: gpt-6-sol at 45, gpt-oss-120b at 50, and gpt-6-astra at 51."
+    "minimax/minimax-m3-20260531 dropped 22 places to 46th, with a 0.2% token share.",
+    "New entrants: openai/gpt-6.1-terra-20261026 at 40th and qwen/qwen3.7-flash-20260727 at 44th.",
+    "Dropouts: openai/gpt-6-sol-20260922 (last ranked 45th) and google/gemma-4-26b-a4b-it-20260403 (last ranked 48th).",
+    "minimax/minimax-m3.1-flash-20261019 is on day 4 of its all-time token share record, at 3.1% and ranked 8th.",
+    "deepseek/deepseek-v4.1-flash-20261017 leads the board at 22.4%, and the top two providers, DeepSeek and Zhipu AI, hold 46.1% combined."
   ],
-  "tone": "big_day",
+  "tone": "notable",
   "source": "llm"
 }
