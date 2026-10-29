@@ -1,12 +1,13 @@
 {
-  "headline": "MiniMax M3 takes a 22-place tumble while DeepSeek keeps the top spot warm",
-  "summary": "The day's biggest move belongs to MiniMax's M3, which slid 22 places to 46th. Two new models made the board at 40th and 44th, and DeepSeek's v4.1 Flash still sits comfortably on top at 22.4%.",
+  "headline": "Two newcomers join at the back, and DeepSeek's provider share climbs to 37.3%",
+  "summary": "Anthropic's claude-fable-5.1 and Google's gemma-4-26b-a4b-it debut at ranks 50 and 51, while gemini-3.7-flash and Inkling fall off the bottom. Up top, deepseek-v4.1-flash-20261017 still holds #1 with 24.8% of tokens, and DeepSeek and Zhipu AI together account for 48.3%.",
   "highlights": [
-    "minimax/minimax-m3-20260531 dropped 22 places to 46th, with a 0.2% token share.",
-    "New entrants: openai/gpt-6.1-terra-20261026 at 40th and qwen/qwen3.7-flash-20260727 at 44th.",
-    "Dropouts: openai/gpt-6-sol-20260922 (last ranked 45th) and google/gemma-4-26b-a4b-it-20260403 (last ranked 48th).",
-    "minimax/minimax-m3.1-flash-20261019 is on day 4 of its all-time token share record, at 3.1% and ranked 8th.",
-    "deepseek/deepseek-v4.1-flash-20261017 leads the board at 22.4%, and the top two providers, DeepSeek and Zhipu AI, hold 46.1% combined."
+    "New entrants: anthropic/claude-fable-5.1-20260831 debuts at #50 with a 0.2% token share, and google/gemma-4-26b-a4b-it-20260403 arrives at #51, also at 0.2%.",
+    "Dropouts: google/gemini-3.7-flash-20260813 (last seen at #49) and thinkingmachines/inkling-20260715:free (last seen at #51) are gone from the board.",
+    "StepFun's stepfun/step-5-preview-20261008 is the week's climber, up 15 places over seven days to #8.",
+    "openai/gpt-6.1-sol-20260929 jumped six spots in a single day to #13.",
+    "Xiaomi is sliding: mimo-v2.6-flash-20260921 dropped four places today to #17 and 13 over 30 days.",
+    "DeepSeek and Zhipu AI hold 48.3% between them, and adding OpenAI and Anthropic lifts the top four to 64.0%."
   ],
   "tone": "notable",
   "source": "llm"
