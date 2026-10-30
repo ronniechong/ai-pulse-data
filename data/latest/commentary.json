@@ -1,14 +1,13 @@
 {
-  "headline": "Two newcomers join at the back, and DeepSeek's provider share climbs to 37.3%",
-  "summary": "Anthropic's claude-fable-5.1 and Google's gemma-4-26b-a4b-it debut at ranks 50 and 51, while gemini-3.7-flash and Inkling fall off the bottom. Up top, deepseek-v4.1-flash-20261017 still holds #1 with 24.8% of tokens, and DeepSeek and Zhipu AI together account for 48.3%.",
+  "headline": "OpenAI's gpt-6-luna sets an all-time record at 8.3%, and OpenAI jumps 5.6 points in a day",
+  "summary": "OpenAI had the loudest day on the board. gpt-6-luna hit an all-time token-share high of 8.3%, and OpenAI as a provider climbed 5.6 points in a single day to 14.4%. DeepSeek still sits on top at 34.5%, and the top two providers together hold 49.0%.",
   "highlights": [
-    "New entrants: anthropic/claude-fable-5.1-20260831 debuts at #50 with a 0.2% token share, and google/gemma-4-26b-a4b-it-20260403 arrives at #51, also at 0.2%.",
-    "Dropouts: google/gemini-3.7-flash-20260813 (last seen at #49) and thinkingmachines/inkling-20260715:free (last seen at #51) are gone from the board.",
-    "StepFun's stepfun/step-5-preview-20261008 is the week's climber, up 15 places over seven days to #8.",
-    "openai/gpt-6.1-sol-20260929 jumped six spots in a single day to #13.",
-    "Xiaomi is sliding: mimo-v2.6-flash-20260921 dropped four places today to #17 and 13 over 30 days.",
-    "DeepSeek and Zhipu AI hold 48.3% between them, and adding OpenAI and Anthropic lifts the top four to 64.0%."
+    "gpt-6-luna is on day 1 of its all-time record and has climbed four spots to #2 in one day.",
+    "gpt-6.1-sol also posted an all-time high at 3.4%, moving up four spots to #9.",
+    "DeepSeek and OpenAI together hold 49.0% of tokens, with DeepSeek alone at 34.5%.",
+    "Two newcomers arrived: Perplexity's pplx-decider-v1.2 debuts at #48 and thinkingmachines' inkling at #51.",
+    "Upstage's solar-pro4 (last at #47) and Anthropic's claude-fable-5.1 (last at #50) dropped off the board."
   ],
-  "tone": "notable",
+  "tone": "big_day",
   "source": "llm"
 }
