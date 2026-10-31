@@ -1,6 +1,21 @@
 {
-  "generated_at": "2026-10-30T06:36:38.847022+00:00",
+  "generated_at": "2026-10-31T06:26:13.518325+00:00",
   "entries": [
+    {
+      "date": "2026-10-31",
+      "headline": "DeepSeek's v4.1 Flash sets a 26.9% all-time share record as DeepSeek reaches 36.5% of tokens",
+      "summary": "DeepSeek had the day, and it wasn't close. Its deepseek/deepseek-v4.1-flash-20261017 model set an all-time token share record at 26.9%, and the provider now sits at 36.5% of all tokens. DeepSeek and OpenAI together hold 47.5%.",
+      "highlights": [
+        "A fresh record, not a rerun: deepseek/deepseek-v4.1-flash-20261017 is at 26.9% of tokens and holds rank 1.",
+        "MiniMax's minimax/minimax-m3.1-flash-20261019 climbed 23 spots over seven days to #8 and set its own all-time record at 3.5%.",
+        "Moonshot AI's moonshotai/kimi-k3.1-pro-20261023 jumped 8 places in a day to #15, also a fresh all-time record at 1.7%.",
+        "Three newcomers arrived: openai/gpt-6-luna-decisions-20261006 at #41, google/gemini-3.7-flash-20260813 at #47, and upstage/solar-pro4-20260810 at #50.",
+        "Three models fell out of the top 50: perplexity/pplx-decider-v1.2-20261016, minimax/minimax-m3-20260531, and google/gemma-4-26b-a4b-it-20260403.",
+        "DeepSeek and OpenAI, the top two providers, hold 47.5% of tokens combined."
+      ],
+      "tone": "big_day",
+      "source": "llm"
+    },
     {
       "date": "2026-10-30",
       "headline": "OpenAI's gpt-6-luna sets an all-time record at 8.3%, and OpenAI jumps 5.6 points in a day",
