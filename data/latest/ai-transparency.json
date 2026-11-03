@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T06:58:24.548378+00:00",
+  "generated_at": "2026-11-03T07:22:17.106574+00:00",
   "window_days": 30,
   "source": "LLM reliability from Langfuse ai-pulse-commentary traces; tone distribution from local commentary.json history; spend from spend-ledger.json; eval-suite health from a live re-run of evals/fixtures",
   "llm_reliability": {
@@ -7,19 +7,19 @@
     "success_count": 30,
     "fallback_count": 0,
     "success_rate": 1.0,
-    "avg_latency_ms": 7434.8
+    "avg_latency_ms": 7463.9
   },
   "tone_distribution": {
     "quiet": 0,
-    "notable": 5,
-    "big_day": 25,
+    "notable": 6,
+    "big_day": 24,
     "days_checked": 30
   },
   "spend": {
-    "month_to_date_usd": 0.003908,
-    "lifetime_usd": 1.004157,
-    "lifetime_calls": 101,
-    "cost_per_generation_usd": 0.009942
+    "month_to_date_usd": 0.00598,
+    "lifetime_usd": 1.006229,
+    "lifetime_calls": 102,
+    "cost_per_generation_usd": 0.009865
   },
   "eval_suite": {
     "total": 24,

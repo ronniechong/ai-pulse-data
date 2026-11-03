@@ -1,13 +1,13 @@
 {
-  "headline": "Moonshot's Kimi K3.1 Pro sets an all-time record while DeepSeek keeps its grip on the top",
-  "summary": "Moonshot's Kimi K3.1 Pro set a new all-time token-share high at 2.5% after jumping 12 places to No. 10. Meanwhile DeepSeek still holds 39.8% of tokens, and DeepSeek and OpenAI together account for 48.3%.",
+  "headline": "Three fresh faces crash the chart while DeepSeek keeps its grip on the crown",
+  "summary": "Three newcomers landed at ranks 42, 50 and 51, and three models fell off the board, so the back of the leaderboard got a reshuffle. Up top, deepseek/deepseek-v4.1-flash-20261017 still holds first with 25.5% of tokens, and OpenAI's gpt-5.6-luna is the day's climber, up five spots to sixth.",
   "highlights": [
-    "Kimi K3.1 Pro hit an all-time record token share of 2.5%, climbing 12 places in a day to rank 10.",
-    "NVIDIA's Nemotron 3.5 Super VL (free) also set an all-time high, at 1.8% token share.",
-    "DeepSeek remains the heavyweight at 39.8% provider share, with deepseek-v4.1-flash-20261017 still at No. 1.",
-    "DeepSeek and OpenAI together hold 48.3%, the top-two cumulative share.",
-    "New entrants: Qwen 3.6 35B A3B, Upstage Solar Pro 4, and Mistral Nemo. Dropouts include Poolside Laguna S 2.1 and OpenAI GPT-6 Astra."
+    "New entrants: anthropic/claude-sonnet-5-20260630 (42nd), openai/gpt-oss-120b (50th), openai/gpt-6-astra-20260903 (51st).",
+    "Dropouts: qwen/qwen3.6-35b-a3b (last ranked 36th), mistralai/mistral-nemo (48th), anthropic/claude-4.5-sonnet-20250929 (51st).",
+    "Biggest climber: openai/gpt-5.6-luna-20260709 rose five places to 6th and is up 15 places over seven days.",
+    "Moonshot AI's kimi-k3.1-pro-20261023 is up 18 places over seven days, now 11th.",
+    "DeepSeek (37.1%) and OpenAI (10.8%) together hold 47.9% of tokens, with Zhipu AI close behind at 10.7%."
   ],
-  "tone": "big_day",
+  "tone": "notable",
   "source": "llm"
 }
