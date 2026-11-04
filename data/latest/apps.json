@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-03T07:22:01.501995+00:00",
+  "generated_at": "2026-11-04T07:04:12.466680+00:00",
   "source": "OpenRouter (openrouter.ai/apps)",
   "apps": [
     {
       "rank": 1,
       "app_id": 3067167,
       "app_name": "Hermes Agent",
-      "total_tokens": 52539399355637,
-      "total_requests": 483244254,
+      "total_tokens": 52439932168551,
+      "total_requests": 482578982,
       "categories": [
         "coding",
         "productivity",
@@ -18,8 +18,8 @@
       "rank": 2,
       "app_id": 2627404,
       "app_name": "Claude Code",
-      "total_tokens": 44692148347049,
-      "total_requests": 397041383,
+      "total_tokens": 45240784725650,
+      "total_requests": 403895847,
       "categories": [
         "coding",
         "cli-agent"
@@ -29,8 +29,8 @@
       "rank": 3,
       "app_id": 2262242,
       "app_name": "Kilo Code",
-      "total_tokens": 23585438422586,
-      "total_requests": 233882523,
+      "total_tokens": 23101017740656,
+      "total_requests": 228628470,
       "categories": [
         "coding",
         "cli-agent"
@@ -40,8 +40,8 @@
       "rank": 4,
       "app_id": 2853275,
       "app_name": "pi",
-      "total_tokens": 16570178839519,
-      "total_requests": 149951315,
+      "total_tokens": 16793783148153,
+      "total_requests": 152840161,
       "categories": [
         "coding",
         "cli-agent"
@@ -51,8 +51,8 @@
       "rank": 5,
       "app_id": 2668297,
       "app_name": "Codex",
-      "total_tokens": 13198999218604,
-      "total_requests": 190159321,
+      "total_tokens": 12888260248424,
+      "total_requests": 185417384,
       "categories": [
         "coding",
         "cli-agent"
@@ -60,21 +60,10 @@
     },
     {
       "rank": 6,
-      "app_id": 190604,
-      "app_name": "Cline",
-      "total_tokens": 11130918146152,
-      "total_requests": 116075557,
-      "categories": [
-        "coding",
-        "cli-agent"
-      ]
-    },
-    {
-      "rank": 7,
       "app_id": 2725608,
       "app_name": "OpenClaw",
-      "total_tokens": 10823396568426,
-      "total_requests": 95728064,
+      "total_tokens": 11563933125512,
+      "total_requests": 98781318,
       "categories": [
         "coding",
         "productivity",
@@ -82,19 +71,30 @@
       ]
     },
     {
+      "rank": 7,
+      "app_id": 190604,
+      "app_name": "Cline",
+      "total_tokens": 10226236452887,
+      "total_requests": 110447912,
+      "categories": [
+        "coding",
+        "cli-agent"
+      ]
+    },
+    {
       "rank": 8,
       "app_id": 4137556,
       "app_name": "Freebuff",
-      "total_tokens": 9906568412244,
-      "total_requests": 75350537,
+      "total_tokens": 9232028176468,
+      "total_requests": 71126063,
       "categories": []
     },
     {
       "rank": 9,
       "app_id": 3682314,
       "app_name": "omp",
-      "total_tokens": 9354485132449,
-      "total_requests": 62389578,
+      "total_tokens": 8863139439539,
+      "total_requests": 56940154,
       "categories": [
         "coding",
         "cli-agent"
@@ -104,16 +104,16 @@
       "rank": 10,
       "app_id": 4706207,
       "app_name": "DeepSeek Harness",
-      "total_tokens": 8011224819631,
-      "total_requests": 48479089,
+      "total_tokens": 8099727247281,
+      "total_requests": 49261692,
       "categories": []
     },
     {
       "rank": 11,
       "app_id": 3003505,
       "app_name": "Strix",
-      "total_tokens": 4788881094586,
-      "total_requests": 38011311,
+      "total_tokens": 5214795376989,
+      "total_requests": 41885363,
       "categories": [
         "coding",
         "cli-agent"
@@ -123,29 +123,18 @@
       "rank": 12,
       "app_id": 169295,
       "app_name": "Portkey AI",
-      "total_tokens": 3138496841121,
-      "total_requests": 333826010,
+      "total_tokens": 4457430734626,
+      "total_requests": 347173877,
       "categories": [
         "coding"
       ]
     },
     {
       "rank": 13,
-      "app_id": 189563,
-      "app_name": "OpenHands",
-      "total_tokens": 2907210120385,
-      "total_requests": 32501496,
-      "categories": [
-        "coding",
-        "cli-agent"
-      ]
-    },
-    {
-      "rank": 14,
       "app_id": 4725308,
       "app_name": "Proto Agent",
-      "total_tokens": 2888018421861,
-      "total_requests": 14818593,
+      "total_tokens": 2889652858477,
+      "total_requests": 15500733,
       "categories": [
         "coding",
         "productivity",
@@ -153,11 +142,22 @@
       ]
     },
     {
+      "rank": 14,
+      "app_id": 189563,
+      "app_name": "OpenHands",
+      "total_tokens": 2871305067719,
+      "total_requests": 32626494,
+      "categories": [
+        "coding",
+        "cli-agent"
+      ]
+    },
+    {
       "rank": 15,
       "app_id": 2699842,
       "app_name": "ISEKAI ZERO",
-      "total_tokens": 2323714481507,
-      "total_requests": 38216691,
+      "total_tokens": 2321798712521,
+      "total_requests": 37976258,
       "categories": [
         "entertainment"
       ]
@@ -166,8 +166,8 @@
       "rank": 16,
       "app_id": 4132065,
       "app_name": "Hello Minds, powered by Ethoswarm",
-      "total_tokens": 2209905562468,
-      "total_requests": 26251160,
+      "total_tokens": 2250063770624,
+      "total_requests": 26986101,
       "categories": [
         "creative",
         "productivity",
@@ -178,45 +178,45 @@
       "rank": 17,
       "app_id": 4580044,
       "app_name": "HighLevel",
-      "total_tokens": 1738307232791,
-      "total_requests": 31063700,
+      "total_tokens": 1749170085998,
+      "total_requests": 31376498,
       "categories": []
     },
     {
       "rank": 18,
       "app_id": 2637375,
       "app_name": "Lemonade",
-      "total_tokens": 1686348223370,
-      "total_requests": 29174716,
+      "total_tokens": 1642865614219,
+      "total_requests": 28438840,
       "categories": [
         "coding"
       ]
     },
     {
       "rank": 19,
-      "app_id": 2524738,
-      "app_name": "LangChain",
-      "total_tokens": 1502370124775,
-      "total_requests": 53766626,
-      "categories": []
-    },
-    {
-      "rank": 20,
       "app_id": 4780809,
       "app_name": "CodeGPT",
-      "total_tokens": 1487686977739,
-      "total_requests": 8599504,
+      "total_tokens": 1523930031112,
+      "total_requests": 8746944,
       "categories": [
         "coding",
         "cli-agent"
       ]
     },
     {
+      "rank": 20,
+      "app_id": 2524738,
+      "app_name": "LangChain",
+      "total_tokens": 1493074646184,
+      "total_requests": 54144293,
+      "categories": []
+    },
+    {
       "rank": 21,
       "app_id": 4749832,
       "app_name": "Aura",
-      "total_tokens": 1454293265180,
-      "total_requests": 12682833,
+      "total_tokens": 1478683171264,
+      "total_requests": 12846597,
       "categories": [
         "coding"
       ]
@@ -225,8 +225,8 @@
       "rank": 22,
       "app_id": 2823243,
       "app_name": "ZCode",
-      "total_tokens": 1420597098855,
-      "total_requests": 6274857,
+      "total_tokens": 1346927428383,
+      "total_requests": 5873392,
       "categories": [
         "coding"
       ]
@@ -235,8 +235,8 @@
       "rank": 23,
       "app_id": 2938662,
       "app_name": "Nous Research API",
-      "total_tokens": 1324070365849,
-      "total_requests": 36865619,
+      "total_tokens": 1302492094252,
+      "total_requests": 31417367,
       "categories": [
         "productivity"
       ]
@@ -245,8 +245,8 @@
       "rank": 24,
       "app_id": 2237546,
       "app_name": "Cursor",
-      "total_tokens": 1245854090969,
-      "total_requests": 10672057,
+      "total_tokens": 1258024361667,
+      "total_requests": 10788946,
       "categories": [
         "coding",
         "cli-agent"
@@ -256,8 +256,8 @@
       "rank": 25,
       "app_id": 2308106,
       "app_name": "Descript",
-      "total_tokens": 1187204295589,
-      "total_requests": 23033025,
+      "total_tokens": 1207144884629,
+      "total_requests": 23418277,
       "categories": [
         "creative"
       ]
@@ -266,56 +266,53 @@
       "rank": 26,
       "app_id": 4940645,
       "app_name": "Scammer Get Scammed",
-      "total_tokens": 980659585993,
-      "total_requests": 296835008,
+      "total_tokens": 997229212428,
+      "total_requests": 301909850,
       "categories": []
     },
     {
       "rank": 27,
-      "app_id": 169155,
-      "app_name": "Janitor AI",
-      "total_tokens": 978489720071,
-      "total_requests": 58027901,
+      "app_id": 2267189,
+      "app_name": "Zed Editor",
+      "total_tokens": 980164644912,
+      "total_requests": 5199711,
       "categories": [
-        "entertainment"
+        "coding"
       ]
     },
     {
       "rank": 28,
-      "app_id": 2267189,
-      "app_name": "Zed Editor",
-      "total_tokens": 972346952023,
-      "total_requests": 5200583,
+      "app_id": 169155,
+      "app_name": "Janitor AI",
+      "total_tokens": 974533827624,
+      "total_requests": 57659989,
       "categories": [
-        "coding"
+        "entertainment"
       ]
     },
     {
       "rank": 29,
       "app_id": 171054,
       "app_name": "HackerAI",
-      "total_tokens": 772785488010,
-      "total_requests": 12100137,
+      "total_tokens": 797149311100,
+      "total_requests": 12213845,
       "categories": []
     },
     {
       "rank": 30,
-      "app_id": 4885443,
-      "app_name": "ai-copilot-prod",
-      "total_tokens": 709587555420,
-      "total_requests": 5502983,
+      "app_id": 4913981,
+      "app_name": "Minds by Authentic Intelligence",
+      "total_tokens": 777530296501,
+      "total_requests": 19550941,
       "categories": []
     },
     {
       "rank": 31,
-      "app_id": 2368812,
-      "app_name": "Letta",
-      "total_tokens": 704718525338,
-      "total_requests": 3905805,
-      "categories": [
-        "coding",
-        "cli-agent"
-      ]
+      "app_id": 4885443,
+      "app_name": "ai-copilot-prod",
+      "total_tokens": 722391965844,
+      "total_requests": 5643470,
+      "categories": []
     },
     {
       "rank": 32,
@@ -330,30 +327,21 @@
     },
     {
       "rank": 33,
-      "app_id": 3909382,
-      "app_name": "Command Code",
-      "total_tokens": 690608662966,
-      "total_requests": 6645729,
+      "app_id": 2368812,
+      "app_name": "Letta",
+      "total_tokens": 691704985311,
+      "total_requests": 3899621,
       "categories": [
         "coding",
-        "productivity",
         "cli-agent"
       ]
     },
     {
       "rank": 34,
-      "app_id": 4913981,
-      "app_name": "Minds by Authentic Intelligence",
-      "total_tokens": 686820312462,
-      "total_requests": 17268022,
-      "categories": []
-    },
-    {
-      "rank": 35,
       "app_id": 3844484,
       "app_name": "Craft",
-      "total_tokens": 616480745775,
-      "total_requests": 27906869,
+      "total_tokens": 608828138127,
+      "total_requests": 28035952,
       "categories": [
         "creative",
         "productivity",
@@ -361,66 +349,66 @@
       ]
     },
     {
-      "rank": 36,
+      "rank": 35,
       "app_id": 3335353,
       "app_name": "Framer",
-      "total_tokens": 594977873118,
-      "total_requests": 7094682,
+      "total_tokens": 598076185903,
+      "total_requests": 7126034,
       "categories": []
     },
     {
-      "rank": 37,
+      "rank": 36,
       "app_id": 184102,
       "app_name": "Open WebUI",
-      "total_tokens": 547420908023,
-      "total_requests": 8800834,
+      "total_tokens": 560711342139,
+      "total_requests": 8964026,
       "categories": [
         "productivity"
       ]
     },
     {
-      "rank": 38,
+      "rank": 37,
       "app_id": 2299688,
       "app_name": "GDevelop",
-      "total_tokens": 528955511217,
-      "total_requests": 8177579,
+      "total_tokens": 533577132458,
+      "total_requests": 8213356,
       "categories": [
         "coding"
       ]
     },
     {
-      "rank": 39,
+      "rank": 38,
       "app_id": 3906588,
       "app_name": "Zoo Code",
-      "total_tokens": 518543924900,
-      "total_requests": 4281793,
+      "total_tokens": 527197783664,
+      "total_requests": 4329665,
       "categories": []
     },
     {
-      "rank": 40,
+      "rank": 39,
       "app_id": 3296290,
-      "app_name": "Mira is the leading AI agent inside Telegram",
-      "total_tokens": 485685353898,
-      "total_requests": 24715870,
+      "app_name": "Mira",
+      "total_tokens": 494808696869,
+      "total_requests": 24637057,
       "categories": [
         "creative",
         "productivity"
       ]
     },
     {
-      "rank": 41,
+      "rank": 40,
       "app_id": 2285082,
       "app_name": "websim",
-      "total_tokens": 451825055450,
-      "total_requests": 11003256,
+      "total_tokens": 445552127381,
+      "total_requests": 10933802,
       "categories": []
     },
     {
-      "rank": 42,
+      "rank": 41,
       "app_id": 4832946,
       "app_name": "Digen AI",
-      "total_tokens": 426704358658,
-      "total_requests": 23839748,
+      "total_tokens": 426244498702,
+      "total_requests": 23857516,
       "categories": [
         "coding",
         "creative",
@@ -428,74 +416,86 @@
       ]
     },
     {
-      "rank": 43,
+      "rank": 42,
       "app_id": 142576,
       "app_name": "SillyTavern",
-      "total_tokens": 407324707243,
-      "total_requests": 19995434,
+      "total_tokens": 407908349549,
+      "total_requests": 19991001,
       "categories": [
         "entertainment"
       ]
     },
     {
-      "rank": 44,
+      "rank": 43,
       "app_id": 2605040,
       "app_name": "claude-mem",
-      "total_tokens": 385950896056,
-      "total_requests": 12646711,
+      "total_tokens": 385488504283,
+      "total_requests": 12720463,
       "categories": []
     },
     {
-      "rank": 45,
+      "rank": 44,
       "app_id": 3248223,
       "app_name": "goose",
-      "total_tokens": 350725664477,
-      "total_requests": 4520761,
+      "total_tokens": 354000405060,
+      "total_requests": 4606049,
       "categories": [
         "coding",
         "cli-agent"
       ]
     },
     {
-      "rank": 46,
+      "rank": 45,
       "app_id": 2483960,
       "app_name": "Context7",
-      "total_tokens": 328716644229,
-      "total_requests": 126141776,
+      "total_tokens": 335458323892,
+      "total_requests": 126337441,
       "categories": []
     },
     {
-      "rank": 47,
+      "rank": 46,
       "app_id": 194607,
       "app_name": "Chatbox AI",
-      "total_tokens": 277174800260,
-      "total_requests": 10757616,
+      "total_tokens": 279612536768,
+      "total_requests": 10845501,
       "categories": [
         "productivity"
       ]
     },
     {
-      "rank": 48,
-      "app_id": 4981787,
-      "app_name": "VVV Easy Agent",
-      "total_tokens": 271077725589,
-      "total_requests": 7292420,
+      "rank": 47,
+      "app_id": 4979262,
+      "app_name": "BobAI agents",
+      "total_tokens": 274005998800,
+      "total_requests": 2028904,
       "categories": []
     },
     {
+      "rank": 48,
+      "app_id": 3909382,
+      "app_name": "Command Code",
+      "total_tokens": 271784617352,
+      "total_requests": 2710371,
+      "categories": [
+        "coding",
+        "productivity",
+        "cli-agent"
+      ]
+    },
+    {
       "rank": 49,
-      "app_id": 4979262,
-      "app_name": "BobAI agents",
-      "total_tokens": 262577968064,
-      "total_requests": 1923278,
+      "app_id": 190307,
+      "app_name": "KoalaBear",
+      "total_tokens": 268121485876,
+      "total_requests": 50240773,
       "categories": []
     },
     {
       "rank": 50,
-      "app_id": 190307,
-      "app_name": "KoalaBear",
-      "total_tokens": 259981130709,
-      "total_requests": 47930055,
+      "app_id": 4981787,
+      "app_name": "VVV Easy Agent",
+      "total_tokens": 257876923528,
+      "total_requests": 6977531,
       "categories": []
     }
   ]
