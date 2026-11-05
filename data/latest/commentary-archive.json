@@ -1,6 +1,21 @@
 {
-  "generated_at": "2026-11-04T07:04:28.536574+00:00",
+  "generated_at": "2026-11-05T07:31:10.189922+00:00",
   "entries": [
+    {
+      "date": "2026-11-05",
+      "headline": "DeepSeek's flash model sets a record 31.2% token share, day 2 and still top of the heap",
+      "summary": "deepseek/deepseek-v4.1-flash-20261017 holds the all-time record at 31.2% of tokens, its second day at the top. DeepSeek as a provider now sits at 43.6% and is up 12.5 points over 30 days, so the rest of the leaderboard is playing catch-up.",
+      "highlights": [
+        "DeepSeek's provider share is 43.6% today, and the top five providers together hold 70.4%.",
+        "Tencent's tencent/hy4-20261104 debuted at rank 5 with 4.0% of tokens, the biggest new entrant of the day.",
+        "Moonshot AI's moonshotai/kimi-k3-20260715 jumped 14 places to rank 10 with 2.0% of tokens.",
+        "stealth/crouton-alpha arrived at rank 12 with 1.7%, which is a very mysterious way to show up.",
+        "NVIDIA's nvidia/nemotron-3.5-super-vl-20261015 set a fresh all-time record at 0.6%, a first-day streak.",
+        "Four models fell off the board, including google/gemini-3.7-flash-20260813, last seen ranked 51st."
+      ],
+      "tone": "big_day",
+      "source": "llm"
+    },
     {
       "date": "2026-11-04",
       "headline": "DeepSeek's v4.1 flash sets a 30.8% all-time share record, and DeepSeek now holds 42.7% of tokens",
