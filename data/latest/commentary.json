@@ -1,13 +1,13 @@
 {
-  "headline": "DeepSeek's flash model sets a record 31.2% token share, day 2 and still top of the heap",
-  "summary": "deepseek/deepseek-v4.1-flash-20261017 holds the all-time record at 31.2% of tokens, its second day at the top. DeepSeek as a provider now sits at 43.6% and is up 12.5 points over 30 days, so the rest of the leaderboard is playing catch-up.",
+  "headline": "Tencent's hy4 sets an all-time record at 9.1% of tokens and climbs to No. 2",
+  "summary": "Tencent's hy4-20261104 hit a fresh all-time high of 9.1% token share, and Tencent's provider share jumped 5.4 points in a day to 10.9%. DeepSeek still sits on top with 35.0%, though it gave back 8.6 points overnight.",
   "highlights": [
-    "DeepSeek's provider share is 43.6% today, and the top five providers together hold 70.4%.",
-    "Tencent's tencent/hy4-20261104 debuted at rank 5 with 4.0% of tokens, the biggest new entrant of the day.",
-    "Moonshot AI's moonshotai/kimi-k3-20260715 jumped 14 places to rank 10 with 2.0% of tokens.",
-    "stealth/crouton-alpha arrived at rank 12 with 1.7%, which is a very mysterious way to show up.",
-    "NVIDIA's nvidia/nemotron-3.5-super-vl-20261015 set a fresh all-time record at 0.6%, a first-day streak.",
-    "Four models fell off the board, including google/gemini-3.7-flash-20260813, last seen ranked 51st."
+    "tencent/hy4-20261104 climbed three spots to No. 2 and set a new all-time token-share record of 9.1%.",
+    "deepseek/deepseek-v4.1-flash-20261017 remains No. 1 at 23.1% of tokens.",
+    "DeepSeek and Tencent together hold 45.9% of tokens, and adding Zhipu AI brings the top three to 53.9%.",
+    "stealth/crouton-alpha set its own all-time record at 3.3% and moved up three spots to No. 9.",
+    "New entrants: openai/gpt-6-astra-20260903 debuted at No. 47 and openai/gpt-5.6-sol-20260709 at No. 49.",
+    "Dropouts: upstage/solar-pro4-20260810 fell off from No. 45, and anthropic/claude-opus-5-20260723 fell off from No. 49."
   ],
   "tone": "big_day",
   "source": "llm"
