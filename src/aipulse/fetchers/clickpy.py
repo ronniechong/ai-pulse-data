@@ -9,6 +9,8 @@ _TIMEOUT = 30
 _TABLE = "pypi.pypi_downloads_per_day_by_version_by_country"
 _REQUIRED_COLUMNS = {"date", "project", "country_code", "count"}
 _WINDOW_DAYS = 30
+# ClickPy records downloads it can't geolocate under an empty country_code.
+_EXCLUDE_UNATTRIBUTED = "AND country_code != ''"
 
 
 def _run_query(sql: str) -> dict:
@@ -45,6 +47,7 @@ def fetch_country_downloads_by_day(start_date: str, end_date: str) -> dict[str, 
         sql = (
             f"SELECT date, country_code, sum(count) AS downloads FROM {_TABLE} "
             f"WHERE project = '{package}' AND date >= '{start_date}' AND date <= '{end_date}' "
+            f"{_EXCLUDE_UNATTRIBUTED} "
             f"GROUP BY date, country_code ORDER BY date, downloads DESC, country_code FORMAT JSON"
         )
         result = _run_query(sql)
@@ -61,6 +64,7 @@ def fetch_country_downloads() -> dict[str, list[ClickPyCountryRow]]:
         sql = (
             f"SELECT country_code, sum(count) AS downloads FROM {_TABLE} "
             f"WHERE project = '{package}' AND date >= today() - {_WINDOW_DAYS} "
+            f"{_EXCLUDE_UNATTRIBUTED} "
             f"GROUP BY country_code ORDER BY downloads DESC, country_code FORMAT JSON"
         )
         result = _run_query(sql)
