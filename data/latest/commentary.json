@@ -1,12 +1,11 @@
 {
-  "headline": "Xiaomi's mimo-v2.6-flash leaps 10 spots to 11th as four newcomers crash the bottom of the board",
-  "summary": "DeepSeek's deepseek-v4.1-flash still sits on top with 24.3% of tokens, and DeepSeek as a provider holds 35.7%. The day's loudest move belongs to Xiaomi's mimo-v2.6-flash, which climbed from 21st to 11th, while Anthropic, xAI, Perplexity, and Google's gemini-2.5-flash-lite made their first appearances near the bottom of the list.",
+  "headline": "Stealth's crouton-alpha vanishes from #9 while DeepSeek keeps the top spot",
+  "summary": "The biggest story is a clean exit: stealth/crouton-alpha, last ranked #9, is gone from the board. Meanwhile DeepSeek's deepseek/deepseek-v4.1-flash-20261017 still sits on top at 27.5% of tokens, and anthropic/claude-fable-5.2 debuts at #28.",
   "highlights": [
-    "Xiaomi's mimo-v2.6-flash jumped 10 places to 11th, the biggest one-day climb on the board, with a 2.2% token share.",
-    "DeepSeek and Tencent together account for 47.5% of tokens, the top two providers in the cumulative share ranking.",
-    "New entrants: anthropic/claude-sonnet-5 (43rd), x-ai/grok-4.7 (45th), perplexity/pplx-decider-v1.2 (50th), and google/gemini-2.5-flash-lite (51st).",
-    "Dropouts: qwen3-embedding-8b, mistral-nemo, tencent/hy4-preview, and nvidia/nemotron-3.5-super-vl all fell off the ranked list.",
-    "Qwen's qwen3.8-flash rose 5 places today and 20 over seven days, now sitting 26th."
+    "stealth/crouton-alpha dropped off the leaderboard after last ranking #9.",
+    "openai/gpt-6.1-sol climbed five places to #9, the biggest move among the top ten.",
+    "anthropic/claude-fable-5.2 enters at #28, one of four new entrants.",
+    "DeepSeek holds 37.8% of provider share, and DeepSeek plus Tencent together account for 47.8%."
   ],
   "tone": "notable",
   "source": "llm"
