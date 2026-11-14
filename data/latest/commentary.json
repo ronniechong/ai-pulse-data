@@ -1,13 +1,13 @@
 {
-  "headline": "ERNIE 5.5 Flash Preview hits an all-time-high 1.0% share; DeepSeek still rules at 39.2%",
-  "summary": "Baidu's ERNIE 5.5 Flash Preview set a fresh all-time token-share record at 1.0%, the day's headline. Meanwhile DeepSeek holds 39.2% of provider share, and its V4.1 Flash still sits on top of the leaderboard at 29.1%.",
+  "headline": "Baidu's ERNIE 5.5 Flash jumps 10 spots to No. 13 and sets an all-time share record at 1.6%",
+  "summary": "Baidu's ERNIE 5.5 Flash is the day's headline, climbing 10 places and hitting an all-time token share high of 1.6% for a second day running. Meanwhile, the newcomer Gemma 4 31B and the departing Claude Sonnet 5 both sit down at the bottom of the table, at about 0.2% each.",
   "highlights": [
-    "The top three providers hold 56.9% between them: DeepSeek, Tencent, and OpenAI.",
-    "Meta's muse-ember enters the leaderboard at rank 47 with 0.3% of tokens.",
-    "Xiaomi's mimo-v2.6-flash climbs 14 spots over seven days to rank 10.",
-    "Grok 4.7 jumps 11 places in a day to rank 39.",
-    "Google's gemma-4-26b drops out after its last ranking at 51."
+    "baidu/ernie-5.5-flash-preview-20261110:free jumped 10 places to No. 13 and set an all-time token share record of 1.6%, now on day 2 of that streak.",
+    "New entrant google/gemma-4-31b-it-20260402 debuts at No. 49 with 0.2% share.",
+    "anthropic/claude-sonnet-5-20260630 dropped out of the rankings from No. 51 with 0.2% share.",
+    "DeepSeek still holds the top spot: deepseek/deepseek-v4.1-flash-20261017 leads at 28.3%, and DeepSeek as a provider holds 38.7%.",
+    "The top three providers, DeepSeek, Tencent and OpenAI, hold 55.5% of token share between them."
   ],
-  "tone": "big_day",
+  "tone": "notable",
   "source": "llm"
 }

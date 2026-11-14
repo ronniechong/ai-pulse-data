@@ -1,6 +1,20 @@
 {
-  "generated_at": "2026-11-13T07:28:02.035647+00:00",
+  "generated_at": "2026-11-14T07:09:31.590240+00:00",
   "entries": [
+    {
+      "date": "2026-11-14",
+      "headline": "Baidu's ERNIE 5.5 Flash jumps 10 spots to No. 13 and sets an all-time share record at 1.6%",
+      "summary": "Baidu's ERNIE 5.5 Flash is the day's headline, climbing 10 places and hitting an all-time token share high of 1.6% for a second day running. Meanwhile, the newcomer Gemma 4 31B and the departing Claude Sonnet 5 both sit down at the bottom of the table, at about 0.2% each.",
+      "highlights": [
+        "baidu/ernie-5.5-flash-preview-20261110:free jumped 10 places to No. 13 and set an all-time token share record of 1.6%, now on day 2 of that streak.",
+        "New entrant google/gemma-4-31b-it-20260402 debuts at No. 49 with 0.2% share.",
+        "anthropic/claude-sonnet-5-20260630 dropped out of the rankings from No. 51 with 0.2% share.",
+        "DeepSeek still holds the top spot: deepseek/deepseek-v4.1-flash-20261017 leads at 28.3%, and DeepSeek as a provider holds 38.7%.",
+        "The top three providers, DeepSeek, Tencent and OpenAI, hold 55.5% of token share between them."
+      ],
+      "tone": "notable",
+      "source": "llm"
+    },
     {
       "date": "2026-11-13",
       "headline": "ERNIE 5.5 Flash Preview hits an all-time-high 1.0% share; DeepSeek still rules at 39.2%",
