@@ -1,0 +1,4408 @@
+{
+  "generated_at": "2026-11-15T07:20:08.133752+00:00",
+  "source": "ClickPy / PyPI downloads (clickpy.clickhouse.com)",
+  "window_days": 30,
+  "packages": {
+    "openai": {
+      "provider": "OpenAI",
+      "countries": [
+        {
+          "country_code": "US",
+          "downloads": 273753080
+        },
+        {
+          "country_code": "SG",
+          "downloads": 14201271
+        },
+        {
+          "country_code": "GB",
+          "downloads": 12271339
+        },
+        {
+          "country_code": "DE",
+          "downloads": 10153798
+        },
+        {
+          "country_code": "NL",
+          "downloads": 8470740
+        },
+        {
+          "country_code": "IN",
+          "downloads": 6569358
+        },
+        {
+          "country_code": "JP",
+          "downloads": 5712836
+        },
+        {
+          "country_code": "FI",
+          "downloads": 4665440
+        },
+        {
+          "country_code": "HK",
+          "downloads": 3999158
+        },
+        {
+          "country_code": "IE",
+          "downloads": 3622216
+        },
+        {
+          "country_code": "FR",
+          "downloads": 3409866
+        },
+        {
+          "country_code": "CA",
+          "downloads": 2931843
+        },
+        {
+          "country_code": "KR",
+          "downloads": 2311963
+        },
+        {
+          "country_code": "SE",
+          "downloads": 2248497
+        },
+        {
+          "country_code": "CN",
+          "downloads": 2103818
+        },
+        {
+          "country_code": "ES",
+          "downloads": 1696800
+        },
+        {
+          "country_code": "AU",
+          "downloads": 1663523
+        },
+        {
+          "country_code": "BR",
+          "downloads": 1536517
+        },
+        {
+          "country_code": "BE",
+          "downloads": 1068027
+        },
+        {
+          "country_code": "MY",
+          "downloads": 1016084
+        },
+        {
+          "country_code": "IT",
+          "downloads": 935295
+        },
+        {
+          "country_code": "PL",
+          "downloads": 612056
+        },
+        {
+          "country_code": "ZA",
+          "downloads": 602317
+        },
+        {
+          "country_code": "MX",
+          "downloads": 574745
+        },
+        {
+          "country_code": "ID",
+          "downloads": 548306
+        },
+        {
+          "country_code": "IL",
+          "downloads": 514796
+        },
+        {
+          "country_code": "RU",
+          "downloads": 514226
+        },
+        {
+          "country_code": "CH",
+          "downloads": 483381
+        },
+        {
+          "country_code": "TW",
+          "downloads": 395895
+        },
+        {
+          "country_code": "DK",
+          "downloads": 383154
+        },
+        {
+          "country_code": "VN",
+          "downloads": 336379
+        },
+        {
+          "country_code": "TH",
+          "downloads": 326796
+        },
+        {
+          "country_code": "NO",
+          "downloads": 298802
+        },
+        {
+          "country_code": "AE",
+          "downloads": 250847
+        },
+        {
+          "country_code": "TR",
+          "downloads": 233808
+        },
+        {
+          "country_code": "AT",
+          "downloads": 220939
+        },
+        {
+          "country_code": "CL",
+          "downloads": 209970
+        },
+        {
+          "country_code": "CZ",
+          "downloads": 152369
+        },
+        {
+          "country_code": "RO",
+          "downloads": 150904
+        },
+        {
+          "country_code": "PT",
+          "downloads": 148134
+        },
+        {
+          "country_code": "CO",
+          "downloads": 121687
+        },
+        {
+          "country_code": "PK",
+          "downloads": 114026
+        },
+        {
+          "country_code": "SA",
+          "downloads": 105637
+        },
+        {
+          "country_code": "UA",
+          "downloads": 99480
+        },
+        {
+          "country_code": "AR",
+          "downloads": 96709
+        },
+        {
+          "country_code": "NZ",
+          "downloads": 90942
+        },
+        {
+          "country_code": "EG",
+          "downloads": 81915
+        },
+        {
+          "country_code": "KZ",
+          "downloads": 77554
+        },
+        {
+          "country_code": "PH",
+          "downloads": 73779
+        },
+        {
+          "country_code": "IS",
+          "downloads": 68778
+        },
+        {
+          "country_code": "LT",
+          "downloads": 67615
+        },
+        {
+          "country_code": "EE",
+          "downloads": 64567
+        },
+        {
+          "country_code": "MA",
+          "downloads": 54121
+        },
+        {
+          "country_code": "HU",
+          "downloads": 51768
+        },
+        {
+          "country_code": "BG",
+          "downloads": 51195
+        },
+        {
+          "country_code": "GR",
+          "downloads": 45965
+        },
+        {
+          "country_code": "BD",
+          "downloads": 45277
+        },
+        {
+          "country_code": "PE",
+          "downloads": 42809
+        },
+        {
+          "country_code": "UZ",
+          "downloads": 38956
+        },
+        {
+          "country_code": "RS",
+          "downloads": 37501
+        },
+        {
+          "country_code": "UY",
+          "downloads": 36772
+        },
+        {
+          "country_code": "LU",
+          "downloads": 35513
+        },
+        {
+          "country_code": "LV",
+          "downloads": 35277
+        },
+        {
+          "country_code": "SK",
+          "downloads": 34390
+        },
+        {
+          "country_code": "NG",
+          "downloads": 32883
+        },
+        {
+          "country_code": "IR",
+          "downloads": 32637
+        },
+        {
+          "country_code": "CY",
+          "downloads": 26151
+        },
+        {
+          "country_code": "HR",
+          "downloads": 24956
+        },
+        {
+          "country_code": "SI",
+          "downloads": 24380
+        },
+        {
+          "country_code": "DZ",
+          "downloads": 24360
+        },
+        {
+          "country_code": "EC",
+          "downloads": 24257
+        },
+        {
+          "country_code": "KE",
+          "downloads": 22785
+        },
+        {
+          "country_code": "QA",
+          "downloads": 21302
+        },
+        {
+          "country_code": "LK",
+          "downloads": 21161
+        },
+        {
+          "country_code": "TN",
+          "downloads": 20162
+        },
+        {
+          "country_code": "GE",
+          "downloads": 19074
+        },
+        {
+          "country_code": "BY",
+          "downloads": 18882
+        },
+        {
+          "country_code": "JO",
+          "downloads": 16724
+        },
+        {
+          "country_code": "AM",
+          "downloads": 15339
+        },
+        {
+          "country_code": "NP",
+          "downloads": 14806
+        },
+        {
+          "country_code": "DO",
+          "downloads": 14347
+        },
+        {
+          "country_code": "CR",
+          "downloads": 13115
+        },
+        {
+          "country_code": "MD",
+          "downloads": 12964
+        },
+        {
+          "country_code": "LB",
+          "downloads": 11938
+        },
+        {
+          "country_code": "IQ",
+          "downloads": 11876
+        },
+        {
+          "country_code": "KG",
+          "downloads": 11298
+        },
+        {
+          "country_code": "AZ",
+          "downloads": 10965
+        },
+        {
+          "country_code": "AL",
+          "downloads": 9441
+        },
+        {
+          "country_code": "GT",
+          "downloads": 9436
+        },
+        {
+          "country_code": "GH",
+          "downloads": 9305
+        },
+        {
+          "country_code": "BO",
+          "downloads": 8690
+        },
+        {
+          "country_code": "PA",
+          "downloads": 8650
+        },
+        {
+          "country_code": "ET",
+          "downloads": 8349
+        },
+        {
+          "country_code": "AD",
+          "downloads": 8298
+        },
+        {
+          "country_code": "PR",
+          "downloads": 8297
+        },
+        {
+          "country_code": "PY",
+          "downloads": 7731
+        },
+        {
+          "country_code": "KH",
+          "downloads": 7456
+        },
+        {
+          "country_code": "KW",
+          "downloads": 6996
+        },
+        {
+          "country_code": "VE",
+          "downloads": 6356
+        },
+        {
+          "country_code": "CI",
+          "downloads": 6241
+        },
+        {
+          "country_code": "BA",
+          "downloads": 6216
+        },
+        {
+          "country_code": "OM",
+          "downloads": 6128
+        },
+        {
+          "country_code": "MK",
+          "downloads": 5818
+        },
+        {
+          "country_code": "BH",
+          "downloads": 5373
+        },
+        {
+          "country_code": "MT",
+          "downloads": 5177
+        },
+        {
+          "country_code": "SV",
+          "downloads": 5139
+        },
+        {
+          "country_code": "UG",
+          "downloads": 4674
+        },
+        {
+          "country_code": "TZ",
+          "downloads": 4633
+        },
+        {
+          "country_code": "CM",
+          "downloads": 4418
+        },
+        {
+          "country_code": "MN",
+          "downloads": 4416
+        },
+        {
+          "country_code": "PS",
+          "downloads": 4146
+        },
+        {
+          "country_code": "MG",
+          "downloads": 3937
+        },
+        {
+          "country_code": "SN",
+          "downloads": 3732
+        },
+        {
+          "country_code": "MO",
+          "downloads": 3526
+        },
+        {
+          "country_code": "HN",
+          "downloads": 3402
+        },
+        {
+          "country_code": "NA",
+          "downloads": 3388
+        },
+        {
+          "country_code": "AO",
+          "downloads": 3185
+        },
+        {
+          "country_code": "NI",
+          "downloads": 2875
+        },
+        {
+          "country_code": "MU",
+          "downloads": 2858
+        },
+        {
+          "country_code": "LY",
+          "downloads": 2726
+        },
+        {
+          "country_code": "TJ",
+          "downloads": 2680
+        },
+        {
+          "country_code": "ME",
+          "downloads": 2622
+        },
+        {
+          "country_code": "YE",
+          "downloads": 2456
+        },
+        {
+          "country_code": "BJ",
+          "downloads": 2440
+        },
+        {
+          "country_code": "RW",
+          "downloads": 2396
+        },
+        {
+          "country_code": "RE",
+          "downloads": 2373
+        },
+        {
+          "country_code": "ZM",
+          "downloads": 2231
+        },
+        {
+          "country_code": "ZW",
+          "downloads": 2201
+        },
+        {
+          "country_code": "CD",
+          "downloads": 1978
+        },
+        {
+          "country_code": "JM",
+          "downloads": 1937
+        },
+        {
+          "country_code": "LA",
+          "downloads": 1896
+        },
+        {
+          "country_code": "TT",
+          "downloads": 1842
+        },
+        {
+          "country_code": "KY",
+          "downloads": 1835
+        },
+        {
+          "country_code": "TG",
+          "downloads": 1698
+        },
+        {
+          "country_code": "MZ",
+          "downloads": 1665
+        },
+        {
+          "country_code": "MM",
+          "downloads": 1586
+        },
+        {
+          "country_code": "MV",
+          "downloads": 1382
+        },
+        {
+          "country_code": "SY",
+          "downloads": 1377
+        },
+        {
+          "country_code": "MC",
+          "downloads": 1248
+        },
+        {
+          "country_code": "BF",
+          "downloads": 1193
+        },
+        {
+          "country_code": "MQ",
+          "downloads": 1100
+        },
+        {
+          "country_code": "AF",
+          "downloads": 917
+        },
+        {
+          "country_code": "IM",
+          "downloads": 905
+        },
+        {
+          "country_code": "SD",
+          "downloads": 899
+        },
+        {
+          "country_code": "BN",
+          "downloads": 885
+        },
+        {
+          "country_code": "PF",
+          "downloads": 810
+        },
+        {
+          "country_code": "GP",
+          "downloads": 805
+        },
+        {
+          "country_code": "SX",
+          "downloads": 719
+        },
+        {
+          "country_code": "BT",
+          "downloads": 713
+        },
+        {
+          "country_code": "SO",
+          "downloads": 699
+        },
+        {
+          "country_code": "SC",
+          "downloads": 686
+        },
+        {
+          "country_code": "GN",
+          "downloads": 668
+        },
+        {
+          "country_code": "GA",
+          "downloads": 659
+        },
+        {
+          "country_code": "ML",
+          "downloads": 654
+        },
+        {
+          "country_code": "BW",
+          "downloads": 645
+        },
+        {
+          "country_code": "GY",
+          "downloads": 639
+        },
+        {
+          "country_code": "JE",
+          "downloads": 603
+        },
+        {
+          "country_code": "MW",
+          "downloads": 596
+        },
+        {
+          "country_code": "CG",
+          "downloads": 564
+        },
+        {
+          "country_code": "BZ",
+          "downloads": 560
+        },
+        {
+          "country_code": "BB",
+          "downloads": 542
+        },
+        {
+          "country_code": "SL",
+          "downloads": 534
+        },
+        {
+          "country_code": "HT",
+          "downloads": 504
+        },
+        {
+          "country_code": "NC",
+          "downloads": 488
+        },
+        {
+          "country_code": "PG",
+          "downloads": 479
+        },
+        {
+          "country_code": "MR",
+          "downloads": 452
+        },
+        {
+          "country_code": "CU",
+          "downloads": 445
+        },
+        {
+          "country_code": "CW",
+          "downloads": 437
+        },
+        {
+          "country_code": "NE",
+          "downloads": 393
+        },
+        {
+          "country_code": "LI",
+          "downloads": 391
+        },
+        {
+          "country_code": "BM",
+          "downloads": 364
+        },
+        {
+          "country_code": "BS",
+          "downloads": 351
+        },
+        {
+          "country_code": "SR",
+          "downloads": 295
+        },
+        {
+          "country_code": "FJ",
+          "downloads": 274
+        },
+        {
+          "country_code": "KN",
+          "downloads": 265
+        },
+        {
+          "country_code": "VG",
+          "downloads": 255
+        },
+        {
+          "country_code": "EU",
+          "downloads": 242
+        },
+        {
+          "country_code": "GI",
+          "downloads": 241
+        },
+        {
+          "country_code": "SS",
+          "downloads": 239
+        },
+        {
+          "country_code": "CV",
+          "downloads": 233
+        },
+        {
+          "country_code": "BI",
+          "downloads": 229
+        },
+        {
+          "country_code": "TL",
+          "downloads": 211
+        },
+        {
+          "country_code": "GG",
+          "downloads": 204
+        },
+        {
+          "country_code": "GL",
+          "downloads": 202
+        },
+        {
+          "country_code": "TD",
+          "downloads": 200
+        },
+        {
+          "country_code": "LR",
+          "downloads": 191
+        },
+        {
+          "country_code": "SZ",
+          "downloads": 186
+        },
+        {
+          "country_code": "LS",
+          "downloads": 178
+        },
+        {
+          "country_code": "AW",
+          "downloads": 170
+        },
+        {
+          "country_code": "GM",
+          "downloads": 159
+        },
+        {
+          "country_code": "SM",
+          "downloads": 141
+        },
+        {
+          "country_code": "VI",
+          "downloads": 141
+        },
+        {
+          "country_code": "LC",
+          "downloads": 136
+        },
+        {
+          "country_code": "FO",
+          "downloads": 134
+        },
+        {
+          "country_code": "VU",
+          "downloads": 131
+        },
+        {
+          "country_code": "DJ",
+          "downloads": 122
+        },
+        {
+          "country_code": "GU",
+          "downloads": 107
+        },
+        {
+          "country_code": "GD",
+          "downloads": 91
+        },
+        {
+          "country_code": "AQ",
+          "downloads": 89
+        },
+        {
+          "country_code": "AG",
+          "downloads": 80
+        },
+        {
+          "country_code": "DM",
+          "downloads": 79
+        },
+        {
+          "country_code": "GF",
+          "downloads": 78
+        },
+        {
+          "country_code": "TM",
+          "downloads": 66
+        },
+        {
+          "country_code": "MF",
+          "downloads": 52
+        },
+        {
+          "country_code": "TC",
+          "downloads": 50
+        },
+        {
+          "country_code": "GW",
+          "downloads": 44
+        },
+        {
+          "country_code": "PW",
+          "downloads": 44
+        },
+        {
+          "country_code": "YT",
+          "downloads": 44
+        },
+        {
+          "country_code": "ER",
+          "downloads": 43
+        },
+        {
+          "country_code": "SB",
+          "downloads": 43
+        },
+        {
+          "country_code": "VC",
+          "downloads": 42
+        },
+        {
+          "country_code": "BL",
+          "downloads": 41
+        },
+        {
+          "country_code": "CF",
+          "downloads": 41
+        },
+        {
+          "country_code": "AX",
+          "downloads": 40
+        },
+        {
+          "country_code": "BQ",
+          "downloads": 35
+        },
+        {
+          "country_code": "KM",
+          "downloads": 34
+        },
+        {
+          "country_code": "ST",
+          "downloads": 27
+        },
+        {
+          "country_code": "WS",
+          "downloads": 23
+        },
+        {
+          "country_code": "GQ",
+          "downloads": 17
+        },
+        {
+          "country_code": "VA",
+          "downloads": 15
+        },
+        {
+          "country_code": "MP",
+          "downloads": 14
+        },
+        {
+          "country_code": "NR",
+          "downloads": 13
+        },
+        {
+          "country_code": "AS",
+          "downloads": 12
+        },
+        {
+          "country_code": "CK",
+          "downloads": 12
+        },
+        {
+          "country_code": "MH",
+          "downloads": 12
+        },
+        {
+          "country_code": "AI",
+          "downloads": 10
+        },
+        {
+          "country_code": "FM",
+          "downloads": 10
+        },
+        {
+          "country_code": "WF",
+          "downloads": 7
+        },
+        {
+          "country_code": "FK",
+          "downloads": 6
+        },
+        {
+          "country_code": "KI",
+          "downloads": 6
+        },
+        {
+          "country_code": "PM",
+          "downloads": 6
+        },
+        {
+          "country_code": "TO",
+          "downloads": 6
+        },
+        {
+          "country_code": "TV",
+          "downloads": 4
+        },
+        {
+          "country_code": "MS",
+          "downloads": 3
+        },
+        {
+          "country_code": "BV",
+          "downloads": 1
+        },
+        {
+          "country_code": "IO",
+          "downloads": 1
+        },
+        {
+          "country_code": "NF",
+          "downloads": 1
+        }
+      ]
+    },
+    "anthropic": {
+      "provider": "Anthropic",
+      "countries": [
+        {
+          "country_code": "US",
+          "downloads": 168440850
+        },
+        {
+          "country_code": "DE",
+          "downloads": 5770496
+        },
+        {
+          "country_code": "SG",
+          "downloads": 4721256
+        },
+        {
+          "country_code": "NL",
+          "downloads": 3187397
+        },
+        {
+          "country_code": "IE",
+          "downloads": 1767892
+        },
+        {
+          "country_code": "IN",
+          "downloads": 1738978
+        },
+        {
+          "country_code": "GB",
+          "downloads": 1569388
+        },
+        {
+          "country_code": "HK",
+          "downloads": 1529684
+        },
+        {
+          "country_code": "CA",
+          "downloads": 1477784
+        },
+        {
+          "country_code": "JP",
+          "downloads": 1214284
+        },
+        {
+          "country_code": "FR",
+          "downloads": 1195744
+        },
+        {
+          "country_code": "FI",
+          "downloads": 1033502
+        },
+        {
+          "country_code": "KR",
+          "downloads": 902514
+        },
+        {
+          "country_code": "AU",
+          "downloads": 840683
+        },
+        {
+          "country_code": "BE",
+          "downloads": 702833
+        },
+        {
+          "country_code": "BR",
+          "downloads": 701813
+        },
+        {
+          "country_code": "CN",
+          "downloads": 646523
+        },
+        {
+          "country_code": "SE",
+          "downloads": 553430
+        },
+        {
+          "country_code": "ES",
+          "downloads": 480352
+        },
+        {
+          "country_code": "IT",
+          "downloads": 472549
+        },
+        {
+          "country_code": "MX",
+          "downloads": 385457
+        },
+        {
+          "country_code": "PL",
+          "downloads": 313362
+        },
+        {
+          "country_code": "MY",
+          "downloads": 257141
+        },
+        {
+          "country_code": "IL",
+          "downloads": 253596
+        },
+        {
+          "country_code": "CH",
+          "downloads": 230197
+        },
+        {
+          "country_code": "TW",
+          "downloads": 199665
+        },
+        {
+          "country_code": "ID",
+          "downloads": 163257
+        },
+        {
+          "country_code": "TH",
+          "downloads": 150432
+        },
+        {
+          "country_code": "RU",
+          "downloads": 140934
+        },
+        {
+          "country_code": "AT",
+          "downloads": 136331
+        },
+        {
+          "country_code": "DK",
+          "downloads": 134686
+        },
+        {
+          "country_code": "VN",
+          "downloads": 134593
+        },
+        {
+          "country_code": "NO",
+          "downloads": 120797
+        },
+        {
+          "country_code": "AE",
+          "downloads": 114811
+        },
+        {
+          "country_code": "CL",
+          "downloads": 108821
+        },
+        {
+          "country_code": "TR",
+          "downloads": 98464
+        },
+        {
+          "country_code": "ZA",
+          "downloads": 88383
+        },
+        {
+          "country_code": "PT",
+          "downloads": 75587
+        },
+        {
+          "country_code": "CZ",
+          "downloads": 71352
+        },
+        {
+          "country_code": "LT",
+          "downloads": 70311
+        },
+        {
+          "country_code": "RO",
+          "downloads": 68906
+        },
+        {
+          "country_code": "NZ",
+          "downloads": 62198
+        },
+        {
+          "country_code": "CO",
+          "downloads": 55762
+        },
+        {
+          "country_code": "AR",
+          "downloads": 54381
+        },
+        {
+          "country_code": "UA",
+          "downloads": 52614
+        },
+        {
+          "country_code": "PK",
+          "downloads": 50138
+        },
+        {
+          "country_code": "SA",
+          "downloads": 42398
+        },
+        {
+          "country_code": "BG",
+          "downloads": 36921
+        },
+        {
+          "country_code": "KZ",
+          "downloads": 32063
+        },
+        {
+          "country_code": "PH",
+          "downloads": 30555
+        },
+        {
+          "country_code": "EG",
+          "downloads": 30333
+        },
+        {
+          "country_code": "GR",
+          "downloads": 29284
+        },
+        {
+          "country_code": "HU",
+          "downloads": 26886
+        },
+        {
+          "country_code": "LU",
+          "downloads": 26228
+        },
+        {
+          "country_code": "EE",
+          "downloads": 21631
+        },
+        {
+          "country_code": "MA",
+          "downloads": 20227
+        },
+        {
+          "country_code": "UZ",
+          "downloads": 18257
+        },
+        {
+          "country_code": "RS",
+          "downloads": 17440
+        },
+        {
+          "country_code": "PE",
+          "downloads": 17120
+        },
+        {
+          "country_code": "IS",
+          "downloads": 16657
+        },
+        {
+          "country_code": "HR",
+          "downloads": 16583
+        },
+        {
+          "country_code": "BD",
+          "downloads": 15494
+        },
+        {
+          "country_code": "SI",
+          "downloads": 15256
+        },
+        {
+          "country_code": "CY",
+          "downloads": 14507
+        },
+        {
+          "country_code": "NG",
+          "downloads": 14156
+        },
+        {
+          "country_code": "SK",
+          "downloads": 12457
+        },
+        {
+          "country_code": "JO",
+          "downloads": 12319
+        },
+        {
+          "country_code": "LV",
+          "downloads": 10345
+        },
+        {
+          "country_code": "KE",
+          "downloads": 9976
+        },
+        {
+          "country_code": "GE",
+          "downloads": 9634
+        },
+        {
+          "country_code": "QA",
+          "downloads": 8998
+        },
+        {
+          "country_code": "UY",
+          "downloads": 8881
+        },
+        {
+          "country_code": "EC",
+          "downloads": 8261
+        },
+        {
+          "country_code": "LK",
+          "downloads": 8194
+        },
+        {
+          "country_code": "TN",
+          "downloads": 7743
+        },
+        {
+          "country_code": "AM",
+          "downloads": 7566
+        },
+        {
+          "country_code": "CR",
+          "downloads": 7025
+        },
+        {
+          "country_code": "DZ",
+          "downloads": 6633
+        },
+        {
+          "country_code": "DO",
+          "downloads": 6171
+        },
+        {
+          "country_code": "IR",
+          "downloads": 5865
+        },
+        {
+          "country_code": "NP",
+          "downloads": 5832
+        },
+        {
+          "country_code": "AL",
+          "downloads": 5600
+        },
+        {
+          "country_code": "MD",
+          "downloads": 5245
+        },
+        {
+          "country_code": "LB",
+          "downloads": 5074
+        },
+        {
+          "country_code": "BY",
+          "downloads": 4666
+        },
+        {
+          "country_code": "IQ",
+          "downloads": 4355
+        },
+        {
+          "country_code": "KW",
+          "downloads": 4225
+        },
+        {
+          "country_code": "PR",
+          "downloads": 4109
+        },
+        {
+          "country_code": "MK",
+          "downloads": 4025
+        },
+        {
+          "country_code": "GH",
+          "downloads": 3841
+        },
+        {
+          "country_code": "AZ",
+          "downloads": 3830
+        },
+        {
+          "country_code": "PY",
+          "downloads": 3810
+        },
+        {
+          "country_code": "BO",
+          "downloads": 3678
+        },
+        {
+          "country_code": "MT",
+          "downloads": 3569
+        },
+        {
+          "country_code": "GT",
+          "downloads": 3531
+        },
+        {
+          "country_code": "KG",
+          "downloads": 3415
+        },
+        {
+          "country_code": "ET",
+          "downloads": 3407
+        },
+        {
+          "country_code": "KH",
+          "downloads": 3234
+        },
+        {
+          "country_code": "PA",
+          "downloads": 2847
+        },
+        {
+          "country_code": "MN",
+          "downloads": 2558
+        },
+        {
+          "country_code": "BA",
+          "downloads": 2493
+        },
+        {
+          "country_code": "BH",
+          "downloads": 2479
+        },
+        {
+          "country_code": "OM",
+          "downloads": 2439
+        },
+        {
+          "country_code": "SV",
+          "downloads": 2266
+        },
+        {
+          "country_code": "UG",
+          "downloads": 2203
+        },
+        {
+          "country_code": "VE",
+          "downloads": 2201
+        },
+        {
+          "country_code": "CM",
+          "downloads": 2152
+        },
+        {
+          "country_code": "TZ",
+          "downloads": 2123
+        },
+        {
+          "country_code": "CI",
+          "downloads": 2063
+        },
+        {
+          "country_code": "SN",
+          "downloads": 1853
+        },
+        {
+          "country_code": "MU",
+          "downloads": 1785
+        },
+        {
+          "country_code": "HN",
+          "downloads": 1722
+        },
+        {
+          "country_code": "MG",
+          "downloads": 1569
+        },
+        {
+          "country_code": "NI",
+          "downloads": 1550
+        },
+        {
+          "country_code": "ME",
+          "downloads": 1439
+        },
+        {
+          "country_code": "ZW",
+          "downloads": 1352
+        },
+        {
+          "country_code": "PS",
+          "downloads": 1347
+        },
+        {
+          "country_code": "RW",
+          "downloads": 1254
+        },
+        {
+          "country_code": "MO",
+          "downloads": 1219
+        },
+        {
+          "country_code": "RE",
+          "downloads": 1206
+        },
+        {
+          "country_code": "CD",
+          "downloads": 1059
+        },
+        {
+          "country_code": "AD",
+          "downloads": 1056
+        },
+        {
+          "country_code": "ZM",
+          "downloads": 1042
+        },
+        {
+          "country_code": "LY",
+          "downloads": 986
+        },
+        {
+          "country_code": "BJ",
+          "downloads": 979
+        },
+        {
+          "country_code": "TJ",
+          "downloads": 960
+        },
+        {
+          "country_code": "AO",
+          "downloads": 878
+        },
+        {
+          "country_code": "MQ",
+          "downloads": 854
+        },
+        {
+          "country_code": "NA",
+          "downloads": 846
+        },
+        {
+          "country_code": "YE",
+          "downloads": 806
+        },
+        {
+          "country_code": "MV",
+          "downloads": 800
+        },
+        {
+          "country_code": "KY",
+          "downloads": 759
+        },
+        {
+          "country_code": "LA",
+          "downloads": 737
+        },
+        {
+          "country_code": "TG",
+          "downloads": 647
+        },
+        {
+          "country_code": "SX",
+          "downloads": 598
+        },
+        {
+          "country_code": "MZ",
+          "downloads": 595
+        },
+        {
+          "country_code": "JM",
+          "downloads": 586
+        },
+        {
+          "country_code": "SY",
+          "downloads": 547
+        },
+        {
+          "country_code": "SD",
+          "downloads": 520
+        },
+        {
+          "country_code": "TT",
+          "downloads": 513
+        },
+        {
+          "country_code": "MC",
+          "downloads": 483
+        },
+        {
+          "country_code": "BF",
+          "downloads": 430
+        },
+        {
+          "country_code": "GP",
+          "downloads": 380
+        },
+        {
+          "country_code": "MM",
+          "downloads": 380
+        },
+        {
+          "country_code": "VG",
+          "downloads": 370
+        },
+        {
+          "country_code": "NC",
+          "downloads": 343
+        },
+        {
+          "country_code": "GA",
+          "downloads": 336
+        },
+        {
+          "country_code": "JE",
+          "downloads": 333
+        },
+        {
+          "country_code": "GI",
+          "downloads": 316
+        },
+        {
+          "country_code": "BZ",
+          "downloads": 314
+        },
+        {
+          "country_code": "ML",
+          "downloads": 291
+        },
+        {
+          "country_code": "HT",
+          "downloads": 272
+        },
+        {
+          "country_code": "MR",
+          "downloads": 271
+        },
+        {
+          "country_code": "IM",
+          "downloads": 265
+        },
+        {
+          "country_code": "SO",
+          "downloads": 260
+        },
+        {
+          "country_code": "BW",
+          "downloads": 258
+        },
+        {
+          "country_code": "PF",
+          "downloads": 248
+        },
+        {
+          "country_code": "BN",
+          "downloads": 247
+        },
+        {
+          "country_code": "CG",
+          "downloads": 245
+        },
+        {
+          "country_code": "GN",
+          "downloads": 238
+        },
+        {
+          "country_code": "NE",
+          "downloads": 227
+        },
+        {
+          "country_code": "MW",
+          "downloads": 212
+        },
+        {
+          "country_code": "CW",
+          "downloads": 211
+        },
+        {
+          "country_code": "LI",
+          "downloads": 211
+        },
+        {
+          "country_code": "BM",
+          "downloads": 198
+        },
+        {
+          "country_code": "DJ",
+          "downloads": 198
+        },
+        {
+          "country_code": "PG",
+          "downloads": 198
+        },
+        {
+          "country_code": "BB",
+          "downloads": 172
+        },
+        {
+          "country_code": "BS",
+          "downloads": 168
+        },
+        {
+          "country_code": "GY",
+          "downloads": 166
+        },
+        {
+          "country_code": "AF",
+          "downloads": 159
+        },
+        {
+          "country_code": "GL",
+          "downloads": 157
+        },
+        {
+          "country_code": "SC",
+          "downloads": 152
+        },
+        {
+          "country_code": "CU",
+          "downloads": 149
+        },
+        {
+          "country_code": "KN",
+          "downloads": 142
+        },
+        {
+          "country_code": "FJ",
+          "downloads": 140
+        },
+        {
+          "country_code": "SL",
+          "downloads": 133
+        },
+        {
+          "country_code": "SR",
+          "downloads": 129
+        },
+        {
+          "country_code": "BT",
+          "downloads": 126
+        },
+        {
+          "country_code": "SS",
+          "downloads": 118
+        },
+        {
+          "country_code": "GG",
+          "downloads": 112
+        },
+        {
+          "country_code": "LR",
+          "downloads": 109
+        },
+        {
+          "country_code": "AW",
+          "downloads": 108
+        },
+        {
+          "country_code": "TD",
+          "downloads": 107
+        },
+        {
+          "country_code": "BI",
+          "downloads": 106
+        },
+        {
+          "country_code": "VI",
+          "downloads": 104
+        },
+        {
+          "country_code": "LC",
+          "downloads": 102
+        },
+        {
+          "country_code": "LS",
+          "downloads": 94
+        },
+        {
+          "country_code": "EU",
+          "downloads": 78
+        },
+        {
+          "country_code": "TL",
+          "downloads": 76
+        },
+        {
+          "country_code": "GU",
+          "downloads": 73
+        },
+        {
+          "country_code": "CV",
+          "downloads": 63
+        },
+        {
+          "country_code": "SZ",
+          "downloads": 63
+        },
+        {
+          "country_code": "SM",
+          "downloads": 59
+        },
+        {
+          "country_code": "GM",
+          "downloads": 54
+        },
+        {
+          "country_code": "TC",
+          "downloads": 49
+        },
+        {
+          "country_code": "GF",
+          "downloads": 47
+        },
+        {
+          "country_code": "SB",
+          "downloads": 46
+        },
+        {
+          "country_code": "AG",
+          "downloads": 43
+        },
+        {
+          "country_code": "FO",
+          "downloads": 40
+        },
+        {
+          "country_code": "CF",
+          "downloads": 37
+        },
+        {
+          "country_code": "DM",
+          "downloads": 37
+        },
+        {
+          "country_code": "GD",
+          "downloads": 31
+        },
+        {
+          "country_code": "YT",
+          "downloads": 29
+        },
+        {
+          "country_code": "AQ",
+          "downloads": 27
+        },
+        {
+          "country_code": "TM",
+          "downloads": 26
+        },
+        {
+          "country_code": "VU",
+          "downloads": 24
+        },
+        {
+          "country_code": "KM",
+          "downloads": 23
+        },
+        {
+          "country_code": "AX",
+          "downloads": 19
+        },
+        {
+          "country_code": "VC",
+          "downloads": 18
+        },
+        {
+          "country_code": "GW",
+          "downloads": 17
+        },
+        {
+          "country_code": "BQ",
+          "downloads": 15
+        },
+        {
+          "country_code": "AI",
+          "downloads": 13
+        },
+        {
+          "country_code": "BL",
+          "downloads": 12
+        },
+        {
+          "country_code": "GQ",
+          "downloads": 11
+        },
+        {
+          "country_code": "MF",
+          "downloads": 11
+        },
+        {
+          "country_code": "MP",
+          "downloads": 10
+        },
+        {
+          "country_code": "PM",
+          "downloads": 9
+        },
+        {
+          "country_code": "VA",
+          "downloads": 9
+        },
+        {
+          "country_code": "WS",
+          "downloads": 7
+        },
+        {
+          "country_code": "AS",
+          "downloads": 6
+        },
+        {
+          "country_code": "NR",
+          "downloads": 6
+        },
+        {
+          "country_code": "CK",
+          "downloads": 5
+        },
+        {
+          "country_code": "MH",
+          "downloads": 5
+        },
+        {
+          "country_code": "PW",
+          "downloads": 5
+        },
+        {
+          "country_code": "TO",
+          "downloads": 3
+        },
+        {
+          "country_code": "WF",
+          "downloads": 3
+        },
+        {
+          "country_code": "ER",
+          "downloads": 2
+        },
+        {
+          "country_code": "FM",
+          "downloads": 2
+        },
+        {
+          "country_code": "KI",
+          "downloads": 2
+        },
+        {
+          "country_code": "TV",
+          "downloads": 2
+        },
+        {
+          "country_code": "UM",
+          "downloads": 1
+        }
+      ]
+    },
+    "google-generativeai": {
+      "provider": "Google",
+      "countries": [
+        {
+          "country_code": "US",
+          "downloads": 6868391
+        },
+        {
+          "country_code": "DE",
+          "downloads": 528169
+        },
+        {
+          "country_code": "JP",
+          "downloads": 493936
+        },
+        {
+          "country_code": "IN",
+          "downloads": 258655
+        },
+        {
+          "country_code": "SG",
+          "downloads": 169704
+        },
+        {
+          "country_code": "NL",
+          "downloads": 69975
+        },
+        {
+          "country_code": "FR",
+          "downloads": 57711
+        },
+        {
+          "country_code": "IE",
+          "downloads": 51434
+        },
+        {
+          "country_code": "CA",
+          "downloads": 44666
+        },
+        {
+          "country_code": "BE",
+          "downloads": 44450
+        },
+        {
+          "country_code": "AU",
+          "downloads": 36995
+        },
+        {
+          "country_code": "GB",
+          "downloads": 36241
+        },
+        {
+          "country_code": "KR",
+          "downloads": 32491
+        },
+        {
+          "country_code": "SE",
+          "downloads": 31576
+        },
+        {
+          "country_code": "BR",
+          "downloads": 27111
+        },
+        {
+          "country_code": "HK",
+          "downloads": 19277
+        },
+        {
+          "country_code": "FI",
+          "downloads": 19169
+        },
+        {
+          "country_code": "ES",
+          "downloads": 18440
+        },
+        {
+          "country_code": "MX",
+          "downloads": 17552
+        },
+        {
+          "country_code": "CN",
+          "downloads": 14025
+        },
+        {
+          "country_code": "TW",
+          "downloads": 11884
+        },
+        {
+          "country_code": "VN",
+          "downloads": 10958
+        },
+        {
+          "country_code": "RU",
+          "downloads": 8976
+        },
+        {
+          "country_code": "ID",
+          "downloads": 8329
+        },
+        {
+          "country_code": "IT",
+          "downloads": 7046
+        },
+        {
+          "country_code": "TR",
+          "downloads": 6927
+        },
+        {
+          "country_code": "PL",
+          "downloads": 6712
+        },
+        {
+          "country_code": "CH",
+          "downloads": 6422
+        },
+        {
+          "country_code": "CL",
+          "downloads": 4894
+        },
+        {
+          "country_code": "PK",
+          "downloads": 4826
+        },
+        {
+          "country_code": "IL",
+          "downloads": 4519
+        },
+        {
+          "country_code": "TH",
+          "downloads": 3619
+        },
+        {
+          "country_code": "MY",
+          "downloads": 3370
+        },
+        {
+          "country_code": "RO",
+          "downloads": 2880
+        },
+        {
+          "country_code": "BD",
+          "downloads": 2695
+        },
+        {
+          "country_code": "CO",
+          "downloads": 2608
+        },
+        {
+          "country_code": "UA",
+          "downloads": 2558
+        },
+        {
+          "country_code": "EG",
+          "downloads": 2542
+        },
+        {
+          "country_code": "AE",
+          "downloads": 2421
+        },
+        {
+          "country_code": "AR",
+          "downloads": 2302
+        },
+        {
+          "country_code": "SA",
+          "downloads": 2224
+        },
+        {
+          "country_code": "ZA",
+          "downloads": 2199
+        },
+        {
+          "country_code": "AT",
+          "downloads": 1911
+        },
+        {
+          "country_code": "CZ",
+          "downloads": 1721
+        },
+        {
+          "country_code": "PE",
+          "downloads": 1594
+        },
+        {
+          "country_code": "PT",
+          "downloads": 1501
+        },
+        {
+          "country_code": "UZ",
+          "downloads": 1441
+        },
+        {
+          "country_code": "BG",
+          "downloads": 1383
+        },
+        {
+          "country_code": "MA",
+          "downloads": 1264
+        },
+        {
+          "country_code": "PH",
+          "downloads": 1239
+        },
+        {
+          "country_code": "NZ",
+          "downloads": 1135
+        },
+        {
+          "country_code": "KZ",
+          "downloads": 1043
+        },
+        {
+          "country_code": "NG",
+          "downloads": 910
+        },
+        {
+          "country_code": "QA",
+          "downloads": 888
+        },
+        {
+          "country_code": "NO",
+          "downloads": 882
+        },
+        {
+          "country_code": "SK",
+          "downloads": 876
+        },
+        {
+          "country_code": "HU",
+          "downloads": 858
+        },
+        {
+          "country_code": "LT",
+          "downloads": 825
+        },
+        {
+          "country_code": "TN",
+          "downloads": 822
+        },
+        {
+          "country_code": "DK",
+          "downloads": 810
+        },
+        {
+          "country_code": "IQ",
+          "downloads": 785
+        },
+        {
+          "country_code": "LK",
+          "downloads": 761
+        },
+        {
+          "country_code": "GR",
+          "downloads": 731
+        },
+        {
+          "country_code": "EE",
+          "downloads": 672
+        },
+        {
+          "country_code": "ET",
+          "downloads": 664
+        },
+        {
+          "country_code": "NP",
+          "downloads": 632
+        },
+        {
+          "country_code": "KE",
+          "downloads": 603
+        },
+        {
+          "country_code": "EC",
+          "downloads": 585
+        },
+        {
+          "country_code": "DZ",
+          "downloads": 553
+        },
+        {
+          "country_code": "VE",
+          "downloads": 501
+        },
+        {
+          "country_code": "KH",
+          "downloads": 464
+        },
+        {
+          "country_code": "SX",
+          "downloads": 433
+        },
+        {
+          "country_code": "IR",
+          "downloads": 423
+        },
+        {
+          "country_code": "BY",
+          "downloads": 381
+        },
+        {
+          "country_code": "JO",
+          "downloads": 373
+        },
+        {
+          "country_code": "LU",
+          "downloads": 363
+        },
+        {
+          "country_code": "AZ",
+          "downloads": 348
+        },
+        {
+          "country_code": "DO",
+          "downloads": 314
+        },
+        {
+          "country_code": "RS",
+          "downloads": 297
+        },
+        {
+          "country_code": "CR",
+          "downloads": 288
+        },
+        {
+          "country_code": "GE",
+          "downloads": 285
+        },
+        {
+          "country_code": "LV",
+          "downloads": 257
+        },
+        {
+          "country_code": "GH",
+          "downloads": 240
+        },
+        {
+          "country_code": "AM",
+          "downloads": 237
+        },
+        {
+          "country_code": "BO",
+          "downloads": 233
+        },
+        {
+          "country_code": "IS",
+          "downloads": 223
+        },
+        {
+          "country_code": "CY",
+          "downloads": 220
+        },
+        {
+          "country_code": "SI",
+          "downloads": 189
+        },
+        {
+          "country_code": "UY",
+          "downloads": 189
+        },
+        {
+          "country_code": "AL",
+          "downloads": 186
+        },
+        {
+          "country_code": "GT",
+          "downloads": 178
+        },
+        {
+          "country_code": "HR",
+          "downloads": 175
+        },
+        {
+          "country_code": "YE",
+          "downloads": 175
+        },
+        {
+          "country_code": "LB",
+          "downloads": 161
+        },
+        {
+          "country_code": "MD",
+          "downloads": 159
+        },
+        {
+          "country_code": "OM",
+          "downloads": 159
+        },
+        {
+          "country_code": "KG",
+          "downloads": 142
+        },
+        {
+          "country_code": "PY",
+          "downloads": 139
+        },
+        {
+          "country_code": "SN",
+          "downloads": 134
+        },
+        {
+          "country_code": "ZW",
+          "downloads": 128
+        },
+        {
+          "country_code": "CI",
+          "downloads": 126
+        },
+        {
+          "country_code": "MT",
+          "downloads": 124
+        },
+        {
+          "country_code": "KW",
+          "downloads": 117
+        },
+        {
+          "country_code": "PS",
+          "downloads": 114
+        },
+        {
+          "country_code": "MM",
+          "downloads": 112
+        },
+        {
+          "country_code": "PR",
+          "downloads": 102
+        },
+        {
+          "country_code": "PA",
+          "downloads": 101
+        },
+        {
+          "country_code": "SV",
+          "downloads": 101
+        },
+        {
+          "country_code": "MN",
+          "downloads": 97
+        },
+        {
+          "country_code": "MK",
+          "downloads": 96
+        },
+        {
+          "country_code": "UG",
+          "downloads": 96
+        },
+        {
+          "country_code": "SY",
+          "downloads": 95
+        },
+        {
+          "country_code": "CM",
+          "downloads": 91
+        },
+        {
+          "country_code": "TJ",
+          "downloads": 84
+        },
+        {
+          "country_code": "MG",
+          "downloads": 83
+        },
+        {
+          "country_code": "TZ",
+          "downloads": 83
+        },
+        {
+          "country_code": "RW",
+          "downloads": 81
+        },
+        {
+          "country_code": "LY",
+          "downloads": 79
+        },
+        {
+          "country_code": "HN",
+          "downloads": 75
+        },
+        {
+          "country_code": "BH",
+          "downloads": 71
+        },
+        {
+          "country_code": "BA",
+          "downloads": 69
+        },
+        {
+          "country_code": "ZM",
+          "downloads": 63
+        },
+        {
+          "country_code": "CD",
+          "downloads": 61
+        },
+        {
+          "country_code": "NI",
+          "downloads": 58
+        },
+        {
+          "country_code": "RE",
+          "downloads": 54
+        },
+        {
+          "country_code": "BJ",
+          "downloads": 48
+        },
+        {
+          "country_code": "AO",
+          "downloads": 46
+        },
+        {
+          "country_code": "BF",
+          "downloads": 45
+        },
+        {
+          "country_code": "JM",
+          "downloads": 42
+        },
+        {
+          "country_code": "AF",
+          "downloads": 41
+        },
+        {
+          "country_code": "MU",
+          "downloads": 39
+        },
+        {
+          "country_code": "TG",
+          "downloads": 38
+        },
+        {
+          "country_code": "MO",
+          "downloads": 36
+        },
+        {
+          "country_code": "NA",
+          "downloads": 36
+        },
+        {
+          "country_code": "ME",
+          "downloads": 31
+        },
+        {
+          "country_code": "LA",
+          "downloads": 28
+        },
+        {
+          "country_code": "SD",
+          "downloads": 27
+        },
+        {
+          "country_code": "MZ",
+          "downloads": 25
+        },
+        {
+          "country_code": "TT",
+          "downloads": 23
+        },
+        {
+          "country_code": "BB",
+          "downloads": 22
+        },
+        {
+          "country_code": "FJ",
+          "downloads": 21
+        },
+        {
+          "country_code": "GP",
+          "downloads": 14
+        },
+        {
+          "country_code": "BW",
+          "downloads": 13
+        },
+        {
+          "country_code": "AD",
+          "downloads": 12
+        },
+        {
+          "country_code": "MR",
+          "downloads": 12
+        },
+        {
+          "country_code": "VI",
+          "downloads": 12
+        },
+        {
+          "country_code": "BI",
+          "downloads": 11
+        },
+        {
+          "country_code": "BT",
+          "downloads": 11
+        },
+        {
+          "country_code": "CG",
+          "downloads": 11
+        },
+        {
+          "country_code": "GN",
+          "downloads": 11
+        },
+        {
+          "country_code": "HT",
+          "downloads": 11
+        },
+        {
+          "country_code": "ML",
+          "downloads": 11
+        },
+        {
+          "country_code": "MW",
+          "downloads": 11
+        },
+        {
+          "country_code": "SO",
+          "downloads": 11
+        },
+        {
+          "country_code": "CU",
+          "downloads": 10
+        },
+        {
+          "country_code": "GY",
+          "downloads": 9
+        },
+        {
+          "country_code": "MC",
+          "downloads": 9
+        },
+        {
+          "country_code": "MV",
+          "downloads": 9
+        },
+        {
+          "country_code": "SZ",
+          "downloads": 9
+        },
+        {
+          "country_code": "TD",
+          "downloads": 9
+        },
+        {
+          "country_code": "EU",
+          "downloads": 8
+        },
+        {
+          "country_code": "LS",
+          "downloads": 8
+        },
+        {
+          "country_code": "MQ",
+          "downloads": 8
+        },
+        {
+          "country_code": "DJ",
+          "downloads": 7
+        },
+        {
+          "country_code": "GA",
+          "downloads": 7
+        },
+        {
+          "country_code": "AW",
+          "downloads": 6
+        },
+        {
+          "country_code": "DM",
+          "downloads": 6
+        },
+        {
+          "country_code": "CW",
+          "downloads": 5
+        },
+        {
+          "country_code": "GL",
+          "downloads": 5
+        },
+        {
+          "country_code": "LC",
+          "downloads": 5
+        },
+        {
+          "country_code": "BS",
+          "downloads": 4
+        },
+        {
+          "country_code": "NE",
+          "downloads": 4
+        },
+        {
+          "country_code": "PF",
+          "downloads": 4
+        },
+        {
+          "country_code": "SC",
+          "downloads": 4
+        },
+        {
+          "country_code": "SR",
+          "downloads": 4
+        },
+        {
+          "country_code": "BN",
+          "downloads": 3
+        },
+        {
+          "country_code": "GD",
+          "downloads": 3
+        },
+        {
+          "country_code": "GI",
+          "downloads": 3
+        },
+        {
+          "country_code": "KY",
+          "downloads": 3
+        },
+        {
+          "country_code": "LI",
+          "downloads": 3
+        },
+        {
+          "country_code": "NC",
+          "downloads": 3
+        },
+        {
+          "country_code": "PG",
+          "downloads": 3
+        },
+        {
+          "country_code": "CV",
+          "downloads": 2
+        },
+        {
+          "country_code": "GG",
+          "downloads": 2
+        },
+        {
+          "country_code": "GU",
+          "downloads": 2
+        },
+        {
+          "country_code": "GW",
+          "downloads": 2
+        },
+        {
+          "country_code": "IM",
+          "downloads": 2
+        },
+        {
+          "country_code": "SL",
+          "downloads": 2
+        },
+        {
+          "country_code": "SS",
+          "downloads": 2
+        },
+        {
+          "country_code": "TL",
+          "downloads": 2
+        },
+        {
+          "country_code": "YT",
+          "downloads": 2
+        },
+        {
+          "country_code": "BL",
+          "downloads": 1
+        },
+        {
+          "country_code": "FO",
+          "downloads": 1
+        },
+        {
+          "country_code": "GQ",
+          "downloads": 1
+        },
+        {
+          "country_code": "LR",
+          "downloads": 1
+        },
+        {
+          "country_code": "SM",
+          "downloads": 1
+        },
+        {
+          "country_code": "TM",
+          "downloads": 1
+        },
+        {
+          "country_code": "VU",
+          "downloads": 1
+        }
+      ]
+    },
+    "ollama": {
+      "provider": "Ollama",
+      "countries": [
+        {
+          "country_code": "US",
+          "downloads": 10046321
+        },
+        {
+          "country_code": "DE",
+          "downloads": 352473
+        },
+        {
+          "country_code": "HK",
+          "downloads": 347477
+        },
+        {
+          "country_code": "IN",
+          "downloads": 282046
+        },
+        {
+          "country_code": "SG",
+          "downloads": 172438
+        },
+        {
+          "country_code": "JP",
+          "downloads": 135058
+        },
+        {
+          "country_code": "CA",
+          "downloads": 120165
+        },
+        {
+          "country_code": "NL",
+          "downloads": 114170
+        },
+        {
+          "country_code": "CN",
+          "downloads": 95941
+        },
+        {
+          "country_code": "AU",
+          "downloads": 94979
+        },
+        {
+          "country_code": "FR",
+          "downloads": 88664
+        },
+        {
+          "country_code": "DK",
+          "downloads": 82925
+        },
+        {
+          "country_code": "FI",
+          "downloads": 74469
+        },
+        {
+          "country_code": "KR",
+          "downloads": 74191
+        },
+        {
+          "country_code": "GB",
+          "downloads": 72962
+        },
+        {
+          "country_code": "IE",
+          "downloads": 60098
+        },
+        {
+          "country_code": "BR",
+          "downloads": 49535
+        },
+        {
+          "country_code": "NO",
+          "downloads": 47817
+        },
+        {
+          "country_code": "BE",
+          "downloads": 45736
+        },
+        {
+          "country_code": "SE",
+          "downloads": 41249
+        },
+        {
+          "country_code": "SA",
+          "downloads": 35760
+        },
+        {
+          "country_code": "IT",
+          "downloads": 33228
+        },
+        {
+          "country_code": "ES",
+          "downloads": 30245
+        },
+        {
+          "country_code": "MX",
+          "downloads": 26383
+        },
+        {
+          "country_code": "RU",
+          "downloads": 25025
+        },
+        {
+          "country_code": "PL",
+          "downloads": 23018
+        },
+        {
+          "country_code": "ZA",
+          "downloads": 21060
+        },
+        {
+          "country_code": "TW",
+          "downloads": 20807
+        },
+        {
+          "country_code": "ID",
+          "downloads": 20104
+        },
+        {
+          "country_code": "VN",
+          "downloads": 19806
+        },
+        {
+          "country_code": "CH",
+          "downloads": 19299
+        },
+        {
+          "country_code": "LT",
+          "downloads": 19217
+        },
+        {
+          "country_code": "UY",
+          "downloads": 19166
+        },
+        {
+          "country_code": "TR",
+          "downloads": 13828
+        },
+        {
+          "country_code": "PK",
+          "downloads": 12353
+        },
+        {
+          "country_code": "AT",
+          "downloads": 12052
+        },
+        {
+          "country_code": "PT",
+          "downloads": 11881
+        },
+        {
+          "country_code": "IL",
+          "downloads": 9625
+        },
+        {
+          "country_code": "UA",
+          "downloads": 9182
+        },
+        {
+          "country_code": "RO",
+          "downloads": 8545
+        },
+        {
+          "country_code": "NZ",
+          "downloads": 8195
+        },
+        {
+          "country_code": "MY",
+          "downloads": 8086
+        },
+        {
+          "country_code": "CL",
+          "downloads": 7537
+        },
+        {
+          "country_code": "CZ",
+          "downloads": 6845
+        },
+        {
+          "country_code": "AE",
+          "downloads": 6543
+        },
+        {
+          "country_code": "AR",
+          "downloads": 6452
+        },
+        {
+          "country_code": "CO",
+          "downloads": 6398
+        },
+        {
+          "country_code": "TH",
+          "downloads": 5708
+        },
+        {
+          "country_code": "BG",
+          "downloads": 5478
+        },
+        {
+          "country_code": "EG",
+          "downloads": 5047
+        },
+        {
+          "country_code": "GR",
+          "downloads": 4843
+        },
+        {
+          "country_code": "AD",
+          "downloads": 4229
+        },
+        {
+          "country_code": "PE",
+          "downloads": 3970
+        },
+        {
+          "country_code": "MA",
+          "downloads": 3897
+        },
+        {
+          "country_code": "PH",
+          "downloads": 3802
+        },
+        {
+          "country_code": "BD",
+          "downloads": 3767
+        },
+        {
+          "country_code": "CY",
+          "downloads": 3408
+        },
+        {
+          "country_code": "NG",
+          "downloads": 3153
+        },
+        {
+          "country_code": "EE",
+          "downloads": 2931
+        },
+        {
+          "country_code": "DZ",
+          "downloads": 2547
+        },
+        {
+          "country_code": "HU",
+          "downloads": 2532
+        },
+        {
+          "country_code": "SK",
+          "downloads": 2445
+        },
+        {
+          "country_code": "TN",
+          "downloads": 2312
+        },
+        {
+          "country_code": "LK",
+          "downloads": 1975
+        },
+        {
+          "country_code": "KZ",
+          "downloads": 1841
+        },
+        {
+          "country_code": "EC",
+          "downloads": 1733
+        },
+        {
+          "country_code": "HR",
+          "downloads": 1730
+        },
+        {
+          "country_code": "KE",
+          "downloads": 1728
+        },
+        {
+          "country_code": "RS",
+          "downloads": 1503
+        },
+        {
+          "country_code": "IR",
+          "downloads": 1474
+        },
+        {
+          "country_code": "NP",
+          "downloads": 1450
+        },
+        {
+          "country_code": "BY",
+          "downloads": 1367
+        },
+        {
+          "country_code": "UZ",
+          "downloads": 1351
+        },
+        {
+          "country_code": "IQ",
+          "downloads": 1338
+        },
+        {
+          "country_code": "LU",
+          "downloads": 1300
+        },
+        {
+          "country_code": "JO",
+          "downloads": 1216
+        },
+        {
+          "country_code": "AM",
+          "downloads": 1210
+        },
+        {
+          "country_code": "CR",
+          "downloads": 1174
+        },
+        {
+          "country_code": "GH",
+          "downloads": 1015
+        },
+        {
+          "country_code": "BO",
+          "downloads": 1003
+        },
+        {
+          "country_code": "DO",
+          "downloads": 990
+        },
+        {
+          "country_code": "LV",
+          "downloads": 985
+        },
+        {
+          "country_code": "IS",
+          "downloads": 937
+        },
+        {
+          "country_code": "ET",
+          "downloads": 932
+        },
+        {
+          "country_code": "AO",
+          "downloads": 916
+        },
+        {
+          "country_code": "QA",
+          "downloads": 901
+        },
+        {
+          "country_code": "VE",
+          "downloads": 878
+        },
+        {
+          "country_code": "GE",
+          "downloads": 876
+        },
+        {
+          "country_code": "MD",
+          "downloads": 832
+        },
+        {
+          "country_code": "UG",
+          "downloads": 822
+        },
+        {
+          "country_code": "TZ",
+          "downloads": 804
+        },
+        {
+          "country_code": "AL",
+          "downloads": 770
+        },
+        {
+          "country_code": "SI",
+          "downloads": 739
+        },
+        {
+          "country_code": "LB",
+          "downloads": 699
+        },
+        {
+          "country_code": "MG",
+          "downloads": 608
+        },
+        {
+          "country_code": "AZ",
+          "downloads": 558
+        },
+        {
+          "country_code": "CI",
+          "downloads": 552
+        },
+        {
+          "country_code": "KH",
+          "downloads": 540
+        },
+        {
+          "country_code": "NA",
+          "downloads": 495
+        },
+        {
+          "country_code": "CM",
+          "downloads": 491
+        },
+        {
+          "country_code": "ZM",
+          "downloads": 477
+        },
+        {
+          "country_code": "PY",
+          "downloads": 457
+        },
+        {
+          "country_code": "OM",
+          "downloads": 440
+        },
+        {
+          "country_code": "GT",
+          "downloads": 428
+        },
+        {
+          "country_code": "PR",
+          "downloads": 416
+        },
+        {
+          "country_code": "SN",
+          "downloads": 389
+        },
+        {
+          "country_code": "PA",
+          "downloads": 387
+        },
+        {
+          "country_code": "BH",
+          "downloads": 368
+        },
+        {
+          "country_code": "SV",
+          "downloads": 364
+        },
+        {
+          "country_code": "KG",
+          "downloads": 362
+        },
+        {
+          "country_code": "SY",
+          "downloads": 362
+        },
+        {
+          "country_code": "BA",
+          "downloads": 352
+        },
+        {
+          "country_code": "CD",
+          "downloads": 351
+        },
+        {
+          "country_code": "MN",
+          "downloads": 317
+        },
+        {
+          "country_code": "YE",
+          "downloads": 308
+        },
+        {
+          "country_code": "SD",
+          "downloads": 306
+        },
+        {
+          "country_code": "KW",
+          "downloads": 304
+        },
+        {
+          "country_code": "RW",
+          "downloads": 288
+        },
+        {
+          "country_code": "BJ",
+          "downloads": 272
+        },
+        {
+          "country_code": "LY",
+          "downloads": 254
+        },
+        {
+          "country_code": "TG",
+          "downloads": 249
+        },
+        {
+          "country_code": "MZ",
+          "downloads": 246
+        },
+        {
+          "country_code": "MK",
+          "downloads": 233
+        },
+        {
+          "country_code": "PS",
+          "downloads": 215
+        },
+        {
+          "country_code": "NI",
+          "downloads": 212
+        },
+        {
+          "country_code": "MT",
+          "downloads": 208
+        },
+        {
+          "country_code": "TJ",
+          "downloads": 204
+        },
+        {
+          "country_code": "MO",
+          "downloads": 201
+        },
+        {
+          "country_code": "HN",
+          "downloads": 192
+        },
+        {
+          "country_code": "ZW",
+          "downloads": 182
+        },
+        {
+          "country_code": "MM",
+          "downloads": 181
+        },
+        {
+          "country_code": "BF",
+          "downloads": 177
+        },
+        {
+          "country_code": "RE",
+          "downloads": 156
+        },
+        {
+          "country_code": "MQ",
+          "downloads": 153
+        },
+        {
+          "country_code": "MU",
+          "downloads": 147
+        },
+        {
+          "country_code": "ME",
+          "downloads": 123
+        },
+        {
+          "country_code": "CG",
+          "downloads": 108
+        },
+        {
+          "country_code": "SO",
+          "downloads": 101
+        },
+        {
+          "country_code": "TT",
+          "downloads": 100
+        },
+        {
+          "country_code": "LA",
+          "downloads": 90
+        },
+        {
+          "country_code": "ML",
+          "downloads": 89
+        },
+        {
+          "country_code": "AF",
+          "downloads": 84
+        },
+        {
+          "country_code": "GA",
+          "downloads": 81
+        },
+        {
+          "country_code": "JM",
+          "downloads": 76
+        },
+        {
+          "country_code": "CU",
+          "downloads": 72
+        },
+        {
+          "country_code": "SS",
+          "downloads": 69
+        },
+        {
+          "country_code": "BT",
+          "downloads": 66
+        },
+        {
+          "country_code": "HT",
+          "downloads": 63
+        },
+        {
+          "country_code": "LR",
+          "downloads": 63
+        },
+        {
+          "country_code": "MV",
+          "downloads": 61
+        },
+        {
+          "country_code": "MW",
+          "downloads": 61
+        },
+        {
+          "country_code": "GN",
+          "downloads": 58
+        },
+        {
+          "country_code": "NE",
+          "downloads": 58
+        },
+        {
+          "country_code": "TD",
+          "downloads": 55
+        },
+        {
+          "country_code": "SX",
+          "downloads": 53
+        },
+        {
+          "country_code": "MR",
+          "downloads": 52
+        },
+        {
+          "country_code": "BW",
+          "downloads": 46
+        },
+        {
+          "country_code": "PG",
+          "downloads": 45
+        },
+        {
+          "country_code": "BI",
+          "downloads": 41
+        },
+        {
+          "country_code": "LS",
+          "downloads": 41
+        },
+        {
+          "country_code": "BN",
+          "downloads": 39
+        },
+        {
+          "country_code": "FJ",
+          "downloads": 39
+        },
+        {
+          "country_code": "MC",
+          "downloads": 36
+        },
+        {
+          "country_code": "SL",
+          "downloads": 35
+        },
+        {
+          "country_code": "CW",
+          "downloads": 34
+        },
+        {
+          "country_code": "GY",
+          "downloads": 33
+        },
+        {
+          "country_code": "JE",
+          "downloads": 31
+        },
+        {
+          "country_code": "LI",
+          "downloads": 29
+        },
+        {
+          "country_code": "NC",
+          "downloads": 28
+        },
+        {
+          "country_code": "GP",
+          "downloads": 26
+        },
+        {
+          "country_code": "SZ",
+          "downloads": 26
+        },
+        {
+          "country_code": "SC",
+          "downloads": 23
+        },
+        {
+          "country_code": "IM",
+          "downloads": 22
+        },
+        {
+          "country_code": "SR",
+          "downloads": 22
+        },
+        {
+          "country_code": "BB",
+          "downloads": 21
+        },
+        {
+          "country_code": "TL",
+          "downloads": 21
+        },
+        {
+          "country_code": "KY",
+          "downloads": 18
+        },
+        {
+          "country_code": "PF",
+          "downloads": 18
+        },
+        {
+          "country_code": "CV",
+          "downloads": 16
+        },
+        {
+          "country_code": "VG",
+          "downloads": 15
+        },
+        {
+          "country_code": "CF",
+          "downloads": 14
+        },
+        {
+          "country_code": "SB",
+          "downloads": 14
+        },
+        {
+          "country_code": "AW",
+          "downloads": 13
+        },
+        {
+          "country_code": "DJ",
+          "downloads": 13
+        },
+        {
+          "country_code": "BS",
+          "downloads": 12
+        },
+        {
+          "country_code": "BZ",
+          "downloads": 12
+        },
+        {
+          "country_code": "GM",
+          "downloads": 12
+        },
+        {
+          "country_code": "SM",
+          "downloads": 12
+        },
+        {
+          "country_code": "VI",
+          "downloads": 12
+        },
+        {
+          "country_code": "EU",
+          "downloads": 11
+        },
+        {
+          "country_code": "GG",
+          "downloads": 10
+        },
+        {
+          "country_code": "KN",
+          "downloads": 10
+        },
+        {
+          "country_code": "BM",
+          "downloads": 9
+        },
+        {
+          "country_code": "TM",
+          "downloads": 9
+        },
+        {
+          "country_code": "AG",
+          "downloads": 8
+        },
+        {
+          "country_code": "DM",
+          "downloads": 8
+        },
+        {
+          "country_code": "FO",
+          "downloads": 8
+        },
+        {
+          "country_code": "KM",
+          "downloads": 8
+        },
+        {
+          "country_code": "YT",
+          "downloads": 8
+        },
+        {
+          "country_code": "GD",
+          "downloads": 7
+        },
+        {
+          "country_code": "GF",
+          "downloads": 7
+        },
+        {
+          "country_code": "LC",
+          "downloads": 7
+        },
+        {
+          "country_code": "MF",
+          "downloads": 7
+        },
+        {
+          "country_code": "AQ",
+          "downloads": 6
+        },
+        {
+          "country_code": "GI",
+          "downloads": 6
+        },
+        {
+          "country_code": "GL",
+          "downloads": 6
+        },
+        {
+          "country_code": "GU",
+          "downloads": 6
+        },
+        {
+          "country_code": "GW",
+          "downloads": 6
+        },
+        {
+          "country_code": "VU",
+          "downloads": 4
+        },
+        {
+          "country_code": "GQ",
+          "downloads": 3
+        },
+        {
+          "country_code": "VC",
+          "downloads": 3
+        },
+        {
+          "country_code": "CK",
+          "downloads": 2
+        },
+        {
+          "country_code": "KI",
+          "downloads": 2
+        },
+        {
+          "country_code": "TC",
+          "downloads": 2
+        },
+        {
+          "country_code": "WS",
+          "downloads": 2
+        },
+        {
+          "country_code": "BL",
+          "downloads": 1
+        },
+        {
+          "country_code": "BQ",
+          "downloads": 1
+        },
+        {
+          "country_code": "FM",
+          "downloads": 1
+        },
+        {
+          "country_code": "IO",
+          "downloads": 1
+        },
+        {
+          "country_code": "MH",
+          "downloads": 1
+        },
+        {
+          "country_code": "ST",
+          "downloads": 1
+        },
+        {
+          "country_code": "TO",
+          "downloads": 1
+        },
+        {
+          "country_code": "TV",
+          "downloads": 1
+        },
+        {
+          "country_code": "VA",
+          "downloads": 1
+        }
+      ]
+    },
+    "mistralai": {
+      "provider": "Mistral AI",
+      "countries": [
+        {
+          "country_code": "US",
+          "downloads": 10004589
+        },
+        {
+          "country_code": "SE",
+          "downloads": 1647946
+        },
+        {
+          "country_code": "ES",
+          "downloads": 538969
+        },
+        {
+          "country_code": "NL",
+          "downloads": 437314
+        },
+        {
+          "country_code": "DK",
+          "downloads": 338174
+        },
+        {
+          "country_code": "DE",
+          "downloads": 232400
+        },
+        {
+          "country_code": "CN",
+          "downloads": 180541
+        },
+        {
+          "country_code": "FR",
+          "downloads": 163210
+        },
+        {
+          "country_code": "IE",
+          "downloads": 90053
+        },
+        {
+          "country_code": "FI",
+          "downloads": 74241
+        },
+        {
+          "country_code": "GB",
+          "downloads": 52535
+        },
+        {
+          "country_code": "JP",
+          "downloads": 46850
+        },
+        {
+          "country_code": "SG",
+          "downloads": 46320
+        },
+        {
+          "country_code": "CA",
+          "downloads": 46109
+        },
+        {
+          "country_code": "IN",
+          "downloads": 37322
+        },
+        {
+          "country_code": "BE",
+          "downloads": 34918
+        },
+        {
+          "country_code": "HK",
+          "downloads": 26200
+        },
+        {
+          "country_code": "AU",
+          "downloads": 24215
+        },
+        {
+          "country_code": "IT",
+          "downloads": 22412
+        },
+        {
+          "country_code": "MX",
+          "downloads": 18180
+        },
+        {
+          "country_code": "BR",
+          "downloads": 17815
+        },
+        {
+          "country_code": "KR",
+          "downloads": 14043
+        },
+        {
+          "country_code": "NO",
+          "downloads": 12880
+        },
+        {
+          "country_code": "CH",
+          "downloads": 10260
+        },
+        {
+          "country_code": "IL",
+          "downloads": 7921
+        },
+        {
+          "country_code": "AT",
+          "downloads": 7046
+        },
+        {
+          "country_code": "PL",
+          "downloads": 6865
+        },
+        {
+          "country_code": "RU",
+          "downloads": 6829
+        },
+        {
+          "country_code": "CZ",
+          "downloads": 6210
+        },
+        {
+          "country_code": "NC",
+          "downloads": 5660
+        },
+        {
+          "country_code": "VN",
+          "downloads": 4737
+        },
+        {
+          "country_code": "CL",
+          "downloads": 4157
+        },
+        {
+          "country_code": "AE",
+          "downloads": 4130
+        },
+        {
+          "country_code": "TW",
+          "downloads": 3970
+        },
+        {
+          "country_code": "ID",
+          "downloads": 3537
+        },
+        {
+          "country_code": "PT",
+          "downloads": 3536
+        },
+        {
+          "country_code": "TR",
+          "downloads": 3251
+        },
+        {
+          "country_code": "GR",
+          "downloads": 2944
+        },
+        {
+          "country_code": "MY",
+          "downloads": 2938
+        },
+        {
+          "country_code": "LU",
+          "downloads": 2169
+        },
+        {
+          "country_code": "UA",
+          "downloads": 1946
+        },
+        {
+          "country_code": "ZA",
+          "downloads": 1925
+        },
+        {
+          "country_code": "HU",
+          "downloads": 1885
+        },
+        {
+          "country_code": "SA",
+          "downloads": 1826
+        },
+        {
+          "country_code": "LV",
+          "downloads": 1748
+        },
+        {
+          "country_code": "RO",
+          "downloads": 1565
+        },
+        {
+          "country_code": "PK",
+          "downloads": 1434
+        },
+        {
+          "country_code": "HR",
+          "downloads": 1403
+        },
+        {
+          "country_code": "MA",
+          "downloads": 1345
+        },
+        {
+          "country_code": "TH",
+          "downloads": 1314
+        },
+        {
+          "country_code": "LT",
+          "downloads": 1289
+        },
+        {
+          "country_code": "CO",
+          "downloads": 1180
+        },
+        {
+          "country_code": "BG",
+          "downloads": 1076
+        },
+        {
+          "country_code": "PH",
+          "downloads": 1025
+        },
+        {
+          "country_code": "EG",
+          "downloads": 912
+        },
+        {
+          "country_code": "AR",
+          "downloads": 836
+        },
+        {
+          "country_code": "NG",
+          "downloads": 716
+        },
+        {
+          "country_code": "GE",
+          "downloads": 691
+        },
+        {
+          "country_code": "PE",
+          "downloads": 669
+        },
+        {
+          "country_code": "SK",
+          "downloads": 563
+        },
+        {
+          "country_code": "NZ",
+          "downloads": 559
+        },
+        {
+          "country_code": "RS",
+          "downloads": 490
+        },
+        {
+          "country_code": "KZ",
+          "downloads": 485
+        },
+        {
+          "country_code": "EE",
+          "downloads": 470
+        },
+        {
+          "country_code": "TN",
+          "downloads": 433
+        },
+        {
+          "country_code": "BD",
+          "downloads": 410
+        },
+        {
+          "country_code": "SI",
+          "downloads": 405
+        },
+        {
+          "country_code": "BY",
+          "downloads": 381
+        },
+        {
+          "country_code": "KE",
+          "downloads": 316
+        },
+        {
+          "country_code": "DO",
+          "downloads": 299
+        },
+        {
+          "country_code": "DZ",
+          "downloads": 298
+        },
+        {
+          "country_code": "CY",
+          "downloads": 266
+        },
+        {
+          "country_code": "MC",
+          "downloads": 265
+        },
+        {
+          "country_code": "IS",
+          "downloads": 261
+        },
+        {
+          "country_code": "LK",
+          "downloads": 235
+        },
+        {
+          "country_code": "NP",
+          "downloads": 224
+        },
+        {
+          "country_code": "EC",
+          "downloads": 215
+        },
+        {
+          "country_code": "GP",
+          "downloads": 213
+        },
+        {
+          "country_code": "BO",
+          "downloads": 205
+        },
+        {
+          "country_code": "MK",
+          "downloads": 191
+        },
+        {
+          "country_code": "MG",
+          "downloads": 187
+        },
+        {
+          "country_code": "AM",
+          "downloads": 182
+        },
+        {
+          "country_code": "BA",
+          "downloads": 178
+        },
+        {
+          "country_code": "LB",
+          "downloads": 176
+        },
+        {
+          "country_code": "PR",
+          "downloads": 172
+        },
+        {
+          "country_code": "AL",
+          "downloads": 169
+        },
+        {
+          "country_code": "SN",
+          "downloads": 160
+        },
+        {
+          "country_code": "IR",
+          "downloads": 155
+        },
+        {
+          "country_code": "UY",
+          "downloads": 147
+        },
+        {
+          "country_code": "MU",
+          "downloads": 143
+        },
+        {
+          "country_code": "JO",
+          "downloads": 141
+        },
+        {
+          "country_code": "UZ",
+          "downloads": 137
+        },
+        {
+          "country_code": "MD",
+          "downloads": 136
+        },
+        {
+          "country_code": "RE",
+          "downloads": 134
+        },
+        {
+          "country_code": "AZ",
+          "downloads": 123
+        },
+        {
+          "country_code": "QA",
+          "downloads": 114
+        },
+        {
+          "country_code": "CR",
+          "downloads": 112
+        },
+        {
+          "country_code": "VE",
+          "downloads": 111
+        },
+        {
+          "country_code": "PY",
+          "downloads": 110
+        },
+        {
+          "country_code": "GH",
+          "downloads": 103
+        },
+        {
+          "country_code": "CI",
+          "downloads": 99
+        },
+        {
+          "country_code": "KG",
+          "downloads": 97
+        },
+        {
+          "country_code": "SV",
+          "downloads": 94
+        },
+        {
+          "country_code": "GT",
+          "downloads": 90
+        },
+        {
+          "country_code": "ME",
+          "downloads": 87
+        },
+        {
+          "country_code": "KW",
+          "downloads": 85
+        },
+        {
+          "country_code": "ET",
+          "downloads": 82
+        },
+        {
+          "country_code": "BJ",
+          "downloads": 74
+        },
+        {
+          "country_code": "PA",
+          "downloads": 71
+        },
+        {
+          "country_code": "IQ",
+          "downloads": 68
+        },
+        {
+          "country_code": "KH",
+          "downloads": 68
+        },
+        {
+          "country_code": "CM",
+          "downloads": 66
+        },
+        {
+          "country_code": "UG",
+          "downloads": 62
+        },
+        {
+          "country_code": "OM",
+          "downloads": 61
+        },
+        {
+          "country_code": "NA",
+          "downloads": 55
+        },
+        {
+          "country_code": "SX",
+          "downloads": 51
+        },
+        {
+          "country_code": "MT",
+          "downloads": 47
+        },
+        {
+          "country_code": "IM",
+          "downloads": 44
+        },
+        {
+          "country_code": "BF",
+          "downloads": 41
+        },
+        {
+          "country_code": "TZ",
+          "downloads": 37
+        },
+        {
+          "country_code": "ZW",
+          "downloads": 36
+        },
+        {
+          "country_code": "TG",
+          "downloads": 35
+        },
+        {
+          "country_code": "AO",
+          "downloads": 34
+        },
+        {
+          "country_code": "HN",
+          "downloads": 30
+        },
+        {
+          "country_code": "MQ",
+          "downloads": 30
+        },
+        {
+          "country_code": "PF",
+          "downloads": 30
+        },
+        {
+          "country_code": "YE",
+          "downloads": 30
+        },
+        {
+          "country_code": "BH",
+          "downloads": 28
+        },
+        {
+          "country_code": "RW",
+          "downloads": 28
+        },
+        {
+          "country_code": "MN",
+          "downloads": 27
+        },
+        {
+          "country_code": "MO",
+          "downloads": 25
+        },
+        {
+          "country_code": "JM",
+          "downloads": 23
+        },
+        {
+          "country_code": "ZM",
+          "downloads": 23
+        },
+        {
+          "country_code": "PS",
+          "downloads": 22
+        },
+        {
+          "country_code": "CD",
+          "downloads": 21
+        },
+        {
+          "country_code": "LI",
+          "downloads": 21
+        },
+        {
+          "country_code": "TJ",
+          "downloads": 19
+        },
+        {
+          "country_code": "LY",
+          "downloads": 18
+        },
+        {
+          "country_code": "NI",
+          "downloads": 18
+        },
+        {
+          "country_code": "FJ",
+          "downloads": 17
+        },
+        {
+          "country_code": "AD",
+          "downloads": 16
+        },
+        {
+          "country_code": "CU",
+          "downloads": 15
+        },
+        {
+          "country_code": "MM",
+          "downloads": 15
+        },
+        {
+          "country_code": "LA",
+          "downloads": 14
+        },
+        {
+          "country_code": "SY",
+          "downloads": 13
+        },
+        {
+          "country_code": "BQ",
+          "downloads": 11
+        },
+        {
+          "country_code": "BW",
+          "downloads": 11
+        },
+        {
+          "country_code": "SD",
+          "downloads": 10
+        },
+        {
+          "country_code": "TT",
+          "downloads": 10
+        },
+        {
+          "country_code": "CW",
+          "downloads": 9
+        },
+        {
+          "country_code": "JE",
+          "downloads": 9
+        },
+        {
+          "country_code": "MZ",
+          "downloads": 9
+        },
+        {
+          "country_code": "AF",
+          "downloads": 8
+        },
+        {
+          "country_code": "MR",
+          "downloads": 7
+        },
+        {
+          "country_code": "SO",
+          "downloads": 7
+        },
+        {
+          "country_code": "BS",
+          "downloads": 6
+        },
+        {
+          "country_code": "BZ",
+          "downloads": 6
+        },
+        {
+          "country_code": "GA",
+          "downloads": 6
+        },
+        {
+          "country_code": "KY",
+          "downloads": 6
+        },
+        {
+          "country_code": "MW",
+          "downloads": 6
+        },
+        {
+          "country_code": "BI",
+          "downloads": 5
+        },
+        {
+          "country_code": "GD",
+          "downloads": 5
+        },
+        {
+          "country_code": "AW",
+          "downloads": 4
+        },
+        {
+          "country_code": "FO",
+          "downloads": 4
+        },
+        {
+          "country_code": "GY",
+          "downloads": 4
+        },
+        {
+          "country_code": "MV",
+          "downloads": 4
+        },
+        {
+          "country_code": "PG",
+          "downloads": 4
+        },
+        {
+          "country_code": "BB",
+          "downloads": 3
+        },
+        {
+          "country_code": "CG",
+          "downloads": 3
+        },
+        {
+          "country_code": "DJ",
+          "downloads": 3
+        },
+        {
+          "country_code": "GG",
+          "downloads": 3
+        },
+        {
+          "country_code": "GI",
+          "downloads": 3
+        },
+        {
+          "country_code": "KN",
+          "downloads": 3
+        },
+        {
+          "country_code": "LS",
+          "downloads": 3
+        },
+        {
+          "country_code": "NE",
+          "downloads": 3
+        },
+        {
+          "country_code": "VG",
+          "downloads": 3
+        },
+        {
+          "country_code": "VI",
+          "downloads": 3
+        },
+        {
+          "country_code": "WS",
+          "downloads": 3
+        },
+        {
+          "country_code": "AX",
+          "downloads": 2
+        },
+        {
+          "country_code": "BM",
+          "downloads": 2
+        },
+        {
+          "country_code": "BT",
+          "downloads": 2
+        },
+        {
+          "country_code": "CF",
+          "downloads": 2
+        },
+        {
+          "country_code": "CV",
+          "downloads": 2
+        },
+        {
+          "country_code": "DM",
+          "downloads": 2
+        },
+        {
+          "country_code": "GF",
+          "downloads": 2
+        },
+        {
+          "country_code": "ML",
+          "downloads": 2
+        },
+        {
+          "country_code": "SR",
+          "downloads": 2
+        },
+        {
+          "country_code": "AI",
+          "downloads": 1
+        },
+        {
+          "country_code": "AQ",
+          "downloads": 1
+        },
+        {
+          "country_code": "BN",
+          "downloads": 1
+        },
+        {
+          "country_code": "GL",
+          "downloads": 1
+        },
+        {
+          "country_code": "GN",
+          "downloads": 1
+        },
+        {
+          "country_code": "HT",
+          "downloads": 1
+        },
+        {
+          "country_code": "MF",
+          "downloads": 1
+        },
+        {
+          "country_code": "MH",
+          "downloads": 1
+        },
+        {
+          "country_code": "MP",
+          "downloads": 1
+        },
+        {
+          "country_code": "SC",
+          "downloads": 1
+        },
+        {
+          "country_code": "SZ",
+          "downloads": 1
+        },
+        {
+          "country_code": "TD",
+          "downloads": 1
+        },
+        {
+          "country_code": "TL",
+          "downloads": 1
+        },
+        {
+          "country_code": "VA",
+          "downloads": 1
+        },
+        {
+          "country_code": "VU",
+          "downloads": 1
+        },
+        {
+          "country_code": "YT",
+          "downloads": 1
+        }
+      ]
+    }
+  }
+}
