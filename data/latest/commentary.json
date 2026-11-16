@@ -1,11 +1,11 @@
 {
-  "headline": "DeepSeek keeps the top spot while a debut and three exits reshuffle the leaderboard",
-  "summary": "deepseek/deepseek-v4.1-flash-20261017 still holds No. 1 at 29.8% of tokens, and DeepSeek as a provider sits at 40.2%. Further down, particle-1 debuts at No. 32, while gpt-6-luna-pro, qwen3.7-flash and gemini-3.1-flash-lite drop off the board.",
+  "headline": "Two newcomers slip into the bottom of the board while DeepSeek keeps its grip on the top spot",
+  "summary": "DeepSeek still leads with 28.2% of tokens, and its providers hold 38.8% overall. Mistral's mistralai/mistral-nemo and InclusionAI's ling-3.2-flash arrived at ranks 48 and 49, while x-ai/grok-4.7 fell off the board after last ranking 44th.",
   "highlights": [
-    "meta/muse-spark-1.3-contributor-20260902 made the biggest one-day climb on the board, up eight places to No. 13.",
-    "Tencent's tencent/hy4-20261104 holds No. 2 at 7.8% of tokens.",
-    "The top two providers, DeepSeek and Tencent, hold 48.8% between them, and the top three reach 55.4%.",
-    "Three newcomers appeared today: particle-ai/particle-1-20261027:free at No. 32, google/gemma-4-26b-a4b-it-20260403 at No. 42, and thinkingmachines/inkling-2-small-20261107 at No. 49."
+    "qwen3.8-flash-20260826 jumped 7 places to 23rd, tied for the biggest one-day climb on the board.",
+    "DeepSeek, Tencent and Zhipu AI together hold 53.8% of tokens.",
+    "x-ai/grok-4.7-20260916 dropped out after last sitting at 44th.",
+    "thinkingmachines' inkling-2-small also dropped out, last seen at 49th."
   ],
   "tone": "notable",
   "source": "llm"
