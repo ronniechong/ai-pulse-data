@@ -1,12 +1,13 @@
 {
-  "headline": "Two newcomers slip into the bottom of the board while DeepSeek keeps its grip on the top spot",
-  "summary": "DeepSeek still leads with 28.2% of tokens, and its providers hold 38.8% overall. Mistral's mistralai/mistral-nemo and InclusionAI's ling-3.2-flash arrived at ranks 48 and 49, while x-ai/grok-4.7 fell off the board after last ranking 44th.",
+  "headline": "DeepSeek still holds 38.0% of tokens, and Tencent's new hy4-flash crashes the top four at #4",
+  "summary": "DeepSeek's grip hasn't loosened: it holds 38.0% of tokens, and the top two providers together account for 47.3%. Tencent's hy4-flash debuted straight into the number four slot at 5.9%, which is a very confident entrance.",
   "highlights": [
-    "qwen3.8-flash-20260826 jumped 7 places to 23rd, tied for the biggest one-day climb on the board.",
-    "DeepSeek, Tencent and Zhipu AI together hold 53.8% of tokens.",
-    "x-ai/grok-4.7-20260916 dropped out after last sitting at 44th.",
-    "thinkingmachines' inkling-2-small also dropped out, last seen at 49th."
+    "Google's gemini-4-carbon set a fresh all-time token share record at 1.1% and jumped nine spots to #23 in a single day.",
+    "Tencent's older hy4 now sits at #8 with 3.4%, while its newer sibling takes the #4 spot.",
+    "Anthropic gained 1.7 points of provider share in a day, now at 7.1% overall.",
+    "The top four providers (DeepSeek, Tencent, Anthropic, OpenAI) hold 61.4% of tokens between them.",
+    "Tencent's hy3 fell off the board after last ranking #31 with 0.6% of tokens."
   ],
-  "tone": "notable",
+  "tone": "big_day",
   "source": "llm"
 }
