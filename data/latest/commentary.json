@@ -1,12 +1,13 @@
 {
-  "headline": "Tencent's hy4-flash still reigns at 42.0% while Qwen4-Max vaults 33 places to a 1.0% all-time high",
-  "summary": "Qwen4-Max leapt 33 places to #13 and set a new all-time token share record at 1.0%. Tencent's provider share sits at 44.7%, up 35.3 points over seven days, and the top two providers hold 68.2% between them.",
+  "headline": "Tencent's hy4-flash sets an all-time token-share record at 45.1%, and nobody's catching it soon",
+  "summary": "tencent/hy4-flash-20261116 took rank 1 with 45.1% of tokens, a fresh all-time high for a single model. Tencent as a provider now holds 46.6%, and the top two providers together sit at 69.9%, so this is less a leaderboard than a Tencent-and-DeepSeek duopoly with Zhipu AI hovering nearby.",
   "highlights": [
-    "tencent/hy4-flash-20261116 remains the undisputed #1 at 42.0% of tokens, and Tencent as a provider holds 44.7%.",
-    "Qwen4-Max is the day's headline mover, rocketing from far down the board to #13 with 1.0% share, and it's a fresh record rather than a continuing streak.",
-    "DeepSeek and Tencent together hold 68.2%, the top-two concentration figure for today.",
-    "Google's gemini-4-neon-20261118 debuted at #40 with 0.2% of tokens.",
-    "qwen/qwen3.6-35b-a3b-20260415 dropped out of the rankings from #51, last seen at 0.1% share."
+    "tencent/hy4-flash-20261116 is at 45.1% of tokens, the highest all-time token share on record.",
+    "Tencent's provider share is 46.6% today, up 37.3 points over the past seven days.",
+    "Tencent, DeepSeek, and Zhipu AI together hold 74.4% of tokens.",
+    "google/gemini-4-carbon-20261110 climbed six places in a day to 20th.",
+    "stepfun/step-5-preview-20261008 dropped out after last ranking 24th.",
+    "Newcomers: google/gemma-4-26b-a4b-it-20260403 (42nd), minimax/minimax-m3-20260531 (45th), and google/gemma-4-31b-it-20260402 (51st)."
   ],
   "tone": "big_day",
   "source": "llm"
