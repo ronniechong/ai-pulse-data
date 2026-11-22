@@ -1,13 +1,13 @@
 {
-  "headline": "Tencent's hy4-flash sets an all-time token-share record at 45.1%, and nobody's catching it soon",
-  "summary": "tencent/hy4-flash-20261116 took rank 1 with 45.1% of tokens, a fresh all-time high for a single model. Tencent as a provider now holds 46.6%, and the top two providers together sit at 69.9%, so this is less a leaderboard than a Tencent-and-DeepSeek duopoly with Zhipu AI hovering nearby.",
+  "headline": "Tencent's provider share slid 17.5 points in a day, yet DeepSeek still runs the provider table",
+  "summary": "No records fell today, so the story is the provider shuffle: Tencent dropped 17.5 points to 29.2% of tokens and now sits second to DeepSeek's 32.4%. DeepSeek gained 9.1 points on the day to keep the top spot.",
   "highlights": [
-    "tencent/hy4-flash-20261116 is at 45.1% of tokens, the highest all-time token share on record.",
-    "Tencent's provider share is 46.6% today, up 37.3 points over the past seven days.",
-    "Tencent, DeepSeek, and Zhipu AI together hold 74.4% of tokens.",
-    "google/gemini-4-carbon-20261110 climbed six places in a day to 20th.",
-    "stepfun/step-5-preview-20261008 dropped out after last ranking 24th.",
-    "Newcomers: google/gemma-4-26b-a4b-it-20260403 (42nd), minimax/minimax-m3-20260531 (45th), and google/gemma-4-31b-it-20260402 (51st)."
+    "DeepSeek leads providers at 32.4%, up 9.1 points on the day.",
+    "The top two providers hold 61.6% combined, the top three 69.2%, the top four 73.1%, and the top five 76.7%.",
+    "tencent/hy4-flash-20261116 holds #1 at 29.2%, even as its provider's share fell.",
+    "Moonshot AI's kimi-k3.1-pro climbed 8 spots to #6.",
+    "Three newcomers: qwen3.6-35b-a3b at #38, mistral-nemo at #47, and particle-ai's particle-1 at #50.",
+    "Dropouts: tencent/hy4-20261104 fell out from #8, and thinkingmachines' inkling-2-small left from #50."
   ],
   "tone": "big_day",
   "source": "llm"

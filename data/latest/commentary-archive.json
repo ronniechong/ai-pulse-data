@@ -1,6 +1,21 @@
 {
-  "generated_at": "2026-11-21T07:49:59.606821+00:00",
+  "generated_at": "2026-11-22T07:37:33.247679+00:00",
   "entries": [
+    {
+      "date": "2026-11-22",
+      "headline": "Tencent's provider share slid 17.5 points in a day, yet DeepSeek still runs the provider table",
+      "summary": "No records fell today, so the story is the provider shuffle: Tencent dropped 17.5 points to 29.2% of tokens and now sits second to DeepSeek's 32.4%. DeepSeek gained 9.1 points on the day to keep the top spot.",
+      "highlights": [
+        "DeepSeek leads providers at 32.4%, up 9.1 points on the day.",
+        "The top two providers hold 61.6% combined, the top three 69.2%, the top four 73.1%, and the top five 76.7%.",
+        "tencent/hy4-flash-20261116 holds #1 at 29.2%, even as its provider's share fell.",
+        "Moonshot AI's kimi-k3.1-pro climbed 8 spots to #6.",
+        "Three newcomers: qwen3.6-35b-a3b at #38, mistral-nemo at #47, and particle-ai's particle-1 at #50.",
+        "Dropouts: tencent/hy4-20261104 fell out from #8, and thinkingmachines' inkling-2-small left from #50."
+      ],
+      "tone": "big_day",
+      "source": "llm"
+    },
     {
       "date": "2026-11-21",
       "headline": "Tencent's hy4-flash sets an all-time token-share record at 45.1%, and nobody's catching it soon",
