@@ -1,6 +1,20 @@
 {
-  "generated_at": "2026-11-22T07:37:33.247679+00:00",
+  "generated_at": "2026-11-23T08:24:32.041972+00:00",
   "entries": [
+    {
+      "date": "2026-11-23",
+      "headline": "Tencent sheds 7.3 points in a day yet still sits second at 21.9% share",
+      "summary": "DeepSeek keeps the top spot, but the big story is Tencent: its provider share fell 7.3 points today while the top two still hold 58.2% between them. Three new entrants landed, led by Tencent's hy4-20261104 at rank 14, and the leaderboard is far from quiet.",
+      "highlights": [
+        "Tencent's provider share dropped 7.3 points in one day to 21.9%, even though it is up 13.7 points over seven days and 15.4 over thirty.",
+        "DeepSeek still leads at 36.3% of provider share, and its deepseek-v4.1-flash-20261017 is the top model with 28.0% of tokens.",
+        "DeepSeek and Tencent together hold 58.2%, and the top three (adding Zhipu AI) reach 65.5%.",
+        "New entrants: tencent/hy4-20261104 at rank 14, stepfun/step-5-preview-20261008 at rank 25, and thinkingmachines/inkling-2-mini-20261120 at rank 29.",
+        "Dropouts included qwen/qwen4-max-20261115, which fell out from rank 26 at 0.5% share, and two lower-ranked models."
+      ],
+      "tone": "big_day",
+      "source": "llm"
+    },
     {
       "date": "2026-11-22",
       "headline": "Tencent's provider share slid 17.5 points in a day, yet DeepSeek still runs the provider table",
