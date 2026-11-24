@@ -1,12 +1,13 @@
 {
-  "headline": "Tencent sheds 7.3 points in a day yet still sits second at 21.9% share",
-  "summary": "DeepSeek keeps the top spot, but the big story is Tencent: its provider share fell 7.3 points today while the top two still hold 58.2% between them. Three new entrants landed, led by Tencent's hy4-20261104 at rank 14, and the leaderboard is far from quiet.",
+  "headline": "Tencent gives back 5.9% of token share in a day, but DeepSeek and Tencent still own 54.7%",
+  "summary": "Tencent had the sharpest provider-share drop of the day, shedding 5.9%, yet it still holds 16.0% and the No. 2 spot. DeepSeek remains the heavyweight at 38.7%, with its top model still at 29.7% of tokens.",
   "highlights": [
-    "Tencent's provider share dropped 7.3 points in one day to 21.9%, even though it is up 13.7 points over seven days and 15.4 over thirty.",
-    "DeepSeek still leads at 36.3% of provider share, and its deepseek-v4.1-flash-20261017 is the top model with 28.0% of tokens.",
-    "DeepSeek and Tencent together hold 58.2%, and the top three (adding Zhipu AI) reach 65.5%.",
-    "New entrants: tencent/hy4-20261104 at rank 14, stepfun/step-5-preview-20261008 at rank 25, and thinkingmachines/inkling-2-mini-20261120 at rank 29.",
-    "Dropouts included qwen/qwen4-max-20261115, which fell out from rank 26 at 0.5% share, and two lower-ranked models."
+    "Tencent's provider share fell 5.9% in a day, the steepest drop on the table, but it's still clinging to No. 2 at 16.0%.",
+    "StepFun's step-5-preview was the day's most dramatic climber, jumping 13 places to No. 12.",
+    "DeepSeek's deepseek-v4.1-flash-20261017 is still parked at No. 1 with 29.7% of tokens, showing no sign of budging.",
+    "The top two providers, DeepSeek and Tencent, hold 54.7% combined, and the top five reach 73.8%.",
+    "Two newcomers joined the top 50 (google/gemini-3.1-flash-lite and perplexity's pplx-decider), while minimax-m3 and mistral-nemo dropped out.",
+    "The records board is empty today, so there are no streaks to celebrate."
   ],
   "tone": "big_day",
   "source": "llm"
