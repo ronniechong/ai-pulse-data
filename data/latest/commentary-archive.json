@@ -1,6 +1,22 @@
 {
-  "generated_at": "2026-11-24T10:32:11.709082+00:00",
+  "generated_at": "2026-11-25T09:22:17.698782+00:00",
   "entries": [
+    {
+      "date": "2026-11-25",
+      "headline": "DeepSeek's v4.1 Flash sets an all-time record at 32.5% of tokens, and nobody else is close",
+      "summary": "The top model is now carrying a record-breaking 32.5% of tokens, and DeepSeek as a provider holds 40.5% of the market. Tencent still sits second in the provider standings, but its flash model has lost ground fast over the past week.",
+      "highlights": [
+        "DeepSeek's deepseek-v4.1-flash-20261017 posted an all-time token-share record of 32.5% and is holding the No. 1 spot.",
+        "DeepSeek the provider holds 40.5% of tokens, up 1.8% on the day and 16.1% over seven days.",
+        "DeepSeek and Tencent together account for 55.1% of tokens, the top-two cumulative share.",
+        "Tencent's tencent/hy4-flash-20261116 is still No. 2 but its share fell 24.8% over seven days.",
+        "Moonshot's kimi-k3.1-pro-20261023 jumped three spots to No. 8 today and is up 12 places over 30 days.",
+        "New on the board: Google's gemini-4-hydrogen at No. 43, Perplexity's pplx-decider-v1.2 at No. 45, and Anthropic's claude-sonnet-5 at No. 50.",
+        "Dropouts: NVIDIA's nemotron-3.5-lightning (last ranked 29th), Perplexity's pplx-decider-v1.3 (last 50th), and particle-ai's particle-1 (last 51st)."
+      ],
+      "tone": "big_day",
+      "source": "llm"
+    },
     {
       "date": "2026-11-24",
       "headline": "Tencent gives back 5.9% of token share in a day, but DeepSeek and Tencent still own 54.7%",
