@@ -1,6 +1,20 @@
 {
-  "generated_at": "2026-11-26T09:00:23.063706+00:00",
+  "generated_at": "2026-11-27T09:14:49.776931+00:00",
   "entries": [
+    {
+      "date": "2026-11-27",
+      "headline": "DeepSeek's flash model still holds No. 1 while Google's Gemini 4 Neon sets a new all-time share record",
+      "summary": "Google's gemini-4-neon-20261118 posted a new all-time token share of 1.2% and climbed into 16th place. DeepSeek still holds the top spot with deepseek-v4.1-flash-20261017 at 35.3%, and DeepSeek as a provider sits at 42.8% overall.",
+      "highlights": [
+        "Fresh record: google/gemini-4-neon-20261118 set an all-time token share high of 1.2%, and it's the first day of that streak.",
+        "Provider top two: DeepSeek (42.8%) and Tencent (12.0%) together hold 54.8% of tokens, with the top three reaching 62.2% once Zhipu AI is added.",
+        "Biggest long-haul climber: moonshotai/kimi-k3.1-pro-20261023 is up 19 places over 30 days, now sitting at No. 8.",
+        "New entrants: stepfun/step-5-preview-20261008 debuts at No. 14 with 1.3% share, and perplexity/pplx-decider-v1.3-20261112:free arrives at No. 36.",
+        "Dropouts: google/gemini-3.1-flash-lite-20260507 and perplexity/pplx-decider-v1.2-20261016 fell off the board this cycle."
+      ],
+      "tone": "big_day",
+      "source": "llm"
+    },
     {
       "date": "2026-11-26",
       "headline": "DeepSeek's v4.1 Flash keeps its all-time token share record at 36.6%, now on day 2",

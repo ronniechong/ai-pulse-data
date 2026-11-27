@@ -1,29 +1,29 @@
 {
-  "date": "2026-11-25",
-  "generated_at": "2026-11-26T09:00:14.444198+00:00",
+  "date": "2026-11-26",
+  "generated_at": "2026-11-27T09:14:42.667792+00:00",
   "rankings": {
     "movers": [
       {
         "model": "deepseek/deepseek-v4.1-flash-20261017",
         "provider": "DeepSeek",
         "rank_today": 1,
-        "token_share_today": 0.366103,
+        "token_share_today": 0.352707,
         "rank_delta_1d": 0,
-        "token_share_delta_1d": 0.041475,
+        "token_share_delta_1d": -0.013394,
         "rank_delta_7d": 1,
-        "token_share_delta_7d": 0.191663,
+        "token_share_delta_7d": 0.174892,
         "rank_delta_30d": 0,
-        "token_share_delta_30d": 0.15966
+        "token_share_delta_30d": 0.128731
       },
       {
         "model": "tencent/hy4-flash-20261116",
         "provider": "Tencent",
         "rank_today": 2,
-        "token_share_today": 0.095136,
+        "token_share_today": 0.115091,
         "rank_delta_1d": 0,
-        "token_share_delta_1d": -0.047892,
+        "token_share_delta_1d": 0.019956,
         "rank_delta_7d": -1,
-        "token_share_delta_7d": -0.328264,
+        "token_share_delta_7d": -0.305398,
         "rank_delta_30d": null,
         "token_share_delta_30d": null
       },
@@ -31,463 +31,391 @@
         "model": "deepseek/deepseek-v4.1-flash-20260910",
         "provider": "DeepSeek",
         "rank_today": 4,
-        "token_share_today": 0.053932,
+        "token_share_today": 0.052756,
         "rank_delta_1d": 0,
-        "token_share_delta_1d": -0.002652,
-        "rank_delta_7d": -1,
-        "token_share_delta_7d": 0.009526,
-        "rank_delta_30d": -1,
-        "token_share_delta_30d": -0.030314
+        "token_share_delta_1d": -0.001176,
+        "rank_delta_7d": 0,
+        "token_share_delta_7d": 0.012146,
+        "rank_delta_30d": -2,
+        "token_share_delta_30d": -0.034713
       },
       {
         "model": "z-ai/glm-5.3-flash-20260826",
         "provider": "Zhipu AI",
         "rank_today": 5,
-        "token_share_today": 0.050678,
+        "token_share_today": 0.050395,
         "rank_delta_1d": 0,
-        "token_share_delta_1d": -0.005345,
-        "rank_delta_7d": 0,
-        "token_share_delta_7d": 0.016454,
-        "rank_delta_30d": -3,
-        "token_share_delta_30d": -0.035846
-      },
-      {
-        "model": "anthropic/claude-opus-5.5-20260921",
-        "provider": "Anthropic",
-        "rank_today": 6,
-        "token_share_today": 0.031492,
-        "rank_delta_1d": 1,
-        "token_share_delta_1d": 0.003027,
-        "rank_delta_7d": 2,
-        "token_share_delta_7d": 0.011142,
-        "rank_delta_30d": 1,
-        "token_share_delta_30d": -0.008113
+        "token_share_delta_1d": -0.000282,
+        "rank_delta_7d": 1,
+        "token_share_delta_7d": 0.023174,
+        "rank_delta_30d": -2,
+        "token_share_delta_30d": -0.019086
       },
       {
         "model": "openai/gpt-6-luna-20260922",
         "provider": "OpenAI",
-        "rank_today": 7,
-        "token_share_today": 0.03141,
-        "rank_delta_1d": -1,
-        "token_share_delta_1d": 0.001203,
-        "rank_delta_7d": -1,
-        "token_share_delta_7d": 0.00502,
-        "rank_delta_30d": -2,
-        "token_share_delta_30d": -0.026451
-      },
-      {
-        "model": "typesafe/jev-1.13-20260917",
-        "provider": "typesafe",
-        "rank_today": 8,
-        "token_share_today": 0.020343,
-        "rank_delta_1d": 10,
-        "token_share_delta_1d": 0.008902,
-        "rank_delta_7d": 10,
-        "token_share_delta_7d": 0.012641,
-        "rank_delta_30d": 7,
-        "token_share_delta_30d": 0.004325
-      },
-      {
-        "model": "minimax/minimax-m3.1-flash-20261019",
-        "provider": "MiniMax",
-        "rank_today": 9,
-        "token_share_today": 0.019484,
-        "rank_delta_1d": 0,
-        "token_share_delta_1d": 0.001755,
-        "rank_delta_7d": 4,
-        "token_share_delta_7d": 0.009527,
-        "rank_delta_30d": 1,
-        "token_share_delta_30d": -0.006336
-      },
-      {
-        "model": "z-ai/glm-5.3-20260816",
-        "provider": "Zhipu AI",
-        "rank_today": 10,
-        "token_share_today": 0.018451,
+        "rank_today": 6,
+        "token_share_today": 0.033561,
         "rank_delta_1d": 1,
-        "token_share_delta_1d": 0.001565,
-        "rank_delta_7d": 2,
-        "token_share_delta_7d": 0.007657,
-        "rank_delta_30d": -2,
-        "token_share_delta_30d": -0.015495
+        "token_share_delta_1d": 0.002151,
+        "rank_delta_7d": -1,
+        "token_share_delta_7d": 0.004001,
+        "rank_delta_30d": 1,
+        "token_share_delta_30d": -0.006581
+      },
+      {
+        "model": "anthropic/claude-opus-5.5-20260921",
+        "provider": "Anthropic",
+        "rank_today": 7,
+        "token_share_today": 0.028543,
+        "rank_delta_1d": -1,
+        "token_share_delta_1d": -0.002949,
+        "rank_delta_7d": 1,
+        "token_share_delta_7d": 0.008525,
+        "rank_delta_30d": -1,
+        "token_share_delta_30d": -0.012175
       },
       {
         "model": "moonshotai/kimi-k3.1-pro-20261023",
         "provider": "Moonshot AI",
+        "rank_today": 8,
+        "token_share_today": 0.020664,
+        "rank_delta_1d": 3,
+        "token_share_delta_1d": 0.00252,
+        "rank_delta_7d": 7,
+        "token_share_delta_7d": 0.011884,
+        "rank_delta_30d": 19,
+        "token_share_delta_30d": 0.012569
+      },
+      {
+        "model": "z-ai/glm-5.3-20260816",
+        "provider": "Zhipu AI",
+        "rank_today": 9,
+        "token_share_today": 0.02011,
+        "rank_delta_1d": 1,
+        "token_share_delta_1d": 0.001659,
+        "rank_delta_7d": 3,
+        "token_share_delta_7d": 0.010291,
+        "rank_delta_30d": 1,
+        "token_share_delta_30d": -0.006036
+      },
+      {
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "typesafe",
+        "rank_today": 10,
+        "token_share_today": 0.019955,
+        "rank_delta_1d": -2,
+        "token_share_delta_1d": -0.000388,
+        "rank_delta_7d": 9,
+        "token_share_delta_7d": 0.012027,
+        "rank_delta_30d": 2,
+        "token_share_delta_30d": -0.001633
+      },
+      {
+        "model": "minimax/minimax-m3.1-flash-20261019",
+        "provider": "MiniMax",
         "rank_today": 11,
-        "token_share_today": 0.018144,
-        "rank_delta_1d": -3,
-        "token_share_delta_1d": -0.005803,
-        "rank_delta_7d": -1,
-        "token_share_delta_7d": 0.006003,
-        "rank_delta_30d": 18,
-        "token_share_delta_30d": 0.01085
+        "token_share_today": 0.018793,
+        "rank_delta_1d": -2,
+        "token_share_delta_1d": -0.000691,
+        "rank_delta_7d": -2,
+        "token_share_delta_7d": 0.006325,
+        "rank_delta_30d": -3,
+        "token_share_delta_30d": -0.012498
       },
       {
         "model": "nvidia/nemotron-3-ultra-550b-a55b-20260604:free",
         "provider": "NVIDIA",
         "rank_today": 12,
-        "token_share_today": 0.016713,
-        "rank_delta_1d": -2,
-        "token_share_delta_1d": -0.000385,
-        "rank_delta_7d": 2,
-        "token_share_delta_7d": 0.00723,
-        "rank_delta_30d": 2,
-        "token_share_delta_30d": 5.7e-05
-      },
-      {
-        "model": "deepseek/deepseek-v4-flash-20260731",
-        "provider": "DeepSeek",
-        "rank_today": 13,
-        "token_share_today": 0.015656,
-        "rank_delta_1d": 7,
-        "token_share_delta_1d": 0.005271,
-        "rank_delta_7d": 9,
-        "token_share_delta_7d": 0.008739,
-        "rank_delta_30d": -2,
-        "token_share_delta_30d": -0.00815
-      },
-      {
-        "model": "anthropic/claude-haiku-5.5-20261007",
-        "provider": "Anthropic",
-        "rank_today": 14,
-        "token_share_today": 0.013489,
-        "rank_delta_1d": -2,
-        "token_share_delta_1d": 0.00066,
-        "rank_delta_7d": 1,
-        "token_share_delta_7d": 0.005088,
-        "rank_delta_30d": 5,
-        "token_share_delta_30d": 0.00033
+        "token_share_today": 0.015505,
+        "rank_delta_1d": 0,
+        "token_share_delta_1d": -0.001208,
+        "rank_delta_7d": -1,
+        "token_share_delta_7d": 0.005449,
+        "rank_delta_30d": 3,
+        "token_share_delta_30d": -0.000869
       },
       {
         "model": "meta/muse-spark-1.3-contributor-20260902",
         "provider": "meta",
-        "rank_today": 15,
-        "token_share_today": 0.01345,
-        "rank_delta_1d": -2,
-        "token_share_delta_1d": 0.000776,
-        "rank_delta_7d": 4,
-        "token_share_delta_7d": 0.006013,
-        "rank_delta_30d": 2,
-        "token_share_delta_30d": -0.000951
+        "rank_today": 13,
+        "token_share_today": 0.013404,
+        "rank_delta_1d": 2,
+        "token_share_delta_1d": -4.6e-05,
+        "rank_delta_7d": 5,
+        "token_share_delta_7d": 0.005325,
+        "rank_delta_30d": 7,
+        "token_share_delta_30d": -0.000791
       },
       {
-        "model": "anthropic/claude-sonnet-5.5-20260928",
+        "model": "stepfun/step-5-preview-20261008",
+        "provider": "StepFun",
+        "rank_today": 14,
+        "token_share_today": 0.012912,
+        "rank_delta_1d": null,
+        "token_share_delta_1d": null,
+        "rank_delta_7d": 10,
+        "token_share_delta_7d": 0.006947,
+        "rank_delta_30d": -5,
+        "token_share_delta_30d": -0.016804
+      },
+      {
+        "model": "anthropic/claude-haiku-5.5-20261007",
         "provider": "Anthropic",
-        "rank_today": 16,
-        "token_share_today": 0.012145,
-        "rank_delta_1d": 1,
-        "token_share_delta_1d": 0.000328,
+        "rank_today": 15,
+        "token_share_today": 0.012605,
+        "rank_delta_1d": -1,
+        "token_share_delta_1d": -0.000884,
         "rank_delta_7d": 1,
-        "token_share_delta_7d": 0.004302,
-        "rank_delta_30d": 4,
-        "token_share_delta_30d": -0.000863
+        "token_share_delta_7d": 0.004387,
+        "rank_delta_30d": 6,
+        "token_share_delta_30d": -0.001033
       },
       {
-        "model": "xiaomi/mimo-v2.6-flash-20260921",
-        "provider": "Xiaomi",
-        "rank_today": 17,
-        "token_share_today": 0.011869,
-        "rank_delta_1d": -2,
-        "token_share_delta_1d": -0.000475,
-        "rank_delta_7d": -6,
-        "token_share_delta_7d": 0.00102,
-        "rank_delta_30d": -4,
-        "token_share_delta_30d": -0.006307
+        "model": "google/gemini-4-neon-20261118",
+        "provider": "Google",
+        "rank_today": 16,
+        "token_share_today": 0.011772,
+        "rank_delta_1d": 5,
+        "token_share_delta_1d": 0.003711,
+        "rank_delta_7d": 24,
+        "token_share_delta_7d": 0.009353,
+        "rank_delta_30d": null,
+        "token_share_delta_30d": null
       },
       {
         "model": "baidu/ernie-5.5-flash-preview-20261110:free",
         "provider": "baidu",
-        "rank_today": 18,
-        "token_share_today": 0.010942,
+        "rank_today": 17,
+        "token_share_today": 0.010908,
         "rank_delta_1d": 1,
-        "token_share_delta_1d": 7.9e-05,
-        "rank_delta_7d": -2,
-        "token_share_delta_7d": 0.002686,
+        "token_share_delta_1d": -3.4e-05,
+        "rank_delta_7d": -3,
+        "token_share_delta_7d": 0.002119,
         "rank_delta_30d": null,
         "token_share_delta_30d": null
+      },
+      {
+        "model": "deepseek/deepseek-v4-flash-20260731",
+        "provider": "DeepSeek",
+        "rank_today": 18,
+        "token_share_today": 0.010528,
+        "rank_delta_1d": -5,
+        "token_share_delta_1d": -0.005128,
+        "rank_delta_7d": 3,
+        "token_share_delta_7d": 0.003228,
+        "rank_delta_30d": -7,
+        "token_share_delta_30d": -0.01405
       },
       {
         "model": "typesafe/jev-1.14-20261014",
         "provider": "typesafe",
         "rank_today": 19,
-        "token_share_today": 0.010376,
-        "rank_delta_1d": -3,
-        "token_share_delta_1d": -0.001788,
+        "token_share_today": 0.01049,
+        "rank_delta_1d": 0,
+        "token_share_delta_1d": 0.000114,
         "rank_delta_7d": 4,
-        "token_share_delta_7d": 0.004087,
+        "token_share_delta_7d": 0.004139,
         "rank_delta_30d": 4,
-        "token_share_delta_30d": 0.001458
+        "token_share_delta_30d": -0.000744
+      },
+      {
+        "model": "xiaomi/mimo-v2.6-flash-20260921",
+        "provider": "Xiaomi",
+        "rank_today": 20,
+        "token_share_today": 0.010303,
+        "rank_delta_1d": -3,
+        "token_share_delta_1d": -0.001565,
+        "rank_delta_7d": -10,
+        "token_share_delta_7d": -0.000921,
+        "rank_delta_30d": -7,
+        "token_share_delta_30d": -0.008981
+      },
+      {
+        "model": "anthropic/claude-sonnet-5.5-20260928",
+        "provider": "Anthropic",
+        "rank_today": 21,
+        "token_share_today": 0.010091,
+        "rank_delta_1d": -5,
+        "token_share_delta_1d": -0.002054,
+        "rank_delta_7d": -4,
+        "token_share_delta_7d": 0.001874,
+        "rank_delta_30d": -4,
+        "token_share_delta_30d": -0.005749
       },
       {
         "model": "nvidia/nemotron-3.5-super-vl-20261015:free",
         "provider": "NVIDIA",
-        "rank_today": 20,
-        "token_share_today": 0.010146,
-        "rank_delta_1d": 1,
-        "token_share_delta_1d": 0.000369,
-        "rank_delta_7d": 1,
-        "token_share_delta_7d": 0.003072,
-        "rank_delta_30d": 5,
-        "token_share_delta_30d": 0.00198
-      },
-      {
-        "model": "google/gemini-4-neon-20261118",
-        "provider": "Google",
-        "rank_today": 21,
-        "token_share_today": 0.008061,
-        "rank_delta_1d": 5,
-        "token_share_delta_1d": 0.002021,
-        "rank_delta_7d": null,
-        "token_share_delta_7d": null,
-        "rank_delta_30d": null,
-        "token_share_delta_30d": null
+        "rank_today": 22,
+        "token_share_today": 0.008562,
+        "rank_delta_1d": -2,
+        "token_share_delta_1d": -0.001584,
+        "rank_delta_7d": -2,
+        "token_share_delta_7d": 0.001256,
+        "rank_delta_30d": 0,
+        "token_share_delta_30d": -0.003948
       },
       {
         "model": "deepseek/deepseek-v4-flash-20260423",
         "provider": "DeepSeek",
-        "rank_today": 22,
-        "token_share_today": 0.007655,
-        "rank_delta_1d": 1,
-        "token_share_delta_1d": 0.000398,
-        "rank_delta_7d": 3,
-        "token_share_delta_7d": 0.002592,
-        "rank_delta_30d": -6,
-        "token_share_delta_30d": -0.007757
+        "rank_today": 23,
+        "token_share_today": 0.006879,
+        "rank_delta_1d": -1,
+        "token_share_delta_1d": -0.000776,
+        "rank_delta_7d": 2,
+        "token_share_delta_7d": 0.001628,
+        "rank_delta_30d": -7,
+        "token_share_delta_30d": -0.009334
       },
       {
         "model": "openai/gpt-6.1-sol-20260929",
         "provider": "OpenAI",
-        "rank_today": 23,
-        "token_share_today": 0.007642,
+        "rank_today": 24,
+        "token_share_today": 0.006575,
         "rank_delta_1d": -1,
-        "token_share_delta_1d": -0.000489,
-        "rank_delta_7d": -3,
-        "token_share_delta_7d": 0.000533,
+        "token_share_delta_1d": -0.001067,
+        "rank_delta_7d": -2,
+        "token_share_delta_7d": -0.000412,
         "rank_delta_30d": -5,
-        "token_share_delta_30d": -0.006479
+        "token_share_delta_30d": -0.007625
       },
       {
         "model": "google/gemini-3.8-flash-20260902",
         "provider": "Google",
-        "rank_today": 24,
-        "token_share_today": 0.006767,
-        "rank_delta_1d": 0,
-        "token_share_delta_1d": -1e-06,
-        "rank_delta_7d": 2,
-        "token_share_delta_7d": 0.002065,
-        "rank_delta_30d": -2,
-        "token_share_delta_30d": -0.002391
-      },
-      {
-        "model": "tencent/hy4-20261104",
-        "provider": "Tencent",
         "rank_today": 25,
-        "token_share_today": 0.005911,
-        "rank_delta_1d": 14,
-        "token_share_delta_1d": 0.002853,
-        "rank_delta_7d": -18,
-        "token_share_delta_7d": -0.017963,
-        "rank_delta_30d": null,
-        "token_share_delta_30d": null
+        "token_share_today": 0.006495,
+        "rank_delta_1d": -1,
+        "token_share_delta_1d": -0.000272,
+        "rank_delta_7d": 2,
+        "token_share_delta_7d": 0.001604,
+        "rank_delta_30d": 0,
+        "token_share_delta_30d": -0.003206
       },
       {
         "model": "openai/gpt-6.2-sol-20261117",
         "provider": "OpenAI",
         "rank_today": 26,
-        "token_share_today": 0.005789,
-        "rank_delta_1d": -1,
-        "token_share_delta_1d": -0.000336,
-        "rank_delta_7d": 16,
-        "token_share_delta_7d": 0.003753,
+        "token_share_today": 0.005473,
+        "rank_delta_1d": 0,
+        "token_share_delta_1d": -0.000316,
+        "rank_delta_7d": 8,
+        "token_share_delta_7d": 0.002675,
         "rank_delta_30d": null,
         "token_share_delta_30d": null
       },
       {
-        "model": "thinkingmachines/inkling-2-small-20261107",
-        "provider": "thinkingmachines",
+        "model": "tencent/hy4-20261104",
+        "provider": "Tencent",
         "rank_today": 27,
-        "token_share_today": 0.005136,
-        "rank_delta_1d": null,
-        "token_share_delta_1d": null,
-        "rank_delta_7d": 12,
-        "token_share_delta_7d": 0.002706,
-        "rank_delta_30d": null,
-        "token_share_delta_30d": null
-      },
-      {
-        "model": "upstage/solar-mini4-20260922",
-        "provider": "upstage",
-        "rank_today": 28,
-        "token_share_today": 0.004506,
-        "rank_delta_1d": 2,
-        "token_share_delta_1d": 0.000844,
-        "rank_delta_7d": 2,
-        "token_share_delta_7d": 0.001193,
-        "rank_delta_30d": -1,
-        "token_share_delta_30d": -0.003112
-      },
-      {
-        "model": "openai/gpt-5.6-luna-20260709",
-        "provider": "OpenAI",
-        "rank_today": 29,
-        "token_share_today": 0.004373,
+        "token_share_today": 0.004806,
         "rank_delta_1d": -2,
-        "token_share_delta_1d": -0.00089,
-        "rank_delta_7d": -5,
-        "token_share_delta_7d": -0.000901,
-        "rank_delta_30d": -8,
-        "token_share_delta_30d": -0.007786
-      },
-      {
-        "model": "openai/gpt-6.1-terra-20261026",
-        "provider": "OpenAI",
-        "rank_today": 30,
-        "token_share_today": 0.004168,
-        "rank_delta_1d": -2,
-        "token_share_delta_1d": -0.000882,
-        "rank_delta_7d": 4,
-        "token_share_delta_7d": 0.001431,
+        "token_share_delta_1d": -0.001105,
+        "rank_delta_7d": -20,
+        "token_share_delta_7d": -0.021994,
         "rank_delta_30d": null,
         "token_share_delta_30d": null
       },
       {
         "model": "meta/muse-ember-20261109",
         "provider": "meta",
-        "rank_today": 31,
-        "token_share_today": 0.004002,
-        "rank_delta_1d": 0,
-        "token_share_delta_1d": 0.000607,
-        "rank_delta_7d": 7,
-        "token_share_delta_7d": 0.00148,
+        "rank_today": 28,
+        "token_share_today": 0.004489,
+        "rank_delta_1d": 3,
+        "token_share_delta_1d": 0.000487,
+        "rank_delta_7d": 1,
+        "token_share_delta_7d": 0.001147,
         "rank_delta_30d": null,
         "token_share_delta_30d": null
-      },
-      {
-        "model": "z-ai/glm-5.2-20260616",
-        "provider": "Zhipu AI",
-        "rank_today": 32,
-        "token_share_today": 0.003913,
-        "rank_delta_1d": 3,
-        "token_share_delta_1d": 0.0006,
-        "rank_delta_7d": 5,
-        "token_share_delta_7d": 0.001328,
-        "rank_delta_30d": -1,
-        "token_share_delta_30d": -0.001378
       },
       {
         "model": "google/gemini-4-carbon-20261110",
         "provider": "Google",
-        "rank_today": 33,
-        "token_share_today": 0.00351,
-        "rank_delta_1d": 1,
-        "token_share_delta_1d": 0.000164,
-        "rank_delta_7d": -2,
-        "token_share_delta_7d": 0.000229,
+        "rank_today": 29,
+        "token_share_today": 0.004306,
+        "rank_delta_1d": 4,
+        "token_share_delta_1d": 0.000796,
+        "rank_delta_7d": -3,
+        "token_share_delta_7d": -0.000915,
         "rank_delta_30d": null,
         "token_share_delta_30d": null
       },
       {
+        "model": "upstage/solar-mini4-20260922",
+        "provider": "upstage",
+        "rank_today": 30,
+        "token_share_today": 0.004186,
+        "rank_delta_1d": -2,
+        "token_share_delta_1d": -0.00032,
+        "rank_delta_7d": 3,
+        "token_share_delta_7d": 0.001295,
+        "rank_delta_30d": -2,
+        "token_share_delta_30d": -0.003501
+      },
+      {
         "model": "qwen/qwen3.8-flash-20260826",
         "provider": "Qwen",
+        "rank_today": 31,
+        "token_share_today": 0.004026,
+        "rank_delta_1d": 3,
+        "token_share_delta_1d": 0.000526,
+        "rank_delta_7d": 1,
+        "token_share_delta_7d": 0.000903,
+        "rank_delta_30d": 10,
+        "token_share_delta_30d": 0.000958
+      },
+      {
+        "model": "openai/gpt-5.6-luna-20260709",
+        "provider": "OpenAI",
+        "rank_today": 32,
+        "token_share_today": 0.003791,
+        "rank_delta_1d": -3,
+        "token_share_delta_1d": -0.000582,
+        "rank_delta_7d": -4,
+        "token_share_delta_7d": -0.000903,
+        "rank_delta_30d": -14,
+        "token_share_delta_30d": -0.01044
+      },
+      {
+        "model": "z-ai/glm-5.2-20260616",
+        "provider": "Zhipu AI",
+        "rank_today": 33,
+        "token_share_today": 0.003587,
+        "rank_delta_1d": -1,
+        "token_share_delta_1d": -0.000326,
+        "rank_delta_7d": 4,
+        "token_share_delta_7d": 0.000981,
+        "rank_delta_30d": -4,
+        "token_share_delta_30d": -0.001683
+      },
+      {
+        "model": "qwen/qwen3.6-35b-a3b-20260415",
+        "provider": "Qwen",
         "rank_today": 34,
-        "token_share_today": 0.0035,
-        "rank_delta_1d": -5,
-        "token_share_delta_1d": -0.000665,
-        "rank_delta_7d": -5,
-        "token_share_delta_7d": -6e-06,
-        "rank_delta_30d": 5,
-        "token_share_delta_30d": 0.00018
+        "token_share_today": 0.003307,
+        "rank_delta_1d": 7,
+        "token_share_delta_1d": 0.000391,
+        "rank_delta_7d": null,
+        "token_share_delta_7d": null,
+        "rank_delta_30d": null,
+        "token_share_delta_30d": null
       },
       {
         "model": "qwen/qwen3.8-27b-20260814",
         "provider": "Qwen",
         "rank_today": 35,
-        "token_share_today": 0.003402,
-        "rank_delta_1d": -3,
-        "token_share_delta_1d": 4.3e-05,
-        "rank_delta_7d": 0,
-        "token_share_delta_7d": 0.00069,
-        "rank_delta_30d": 7,
-        "token_share_delta_30d": 0.000587
+        "token_share_today": 0.003292,
+        "rank_delta_1d": 0,
+        "token_share_delta_1d": -0.00011,
+        "rank_delta_7d": 7,
+        "token_share_delta_7d": 0.001099,
+        "rank_delta_30d": 10,
+        "token_share_delta_30d": 0.000759
       },
       {
-        "model": "deepseek/deepseek-v4-pro-20260813",
-        "provider": "DeepSeek",
+        "model": "perplexity/pplx-decider-v1.3-20261112:free",
+        "provider": "Perplexity",
         "rank_today": 36,
-        "token_share_today": 0.003246,
-        "rank_delta_1d": 1,
-        "token_share_delta_1d": 0.000108,
-        "rank_delta_7d": 5,
-        "token_share_delta_7d": 0.001188,
-        "rank_delta_30d": -2,
-        "token_share_delta_30d": -0.001214
-      },
-      {
-        "model": "xiaomi/mimo-v2.6-pro-20260921",
-        "provider": "Xiaomi",
-        "rank_today": 37,
-        "token_share_today": 0.003177,
-        "rank_delta_1d": 3,
-        "token_share_delta_1d": 0.000155,
-        "rank_delta_7d": 3,
-        "token_share_delta_7d": 0.000824,
-        "rank_delta_30d": -11,
-        "token_share_delta_30d": -0.004907
-      },
-      {
-        "model": "google/gemma-4-31b-it-20260402",
-        "provider": "Google",
-        "rank_today": 38,
-        "token_share_today": 0.003109,
-        "rank_delta_1d": 6,
-        "token_share_delta_1d": 0.000665,
-        "rank_delta_7d": null,
-        "token_share_delta_7d": null,
-        "rank_delta_30d": 6,
-        "token_share_delta_30d": 0.000581
-      },
-      {
-        "model": "moonshotai/kimi-k3-20260715",
-        "provider": "Moonshot AI",
-        "rank_today": 39,
-        "token_share_today": 0.003064,
-        "rank_delta_1d": -1,
-        "token_share_delta_1d": -2.7e-05,
-        "rank_delta_7d": -7,
-        "token_share_delta_7d": 9e-05,
-        "rank_delta_30d": -11,
-        "token_share_delta_30d": -0.004419
-      },
-      {
-        "model": "google/gemini-4-hydrogen-20261112",
-        "provider": "Google",
-        "rank_today": 40,
-        "token_share_today": 0.002995,
-        "rank_delta_1d": 3,
-        "token_share_delta_1d": 0.000531,
-        "rank_delta_7d": null,
-        "token_share_delta_7d": null,
-        "rank_delta_30d": null,
-        "token_share_delta_30d": null
-      },
-      {
-        "model": "qwen/qwen3.6-35b-a3b-20260415",
-        "provider": "Qwen",
-        "rank_today": 41,
-        "token_share_today": 0.002916,
-        "rank_delta_1d": 5,
-        "token_share_delta_1d": 0.000567,
-        "rank_delta_7d": 10,
-        "token_share_delta_7d": 0.001485,
-        "rank_delta_30d": null,
-        "token_share_delta_30d": null
-      },
-      {
-        "model": "openai/gpt-6.2-astra-20261117",
-        "provider": "OpenAI",
-        "rank_today": 42,
-        "token_share_today": 0.002848,
+        "token_share_today": 0.003103,
         "rank_delta_1d": null,
         "token_share_delta_1d": null,
         "rank_delta_7d": null,
@@ -498,106 +426,178 @@
       {
         "model": "anthropic/claude-fable-5.2-20261109",
         "provider": "Anthropic",
-        "rank_today": 43,
-        "token_share_today": 0.002825,
-        "rank_delta_1d": -7,
-        "token_share_delta_1d": -0.00034,
-        "rank_delta_7d": 1,
-        "token_share_delta_7d": 0.000981,
+        "rank_today": 37,
+        "token_share_today": 0.003091,
+        "rank_delta_1d": 6,
+        "token_share_delta_1d": 0.000266,
+        "rank_delta_7d": 8,
+        "token_share_delta_7d": 0.001228,
         "rank_delta_30d": null,
         "token_share_delta_30d": null
       },
       {
-        "model": "google/gemma-4-26b-a4b-it-20260403",
-        "provider": "Google",
-        "rank_today": 44,
-        "token_share_today": 0.002758,
-        "rank_delta_1d": -3,
-        "token_share_delta_1d": -0.0001,
-        "rank_delta_7d": null,
-        "token_share_delta_7d": null,
-        "rank_delta_30d": 4,
-        "token_share_delta_30d": 0.000692
-      },
-      {
-        "model": "google/gemini-3-flash-preview-20251217",
-        "provider": "Google",
-        "rank_today": 45,
-        "token_share_today": 0.002541,
-        "rank_delta_1d": -3,
-        "token_share_delta_1d": -0.000285,
-        "rank_delta_7d": 2,
-        "token_share_delta_7d": 0.000857,
-        "rank_delta_30d": -8,
-        "token_share_delta_30d": -0.00115
-      },
-      {
-        "model": "openai/gpt-6-luna-pro-20260922",
+        "model": "openai/gpt-6.1-terra-20261026",
         "provider": "OpenAI",
-        "rank_today": 46,
-        "token_share_today": 0.00251,
-        "rank_delta_1d": 2,
-        "token_share_delta_1d": 0.000252,
+        "rank_today": 38,
+        "token_share_today": 0.003061,
+        "rank_delta_1d": -8,
+        "token_share_delta_1d": -0.001107,
+        "rank_delta_7d": -2,
+        "token_share_delta_7d": 0.000302,
+        "rank_delta_30d": 2,
+        "token_share_delta_30d": -2.6e-05
+      },
+      {
+        "model": "moonshotai/kimi-k3-20260715",
+        "provider": "Moonshot AI",
+        "rank_today": 39,
+        "token_share_today": 0.002884,
+        "rank_delta_1d": 0,
+        "token_share_delta_1d": -0.00018,
         "rank_delta_7d": -1,
-        "token_share_delta_7d": 0.000714,
-        "rank_delta_30d": -5,
-        "token_share_delta_30d": -0.000705
+        "token_share_delta_7d": 0.000302,
+        "rank_delta_30d": -15,
+        "token_share_delta_30d": -0.008237
+      },
+      {
+        "model": "xiaomi/mimo-v2.6-pro-20260921",
+        "provider": "Xiaomi",
+        "rank_today": 40,
+        "token_share_today": 0.002876,
+        "rank_delta_1d": -3,
+        "token_share_delta_1d": -0.000301,
+        "rank_delta_7d": -1,
+        "token_share_delta_7d": 0.000391,
+        "rank_delta_30d": -14,
+        "token_share_delta_30d": -0.006135
       },
       {
         "model": "google/gemini-4-argon-20261013",
         "provider": "Google",
-        "rank_today": 47,
-        "token_share_today": 0.002417,
-        "rank_delta_1d": 0,
-        "token_share_delta_1d": 0.000149,
-        "rank_delta_7d": -4,
-        "token_share_delta_7d": 0.00051,
-        "rank_delta_30d": -14,
-        "token_share_delta_30d": -0.002182
+        "rank_today": 41,
+        "token_share_today": 0.002841,
+        "rank_delta_1d": 6,
+        "token_share_delta_1d": 0.000424,
+        "rank_delta_7d": 9,
+        "token_share_delta_7d": 0.001185,
+        "rank_delta_30d": -11,
+        "token_share_delta_30d": -0.002193
       },
       {
-        "model": "deepseek/deepseek-v4-pro-20260423",
-        "provider": "DeepSeek",
-        "rank_today": 48,
-        "token_share_today": 0.002388,
-        "rank_delta_1d": -15,
-        "token_share_delta_1d": -0.000968,
-        "rank_delta_7d": 0,
-        "token_share_delta_7d": 0.000823,
-        "rank_delta_30d": -10,
-        "token_share_delta_30d": -0.000942
-      },
-      {
-        "model": "liquid/d1-ultra-20261015",
-        "provider": "Liquid AI",
-        "rank_today": 49,
-        "token_share_today": 0.00236,
-        "rank_delta_1d": null,
-        "token_share_delta_1d": null,
+        "model": "google/gemma-4-26b-a4b-it-20260403",
+        "provider": "Google",
+        "rank_today": 42,
+        "token_share_today": 0.00274,
+        "rank_delta_1d": 2,
+        "token_share_delta_1d": -1.8e-05,
         "rank_delta_7d": null,
         "token_share_delta_7d": null,
         "rank_delta_30d": null,
         "token_share_delta_30d": null
       },
       {
-        "model": "google/gemini-3.1-flash-lite-20260507",
-        "provider": "Google",
-        "rank_today": 50,
-        "token_share_today": 0.002171,
-        "rank_delta_1d": -1,
-        "token_share_delta_1d": -8.4e-05,
-        "rank_delta_7d": 0,
-        "token_share_delta_7d": 0.000718,
-        "rank_delta_30d": -14,
-        "token_share_delta_30d": -0.001618
+        "model": "deepseek/deepseek-v4-pro-20260813",
+        "provider": "DeepSeek",
+        "rank_today": 43,
+        "token_share_today": 0.002732,
+        "rank_delta_1d": -7,
+        "token_share_delta_1d": -0.000514,
+        "rank_delta_7d": 1,
+        "token_share_delta_7d": 0.000644,
+        "rank_delta_30d": -10,
+        "token_share_delta_30d": -0.001769
       },
       {
-        "model": "perplexity/pplx-decider-v1.2-20261016",
-        "provider": "Perplexity",
+        "model": "liquid/d1-ultra-20261015",
+        "provider": "Liquid AI",
+        "rank_today": 44,
+        "token_share_today": 0.002675,
+        "rank_delta_1d": 5,
+        "token_share_delta_1d": 0.000315,
+        "rank_delta_7d": null,
+        "token_share_delta_7d": null,
+        "rank_delta_30d": null,
+        "token_share_delta_30d": null
+      },
+      {
+        "model": "thinkingmachines/inkling-2-small-20261107",
+        "provider": "thinkingmachines",
+        "rank_today": 45,
+        "token_share_today": 0.002604,
+        "rank_delta_1d": -18,
+        "token_share_delta_1d": -0.002531,
+        "rank_delta_7d": -14,
+        "token_share_delta_7d": -0.000531,
+        "rank_delta_30d": null,
+        "token_share_delta_30d": null
+      },
+      {
+        "model": "google/gemini-3-flash-preview-20251217",
+        "provider": "Google",
+        "rank_today": 46,
+        "token_share_today": 0.00244,
+        "rank_delta_1d": -1,
+        "token_share_delta_1d": -0.000101,
+        "rank_delta_7d": 5,
+        "token_share_delta_7d": 0.000832,
+        "rank_delta_30d": -10,
+        "token_share_delta_30d": -0.00104
+      },
+      {
+        "model": "google/gemma-4-31b-it-20260402",
+        "provider": "Google",
+        "rank_today": 47,
+        "token_share_today": 0.002401,
+        "rank_delta_1d": -9,
+        "token_share_delta_1d": -0.000708,
+        "rank_delta_7d": null,
+        "token_share_delta_7d": null,
+        "rank_delta_30d": 0,
+        "token_share_delta_30d": 7.5e-05
+      },
+      {
+        "model": "openai/gpt-6-luna-pro-20260922",
+        "provider": "OpenAI",
+        "rank_today": 48,
+        "token_share_today": 0.00234,
+        "rank_delta_1d": -2,
+        "token_share_delta_1d": -0.00017,
+        "rank_delta_7d": -1,
+        "token_share_delta_7d": 0.000587,
+        "rank_delta_30d": -9,
+        "token_share_delta_30d": -0.0008
+      },
+      {
+        "model": "openai/gpt-6.2-astra-20261117",
+        "provider": "OpenAI",
+        "rank_today": 49,
+        "token_share_today": 0.002281,
+        "rank_delta_1d": -7,
+        "token_share_delta_1d": -0.000567,
+        "rank_delta_7d": null,
+        "token_share_delta_7d": null,
+        "rank_delta_30d": null,
+        "token_share_delta_30d": null
+      },
+      {
+        "model": "deepseek/deepseek-v4-pro-20260423",
+        "provider": "DeepSeek",
+        "rank_today": 50,
+        "token_share_today": 0.002264,
+        "rank_delta_1d": -2,
+        "token_share_delta_1d": -0.000124,
+        "rank_delta_7d": -1,
+        "token_share_delta_7d": 0.000599,
+        "rank_delta_30d": -13,
+        "token_share_delta_30d": -0.00103
+      },
+      {
+        "model": "google/gemini-4-hydrogen-20261112",
+        "provider": "Google",
         "rank_today": 51,
-        "token_share_today": 0.001983,
-        "rank_delta_1d": -6,
-        "token_share_delta_1d": -0.000406,
+        "token_share_today": 0.002127,
+        "rank_delta_1d": -11,
+        "token_share_delta_1d": -0.000868,
         "rank_delta_7d": null,
         "token_share_delta_7d": null,
         "rank_delta_30d": null,
@@ -606,179 +606,174 @@
     ],
     "new_entrants": [
       {
-        "model": "thinkingmachines/inkling-2-small-20261107",
-        "provider": "thinkingmachines",
-        "rank": 27,
-        "token_share": 0.005136
+        "model": "stepfun/step-5-preview-20261008",
+        "provider": "StepFun",
+        "rank": 14,
+        "token_share": 0.012912
       },
       {
-        "model": "openai/gpt-6.2-astra-20261117",
-        "provider": "OpenAI",
-        "rank": 42,
-        "token_share": 0.002848
-      },
-      {
-        "model": "liquid/d1-ultra-20261015",
-        "provider": "Liquid AI",
-        "rank": 49,
-        "token_share": 0.00236
+        "model": "perplexity/pplx-decider-v1.3-20261112:free",
+        "provider": "Perplexity",
+        "rank": 36,
+        "token_share": 0.003103
       }
     ],
     "dropouts": [
       {
-        "model": "stepfun/step-5-preview-20261008",
-        "provider": "StepFun",
-        "last_rank": 14,
-        "last_token_share": 0.012389
-      },
-      {
-        "model": "anthropic/claude-sonnet-5-20260630",
-        "provider": "Anthropic",
+        "model": "google/gemini-3.1-flash-lite-20260507",
+        "provider": "Google",
         "last_rank": 50,
-        "last_token_share": 0.002019
+        "last_token_share": 0.002171
       },
       {
-        "model": "thinkingmachines/inkling-2-mini-20261120",
-        "provider": "thinkingmachines",
+        "model": "perplexity/pplx-decider-v1.2-20261016",
+        "provider": "Perplexity",
         "last_rank": 51,
-        "last_token_share": 0.002
+        "last_token_share": 0.001983
       }
     ],
     "records": [
       {
         "type": "all_time_token_share",
-        "model": "deepseek/deepseek-v4.1-flash-20261017",
-        "provider": "DeepSeek",
-        "value": 0.366103,
-        "streak_days": 2
+        "model": "google/gemini-4-neon-20261118",
+        "provider": "Google",
+        "value": 0.011772,
+        "streak_days": 1
       }
     ],
     "provider_share": [
       {
         "provider": "DeepSeek",
-        "token_share_today": 0.44898,
-        "delta_1d": 0.043632,
-        "delta_7d": 0.214531,
-        "delta_30d": 0.111283
+        "token_share_today": 0.427866,
+        "delta_1d": -0.021112,
+        "delta_7d": 0.193137,
+        "delta_30d": 0.067835
       },
       {
         "provider": "Tencent",
-        "token_share_today": 0.101047,
-        "delta_1d": -0.045039,
-        "delta_7d": -0.346227,
-        "delta_30d": 0.027839
+        "token_share_today": 0.119897,
+        "delta_1d": 0.018851,
+        "delta_7d": -0.327392,
+        "delta_30d": 0.052661
       },
       {
         "provider": "Zhipu AI",
-        "token_share_today": 0.073042,
-        "delta_1d": -0.00318,
-        "delta_7d": 0.025439,
-        "delta_30d": -0.052719
-      },
-      {
-        "provider": "Anthropic",
-        "token_share_today": 0.059951,
-        "delta_1d": 0.001656,
-        "delta_7d": 0.021513,
-        "delta_30d": -0.009102
+        "token_share_today": 0.074092,
+        "delta_1d": 0.001051,
+        "delta_7d": 0.034446,
+        "delta_30d": -0.026805
       },
       {
         "provider": "OpenAI",
-        "token_share_today": 0.05874,
-        "delta_1d": 0.001706,
-        "delta_7d": 0.013398,
-        "delta_30d": -0.034736
+        "token_share_today": 0.057082,
+        "delta_1d": -0.001658,
+        "delta_7d": 0.008531,
+        "delta_30d": -0.022066
+      },
+      {
+        "provider": "Anthropic",
+        "token_share_today": 0.05433,
+        "delta_1d": -0.005621,
+        "delta_7d": 0.016014,
+        "delta_30d": -0.019027
       },
       {
         "provider": "Google",
-        "token_share_today": 0.034329,
-        "delta_1d": 0.00306,
-        "delta_7d": 0.021302,
-        "delta_30d": 0.006419
+        "token_share_today": 0.035122,
+        "delta_1d": 0.000793,
+        "delta_7d": 0.017653,
+        "delta_30d": 0.0082
       },
       {
         "provider": "typesafe",
-        "token_share_today": 0.030719,
-        "delta_1d": 0.007114,
-        "delta_7d": 0.016728,
-        "delta_30d": 0.005783
+        "token_share_today": 0.030445,
+        "delta_1d": -0.000274,
+        "delta_7d": 0.016166,
+        "delta_30d": -0.002377
       },
       {
         "provider": "NVIDIA",
-        "token_share_today": 0.026859,
-        "delta_1d": -1.6e-05,
-        "delta_7d": 0.006124,
-        "delta_30d": -0.003315
+        "token_share_today": 0.024067,
+        "delta_1d": -0.002792,
+        "delta_7d": 0.001737,
+        "delta_30d": -0.009546
       },
       {
         "provider": "Moonshot AI",
-        "token_share_today": 0.021208,
-        "delta_1d": -0.00583,
-        "delta_7d": 0.006093,
-        "delta_30d": 0.006431
+        "token_share_today": 0.023548,
+        "delta_1d": 0.00234,
+        "delta_7d": 0.012186,
+        "delta_30d": 0.004332
       },
       {
         "provider": "MiniMax",
-        "token_share_today": 0.019484,
-        "delta_1d": 0.001755,
-        "delta_7d": 0.009527,
-        "delta_30d": -0.014671
+        "token_share_today": 0.018793,
+        "delta_1d": -0.000691,
+        "delta_7d": 0.006325,
+        "delta_30d": -0.014965
       },
       {
         "provider": "meta",
-        "token_share_today": 0.017452,
-        "delta_1d": 0.001383,
-        "delta_7d": 0.007493,
-        "delta_30d": 0.003051
+        "token_share_today": 0.017893,
+        "delta_1d": 0.000441,
+        "delta_7d": 0.006472,
+        "delta_30d": 0.003698
       },
       {
         "provider": "Xiaomi",
-        "token_share_today": 0.015046,
-        "delta_1d": -0.00032,
-        "delta_7d": 0.001844,
-        "delta_30d": -0.011214
+        "token_share_today": 0.013179,
+        "delta_1d": -0.001866,
+        "delta_7d": -0.00053,
+        "delta_30d": -0.015116
+      },
+      {
+        "provider": "StepFun",
+        "token_share_today": 0.012912,
+        "delta_1d": null,
+        "delta_7d": 0.006947,
+        "delta_30d": -0.019408
       },
       {
         "provider": "baidu",
-        "token_share_today": 0.010942,
-        "delta_1d": 7.9e-05,
-        "delta_7d": 0.002686,
+        "token_share_today": 0.010908,
+        "delta_1d": -3.4e-05,
+        "delta_7d": 0.002119,
         "delta_30d": null
       },
       {
         "provider": "Qwen",
-        "token_share_today": 0.009818,
-        "delta_1d": -5.5e-05,
-        "delta_7d": 0.000413,
-        "delta_30d": 0.003683
-      },
-      {
-        "provider": "thinkingmachines",
-        "token_share_today": 0.005136,
-        "delta_1d": 0.003136,
-        "delta_7d": -0.00123,
-        "delta_30d": 0.003124
+        "token_share_today": 0.010625,
+        "delta_1d": 0.000807,
+        "delta_7d": -0.004399,
+        "delta_30d": 0.002472
       },
       {
         "provider": "upstage",
-        "token_share_today": 0.004506,
-        "delta_1d": 0.000844,
-        "delta_7d": 0.001193,
-        "delta_30d": -0.005684
-      },
-      {
-        "provider": "Liquid AI",
-        "token_share_today": 0.00236,
-        "delta_1d": null,
-        "delta_7d": null,
-        "delta_30d": null
+        "token_share_today": 0.004186,
+        "delta_1d": -0.00032,
+        "delta_7d": 0.001295,
+        "delta_30d": -0.006213
       },
       {
         "provider": "Perplexity",
-        "token_share_today": 0.001983,
-        "delta_1d": -0.000406,
+        "token_share_today": 0.003103,
+        "delta_1d": 0.00112,
         "delta_7d": null,
         "delta_30d": null
+      },
+      {
+        "provider": "Liquid AI",
+        "token_share_today": 0.002675,
+        "delta_1d": 0.000315,
+        "delta_7d": null,
+        "delta_30d": null
+      },
+      {
+        "provider": "thinkingmachines",
+        "token_share_today": 0.002604,
+        "delta_1d": -0.002531,
+        "delta_7d": -0.002751,
+        "delta_30d": 0.000563
       }
     ],
     "provider_share_cumulative": [
@@ -788,7 +783,7 @@
           "DeepSeek",
           "Tencent"
         ],
-        "token_share": 0.550027
+        "token_share": 0.547763
       },
       {
         "top_n": 3,
@@ -797,7 +792,7 @@
           "Tencent",
           "Zhipu AI"
         ],
-        "token_share": 0.623069
+        "token_share": 0.621855
       },
       {
         "top_n": 4,
@@ -805,9 +800,9 @@
           "DeepSeek",
           "Tencent",
           "Zhipu AI",
-          "Anthropic"
+          "OpenAI"
         ],
-        "token_share": 0.68302
+        "token_share": 0.678937
       },
       {
         "top_n": 5,
@@ -815,15 +810,15 @@
           "DeepSeek",
           "Tencent",
           "Zhipu AI",
-          "Anthropic",
-          "OpenAI"
+          "OpenAI",
+          "Anthropic"
         ],
-        "token_share": 0.74176
+        "token_share": 0.733267
       }
     ],
     "concentration": {
-      "hhi_today": 0.228649,
-      "hhi_delta_30d": 0.074089
+      "hhi_today": 0.213725,
+      "hhi_delta_30d": 0.051052
     }
   }
 }
