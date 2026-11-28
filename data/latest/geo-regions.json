@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T09:14:42.617430+00:00",
+  "generated_at": "2026-11-28T08:33:21.726134+00:00",
   "source": "derived from geo-adoption.json (Anthropic Economic Index, CC-BY) + sdk-geo.json (ClickPy) via a static country-to-region crosswalk",
   "regions": {
     "adoption": [
@@ -39,35 +39,35 @@
     "downloads": [
       {
         "region": "North America",
-        "value": 500440400
+        "value": 495908868
       },
       {
         "region": "Europe",
-        "value": 81337962
+        "value": 81280448
       },
       {
         "region": "East Asia",
-        "value": 21502516
+        "value": 21528405
       },
       {
         "region": "South Asia",
-        "value": 9335160
+        "value": 9297332
       },
       {
         "region": "SE Asia",
-        "value": 23516088
+        "value": 23505615
       },
       {
         "region": "Middle East",
-        "value": 2667336
+        "value": 2658543
       },
       {
         "region": "Latin America",
-        "value": 4223184
+        "value": 4139216
       },
       {
         "region": "Africa",
-        "value": 1120383
+        "value": 1139777
       }
     ]
   }
